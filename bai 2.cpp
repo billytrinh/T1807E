@@ -2,7 +2,7 @@
 
 int main(){
 	float tong = 0;
-	float ty_le_lai;
+	float ty_le_lai; // hahahahahahahahahaha
 	float lai;
 	int nam;
 	printf("Enter Capital Sum: \n");
