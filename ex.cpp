@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int a,b,c;
+	int a,b,c,d;
 	printf("Nhap a va b\n");
 	scanf("%d %d",&a,&b);
 	if(a <= b){
