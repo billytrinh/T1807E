@@ -1,1 +1,53 @@
+*{
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;
+}
+body {
+	margin: 0px;
+}
+.row {
+	height: 410px;
+	width: 880px;
+	background-color: #f2f5f7;
+	padding: 0px;
+}
+.list {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px
+}
+.list li {
+	height: 410px;
+	width: 270px;
+	margin-right: 22px;
+	float: left;
+	background-color: white;
+	position: relative;
+}
+.list li:hover .descrip{
+	color: #ff5912;
+	transition: 0.6s;
+}
 
+.list li .picture {
+	width: 270px;
+	height: 300px;
+}
+.list li .picture img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+.list li p {
+	text-align: center;
+	margin: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	transition: 0.6s;
+}
+.price {
+	color: #ff5912;
+}
+.descrip {
+	color: #424d57;	
+}
