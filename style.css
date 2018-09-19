@@ -2,14 +2,14 @@ body{background: #ffffff}
 div{
 	text-align: center;
 }
-h3{
+#product-name{
 	font-size: 16px;
 	background: #ffffff;
 	font-family: Lucida Bright;
 	color: #34404b;
 	text-align: center;
 }
-h4{
+p{
 	font-size: 12px;
 	background: #ffff;
 	font-family: Lucida Bright;
