@@ -1,13 +1,27 @@
 body{background: #FFF;}
+
+div{
+	text-align: center;	
+	margin: 0px;
+	border: 60px solid #f4f6f8;
+	padding: 20px 30px 20px 30px;
+	float: left;	
+}
+div1{
+	text-align: center;
+	margin: 0px;
+	border: 60px solid #f4f6f8;
+	padding: 20px 20px 23px 20px;
+	float: left;
+}
 h2{
-	font-family: Arial;
 	color: red;
 }
 h3{
-	font-family: Arial;
 	color: #34404b;
 }
-h4{
-	font-family: Arial;
+p{
+	font-weight: 600;
 	color: #ff5912;
 }
+
