@@ -1,0 +1,41 @@
+body{
+	background-color:#f4f6f8;
+}
+
+
+.container{
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	width:600px;
+	margin:auto;
+}
+
+.productbox{
+	margin:15px;
+	background-color:white;
+}
+
+img{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+.product-name{
+	color:#34404b;
+	margin-top:10px;
+	margin-bottom:14px;
+}
+
+.product-price{
+	color:#ff5912;
+	margin-top:14px;
+}
+
+p{
+	font-family:PT San;
+	font-size: 14;
+	font-weight:600;
+	text-align:center;
+}
