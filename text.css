@@ -1,0 +1,40 @@
+#menu{
+	height: 1195px;
+	width: 900px;
+	text-align: center;
+	margin-left: 50px;
+	background-color: #f2f2f2;
+
+}
+body{
+	background-color: #f2f2f2;
+}
+.image{
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.menu1{
+	height: 368px;
+	width: 270px;
+	float: left;
+	margin: 15px;
+	background-color: white;
+
+}
+
+.price{
+
+	margin-bottom: 30px;
+	font-style: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.des{
+	font-weight: 600;
+	font-family: sans-serif; ;
+	font-style: 18px;
+	margin-top:30px;
+	color: #34404b;
+}
+
