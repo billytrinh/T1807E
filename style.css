@@ -1,0 +1,39 @@
+body {background-color: #F4F6F8;
+	margin: 200px 75px 200px 70px;;
+
+}
+div{
+	text-align: center;
+	float: right ;
+
+	padding: 70px 10px;
+	width: 270px;
+    height: 270px;
+}
+h3{
+	color: #34404b;
+
+}
+#product{
+	background: white;
+	font-size:20px;
+	margin: 10px;
+
+}
+#name{
+	background: white;
+	font-size: 20px;
+	margin:10px;
+
+}
+#name1{
+	background: white;
+	font-size: 20px;
+	margin: 10px;
+
+}
+p{
+	color: #ff5912;
+	font-weight: bold;
+	font-size: 15px;
+}
