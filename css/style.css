@@ -40,17 +40,29 @@ a{
 	font-weight: 600;
 	line-height: 55px;
 }
-.products .rows .item figcaption:hover{
-	color: red;
+.products .rows .item{
+	position: relative;
+}
+.products .rows .item .show{
+	opacity: 1;
 }
 .products .rows .item .show-hover{
-	display: none;
-}
-.products .rows .item:hover .show-hover{
-	display: inline-block;
+	position: absolute;
+	opacity: 0;
+	top:20px;
+	left:20px;
+	width: calc(100% - 40px);
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
 }
 .products .rows .item:hover .show{
-	display: none;
+	opacity: 0;
+}
+.products .rows .item:hover .show-hover{
+	opacity: 1;
+}
+.products .rows .item figcaption:hover{
+	color: red;
 }
 .products .rows .item .price{
 	font-size: 18px;
