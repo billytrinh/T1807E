@@ -1,0 +1,27 @@
+body {background:grey;}
+h3
+{
+	font-family:Myriad Pro;
+}
+.product-name
+{
+	font-size:18.03px;
+	color: green;
+}
+p
+{
+	font-size:18.03px;
+	color: red;
+}
+div 
+{
+	width: 270px;
+	height: 365px;
+	margin: 20px 20px 20px 100px;
+	padding: 10px 10px;
+	float: left;
+	boder: 1px solid green;
+	text-align: center;
+	background:white;
+	font-family:Arial;
+}
