@@ -1,18 +1,37 @@
-body{background: #ffffff}
-div{
+body{background: #f4f6f8;}
+/*div{
 	text-align: center;
-}
-#product-name{
-	font-size: 16px;
+	margin: 15px;
+	padding: 2px 20px 2px 20px;
+	background: white;
+	border: 0px solid white;
+	float: left;
+	height: 360px;
+	width: 270px;
+}*/
+.background{
+	background: #f4f6f8;
+	float: left;
+	text-align: center;
+	}
+.product-name{
 	background: #ffffff;
-	font-family: Lucida Bright;
+	border: 1px solid white;
+	height: 360px;
+	width: 270px;
+	margin: 15px;
+}
+.name{
+	font-family: Myriad Pro;
+	font-size: 18px;
+	font-weight: 600;
 	color: #34404b;
 	text-align: center;
 }
-p{
-	font-size: 12px;
+.money{
+	font-size: 18px;
 	background: #ffff;
-	font-family: Lucida Bright;
+	font-family: Myriad Pro;
 	color: #ff5912;
 	font-weight: 600;
 	text-align: center;
