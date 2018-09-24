@@ -1,0 +1,19 @@
+body{background: white;}
+h3{
+	color: #31465a;
+	padding-left: 30px;
+
+} 
+p{
+	color: red;
+	font-size: 20px;
+	margin: 30px 30px 30px 30px;
+	padding-left: 50px;
+}
+div {
+	float: left;
+}
+img {
+	padding: 30px 30px 30px 30px;
+} 
+
