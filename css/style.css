@@ -40,6 +40,9 @@ a{
 	font-weight: 600;
 	line-height: 55px;
 }
+.products .rows .item figcaption:hover{
+	color: red;
+}
 .products .rows .item .show-hover{
 	display: none;
 }
