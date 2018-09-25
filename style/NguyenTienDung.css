@@ -3,26 +3,335 @@
 	font-size: 18.03px;
 	font-weight: 550;
 	color: #34404b;
+	box-sizing: border-box;
+}
+body {
+	background: #f4f6f8;
+	position: relative;
+	height: 2163px;
 }
 .frame {
+	top: 300px;
 	width: 900px;
-	height: auto;
-	position: absolute;
-	left: 15%;
-	background: #f4f6f8;
+	height: 1800px;
+	position: relative;
+	padding-bottom: 0px;
+	left: 28.125%;
+
 }
-.product {
+.products {
+	width: 100%;
+	position: relative;
+	height: 367px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+.left{
+	width: 270px;
+	position: absolute;
+	top: 300px;
+	left: 135px;
+}
+.left1{
+	width: 270px;
+	height: 300px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: white;
+	padding-top: 40px;
+}
+.left2 {
+	width: 270px;
+	height: 235px;
+	position: absolute;
+	right: 0px;
+	top: 330px;
+	background: white;
+	padding-top: 40px;
+}
+.left3{
+	width: 270px;
+	height: 300px;
+	position: absolute;
+	right: 0px;
+	top: 595px;
+	background: white;
+}
+.left4{
+	width: 270px;
+	height: 300px;
+	position: absolute;
+	right: 0px;
+	top: 925px;
+	background: white;
+}
+.left1 p {
+	padding-left: 40px;
+	color: #ff5912;
+	margin: 0px;
+}
+.left1 ul li {
+	line-height: 50px;
+	font-size: 16px;
+}
+.left1 ul li:hover {
+	color: #ff5912;
+}
+
+.left2 p {
+	color: #ff5912;
+	padding-left: 40px;
+	margin: 0px;
+	margin-bottom: 40px;
+}
+.range {
+	text-align: center;
+	margin-bottom: 35px;
+}
+.fill input {
+	width: 45px;
+	height: 25px;
+	background: #edf0f2;
+	border: none;
+	margin-left: 15px;
+	margin-right: 20px;
+	font-style: 14px;
+}
+.fill span {
+	margin-left: 40px;
+	font-size: 14.03px;
+}
+#last {
+	margin-left: 0px;
+}
+ul {
+	list-style-type: none;
+}
+
+.item {
 	width: 270px;
 	height: 367px;
 	text-align: center;
 	float: left;
-	margin: 15px 15px 15px 15px;
+	margin-right: 30px;
 	background: white;
+	position: relative;
+}
+.item:first-child {
+	margin-left: 0px;
+}
+.item:last-child {
+	margin-right: 0px;
 }
 .pic {
 	margin-top: 30px;
 }
+.show-hover .desc {
+	color: #ff5912;
+}
+.show-hover .price {
+	color: black;
+	font-weight: 400;
+	font-size: 13.93px;
+}
+.show {
+	opacity: 1;
+	transition: 0.5s;
+	width: 270px;
+	height: 367px;
+	text-align: center;
+	float: left;
+	margin-right: 30px;
+	background: white;
+	position: relative;
+}
+.show-hover {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	background: white;
+	width: 270px;
+	height: 367px;
+	bottom: 0px;
+	transition: 0.3s;
+}
+.item:hover .show {
+	opacity: 0;
+	transition: 0.3s;
+}
+.item:hover .show-hover {
+	opacity: 1;
+	z-index: 1;
+	transition: 0.9s;
+	border: 1px solid #ff5912;
+}
+.icon {
+	line-height: 120px;
+}
+.icon img {
+	margin-left: 15px;
+}
+.pic-small img {
+	margin-top: 50px;
+	width: auto;
+	height: 94.2px;
+}
 .price {
 	color: #ff5912;
 	margin-bottom: 30px;
+	margin-top: 0px;
 }
+.size {
+	margin-top: 40px;
+	margin-left: 40px;
+	color: #ff5912;
+	font-size: 18px;
+}
+.load {
+	width: 870px;
+	height: 60px;
+	background: white;
+	position: relative;
+	margin-left: 30px;
+	text-align: center;
+}
+.load img{
+	position: absolute;
+	top: 25px;
+}
+
+label{
+	font-size: 16px;
+	font-weight: 600;
+}
+.left3 input[type=checkbox] + label{
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 38px;
+}
+.left3 input[type=checkbox]{
+	display: none;
+}
+.left3 input[type=checkbox] + label:before{
+	content: "\2714";
+	background-color: #edf0f2;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	padding-left: 0.2em;
+	padding-bottom: 0.3em;
+	margin-right: 15px;
+	vertical-align: bottom;
+	transition: 0.2s;
+	color: transparent;
+}
+.left3 input[type=checkbox]:checked + label:before{
+	background: #ff5912;
+	color: #fff;
+}
+
+.left3 label:hover {
+	color: #ff5912;
+}
+.left4 input[type=checkbox] + label{
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 38px;
+}
+.left4 input[type=checkbox]{
+	display: none;
+}
+.left4 input[type=checkbox] + label:before{
+	content: "\2714";
+	background-color: #edf0f2;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-left: 0.2em;
+	padding-bottom: 0.3em;
+	margin-right: 15px;
+	vertical-align: bottom;
+	transition: 0.2s;
+	color: transparent;
+}
+.left4 input[type=checkbox]:checked + label:before{
+	background: #ff5912;
+	color: #fff;
+}
+
+.left4 label:hover {
+	color: #ff5912;
+}
+.footer {
+	width: 1170px;
+	height: 123px;
+	background: white;
+	position: absolute;
+	bottom: 372px;
+	left: 135px;
+}
+.news-letter {
+	position: absolute;
+	margin: 0px;
+	margin-left: 55px;
+	line-height: 123px;
+	color: #ff5912;
+}
+.join {
+	position: absolute;
+	margin: 0px;
+	margin-left: 200px;
+	line-height: 123px;
+	font-weight: 400;
+	font-size: 14px;
+}
+.mail {
+	margin: 0px;
+	position: absolute;
+	margin-left: 714px;
+	bottom: 60px;
+}
+input[type=text]{
+	position: absolute;
+	margin-left: 740px;
+	top: 51px;
+}
+input[type=image]{
+	position: absolute;
+	margin-left: 714px;
+	top: 54px;
+}
+.footer form input {
+	border: none;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 400;
+}
+.button {
+    background-color: #ff5912;
+    border: none;
+    color: white;
+    padding: 17px 30px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 36.5px;
+    cursor: pointer;
+    position: absolute;
+    right: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
