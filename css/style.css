@@ -103,13 +103,13 @@ a{
 .menu .sizes{
 	height: 240px;
 	background: #fff; 
-	padding: 15px 40px;
+	padding: 15px 40px 20px;
 	margin-bottom: 26px;
 }
 .menu .brand{
 	height: 240px;
 	background: #fff; 
-	padding: 15px 40px;
+	padding: 15px 40px 20px;
 }
 .menu .sizes .checkbox{
 	padding: 30px 15px 30px 40px;
@@ -142,7 +142,7 @@ a{
 	background: #fff;
 }
 .footer .head{
-	padding:  0 60px 0 40px;
+	padding:  0 30px 0 40px;
 	font-size: 18px;
 	font-weight: 900;
 	line-height: 120px;
@@ -155,8 +155,11 @@ a{
 	line-height: 120px;
 	color: #34404b;
 }
+.footer .iconmain{
+	padding: 0 0 0 260px;
+}
 .footer .sendmail{
-	padding: 0 150px 0 250px;
+	padding: 0 160px 0 10px;
 	font-size: 14px;
 	font-weight: 400;
 	font-style: italic;
@@ -165,7 +168,7 @@ a{
 }
 .footer .join{
 	margin: 20px;
-	padding:  20px;
+	padding:  17px 22px;
 	background-color: #ff5912;
 	font-size: 14px;
 	font-weight: 600;
