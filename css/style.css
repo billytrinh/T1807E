@@ -11,6 +11,14 @@ body{
 }
 a{
 }
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	float: left;
+	margin: 0px auto;
+}
 .products{
 	float:right;
 	width: 870px;
@@ -93,6 +101,5 @@ a{
 	font-weight: 600;
 	color: #ff5912;
 	line-height: 33px;
-
 }
 
