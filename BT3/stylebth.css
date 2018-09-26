@@ -1,0 +1,162 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body
+{
+
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background:#fff; 
+}
+
+a
+{
+
+}
+
+.products
+{
+	float:right;
+	width: 1055px;
+	padding: 300px 20px;
+}
+
+.products .rows
+{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.products .rows .item
+{
+	float:left;
+	width: 270px;
+	height: 365px;
+	text-align: center;
+	background: #fff;
+	padding: 20px 20px;
+	margin:0px 15px; 
+}
+
+.products .rows .item:first-child
+{
+	margin-left:0;
+}
+
+.products .rows .item:last-child
+{
+	margin-right:0;
+}
+
+.products .rows .item figcaption
+{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+
+.products .rows .item .haha
+{
+	text-align: center;
+	font-size: 18px;
+	line-height: 55px
+}
+
+.products .rows .item .show-hover
+{
+	display: none;
+}
+
+.products .rows .item:hover .show-hover
+{
+	display: inline-block;
+}
+
+.products .rows .item:hover .show
+{
+	display: none;
+}
+
+.products .rows .item .price
+{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.choice
+{
+	float: right;
+	width: 268px;
+	padding: 300px 100px 300px 20px;
+}
+.choice .column
+{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.choice .column .info
+{
+	text-align: left;
+	width: 270px;
+	height: 270px;
+	background: white;
+	padding: 20px 20px;
+	margin:0px 15px; 
+}
+.choice .column .info .muc
+{
+	text-align: left;
+	text-transform: capitalize;
+	line-height: 55px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.choice .column .info text
+{
+	line-height: 50px;
+	font-size: 18px;
+}
+.comment
+{
+	float:right;
+	margin-top: 1500px;
+	margin-left: 190;
+	width: 2000px;
+	height: 10px;
+}
+.comment .c1
+{
+	padding: 20px 20px;
+	font-weight: 600;
+	color: #ff5912;
+	font-size: 18px;
+}
+.comment .c2
+{
+	padding: 20px 20px;
+	font-size: 14px
+}
+c3
+{
+	padding: 20px 20px;
+	font-style: italic; 
+}
+.comment .c4
+{
+	width:100px;
+	height: 50px;
+	color: white;
+	padding: 20px 20px;
+	font-style: italic;
+	font-size: 15px
+	boder:10px solid;
+	background: #ff5912;
+	text-align: center;
+}
