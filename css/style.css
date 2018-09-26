@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: time new roman;
+	font-size: 14px;
+	color: #34404b;
+	background: #f4f6f8;
+	line-height: 1.15;
+}
+.sanpham {
+	float: left;
+	width: 870px;
+	padding: 0px 15px;
+}
+.sanpham .hang{
+	float: left;
+	width: 100%;
+	margin-bottom: 30px; 
+	
+}
+.sanpham .hang .ao{
+	float: left;
+	width: 160px;
+	padding: 20px 20px;
+	margin:  0px 15px;
+	background:#fff;
+	text-align:center;
+}
+.sanpham .hang .ao .gia{
+	font-size: 13px;
+	color: red;
+	font-weight: 600;
+}
