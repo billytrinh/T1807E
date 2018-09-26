@@ -1,0 +1,132 @@
+<<<<<<< HEAD
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background:#f4f6f8; 
+}
+a{
+}
+.products{
+	float:right;
+	width: 870px;
+	padding: 0 15px;
+}
+.products .rows{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.products .rows .item{
+	float:left;
+	width: 230px;
+	text-align: center;
+	background: #fff;
+	padding: 20px 20px;
+	margin:0 15px; 
+}
+.products .rows .item:first-child{
+	margin-left:0;
+}
+.products .rows .item:last-child{
+	margin-right:0;
+}
+.products .rows .item .show figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 75px;
+}
+.products .rows .item .show-hover figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 45px;
+}
+.products .rows .item .show-hover .size{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 55px;
+	color: #34404b;
+}
+.products .rows .item .show-hover .bieu-tuong{
+	padding: 40px 0px;
+	/*border-top: 0.2px solid #34404b;*/
+}
+.products .rows .item .show-hover .bieu-tuong .hinh-nho{
+	padding: 0px 10px;
+}
+.products .rows .item .show-hover .dot{
+	padding: 20px 0px;
+}
+.products .rows .item{
+	position: relative;
+}
+.products .rows .item .show{
+	opacity: 1;
+}
+.products .rows .item .show-hover{
+	position: absolute;
+	opacity: 0;
+	top:20px;
+	left:20px;
+	width: calc(100% - 40px);
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+}
+.products .rows .item:hover .show{
+	opacity: 0;
+}
+.products .rows .item:hover .price{
+	opacity: 0;
+}
+.products .rows .item:hover .show-hover{
+	opacity: 1;
+}
+.products .rows .item figcaption:hover{
+	color: red;
+}
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+	line-height: 33px;
+
+}
+
+
+=======
+body{
+	background: #f4f6f8;
+	width: 900px;
+	height: 1185px;
+	margin: 0px;
+}
+div{
+	background: #fff;
+	width: 270px;
+	height: 365px;
+	text-align: center;
+	float: left;
+	margin: 15px;
+}
+h3{
+	font-size: 18.03px;
+	color: #34404b;
+	font-family: Arial;
+}
+h2{
+	font-size: 18.03px;
+	color: #ff5912;
+	font-family: Arial;
+	font-style: ;
+}
+img{
+	width: 159px;
+	height: 214px;
+	padding: 30px 0px 0px 0px;
+}
+>>>>>>> e6e5f6f4507b643ae9a0d5cbd504103c8c2772d3
