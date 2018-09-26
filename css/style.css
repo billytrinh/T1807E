@@ -1,0 +1,149 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background:#f4f6f8; 
+	margin: 40px;
+}
+a{
+}
+.products{
+	float:right;
+	width: 900px;
+}
+.products .rows{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.products .rows .item{
+	float:left;
+	width: 200px;
+	text-align: center;
+	background: #fff;
+	padding: 30px 30px;
+	margin:0 15px; 
+}
+.products .rows .item:first-child{
+	margin-left:0;
+}
+.products .rows .item:last-child{
+	margin-right:0;
+}
+.products .rows .item {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.products .rows .item{
+	position: relative;
+}
+.products .rows .item .show{
+	opacity: 1;
+}
+.products .rows .item .show-hover{
+	color: #ff5912;
+	position: absolute;
+	opacity: 0;
+	top:20px;
+	left:20px;
+	width: calc(100% - 40px);
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+}
+.products .rows .item .show-hover .size{
+	font-size: 14px;
+	color: black;
+	font-weight: 100;
+}
+.products .rows .item:hover .show{
+	opacity: 0;
+}
+.products .rows .item:hover .show-hover{
+	opacity: 1;
+}
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.products .rows .item .show-hover .color .colorchoiceshow{
+	position: relative;
+}
+.products .rows .item .show-hover .color{
+	margin-left: calc(50% - 40px);
+	width: 80px;
+	padding: 0px;
+}
+.products .rows .item .show-hover .color .colorchoiceshow{
+	padding-left: 2px;
+	padding-right: 2px;
+	float:left;
+	opacity: 1;
+	border: 1px solid;
+	border-color: transparent;
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+}
+.products .rows .item .show-hover .color .colorchoiceshow-active{
+	padding-left: 2px;
+	padding-right: 2px;
+	float:left;
+	opacity: 0;
+	position: absolute;
+	border: 1px solid;
+	border-color: black;
+}
+.products .rows .item .show-hover .color .colorchoiceshow:active{
+	opacity: 0;
+}
+.products .rows .item .show-hover .color .colorchoiceshow-active:active{
+	opacity: 1;
+}
+.side{
+	float: left;
+	height: 1500px;
+}
+.side .categories{
+	background-color: white;
+	margin-bottom: 30px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #ff5912;
+	padding: 25px 30px;
+}
+.side .categories .section{
+	font-size: 16px;
+	font-weight: 600;
+	color: #454f59;
+}
+.side .categories .type{
+	height: 250px;
+}
+.side .categories .type .section{
+	padding-top: 15px;
+}
+.side .categories .price .title{
+	padding-bottom: 20px;
+}
+.side .categories .checkbox{
+	height: 240px;
+}
+.side .categories .checkbox .icon {
+	float: left;
+	height: 240px;
+	background-color: black;
+}
+.side .categories .checkbox .choice {
+	float: right;
+	height: 240px;
+	margin-right: 90px;
+}
+.section{
+	padding-left: 10px;
+}
