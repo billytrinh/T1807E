@@ -12,8 +12,6 @@ body{
 li{
 	list-style: none;
 }
-a{
-}
 .hidden{display: none;}
 .section{
 	float: left;
