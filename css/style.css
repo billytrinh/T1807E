@@ -137,12 +137,11 @@ a{
 .side .categories .checkbox .icon {
 	float: left;
 	height: 240px;
-	background-color: black;
 }
 .side .categories .checkbox .choice {
-	float: right;
+	float: left;
 	height: 240px;
-	margin-right: 90px;
+	margin-right: 70px;
 }
 .section{
 	padding-left: 10px;
