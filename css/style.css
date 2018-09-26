@@ -15,9 +15,13 @@ a{
 	float: left;
 	width: 100%;
 }
-/*.container{
+.container{
 	float: left;
-	margin: 0px auto;*/
+	margin: 0px auto;\
+}
+.left-column{
+	float: left;
+	width: 270px;
 }
 .products{
 	float:right;
