@@ -1,0 +1,83 @@
+body{
+	background: white;
+}
+.rung{
+	width:100%;
+	height: 1300px;
+	background: yellow;
+}
+.rung .cay1{
+	width: 400px;
+	float: left;
+	height: 1250px;
+	background: blue;
+	text-align: center; 
+}
+.rung .cay1 .as{
+	height: 250px;
+	padding:  10px 10px 10px 10px;
+	margin: 30px 30px 10px 30px;
+	background: white;
+}
+.rung .cay1 .as input{
+}
+.rung .cay2{
+	width: 1000px;
+	float: right;
+	height: 1200px;
+	background: gray;
+}
+.rung .cay2 .goc{
+    text-align: center; 
+    font-size: 30px;
+		
+}
+.rung .cay2 .goc .canh{
+	height: 33%;
+}
+.rung .cay2 .goc .canh .nhanh{
+    width: 250px;
+	height: 330px;
+	padding:  10px 10px 10px 10px;
+    float:left;  
+	margin: 30px 30px 10px 30px;
+	background: white;
+	color: red;
+	position: relative;
+}
+.rung .cay2 .goc .canh .nhanh .show{
+	opacity: 1;
+	position: absolute;
+	top: -20px;
+	left: 0px;
+}
+.rung .cay2 .goc .canh .nhanh .show-hover{
+	position: absolute;
+	opacity: 0;
+	top: -20px;
+	left: 0px;
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+	-moz-transition: all 1050ms ease-out;
+}
+.rung .cay2 .goc .canh .nhanh:hover .show{
+	opacity: 0;
+}
+.rung .cay2 .goc .canh .nhanh:hover .show-hover{
+	opacity: 1;
+}
+.rung .cay2 .goc .canh .nhanh figcaption{	
+	font-size: 20px;
+	color: #34404b;
+}
+.rung .cay2 .goc .canh .nhanh .money{
+	padding-top: 280px;
+	color: #ff5912;
+}
+.rung .cay2 .goc .canh .nhanh figcaption:hover{
+	color: blue;
+}
+.rung .cay2 .goc .canh .nhanh .money:hover{
+	padding-top: 280px;
+	color: yellow;
+}
