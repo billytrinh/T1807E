@@ -1,0 +1,58 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: Myriad Pro;
+	font-size: 30px;
+	line-height: 1.15;
+	color: #34404b;
+	background:#f4f6f8; 
+}
+a{
+}
+.sanpham{
+	float:right;
+	width: 870px;
+	padding: 0 15px;
+}
+.sanpham .hang{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.sanpham .hang .vatpham{
+	float:left;
+	width: 230px;
+	text-align: center;
+	background: #fff;
+	padding: 20px 20px;
+	margin:0 15px; 
+}
+.sanpham .hang .vatpham:first-child{
+	margin-left: 0;
+}
+.sanpham .hang .vatpham:last-child{
+	margin-right: 0;
+}
+.sanpham .hang .vatpham figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.sanpham .hang .vatpham .hien-hieuung{
+	display: none;
+	
+}
+.sanpham .hang .vatpham:hover .hien-hieuung{
+	display: inline-block;
+}
+.sanpham .hang .vatpham:hover .hieuung{
+	display: none;
+}
+.sanpham .hang .vatpham .price{
+	font-size: 20px;
+	font-weight: 600;
+	color: #ff5912;
+}
+

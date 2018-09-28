@@ -1,0 +1,18 @@
+body{background: white;}
+div{
+	border: 2px solid white;
+	float: left;
+	padding: 15px;
+	margin: 30px;
+	text-align: center;
+	}
+h3{
+	font-size: 30px;
+	font-family: arial;
+	color: black;
+}
+h4{
+	font-size: 20px;
+	font-family: arial;
+	color: red;
+}
