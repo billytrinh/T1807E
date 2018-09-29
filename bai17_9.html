@@ -2,62 +2,210 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<title>Bai tap ve nha 17/9</title>
-		<link rel="stylesheet" href="style.css"/>
+		<title>Bai tap ve nha</title>
+		<link rel="stylesheet" href="css\style.css"/>
 	</head>
+	
 	<body>
-		<div>
-			<img src="jacketden1pts.jpg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
+		<section class="section">
+			<div class="container">
+				<div class="left-column left-navigation">
+					<div class="block categories">
+						<h3>Categories</h3>
+						<ul>
+							<li><a class="hyperlink" href="#">Man</a></li>
+							<li><a class="hyperlink" href="#">Women</a></li>
+							<li><a class="hyperlink" href="#">Childrens</a></li>
+							<li><a class="hyperlink" href="#">Hot deals</a></li>
+						</ul>
+					</div>
+					<div class="block price-filter">
+						<h3 id="pricefilter">Price Filter</h3>
+						<div class="price-controls">
+							<input class="min-price" type="text" value="100$">
+							<input class="max-price" type="text" value="1000$">
+						</div>
+						<p class="line-box">
+							<span class="node no_1"></span>
+							<span class="line"></span>
+							<span class="node no_2"></span>
+						</p>
+						<h4 class="price-controls2">
+						From   <input class="min-price2" type="text" value=" ">
+						To   <input class="max-price2" type="text" value=" ">
+						</h4>
+					</div>
+					<div class="block sizes">
+						<h3>Sizes</h3>
+						<ul>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="size" id="checkbox1">
+								<label for="checkbox1">Small</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="size2" id="checkbox2">
+								<label for="checkbox2">Medium</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="size3" id="checkbox3">
+								<label for="checkbox3">Large</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="size4" id="checkbox4">
+								<label for="checkbox4">X Large</label>
+							</li>
+						</ul>
+					</div>
+					<div class="block brands">
+						<h3>Brands</h3>
+						<ul>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="brand1" id="checkbox1-1">
+								<label for="checkbox1-1">Reebok</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="brand2" id="checkbox2-2">
+								<label for="checkbox2-2">Addidas</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="brand3" id="checkbox3-3">
+								<label for="checkbox3-3">Nike</label>
+							</li>
+							<li class="checkbox">
+								<input class="hidden" type="checkbox" name="brand4" id="checkbox4-4">
+								<label for="checkbox4-4">Active</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="products">
+					<div class="rows">
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketden1pts.jpg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+							<figure class="show-hover">
+								<img width="74px" height="91px" src="image\jacketden1pts.jpg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="sizes">sizes : s-m-l-xl</p>
+								<span class="dot1"></span>
+								<span class="dot2"></span>
+								<span class="dot3"></span>
+								<span class="dot4"></span>
+								<p><span class="line"></span></p>
+								<div class="icons">
+									<img src="image\icon1.png"/>
+									<span class="blank"></span>
+									<img src="image\icon2.png"/>
+									<span class="blank"></span>
+									<img src="image\icon3.png"/>
+								</div>
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\imagebaitap-2.jpeg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketred3.png"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+					</div>
+					
+					<div class="rows">
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketden1pts.jpg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\imagebaitap-2.jpeg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketred3.png"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+					</div>
+					
+					<div class="rows">
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketden1pts.jpg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\imagebaitap-2.jpeg"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>				
+							</figure>
+						</div>
+						
+						<div class="item">
+							<figure class="show">
+								<img src="image\jacketred3.png"/>
+								<figcaption>Reebok Track Jacket</figcaption>
+								<p class="price-box">
+									<span class="price">100$</span>
+								</p>
+							</figure>
+						</div>
+					</div>
+					
+					<div class="rows">
+						<div class="loadingmore">
+							<a class="loadingdots" href="#">
+							<img src="image\loadingdot.png"/>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</section>
 		
-		<div>
-			<img src="jacketden1pts.jpg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="jacketred3.png"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="jacketden1pts.jpg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="imagebaitap-2.jpeg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="jacketred3.png"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="jacketden1pts.jpg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="imagebaitap-2.jpeg"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
-		
-		<div>
-			<img src="jacketred3.png"/>
-			<h3 id="product-name">Reebok Track Jacket</h3>
-			<p id="price">100$</p>
-		</div>
 	</body>
 </html>
