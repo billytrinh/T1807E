@@ -3,24 +3,23 @@ body{
 }
 .dau{
 	width:100%;
-	height: 300px;
+	height: 250px;
 	background: #f4f6f8;
-	padding-top: 10px;
+	margin-top: -10px;
 }
 .dau .d1{
 	width:100%;
-	height:50px;
-	background: #f4f6f8;
+	height:60px;
+	background: white;
 }
 .dau .d1 .a1{
 	width:500px;
 	float: left;
 	margin-left:100px;
 }
-.dau .d1 .a2{
-	width: 500px;
-	float: right;
-	margin-right:50px;
+.dau .d1 .a1 .thu-kb2{
+	position: relative;
+	top: 10px;
 }
 .b{	
 	padding-top: -20px;
@@ -36,32 +35,41 @@ body{
 	margin: 15px 10px 10px 30px;
 	background: #edf0f2;
 }
+.dau .d1 .a2{
+	width: 500px;
+	float: right;
+	margin-right:50px;
+}
+.dau .d1 .a2 .gocphaitren{
+	position: relative;
+	top: 20px;
+}
 .dau .d2{
 	width:100%;
-	height:200px;
-	background: #f4f6f8;
+	height:180px;
+	background: white;
+	margin-top: 5px;
 }
 .dau .d2 .x1{
 	width: 900px;
 	float:left;
-	padding: 30px 10px 0px 100px;
-	margin: 10px 10px 10px 10px;
+	padding: 0px 10px 0px 100px;
+	margin: 0px 10px 10px 10px;
 }
 .dau .d2 .x1 .y1{
-	width:300;
+	width: 300px;
+	height: 120px;
 	float: left;
 }
 .dau .d2 .x1 .y2{
-	width:500px;
+	width: 400px;
 	height:90px;
-	float: right;
-	padding-top: 50px;
-	padding-left: 20px;
+	float: left;
+	padding-top: 60px;
 }
 .khoangtrong:before{
 	content: " ";
 	width: 30px;
-
 	display: inline-block;
 }.khoangtrongmau{
 	color: red;
@@ -69,13 +77,12 @@ body{
 .khoangtrongmau:before{
 	content: " ";
 	width: 30px;
-
 	display: inline-block;
 }
 .dau .d2 .x2{
-	width: 300px;
+	width: 400px;
 	height: 90px;
-	float:right;
+	float: left;
 	padding-top: 50px;
 }
 .rung{
@@ -208,18 +215,29 @@ body{
 	background: white;
 	color: red;
 	position: relative;
+	/*animation-name: hieuung;
+	animation-duration: 2s;
+    animation-iteration-count: infinite;*/
 }
+/*@keyframes hieuung{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow;left:200px; top:0px;}
+    50%  {background-color:blue;left:200px; top:200px;}
+    75%  {background-color:green;left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}*/
 .rung .cay2 .goc .canh .nhanh .show{
 	opacity: 1;
 	position: absolute;
 	top: -20px;
 	left: 0px;
+
 }
 .rung .cay2 .goc .canh .nhanh .show-hover{
 	position: absolute;
 	opacity: 0;
-	top: -20px;
-	left: 0px;
+	top: -30px;
+	left: -20px;
 	transition: all 1050ms ease-out;
 	-webkit-transition:all 1050ms ease-out;
 	-moz-transition: all 1050ms ease-out;
@@ -235,22 +253,22 @@ body{
 	color: #34404b;
 }
 .rung .cay2 .goc .canh .nhanh .money{
-	padding-top: 280px;
+	padding-top: 270px;
 	color: #ff5912;
+	font-size: 30px;
 }
 .rung .cay2 .goc .canh .nhanh figcaption:hover{
 	color: blue;
 }
 .rung .cay2 .goc .canh .nhanh .money:hover{
-	padding-top: 280px;
 	color: yellow;
 }
 .rung .khac{
 	width: 1000px;
 	height: 90px;
 	float: right;
-	margin-top: -50px;
-	margin-left: -50px;
+	margin-top: -80px;
+	margin-right: 50px;
 	position: relative;
 	background: white;
 }
@@ -275,7 +293,7 @@ body{
 }
 .duoi{
 	margin: 0px auto;
-	width: 1400px;
+	width: 1350px;
 	height: 100px;
 	background: white;
 }
@@ -283,6 +301,9 @@ body{
 	float: left;
 	width: 500px;
 	padding-top: 40px;
+}
+.duoi .duoitrai .chuchinh{
+	color: red;
 }
 .duoi .duoitrai .chuchinh:after{
 	content:" ";
@@ -299,15 +320,21 @@ body{
 }
 .dptrai{
 	width: 300px;
-	float: left
+	float: left;
+	position: relative;
+}
+.dptraithu{
+	position: absolute;
+	top: -5px;
+	left: 50px;
 }
 .dpphai{
 	width: 100px;
 	height: 30px;
 	float: right;
 	background: red;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding-top: 10px;
+	padding-left: 5px;
 	margin-top: -10px;
 }
 .cuoi{
