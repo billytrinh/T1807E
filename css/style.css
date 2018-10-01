@@ -17,7 +17,11 @@ a
 {
 	text-decoration: none;
 	color: #34404b;
-	font-weight: 600;
+	font-weight: 400;
+}
+a:hover
+{
+	color: #ff5912;
 }
 .hidden{display: none;}
 .section{
@@ -69,6 +73,7 @@ h3
 	padding-left: 40px;
 	font-size: 18px;
 	line-height: 2.5;
+	padding-right: 0px;
 }
 .products
 {
@@ -85,9 +90,8 @@ h3
 	background: #fff;
 	float: left;
 	width: 870px; 
-	height: 61px;
 	text-align: center;
-	padding-top: 28px;
+	padding: 28px 0px;
 }
 .products .rows .item{
 	float:left;
@@ -142,6 +146,9 @@ h3
 	transition: all 250ms ;
 	-webkit-transition: all 250ms ;
 }
+.products .rows .item:hover figcaption{
+	color: #ff5912;
+}
 .products .rows .item:hover .price-box{
 	opacity: 0;height: 0px;
 	transition: all 250ms ease-out;
@@ -181,13 +188,23 @@ h3
 .block.price-filter{
 	text-align: center;
 }
+.price-filter p
+{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.price-filter .price
+{
+	margin-right: 30px;
+	margin-left: 30px;
+}
 .price-filter .line-box{
 	width: 186px;
 	border-bottom: 3px solid #edf0f2;
 	margin:0 auto;
 	position: relative;
 }
-.price-filter .line-box .line{
+.price-filter .line-box .lines{
 	display: inline-block;
 	width: 107px;
 	border-bottom: 3px solid #34404b;
@@ -240,12 +257,18 @@ header{
 	float: left;
 	width: 100%;
 }
+.rows{
+	margin-right: -15px;
+	margin-left: -15px;
+}
 .header-top{
 	background: #fff;
 	border-bottom: 1px solid #f4f6f8;
+	padding: 25px 0px;
 }
 .header-bottom{
 	background: #fff;
+	padding: 45px 0px;
 }
 .newsletter{
 	float:left;
@@ -269,4 +292,79 @@ input
 {
 	display: inline-block;
 	font-weight: 600px;
+}
+
+.icon-header
+{
+	float:right;
+}
+.m-l-40
+{
+	margin-left: 40px;
+}
+
+.line
+{
+	border-bottom: 1px solid #f2f4f7;
+	margin: 0 50px;
+}
+footer
+{
+
+	margin-top: 122px;
+	float: left;
+	width: 100%;
+}
+.footer
+{
+	background: #fff;
+	border-top: 1px solid #f4f6f8;
+	padding: 25px 0px;
+	display: inline-block;
+}
+.footer .container .logo
+{
+	float: left;
+	width: 220px;
+	margin-right: 115px;
+}
+.footer .container .center
+{
+	float: left;
+}
+.footer .container .center .columns
+{
+	float: left;
+	margin-right: 100px;
+}
+.columns li
+{
+	list-style-type: disc;
+	margin-bottom: 20px;
+}
+.columns li a
+{
+	font-weight: 400;
+}
+.columns .m-l-178
+{
+	margin-left: 178px;
+}
+.footer .container .payment
+{
+	float: right;
+	text-align: left;
+}
+.credit-icons
+{
+	margin-top: 23px;
+}
+.credit-icons i
+{
+	margin-right: 10px;
+}
+.footer
+{
+	padding-bottom:  90px;
+	padding-top: 90px
 }
