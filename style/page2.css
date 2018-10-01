@@ -594,9 +594,12 @@ input[type=checkbox]{
     height: 207px;
     padding-bottom: 30px;
 }
-.choose p:first-child {
+.choose .choose-left p {
     float: left;
     margin-right: 30px;
+    font-size: 18px;
+}
+.choose .choose-right p {
     font-size: 18px;
 }
 .quality {
@@ -605,7 +608,6 @@ input[type=checkbox]{
 }
 .choose ul{
     float: left;
-    padding-right: 160px;
 }
 .choose ul li{
     float: left;
@@ -624,6 +626,17 @@ input[type=checkbox]{
 .choose ul li:hover a{
     color: #ff5912;
     font-size: 18px;
+}
+.choose-left{
+    width: 50%;
+}
+.choose-right{
+    width: calc(50% - 100px);
+    float: right;
+    padding-left: 100px;
+}
+.choose-right p{
+    margin:0px;
 }
 .choose-number input{
     width: 35px;
