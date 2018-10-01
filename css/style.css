@@ -410,10 +410,9 @@ button{
 	height: 200px;
 }
 .footer{
-	padding: 70px 0px;
+	padding: 70px 0px 0px;
 	margin: 0 auto;
 	width: 1200px;
-	height: calc(100% - 140px);
 }
 .foot{
 	float: left;
