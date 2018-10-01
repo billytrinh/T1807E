@@ -512,7 +512,9 @@ input[type=checkbox]{
     color: #ff5912;
     font-weight: 600;
 }
-
+.choose-size {
+    font-size: 12px;
+}
 
 
 
