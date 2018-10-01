@@ -1,0 +1,342 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #f4f6f8;
+}
+li{
+	list-style: none;
+}
+.section{
+	width: 1170px;
+	margin: 0 auto;
+}
+.menu{
+	width: 900px;
+	height: auto;
+	float: right;
+	text-align: center;
+}
+.menu .edit-key{
+	width: 870px;
+	height: 60px;
+	background-color: white;
+	float: right;
+	position: relative;
+}
+.menu .edit-key .edit{
+	width: 9px;
+	height: 50px;
+	margin-left: 425px;
+}
+.menu .edit-key .edit .edit1{
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	border-radius: 100%;
+	background-color: #ff5912;
+	top: 30px;
+	margin-left: 10px;
+}
+.menu .edit-key .edit .edit2{
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	border-radius: 100%;
+	background-color: #ff5912;
+	top: 30px;
+	margin-left: 20px;
+}
+.menu .edit-key .edit .edit3{
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	border-radius: 100%;
+	background-color: #ff5912;
+	top: 30px;
+	margin-right: 20px;
+}
+
+.menu .item{
+	float: left;
+	width: 270px;
+	height: 368px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.menu .item .row{
+	width: 270px;
+	height: 368px;
+	background-color: white;
+	float: left;
+}
+.menu .item .row .image img{
+	margin-top: 20px;
+
+}
+.menu .item .image figcaption{
+	margin-top: 20px;
+	color: #34404b;
+	font-size:18px;
+	font-weight :700;
+}
+.price{
+	color: #ff5912;
+	margin-top: 30px;
+	font-size:18px;
+	font-weight :700px;
+}
+.menu .item .row-hover{
+	position: absolute;
+	width: 270px;
+	height: 368px;
+	margin-top: 20px 20px;
+	background-color: white;
+	z-index: -1;
+	opacity: 0;
+}
+.menu .item{
+	position: relative;
+	transition: all 250ms ease-out;
+	-webkit-transition:all 250ms ease-out;
+}
+.menu .item .row:hover img{
+	height: 90px;
+	width: auto;
+	transition: all 250ms ease-out;
+	-webkit-transition:all 250ms ease-out;
+}
+.menu .item .row:hover .price{
+	opacity: 0;height: 0px;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.menu .item .image{
+	opacity: 1;
+}
+.menu .item:hover .row{
+	opacity: 0;
+}
+.menu .item:hover .row-hover{
+	z-index: 1;
+	opacity: 1;
+	transition: all 800ms ease-out;
+	-webkit-transition:all 800ms ease-out;
+}
+.menu .item .row-hover .image img{
+	height: 87px;
+	width: auto;
+	margin-top: 35px;
+
+}
+.menu .item .row-hover .image figcaption{
+	margin-top: 20px;
+	color: #ff5912;
+	font-size:16px;
+	font-weight :700;
+}
+.menu .item .row-hover p{
+	margin-top: 20px;
+	font-size:15px;
+	font-weight :600px;
+}
+.menu .item .row-hover .color img{
+	width: 12px;
+	height: 12px;
+}
+.menu .item .row-hover .color{
+	margin-bottom: 30px;
+}
+.menu .item .row-hover .icon{
+	padding: 10px 20px;
+	height: 30px;
+	margin:30px;
+	margin-right: 40px;
+}
+.menu .item .row-hover .icon img{
+	width: 20px;
+	height: 17px; 
+	margin-top: 0px;
+	margin-left: 20px;
+
+}
+.line{
+	border-bottom: 3px solid #f4f6f8;
+	width: 168px;
+	height: 0px;
+	margin:0 auto;
+	padding-bottom: 0px;
+}
+.menu1{
+	width: 270px;
+	height: auto;
+	float: left;
+	margin-top: 0px;
+}
+.menu1 .item1{
+	width: 270px;
+	height: 300px;
+	background-color: white;
+}
+.menu1 .item1 .block-categories{
+	width: 270px;
+	height: 270px;
+	font-weight: 700;
+	font-size: 18px;
+}	
+h3{
+	padding-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	color: #ff5912;
+}
+.menu1 .item1 .block-categories ul{
+	margin-top :30px;
+	list-style: none;
+	margin-left: 30px
+}
+.menu1 .item1 .block-categories li{
+	margin-top: 30px;
+}
+.menu1 .item2{
+	margin-top:10px;
+	width: 270px;
+	height: 230px;
+	background-color: white;
+}
+.menu1 .item2 .money1{
+
+	margin-left: 20px;
+}
+.price-filtter .line-box{
+	width: 180px;
+	border: 1px solid #edf0f2;
+	margin: 30px 30px;
+	position: relative;
+}
+.price-filtter .line-box .line1{
+	position: absolute;
+	display: inline-block;
+	width: 107px;
+	border: 1px solid #38444f;
+	top: -1px;
+	left: 35px;
+}
+.price-filtter .line-box .node{
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	border-radius: 100%;
+	background: #34404b;
+}
+.price-filtter .line-box .node.no_1{
+	top: -5px;
+	left: 27px;
+}
+.price-filtter .line-box .node.no_2{
+	top: -5px;
+	right: 27px;
+}
+.number{
+	float: left;
+	margin-left: 30px;
+}
+input{
+	width: 47px;
+	height: 25px;
+	margin-left: 15px;
+}
+.menu1 .item3{
+	margin-top:30px;
+	width: 270px;
+	height: 300px;
+	background-color: white;
+}
+.hinder{display: none;}
+.checkbox{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.checkbox label{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.checkbox label:before{
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border:5px solid #edf0f2;
+    background: #edf0f2;
+    display: inline-block;
+    margin-right: 15px;
+}
+.checkbox input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+.checkbox input[type="checkbox"]:checked + label:before{
+    border:5px solid #ff5912;
+}
+.menu .edit{
+	width: 870px;
+	height: 60px;
+	background-color: white;
+}
+.container{
+	width: 1170px;
+	height: 125px;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 120px;
+}
+footer{
+	width: 100%;
+	float: left;
+}
+.container .new{
+	float: left;
+	width: 110px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 55px;
+	padding-left: 60px;
+	margin-right: 0px;
+	color: #ff5912;
+}
+.container .join{
+	width: 350px;
+	font-style: italic;
+	float: left;
+	display: inline-block;
+	margin-top: 57px;
+	margin-left: 30px;
+	font-size: 14px;
+}
+.container .email{
+	width: 200px;
+	float: left;
+	display: inline-block;
+	margin-top: 55px;
+	margin-left: 230px;
+	color: #ff5912;
+}
+form{
+	display: inline-block;
+
+}
+.container .email input{
+	width: 135px;
+	height: 18px;
+	margin-left: 0px;
+	border:none;
+}
+.container .email .button{
+	width: 100px;
+	height: 50px;
+}
