@@ -1,0 +1,327 @@
+body{
+	background: #f4f6f8;
+}
+.dau{
+	width:100%;
+	height: 250px;
+	background: #f4f6f8;
+	margin-top: -10px;
+}
+.dau .d1{
+	width:100%;
+	height:60px;
+	background: white;
+}
+.dau .d1 .a1{
+	width:500px;
+	float: left;
+	margin-left:100px;
+}
+.dau .d1 .a1 .thu-kb2{
+	position: relative;
+	top: 10px;
+}
+.b{	
+	padding-top: -20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.b3:before{
+	content:" ";
+	width: 6px;
+	height: 6px;
+	border:5px solid red;
+	display: inline-block;
+	margin: 15px 10px 10px 30px;
+	background: #edf0f2;
+}
+.dau .d1 .a2{
+	width: 500px;
+	float: right;
+	margin-right:50px;
+}
+.dau .d1 .a2 .gocphaitren{
+	position: relative;
+	top: 20px;
+}
+.dau .d2{
+	width:100%;
+	height:180px;
+	background: white;
+	margin-top: 5px;
+}
+.dau .d2 .x1{
+	width: 900px;
+	float:left;
+	padding: 0px 10px 0px 100px;
+	margin: 0px 10px 10px 10px;
+}
+.dau .d2 .x1 .y1{
+	width: 300px;
+	height: 120px;
+	float: left;
+}
+.dau .d2 .x1 .y2{
+	width: 400px;
+	height:90px;
+	float: left;
+	padding-top: 60px;
+}
+.khoangtrong:before{
+	content: " ";
+	width: 30px;
+	display: inline-block;
+}.khoangtrongmau{
+	color: red;
+}
+.khoangtrongmau:before{
+	content: " ";
+	width: 30px;
+	display: inline-block;
+}
+.dau .d2 .x2{
+	width: 400px;
+	height: 90px;
+	float: left;
+	padding-top: 50px;
+}
+.thantren{
+	width: 100%;
+	height: 550px;
+	background: white;
+}
+.thantren .thantrentrai{
+	width: 700px;
+	float: left;
+	height: 100%;
+}
+.ttt-tren{
+	width: 70%;
+	float: right;
+	height:400px;
+}
+.ttt-duoi{
+	width: 65%;
+	float: right;
+	height: 170px;
+}
+.iconset{
+	float: left;
+	width: 140px;
+	height: 110px;
+	opacity: 1;
+	transition: all ease-out;
+	-webkit-transition: all ease-out;
+	-moz-transition: all ease-out;
+	position: relative;
+	background: #f4f6f8;
+}
+.iconset .ics{
+	opacity: 1;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+}
+.iconset:hover{
+	opacity: 0.5;
+	background: orange;
+}
+/*.iconset .ics:hover{
+	opacity: 0.5;
+	background: orange;
+}*/
+.thantrenphai{
+	width: 700px;
+	float: left;
+	height: 100%;
+	text-align: left;
+	padding-left: 20px;
+}
+.ttp-tren{
+	width: 100%;
+	height: 250px;
+}
+.ttp-giua{
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+}
+.choossize{
+	float: left;
+	width: 300px;
+	height: 50px;
+	margin-top: 20px;
+}
+.choos:after{
+	content: " ";
+	width: 20px;
+	display: inline-block;
+}
+.size:after{
+	content: " ";
+	width: 20px;
+	display: inline-block;
+}
+.size:hover{
+	color: red;
+}
+.quantity{
+	float: right;
+	width: 350px;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+.ttp-duoi{
+	width: 100%;
+	height: 100px;
+}
+.price{
+	width: 200px;
+	float: left;
+	margin-top: 30px;
+}
+.kobiet{
+	width: 450px;
+	float: right;
+	height: 100px;
+	margin-top: 30px;
+}
+.ickobiet{
+	float: left;
+	width: 230px;
+	height: 90px;
+}
+.ickb{
+	float:left;
+	width: 70px;
+	height: 60px;
+}
+.ickobiet2{
+	float: right;
+	height: 50px;
+	width: 170px;
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 10px;
+	background: red;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+.thanduoi{
+	margin: 0px auto;
+	width: 1380px;
+	height: 400px;
+}
+.quanao{
+	float:left;
+	width: 290px;
+	height: 370px;
+	background: white;
+	position: relative;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+.quanao .truochover{
+	opacity: 1;
+	position: absolute;
+	top: -10px;
+	left: -25px;
+}
+.quanao .sauhover{
+	opacity: 0;
+	position: absolute;
+	top: -17px;
+	left: -37px;
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+	-moz-transition: all 1050ms ease-out;
+}
+.quanao .truochover:hover{
+	opacity: 0;
+}
+.quanao .sauhover:hover{
+	opacity: 1;
+}
+.quanao .money{
+	padding-top:330px;
+	font-size: 20px;
+	color: red;
+}
+.duoi{
+	margin: 0px auto;
+	width: 1300px;
+	height: 100px;
+	background: white;
+}
+.duoi .duoitrai{
+	float: left;
+	width: 500px;
+	padding-top: 40px;
+}
+.duoi .duoitrai .chuchinh{
+	color: red;
+}
+.duoi .duoitrai .chuchinh:after{
+	content:" ";
+	width: 20px;
+	height: 6px;
+	display: inline-block;
+	background: white;
+}
+.duoi .duoiphai{
+	float: right;
+	width: 600px;
+	margin-top: 40px;
+	margin-right: 100px;
+}
+.dptrai{
+	width: 300px;
+	float: left;
+	position: relative;
+}
+.dptraithu{
+	position: absolute;
+	top: -5px;
+	left: 50px;
+}
+.dpphai{
+	width: 100px;
+	height: 30px;
+	float: right;
+	background: red;
+	padding-top: 10px;
+	padding-left: 5px;
+	margin-top: -10px;
+}
+.cuoi{
+	width: 100%;
+	background: white;
+	height: 200px;
+	margin-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.cuoi .cuoitrai{
+	width: 350px;
+	float: left;
+}
+.cuoi .cuoigiua{
+	float: left;
+	width: 600px;
+}
+.cuoi .cuoigiua .cot{
+	padding-top: 30px;
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+.cuoi .cuoiphai{
+	float: right;
+	right: 400px;
+}
+.mau{
+	color: red;
+}
