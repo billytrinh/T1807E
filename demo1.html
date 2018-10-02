@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Demo</title>
+	<title>Demo1</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="css/ico/favicon.ico" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -71,70 +72,115 @@
 					<a href="#"><img class="icon-navigation" id="icon1" src="css/ico/search.png"/></a>
 				</div>
 			</div>
-			<div id="separator2"></div>
 		</div>
 	</section>
 	<section class="section">
-		<div class="main-product">
-				<div class="fullset-kit">
-					<div class="tab-image block">
-						<div class="big-image">
-							<img class="fsproduct" src="images/fsproduct.png"/>
+		<div class="container1">
+			<div class="left-column">
+				<div class="block categories">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Man</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">Children</a></li>
+						<li><a href="#">Hot deals</a></li>
+					</ul>
+				</div>
+				<div class="block price-filter">
+					<h3>Price Filter</h3>
+					<li><p>100$ &emsp;&emsp;&emsp;&emsp;&emsp;1000$</li>
+					<p class="line-box">
+						<span class="node no_1"></span>
+						<span class="line"></span>
+						<span class="node no_2"></span>
+					</p>
+					<form>
+						<div class="type-range">
+						From&emsp;<input type="number" name="sizemin">
 						</div>
-						<div class="small-image">
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-1.png"/>
-							</div>
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-2.png"/>
-							</div>
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-3.png"/>
-							</div>
+						<div class="type-range">
+						To&emsp;<input type="number" name="sizemax">
 						</div>
-					</div>
-					<div class="product-details block">
-						<div class="description">
-							<h1>FULL WINTER KIT</h1>
-							<p>Half Jacket + Skiny Trousers + Boot Leather</p> 
-							<li>lorem ipsum is simply dummy text of the printing and typesetting industry</li>
-							<li>lorem ipsum is simply dummy text of the printing</li>
-							<li>and typesetting industry</li>
-						</div>
-						<div id="small-separator1"></div>
-						<div class="choosing-option">
-							<div class="size-choose">
-								<p>Choose Size&emsp;&emsp;<span class="size size-1">S</span> - <span class="size size-2">M</span> - <span class="size size-3">L</span> - <span class="size size-4">XL</span></p>
-							</div>
-							<div class="quantity-choose">
-								<div class="quantity-option">
-									<p>Choose Quantity</p>
+					</form>
+				</div>
+				<div class="block sizes">
+					<h3>Sizes</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox1" checked>
+							<label for="checkbox1">Small</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size2" id="checkbox2">
+							<label for="checkbox2">Medium</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size3" id="checkbox3">
+							<label for="checkbox3">Large</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size4" id="checkbox4">
+							<label for="checkbox4">X Large</label>
+						</li>
+					</ul>
+				</div>
+				<div class="block brands">
+					<h3>Brands</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand1" id="checkbox5" checked>
+							<label for="checkbox5">Reebok</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand2" id="checkbox6">
+							<label for="checkbox6">Addidas</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand3" id="checkbox7">
+							<label for="checkbox7">Nike</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand4" id="checkbox8">
+							<label for="checkbox8">Active</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="products">
+				<div class="rows">
+					<div class="item">
+						<figure class="show">
+							<img src="images/image1.png"/>
+							<p class="productname">Reebok Track Jacket</p>
+							<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						</figure>
+						<figure class="show-hover">
+							<img src="images/small-image1.png"/>
+							<p class="productname"> Reebok Track Jacket </p>
+							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
+							<div class="color">
+								<div class="color-choice">
+									<a href="#"> <div class="color-choice1"></div> </a>
 								</div>
-								<div class="quantity-option">
-									<button type="button">+</button>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice2"></div> </a>
 								</div>
-								<div class="quantity-option">
-									<input name="quantity" value="3">
+								<div class="color-choice">
+									<a href="#"><div class="color-choice3"></div> </a>
 								</div>
-								<div class="quantity-option">
-									<button type="button">-</button>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice4"></div> </a>
 								</div>
 							</div>
-						</div>
-						<div id="small-separator2"></div>
-						<div class="order">
-							<div class="fsproduct-price">
-								<p>Price:120$</p>
-							</div>
-							<div class="order-button order-action">
-								<a href="#"><button type="button">Order Now</button></a>
-							</div>
-							<div class="tabicon order-action"> 
+							<div class="separator"></div>
+							<div class="tabicon"> 
 								<figure class="icon">
 									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
 								</figure>
-								<figure class="icon" id="icon-error">
+								<figure class="icon">
 									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
 								</figure>
@@ -143,29 +189,18 @@
 									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
 								</figure>
 							</div>
-						</div>
+						</figure>
 					</div>
-				</div>
-			</div>
-	</section>
-	<section class="section">
-		<div class="container">
-			<div class="related-product">
-				<H1><span style="color:#ff5912">RELATED</span> PRODUCT</H1>
-				<p>lorem ipsum is simply dummy text of the printing and typesetting industry</p>
-			</div>
-			<div class="products">
-				<div class="rows">
 					<div class="item">
 						<figure class="show">
-							<img src="images/product3.png"/>
+							<img src="images/product2.png"/>
 							<p class="productname">Reebok Track Jacket</p>
 							<p class="price-box">
 								<span class="price">100$</span>
 							</p>
 						</figure>
 						<figure class="show-hover">
-							<img src="images/small-product3.png"/>
+							<img src="images/small-product2.png"/>
 							<p class="productname"> Reebok Track Jacket </p>
 							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
 							<div class="color"> 
@@ -199,6 +234,51 @@
 							</div>
 						</figure>
 					</div>
+					<div class="item">
+						<figure class="show">
+							<img src="images/product2.png"/>
+							<p class="productname">Reebok Track Jacket</p>
+							<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						</figure>
+						<figure class="show-hover">
+							<img src="images/small-product2.png"/>
+							<p class="productname"> Reebok Track Jacket </p>
+							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
+							<div class="color"> 
+								<div class="color-choice">
+									<a href="#"> <div class="color-choice1"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice2"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice3"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice4"></div> </a>
+								</div>
+							</div>
+							<div class="separator"></div>
+							<div class="tabicon"> 
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
+								</figure>
+							</div>
+						</figure>
+					</div>
+				</div>
+				<div class="rows">
 					<div class="item">
 						<figure class="show">
 							<img src="images/image1.png"/>
@@ -327,6 +407,145 @@
 								</figure>
 							</div>
 						</figure>
+					</div>
+				</div>
+				<div class="rows">
+					<div class="item">
+						<figure class="show">
+							<img src="images/image1.png"/>
+							<p class="productname">Reebok Track Jacket</p>
+							<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						</figure>
+						<figure class="show-hover">
+							<img src="images/small-image1.png"/>
+							<p class="productname"> Reebok Track Jacket </p>
+							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
+							<div class="color"> 
+								<div class="color-choice">
+									<a href="#"> <div class="color-choice1"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice2"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice3"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice4"></div> </a>
+								</div>
+							</div>
+							<div class="separator"></div>
+							<div class="tabicon"> 
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
+								</figure>
+							</div>
+						</figure>
+					</div>
+					<div class="item">
+						<figure class="show">
+							<img src="images/product2.png"/>
+							<p class="productname">Reebok Track Jacket</p>
+							<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						</figure>
+						<figure class="show-hover">
+							<img src="images/small-product2.png"/>
+							<p class="productname"> Reebok Track Jacket </p>
+							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
+							<div class="color"> 
+								<div class="color-choice">
+									<a href="#"> <div class="color-choice1"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice2"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice3"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice4"></div> </a>
+								</div>
+							</div>
+							<div class="separator"></div>
+							<div class="tabicon"> 
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
+								</figure>
+							</div>
+						</figure>
+					</div>
+					<div class="item">
+						<figure class="show">
+							<img src="images/product3.png"/>
+							<p class="productname">Reebok Track Jacket</p>
+							<p class="price-box">
+								<span class="price">100$</span>
+							</p>
+						</figure>
+						<figure class="show-hover">
+							<img src="images/small-product3.png"/>
+							<p class="productname"> Reebok Track Jacket </p>
+							<p class="size">size&emsp;:&emsp;s-m-l-xl</p>
+							<div class="color"> 
+								<div class="color-choice">
+									<a href="#"> <div class="color-choice1"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice2"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice3"></div> </a>
+								</div>
+								<div class="color-choice">
+									<a href="#"><div class="color-choice4"></div> </a>
+								</div>
+							</div>
+							<div class="separator"></div>
+							<div class="tabicon"> 
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
+								</figure>
+								<figure class="icon">
+									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
+								</figure>
+							</div>
+						</figure>
+					</div>
+				</div>
+
+				<div class="paginator">
+					<div class="page-button">
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
 					</div>
 				</div>
 			</div>
