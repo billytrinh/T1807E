@@ -206,9 +206,11 @@ h3{
 	height: 230px;
 	background-color: white;
 }
-.menu1 .item2 .money1{
-
-	margin-left: 20px;
+.money1{
+	margin-left: 50px;
+}
+.money2{
+	margin-left: 60px;
 }
 .price-filtter .line-box{
 	width: 180px;
@@ -310,7 +312,7 @@ footer{
 	color: #ff5912;
 }
 .container .join{
-	width: 350px;
+	width: 285px;
 	font-style: italic;
 	float: left;
 	display: inline-block;
@@ -319,11 +321,11 @@ footer{
 	font-size: 14px;
 }
 .container .email{
-	width: 200px;
+	width: 370px;
 	float: left;
 	display: inline-block;
-	margin-top: 55px;
-	margin-left: 230px;
+	margin-top: 35px;
+	margin-left: 250px;
 	color: #ff5912;
 }
 form{
@@ -331,12 +333,17 @@ form{
 
 }
 .container .email input{
-	width: 135px;
+	width: 125px;
 	height: 18px;
-	margin-left: 0px;
+	margin-left: 5px;
 	border:none;
+	margin-top: 20px;
 }
-.container .email .button{
+.container .email button{
 	width: 100px;
 	height: 50px;
+	margin-left: 110px;
+	background-color: #ff5912;
+	font-weight: 700;
+	color: white;
 }
