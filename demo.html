@@ -5,6 +5,8 @@
 	<title>Demo</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/data.json"></script>
+
 </head>
 <body>
 	<header>
@@ -55,155 +57,14 @@
 				</div>
 			</div>
 			<div class="products">
-				<div class="rows">
-					<div class="item">
-						<div class="item-content">
-							<div class="content-box">
-								<figure class="show">
-									<img width="150px" height="200px" src="images/image1.png"/>
-									<figcaption>Reebok Track Jacket</figcaption>
-								</figure>
-								<p class="price-box">
-									<span class="price">100$</span>
-								</p>
-								<p>Size: S - M - L - XL</p>
-								<p class="size-icons">
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-								</p>
-								<div class="cart-icons">
-									<p class="size-icons">
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-									<span>&nbsp;</span>
-								</p>
-								</div>
-							</div>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product2.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product3.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-				
-					<div class="item">
-						<div class="item-content">
-							<figure>
-								<img src="images/image1.png"/>
-								<figcaption>Reebok Track Jacket</figcaption>
-							</figure>
-							<p class="price-box"><span class="price">100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure class="show">
-							<img width="150px" height="200px" src="images/image1.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<figure class="show-hover">
-							<img src="images/product2.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box">
-							<span class="price">100$</span>
-						</p>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product2.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product3.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-				
-					<div class="item">
-						<div class="item-content">
-							<figure>
-								<img src="images/image1.png"/>
-								<figcaption>Reebok Track Jacket</figcaption>
-							</figure>
-							<p class="price-box"><span class="price">100$</span></p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure class="show">
-							<img width="150px" height="200px" src="images/image1.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<figure class="show-hover">
-							<img src="images/product2.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box">
-							<span class="price">100$</span>
-						</p>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product2.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-					<div class="item">
-						<div class="item-content">
-						<figure>
-							<img src="images/product3.png"/>
-							<figcaption>Reebok Track Jacket</figcaption>
-						</figure>
-						<p class="price-box"><span class="price">100$</span></p>
-					</div>
-					</div>
-				
-					<div class="item">
-						<div class="item-content">
-							<figure>
-								<img src="images/image1.png"/>
-								<figcaption>Reebok Track Jacket</figcaption>
-							</figure>
-							<p class="price-box"><span class="price">100$</span></p>
-						</div>
-					</div>
+				<div class="rows" id="product_list">
+					
 				</div>
-
+			</div>
 			<div class="paginator">
 				<a href="#">...</a>
 			</div>
-			</div>
+		</div>
 	</div>
 	</section>
 	<section class="section">
@@ -213,5 +74,6 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript" src="js/demo.js"></script>
 </body>
 </html>
