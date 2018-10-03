@@ -23,6 +23,18 @@ a:hover
 {
 	color: #ff5912;
 }
+.sizes a:hover
+{
+	color: #ff5912;
+	font-size: 18px;
+	font-weight: 800;
+}
+.quantity a:hover
+{
+	color: #ff5912;
+	font-size: 18px;
+	font-weight: 800;
+}
 .hidden{display: none;}
 .section{
 	float: left;
@@ -428,7 +440,10 @@ footer
 .section .related-product
 {
 	width: 100%;
-	height: 266px;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 117px;
+	margin-bottom: 82px;
 }
 .description
 {
@@ -445,6 +460,10 @@ footer
 	font-size: 17.97px;
 	font-weight: 700;
 }
+.item-list:hover
+{
+	color: #34404b;
+}
 .m-b-40
 {
 	margin-bottom: 40px;
@@ -459,4 +478,40 @@ footer
 	padding-top: 40px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #edeff1;
+}
+.quantity, .order-icons
+{
+	float: right;
+}
+.order
+{
+	padding-top: 40px;
+	vertical-align: middle;
+}
+.color-orange
+{
+	color: #ff5912;
+}
+.m-t-40
+{
+	margin-top: 40px;
+}
+.m-b-122
+{
+	margin-bottom: 122px;
+}
+.product-page .products
+{
+	width: 100%;
+	margin: 0 0px 92px 0px;
+	padding-left: 0;
+}
+.product-page .products .rows .item
+{
+	width: calc(100% / 4 - 30px);
+}
+.product-page .products .rows
+{
+	margin-left: 0px;	
+	margin-right: 0px;
 }
