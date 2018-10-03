@@ -7,13 +7,15 @@ var html = '';
 			html+='			<figcaption>'+products[i].name+'</figcaption>';
 			html+='	</figure>';
 			html+='		<p class="price-box"><span class="price">'+products[i].price+'</span></p>';
-			html+='	<p>Size: S - M - L - XL</p>';
-			html+='			<p class="size-icons">';
-			html+='				<span>&nbsp;</span>';
-			html+='				<span class="color-black">&nbsp;</span>';
-			html+='				<span class="color-blue">&nbsp;</span>';
-			html+='				<span class="color-green">&nbsp;</span>';
-			html+='			</p>';
+			html+='	<p>Sizes: S - M - L - XL</p>';
+			html+='<div class="color-icons">';
+			html+='		<span>';
+			html+='			<a href="#"><i class="fa fa-circle icon"></i></a>';
+			html+='			<a href="#"><i class="fa fa-circle icon"></i></a>';
+			html+='			<a href="#"><i class="fa fa-circle icon"></i></a>'; 
+			html+='			<a href="#"><i class="fa fa-circle icon"></i></a>';
+			html+='		</span>';
+			html+='</div>';
 			html+='			<p class="line"></p>';
 			html+='			<div class="cart-icons">';
 			html+='				<p class="size-icons">';
@@ -26,4 +28,3 @@ var html = '';
 			html+='</div>';
 		}
 document.getElementById("product-list").innerHTML = html;
-

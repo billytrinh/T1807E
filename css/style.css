@@ -139,17 +139,16 @@ h3
 	border-radius: 100%;
 	display: inline-block;
 }
-.products .rows .item .size-icons .color-blue
+
+.products .rows .item .color-icons
 {
-	background: blue;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
-.products .rows .item .size-icons .color-black
+
+.products .rows .item .color-icons .icon
 {
-	background: black;
-}
-.products .rows .item .size-icons .color-green
-{
-	background: green;
+	margin-right: 2px;
 }
 
 .products .rows .item:hover img{
@@ -320,6 +319,7 @@ input
 {
 	border-bottom: 1px solid #f2f4f7;
 	margin: 0 50px;
+	margin-bottom: 30px;
 }
 footer
 {
