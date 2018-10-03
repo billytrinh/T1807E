@@ -350,17 +350,31 @@ h2{
 	font-size: 45px;
 	font-weight: 800;
 }
-.body-1 .right-body .style-coak{
+.style-coak{
 	color: #34404b;
 	font-size: 18px;
 	font-weight: 600;
 	padding-right: 5px;
-	/*padding: 30px 0px;*/
+	
 }
-.body-1 .right-body .lua-chon{
-	border-top: 1px solid #f4f6f8;
+.thong-tin{
+	padding-bottom: 40px;
+}
+.thong-tin .style-coak{
+	line-height: 60px;
+}
+.lua-chon .style-coak{
+	line-height: 100px;
+}
 
-	padding: 40px 0px;
+.body-1 .right-body .lua-chon{
+	float: left;
+	width: 100%;
+	border-top: 1px solid #f4f6f8;
+	border-bottom: 1px solid #f4f6f8;
+}
+.body-1 .right-body .lua-chon .right{
+	float: right;
 }
 .body-1 .right-body .lua-chon .size-chu span{
 	padding: 0px 5px;
@@ -378,12 +392,19 @@ h2{
 	padding-right: 25px;
 }
 .body-1 .right-body .thanh-toan{
-	border-top: 1px solid #f4f6f8;
+	float: left;
+	width: 100%;
+}
+.body-1 .right-body .thanh-toan .right{
+	float: right;
+	padding-top: 85px;
 }
 .body-1 .right-body .thanh-toan .pay-price{
 	color: #34404b;
 	font-size: 20px;
 	font-weight: 800;
+	/*line-height: 80px;*/
+	padding-top: 100px;
 }
 .left{
 	float: left;
@@ -419,32 +440,13 @@ h2{
 }
 
 /*body-bot*/
-/*.body-bot{
-}
-.body-bot .rows{
-	width: 100%;
-	float: left;
-}*/
-/*.body-bot{
-	float: left;
-}*/
+
 .products.body-bot{
 	width: 100%;
 	float: left;
 	padding: 0px;
 }
-/*.body-bot .rows{
-	float: left;
-	width: 100%;
-}
-.body-bot .rows .item{
-	float: left;
-	width: 240px;
-	text-align: center;
-	padding: 0px 15px;
-	background: #fff;
-	height: 340px;
-}*/
+
 .body-bot .rows .item{
 	width: 230px;
 }
