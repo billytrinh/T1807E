@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Homepage</title>
+	<link rel="stylesheet" href="css/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css"/>
 	<script type="text/javascript" src="js/data.json"></script>
+	<script type="text/javascript" src="js/get-products.js"></script>
 </head>
 <body>
 	<header>
@@ -123,7 +124,9 @@
 			</div>
 			<div class="products">
 				<div class="rows" id="product-list">
-
+					<script type="text/javascript">
+						get_product_view(products);
+					</script>
 				</div>
 			</div>
 		</div>
@@ -187,6 +190,5 @@
 			</div>
 	</div>		
 	</footer>
-	<script type="text/javascript" src="js/get-products.js"></script>
 </body>
 </html>
