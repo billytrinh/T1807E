@@ -6,7 +6,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	background-color: #f4f6f8;
 }
-li{
+.menu1 li{
 	list-style: none;
 }
 .section{
@@ -15,159 +15,133 @@ li{
 }
 .menu{
 	width: 900px;
-	height: auto;
 	float: right;
 	text-align: center;
 }
-.menu .edit-key{
-	width: 870px;
-	height: 60px;
-	background-color: white;
-	float: right;
-	position: relative;
-}
-.menu .edit-key .edit{
-	width: 9px;
-	height: 50px;
-	margin-left: 425px;
-}
-.menu .edit-key .edit .edit1{
-	width: 9px;
-	height: 9px;
-	position: absolute;
-	border-radius: 100%;
-	background-color: #ff5912;
-	top: 30px;
-	margin-left: 10px;
-}
-.menu .edit-key .edit .edit2{
-	width: 9px;
-	height: 9px;
-	position: absolute;
-	border-radius: 100%;
-	background-color: #ff5912;
-	top: 30px;
-	margin-left: 20px;
-}
-.menu .edit-key .edit .edit3{
-	width: 9px;
-	height: 9px;
-	position: absolute;
-	border-radius: 100%;
-	background-color: #ff5912;
-	top: 30px;
-	margin-right: 20px;
-}
-
 .menu .item{
 	float: left;
-	width: 270px;
+	width: calc(100% / 3 - 30px);
 	height: 368px;
-	margin-left: 30px;
+	overflow: hidden;
 	margin-bottom: 30px;
+	margin-left: 30px;
 }
 .menu .item .row{
-	width: 270px;
+	width: 100%;
 	height: 368px;
-	background-color: white;
-	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #fff;
 }
-.menu .item .row .image img{
-	margin-top: 20px;
-
+figcaption{
+	line-height: 70px;
+	font-size: 18px;
+	font-weight: 600;
 }
-.menu .item .image figcaption{
-	margin-top: 20px;
-	color: #34404b;
-	font-size:18px;
-	font-weight :700;
-}
-.price{
+.menu .item .row .price{
+	margin-bottom: 70px;
+	font-size: 18px;
 	color: #ff5912;
-	margin-top: 30px;
-	font-size:18px;
-	font-weight :700px;
+	font-weight: 700;
 }
-.menu .item .row-hover{
-	position: absolute;
-	width: 270px;
-	height: 368px;
-	margin-top: 20px 20px;
-	background-color: white;
-	z-index: -1;
-	opacity: 0;
+.menu .item .row .size{
+	margin-bottom: 30px;
+	font-size: 14px;
 }
-.menu .item{
-	position: relative;
-	transition: all 250ms ease-out;
-	-webkit-transition:all 250ms ease-out;
+.menu .item .row span{
+	cursor: pointer;
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+    display: inline-block;
+}
+.black{
+	background: #34404b;
+}
+.blue {
+	background: #3ab3ff;
+}
+.green{
+	background: #2fd967;
+}
+.red{
+	background: #e12e3f;
+}
+.icon .fa{
+    padding: 0 13px;
+    cursor: pointer;
+}
+.icon .fa.fa-shopping-cart{
+	color: #ff5912;
+}
+.menu .item .row img{
+	height: 200px;
+	width: auto;
+	transition: all 350ms ease-out;
+	-webkit-transition: all 350ms ease-out;
+}
+.menu .item .row{
+	transition: all 450ms ease-out;
+	-webkit-transition:all 450ms ease-out;
 }
 .menu .item .row:hover img{
 	height: 90px;
 	width: auto;
-	transition: all 250ms ease-out;
+	transition: all 250ms;
 	-webkit-transition:all 250ms ease-out;
 }
 .menu .item .row:hover .price{
-	opacity: 0;height: 0px;
-	transition: all 250ms ease-out;
-	-webkit-transition: all 250ms ease-out;
-}
-.menu .item .image{
-	opacity: 1;
-}
-.menu .item:hover .row{
+	margin-bottom: 0px;
 	opacity: 0;
+	height: 0px;
 }
-.menu .item:hover .row-hover{
-	z-index: 1;
-	opacity: 1;
-	transition: all 800ms ease-out;
-	-webkit-transition:all 800ms ease-out;
+.menu .sent{
+	width: 870px;
+	height: 60px;
+	background: #ffffff;
+	margin-left: 30px;
+	float: left;
 }
-.menu .item .row-hover .image img{
-	height: 87px;
-	width: auto;
-	margin-top: 35px;
-
+.menu .color span{
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+    display: inline-block;
 }
-.menu .item .row-hover .image figcaption{
-	margin-top: 20px;
-	color: #ff5912;
-	font-size:16px;
-	font-weight :700;
+.menu .color .one{
+	background-color: #ff5912;
+	margin-top: 25px;
 }
-.menu .item .row-hover p{
-	margin-top: 20px;
-	font-size:15px;
-	font-weight :600px;
-}
-.menu .item .row-hover .color img{
-	width: 12px;
+.products .edit-key{
+	width: 70px;
 	height: 12px;
+	background-color: white;
+	float: left;
+	position: relative;
+	margin-left: 30px;
+	padding: 24px 400px;
 }
-.menu .item .row-hover .color{
-	margin-bottom: 30px;
+.products .edit-key .edit{
+	position: absolute;
+	margin: 0 auto;
 }
-.menu .item .row-hover .icon{
-	padding: 10px 20px;
-	height: 30px;
-	margin:30px;
-	margin-right: 40px;
+.products .edit-key .edit .edit1{
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	background-color: #ff5912;
+	margin-left: 10px;
+	float: left;
 }
-.menu .item .row-hover .icon img{
-	width: 20px;
-	height: 17px; 
-	margin-top: 0px;
-	margin-left: 20px;
 
-}
 .line{
 	border-bottom: 3px solid #f4f6f8;
 	width: 168px;
 	height: 0px;
 	margin:0 auto;
-	padding-bottom: 0px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 .menu1{
 	width: 270px;
@@ -176,7 +150,7 @@ li{
 	margin-top: 0px;
 }
 .menu1 .item1{
-	width: 270px;
+	width: 100%;
 	height: 300px;
 	background-color: white;
 }
@@ -201,8 +175,8 @@ h3{
 	margin-top: 30px;
 }
 .menu1 .item2{
-	margin-top:10px;
-	width: 270px;
+	margin-top:30px;
+	width: 100%;
 	height: 230px;
 	background-color: white;
 }
@@ -252,7 +226,7 @@ input{
 }
 .menu1 .item3{
 	margin-top:30px;
-	width: 270px;
+	width: 100%;
 	height: 300px;
 	background-color: white;
 }
@@ -347,3 +321,84 @@ form{
 	font-weight: 700;
 	color: white;
 }
+
+.footer1{
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 120px;
+}
+.footer1 .show{
+	width: 100%;
+	height: 150px;
+}
+.footer1 .show .logo{
+	display: inline-block;
+	float: left;
+	margin-left: 60px;
+	margin-top: 40px; 
+}
+.footer1 .show .logo .shopy{
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 300;
+}
+.footer1 .show .track1{
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-block;
+	float: left;
+	margin-top: 30px; 
+	margin-left:200px
+}
+
+.footer1 .show .track2{
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-block;
+	float: left;
+	margin-top: 30px; 
+	margin-left:115px
+}
+.footer1 .show .track3{
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-block;
+	float: left;
+	margin-top: 30px; 
+	margin-left:50px
+}
+.footer1 .show .track4{
+	font-size: 14px;
+	font-weight: 300;
+	display: inline-block;
+	float: left;
+	margin-top: 50px;
+	margin-left: 120px;
+	color: #ff5912;
+}
+}
+.footer1 .show .track4 .payment{
+	margin-bottom: 20px;
+	color: #ff5912;
+}
+.footer1 .show .track4 .logo1{
+	margin-top: 15px;
+}
+li{
+margin: 7px;
+}
+.footer1 .show .track1 li:hover{
+	color: #ff5912;
+}
+.footer1 .show .track2 li:hover{
+	color: #ff5912;
+}
+.footer1 .show .track3 li:hover{
+	color: #ff5912;
+}
+
+
+
+
