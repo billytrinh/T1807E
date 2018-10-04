@@ -1,0 +1,327 @@
+*{
+	margin:0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background:#f4f6f8; 
+}
+header{
+	float: left;
+	width: 100%;
+	
+}
+.header-top{
+	background: #fff;
+	border-bottom: 1px solid #f4f6f8;
+	padding: 15px 0;
+}
+.header-bottom{
+	background: #fff;
+	border-bottom: 1px solid #f4f6f8;
+	padding: 30px 0;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+.header-top .tool{
+	padding-right: 30px;
+}
+.header-top .text{
+	padding-left: 5px;
+	font-weight: 600;
+}
+.container .right-header{
+	float: right;
+}
+.header-top .right-header .icon{
+	padding-left: 15px;
+}
+.header-bottom .logo{
+	float: left;
+	padding-top: 10px;
+}
+.header-bottom .header{
+	float: left;
+}
+.header-bottom .header-li ul li{
+	display: inline;
+	padding-left: 60px;
+	margin-top: 200px;
+}
+.header-bottom .header-li a{
+	text-decoration: none;
+	color: #34404b;
+	font-weight: 600;
+}
+.header-bottom .header-li ul{
+	display: inline;
+	padding-top: 18px;
+	float: left;
+}
+.header-bottom .right-header .icon2{
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+.section{
+	float: left;
+	width: 100%;
+	background: #fff;
+}
+.container .menu1{
+	background: #fff;
+	border-bottom: 1px solid #f4f6f8;
+	padding: 30px 0;
+	float: left;
+	width: 100%;
+}
+.container .menu1{
+	float: left;
+	margin-top: 60px;
+	margin-bottom: -1px;
+}
+.menu1 .menu1-images{
+	width: 470px;
+	float: left;
+}
+.menu1 .menu1-images .aokhoac{
+	float: left;
+	padding-left: 175px;
+}
+.menu1 .menu1-images .list-clothes{
+	margin: 0 100px;
+	padding: 70px 0 130px 0;
+	width: 353px;
+	clear: both;
+}
+.menu1 .menu1-content{
+	float: left;
+	width: calc(100% - 560px);
+}
+.menu1 .menu1-content .full-winter{
+	font-size: 40px;
+	color: #ff5912;
+	font-weight: 900;
+}
+.menu1 .menu1-content .text-winter0{
+	padding-top: 15px;
+	padding-bottom: 30px;
+	font-size: 15px;
+	color: #3c4751;
+	font-weight: 600;
+}
+.menu1 .menu1-content .text-winter{
+	padding-bottom: 10px;
+	font-size: 13px;
+	color: #495662;
+	font-weight: 500;
+}
+.menu1 .menu1-content .winter-kit{
+	height: 237px;
+	border-bottom: 2px solid #f4f6f8;
+}
+.menu1 .menu1-content .choose{
+	width: 100%;
+	height: 20px;
+	padding: 30px 0;
+	border-bottom: 2px solid #f4f6f8;
+}
+.menu1 .menu1-content .choose .choose-size{
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+	width: 300px;
+	border-right: 2px solid #f4f6f8;
+}
+.menu1 .menu1-content .choose .text{
+	float: left;
+	padding-right: 20px;
+}
+.menu1 .menu1-content .choose .size li{
+	float: left;
+	display: inline;
+	font-size: 13px;
+	padding-left: 10px;
+	font-weight: 600;	
+}
+.menu1 .menu1-content .choose .choose-quantity{
+	float: left;
+	padding-left: 110px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.menu1 .menu1-content .choose .choose-number{
+	float: left;
+	margin-left: -45px;
+}
+.menu1 .menu1-content .choose .choose-number li{
+	float: left;
+	display: inline;
+	font-size: 13px;
+	padding-left: 15px;
+	font-weight: 600;	
+}
+b{
+	color: #ff5912;
+	font-size: 15px;
+}
+
+.menu1 .menu1-content .order{
+	height: 20px;
+	padding: 50px 0;	
+}
+.menu1 .menu1-content .order .price-winter{
+	float: left;
+	font-size: 17px;
+	font-weight: 900;
+	margin-top: 17px;
+}
+.menu1 .menu1-content .order .images-plus{
+	float: left;
+	padding-left: 230px;
+	margin-top: 15px;
+}
+.menu1 .menu1-content .order .images-plus a{
+	padding-right: 24px;
+}
+.menu1 .menu1-content .order .order-now{
+	float: left;
+	border: none;
+	border-width: 20px;
+	border-radius: 25px 25px;
+	background-color: #ff5912;
+	width: 138px;
+	height: 50px;
+	font-weight: 600;
+	color: #fff;
+}
+.menu2{
+	padding: 100px 0;
+	text-align: center;
+	background: #f4f6f8;
+}
+.menu2 .row1{
+	padding-top: 100px;
+	padding-bottom: 30px;
+	float: left;
+	width: 100%;
+}
+.menu2 .row1 .row1-0{
+	font-size: 25px;
+	font-weight: 900;
+	color: #ff5912;
+}
+.menu2 .row1 .row1-1{
+	padding-left: 5px;
+	font-size: 25px;
+	font-weight: 900;
+	color: #34404b;
+}
+.menu2 .row2{
+	color: #495662;
+}
+ 
+ 
+.section1 .products{
+	margin-left: -15px;
+	margin-right: -14px;
+}
+.section1 .products .rows{
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+.products .rows .item{
+	width: calc(100% / 4 - 28px);
+	float:left;	
+	text-align: center;
+	background: #fff;
+	margin: 14px;
+	padding: 30px 0px;
+		
+}
+.products .rows figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+
+
+.menu3{
+	float: left;
+	margin: 80px 0;
+	width: 1170px;
+	height: 123px;
+	background: #fff;
+}
+.menu3 .head{
+	padding:  0 30px 0 40px;
+	font-size: 17px;
+	font-weight: 900;
+	line-height: 120px;
+	color: #ff5912;
+}
+.menu3 .description{
+	font-size: 14px;
+	font-weight: 600;
+	font-style: italic;
+	line-height: 120px;
+	color: #34404b;
+}
+.menu3 .iconmain{
+	padding: 0 0 0 250px;
+}
+
+.menu3 .sendmail{
+	padding: 0 160px 0 10px;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 120px;
+	color: #7c8791;
+}
+.menu3 .join{
+	margin-left: 20px;
+	padding:  17px 22px;
+	background-color: #ff5912;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+}
+
+footer{
+	float: left;
+	width: 100%;
+	height: 252px;
+	background: #fff;
+}
+footer .logo{
+	float: left;
+	font-weight: 600;
+	margin: 75px auto auto 0;	
+	width: 400px;
+}
+footer .lists{
+	float: left;
+	font-weight: 600;
+	width: 200px;
+	line-height: 2.5;
+	margin-top: 75px;
+
+}
+footer .payment{
+	font-size: 17px;
+	font-weight: 600;
+	color: #ff5912;
+	float: left;
+	width: calc(100% - 1000px);
+	margin-top: 95px;
+}
