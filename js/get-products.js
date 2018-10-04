@@ -12,10 +12,10 @@ function get_product_view(products)
 		html+='<div class="size">';
 		html+='<span>';
 		html+='size : ';
-		html+='<a href="#" class="m-l-15">s</a>';
-		html+='<a href="#" class="m-l-15">m</a>';
-		html+='<a href="#" class="m-l-15">l</a>';
-		html+='<a href="#" class="m-l-15">xl</a>';
+		html+='<a href="#" class="m-l-15" style="font-weight: 600;">s</a>';
+		html+='<a href="#" class="m-l-15" style="font-weight: 600;">m</a>';
+		html+='<a href="#" class="m-l-15" style="font-weight: 600;">l</a>';
+		html+='<a href="#" class="m-l-15" style="font-weight: 600;">xl</a>';
 		html+='</span>';
 		html+='</div>';		
 		html+='<div class="color-icons">';
