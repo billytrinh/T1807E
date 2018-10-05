@@ -2,12 +2,19 @@ var products = [
 			{
 				image: "images/image1.png",
 				name: "Reebok Track Jacket",
-				price: "110$",
-			},
+				price: "100$",
+				size: "sizes : s-m-l-xl"
+				size-icon1: "images/dot1.png"
+				size-icon2: "images/dot2.png"
+				size-icon3: "images/dot3.png"
+				size-icon4: "images/dot4.png"
+				pay-icon1: "images/cau.png"
+				pay-icon2: "images/xe.png"
+				pay-icon3: "images/tim.png"
 			{
 				image: "images/image3.png",
 				name: "Reebok Track Jacket",
-				price: "120$",
+				price: "100$",
 			},
 			{
 				image: "images/image3.png",

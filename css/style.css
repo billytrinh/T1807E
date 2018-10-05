@@ -58,18 +58,29 @@ a{
 	height: calc(100% - 40px);
 	padding-top: 20px;
 	padding-bottom: 20px;
-/*	overflow: hidden;
-	animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;*/
+	overflow: hidden
 }
-
-.products .rows .item .show figcaption{
+.products .rows .item figcaption{
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 75px;
 }
-.products .rows .item .show-hover figcaption{
+.products .rows .item:hover img{
+	height: 90px;
+	width: auto;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.products .rows .item:hover .price{
+	opacity: 0;
+	height: 0px;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.products .rows .item:hover figcaption{
+	color: #ff5912;
+}
+/*.products .rows .item .show-hover figcaption{
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 45px;
@@ -82,7 +93,7 @@ a{
 }
 .products .rows .item .show-hover .bieu-tuong{
 	padding: 40px 0px;
-	/*border-top: 0.2px solid #34404b;*/
+	/*border-top: 0.2px solid #34404b;
 }
 .products .rows .item .show-hover .bieu-tuong .hinh-nho{
 	padding: 0px 10px;
@@ -116,7 +127,7 @@ a{
 }
 .products .rows .item figcaption:hover{
 	color: red;
-}
+}*/
 .products .rows .item .price{
 	font-size: 18px;
 	font-weight: 600;
@@ -453,7 +464,5 @@ h2{
 	float: left;
 	padding: 0px;
 }
-
-.body-bot .rows .item{
-	width: 230px;
-}
+.products.body-bot .rows .item{
+	width: calc(100% / 4 - 30px);
