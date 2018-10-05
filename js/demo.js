@@ -12,3 +12,5 @@ var html = '';
 				html+='	</div></div>';
 		}
 document.getElementById("product_list").innerHTML = html;
+
+

@@ -35,4 +35,17 @@ var products = [
 				price: "100$",
 			}		
 		]; 
-		
+
+	var related_products = [
+		{
+				image: "images/image1.png",
+				name: "Reebok Track Jacket 6",
+				price: "100$",
+			},
+			{
+				image: "images/image1.png",
+				name: "Reebok Track Jacket 6",
+				price: "100$",
+			}
+
+];		
