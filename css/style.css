@@ -64,9 +64,7 @@ li{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
-	animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+	
 }
 .products .rows .item figcaption{
 	font-size: 18px;
