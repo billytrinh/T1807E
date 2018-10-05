@@ -52,6 +52,10 @@ header{
 	padding-left: 60px;
 	margin-top: 200px;
 }
+.header-bottom .header-li ul li:hover{
+	color: #ff5912;
+	cursor: pointer;
+}
 .header-bottom .header-li a{
 	text-decoration: none;
 	color: #34404b;
@@ -138,7 +142,8 @@ header{
 }
 .menu1 .menu1-content .choose .text{
 	float: left;
-	padding-right: 20px;
+	padding-right: 25px;
+	line-height: 20px;
 }
 .menu1 .menu1-content .choose .size li{
 	float: left;
@@ -146,6 +151,12 @@ header{
 	font-size: 13px;
 	padding-left: 10px;
 	font-weight: 600;	
+	line-height: 20px;
+}
+.menu1 .menu1-content .choose .size li:hover{
+	color: #ff5912;
+	cursor: pointer;
+	font-size: 15px;
 }
 .menu1 .menu1-content .choose .choose-quantity{
 	float: left;
@@ -155,19 +166,31 @@ header{
 }
 .menu1 .menu1-content .choose .choose-number{
 	float: left;
-	margin-left: -45px;
+	margin-left: -20px;
 }
-.menu1 .menu1-content .choose .choose-number li{
+.menu1 .menu1-content .choose .choose-number span{
 	float: left;
 	display: inline;
 	font-size: 13px;
 	padding-left: 15px;
 	font-weight: 600;	
+	line-height: 20px;
 }
-b{
+.menu1 .menu1-content .choose .choose-number input{
+	border: none;
+	width: 40px;
+	font-size: 18px;
 	color: #ff5912;
-	font-size: 15px;
+	text-align: center;
 }
+.menu1 .menu1-content .choose .choose-number .number{
+	float: left;
+	margin-right: -20px;
+	margin-left: 10px;
+}
+a{
+	font-size: 14px;
+}	
 
 .menu1 .menu1-content .order{
 	height: 20px;
@@ -315,7 +338,10 @@ footer .lists{
 	width: 200px;
 	line-height: 2.5;
 	margin-top: 75px;
-
+}
+footer .lists li:hover{
+	color: #ff5912;
+	cursor: pointer;
 }
 footer .payment{
 	font-size: 17px;
