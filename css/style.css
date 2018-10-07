@@ -65,6 +65,7 @@ li{
 	float: left;
 }
 .footer .list{
+	list-style-type: none;
 	padding-top: 80px;
 	width: 200px;
 	height: 170px;
@@ -79,7 +80,8 @@ li{
 }
 .footer .payment{
 	padding-top: 85px;
-	width: 170px;
+	/*width: 170px;*/
+	width: calc(100% - 1000px);
 	height: 165px;
 	font-size: 16px;
 	font-weight: 600;
@@ -251,9 +253,14 @@ li{
 	display: inline-block;
 	margin-right: 15px
 }
-.menu .check input[type="checkbox"]:checked + label {
+
+
+/*khi input checked thì lấy thuộc tính input thêm vào label*/
+/*Chữ ko vàng*/
+.menu .check input[type="checkbox"]:checked + label {   
     color: #ff5912
 }
+/*Chữ vàng nhưng checkbox ko đc check*/
 .menu .check input[type="checkbox"]:checked + label:before {
     border:5px solid #ff5912
 }
@@ -279,7 +286,6 @@ li{
 	width: 100%;
 	height: 123px;
 	background: #fff;
-	margin-top: 120px;
 }
 .submit-bar .head{
 	padding:  0 30px 0 40px;
@@ -361,24 +367,21 @@ li{
 }
 
 .related{
-	height: calc (100% - 200px);
+	height: calc(100% - 200px);
 	text-align: center;
 	padding-top: 117px;
 	padding-bottom: 82px;
 }
 #section-tittle1{
-	font-size: 28px;
 	color: #ff5912;
 	font-weight: 900;
 }
 #section-tittle2{
-	font-size: 28px;
 	color: #34404b;
 	font-weight: 900;
 }
 #section-description{
 	padding-top: 40px;
-	font-size: 16px;
 	color: #34404b;
 }
 
@@ -472,6 +475,59 @@ li{
 }
 
 
+/*HomePage*/
+
+/*Slide*/
+.slide{
+	text-align: center;
+}
+/*Page*/
+.page {
+	text-align: center;
+	width: 100%;
+	height: 60px
+}
+.page .node{
+	/*float: left;*/
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #ff5912;
+}
+
+/*Sale & adv*/
+.sale_adv {
+	float: left;
+	height: 100px
+}
+.sale_adv .sale {
+	float: left;
+	width: 670px;
+	height: 100%
+}
+.sale_adv .sale .logo {
+	float: left;
+	text-align: center;
+	width: 200px
+}
+.sale_adv .sale .description {
+	float: left;
+	width: 300px
+}
+.sale_adv .sale .price {
+	float: left;
+	text-align: center;
+	width: calc(100% - 500px)
+}
+
+.sale_adv .adv {
+	float: left;
+	text-align: center;
+	width: 470px;
+	height: 100px
+}
+
+
 /*Modify Margin*/
 .m-t-50{
 	margin-top: 50px;
@@ -482,18 +538,25 @@ li{
 .m-t-100{
 	margin-top: 100px;
 }
-.m-b-118{
-	margin-bottom: 118px;
+.m-t-120{
+	margin-top: 120px;
 }
+
 .m-b-50{
 	margin-bottom: 50px;
 }
 .m-b-80{
 	margin-bottom: 80px;
 }
+.m-b-118{
+	margin-bottom: 118px;
+}
+.m-l-15{ margin-left: 15px }
 .m-l-20{
 	margin-left: 20px;
 }
+
+.m-r-15{ margin-right: 15px }
 .m-r-160{
 	margin-right: 160px;
 }
@@ -508,14 +571,18 @@ li{
 .p-b-30{
 	padding-bottom: 30px;
 }
-
+.p-r-15{ padding-right: 15px }
+.p-l-15{ padding-left: 15px }
+.p-t-10{ padding-top: 10px }
+.p-t-23{ padding-top: 23px }
+.p-t-33{ padding-top: 33px }
 
 /*Modify Float*/
 .fl-left{
-	float: left;
+	float: left
 }
 .fl-right{
-	float: right;
+	float: right
 }
 
 /*Modify backgroud*/
@@ -530,3 +597,22 @@ li{
 .b-n{
 	border: none;
 }
+
+/*Modify Font-size*/
+.f-s-12{ font-size: 12px }
+.f-s-16{ font-size: 16px }
+.f-s-22{ font-size: 22px }
+.f-s-28{ font-size: 28px }
+.f-s-32{ font-size: 32px }
+.f-s-36{ font-size: 36px }
+
+/*Modify font-weight*/
+.f-w-100{ font-weight: 100 }
+.f-w-200{ font-weight: 200 }
+.f-w-300{ font-weight: 300 }
+.f-w-400{ font-weight: 400 }
+.f-w-500{ font-weight: 500 }
+.f-w-600{ font-weight: 600 }
+.f-w-700{ font-weight: 700 }
+.f-w-800{ font-weight: 800 }
+.f-w-900{ font-weight: 900 }
