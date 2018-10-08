@@ -1,4 +1,4 @@
-var products = [
+var products9 = [
     {
         image: "images/products/Gray-coat.jpg",
         name: "Reebok Track Jacket 1",
