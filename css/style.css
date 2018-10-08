@@ -1,0 +1,436 @@
+*{
+	margin:0px;
+}
+body{
+	font-family: lato,san-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background-color: #f4f6f8; 
+}
+a{
+	text-decoration: none;
+	color: #34404b;
+}
+a:hover{
+	color: #ff5912;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.section{
+	float: left;
+	width: 100%;
+	background-color: #fff;
+}
+/*header top*/
+.header-top{
+	padding-top: 20px;
+	border-bottom: 1px solid #edeff1;
+	padding-bottom: 20px;
+}
+.header-top .content-header-top{
+	display: inline;
+	padding-right:15px;
+}
+.header-top .right-header-top{
+	float: right;
+}
+.header-top .left-header-top{
+	float: left;
+	display: inline;
+}
+.images-header{
+	padding-left: 15px;
+}
+/*header bottom*/
+.header-bottom{
+	padding-bottom: 40px;
+	border-bottom: 1px solid #edeff1;
+}
+.header-bottom .container .left-header-bottom .logo-top{
+	float: left;
+}
+.header-bottom .container .left-header-bottom{
+	float: left;
+	padding-top: 30px;
+	width: 1000px;
+}
+.header-bottom .container .left-header-bottom .main{
+	padding-top: 24px;
+	padding-left: 200px;
+}
+
+.header-bottom .container .right-header-bottom{
+	float: right;
+	padding-top: 27px;
+}
+
+.content1{
+	padding-top: 104px;
+	overflow: auto;
+	background-color: #fff;
+}
+.content1 .winter-kit-images {
+	width: 470px;
+	height: 547px;
+	float: left;
+}
+.content1 .winter-kit-images .big-images{
+	width: 470px;
+	height: 276px;
+	padding-left: 158px;
+	padding-bottom: 65px;
+}
+.content1 .winter-kit-images .mini-images{
+	padding-left: 60px;
+}
+.content1 .winter-kit-images .mini-images .clothes{
+	padding: 11px 28px;
+	background-color:#f4f6f8;
+	margin-right: 20px;
+}
+.content1 .winter-kit-images .mini-images .clothes:hover{
+	background-color: #ff5912;
+}
+.content1 .winter-kit-content{
+	width: 700px;
+	float: left;
+}
+.full-winter-kit{
+	color: #ff5912;
+	font-weight: 900;
+	font-size: 55px;
+	margin-bottom: 30px;
+}
+.hsb{
+	color: #3c4751;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.text-winter{
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #495662
+}
+.content1 .choos{
+	float: left;
+	margin-top: 50px;
+	font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 85px;
+}
+.content1 .choos .choos-size{
+	margin-right: 190px;
+}
+.content1 .price-order{
+	float: left;
+	line-height: 50px
+}
+.content1 .price-order .price{
+	font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    margin-right: 240px;
+}
+.content1 .price-order .price-order-images{
+	margin-right: 10px;
+}
+.content1 .price-order .order-now{
+   	padding: 10px;
+    background-color: #ff5912;
+    border-radius:25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 20px;
+
+}
+
+.content2{
+	clear: both;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 100px;
+}
+.content2 .container .line1{
+	margin-bottom: 27px;
+}
+.content2 .container .line1 .related{
+	font-size: 28px;
+    color: #ff5912;
+    font-weight: 900;
+    margin-right: 10px;
+}
+.content2 .container .line1 .products{
+	font-size: 28px;
+    color: #34404b;
+    font-weight: 900;
+}
+.content2 .container .line2{
+	font-size: 16px;
+    color: #34404b;
+}
+
+
+
+.content3{
+	overflow: auto;
+	text-align: center;
+}
+.content3 .container .row{
+	margin: 0 -15px;
+}
+.content3 .container .row .item{
+	float: left;
+	padding: 20px 0px;
+	background-color: #fff;
+	margin: 0 15px;
+	width: calc(100% / 4 - 30px);
+	
+}
+.content3 .container .row .item figcaption{
+	font-size: 18px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.content3 .container .row .item .price{
+	color: red;
+	font-weight: 600;
+}
+
+.content4{
+	background-color: #fff;
+	margin-top: 50px;
+	height: 150px;
+}
+ .container .content4 .news-letter{
+	float: left;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ff5912;
+    margin-right: 50px;
+    padding-top: 70px;
+    padding-left: 40px;
+}
+.container .content4 .join-us-now{
+	float: left;
+	font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    color: #34404b;
+    margin-right: 220px;
+    padding-top: 70px;
+}
+.container .content4 .type-mail{
+	float: left;
+	font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #7c8791;
+    padding-top: 70px;
+}
+.container .content4 .join-us-buttom{
+	float: right;
+	margin-top: 50px;
+	margin-right: 40px;
+	padding: 20px 25px;	
+    background-color: #ff5912;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+
+
+.footer-top{
+	margin-top: 120px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.footer-top .container .copy-right{
+	float: left;
+	margin-right: 180px;
+}
+.footer-top .container .choose1{
+	float: left;
+	margin-right: 115px;
+}
+.footer-top .container .choose1 div{
+	display: list-item;
+	list-style-type:disc;
+	padding-bottom: 15px;
+}
+.footer-top .container .choose2{
+	float: left;
+	margin-right: 50px;
+}
+.footer-top .container .choose2 div{
+	display: list-item;
+	list-style-type:disc;
+	padding-bottom: 15px;
+}
+.footer-top .container .choose3{
+	float: left;
+}
+.footer-top .container .choose3 div{
+	display: list-item;
+	list-style-type:disc;
+	padding-bottom: 15px;
+}
+.footer-top .container .payment{
+	float: right;
+	font-size: 16px;
+    font-weight: 600;
+    color: #ff5912;
+}
+.footer-top .container .payment .payment-methods{
+	margin-bottom: 20px;
+}
+
+
+/*bai3*/
+.section_b3{
+	width: 100%;
+	float: left;
+	background-image: url(../images/background-img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 649px;
+	overflow: auto;
+}
+.section_b3 .container{
+	
+}
+.section_b3 .container .content1_b3{
+	
+}
+.section_b3 .container .content1_b3 .scoll{
+	float: left;
+	padding-top: 265px;
+	padding-right: 89px;
+}
+.section_b3 .container .content1_b3 .winter-kit{
+	float: left;
+	padding-top: 215px;
+}
+.section_b3 .container .content1_b3 .price-order{
+	padding-top: 64px;
+}
+.section_b3 .container .content1_b3 .price-order .price{
+	float: left;
+	font-size: 20px;
+    font-weight: 600;
+    color: #34404b;
+    padding-right: 30px;
+}
+.section_b3 .container .content1_b3 .price-order .order-buttom{
+	float: left;
+	padding-top: 2px;
+	padding-right: 10px;
+}
+.section_b3 .container .content1_b3 .price-order .order-now{
+	float: left;
+	font-size: 20px;
+    font-weight: 600;
+    color: #ff5912;
+}
+.container .dots{
+	padding: 30px 0px;
+	text-align: center;
+	background-color: #fff;
+	margin-top:80px;
+	margin-bottom: 120px;
+}
+.container .sale{
+	overflow: auto;
+}
+.container .sale .sale50{
+	width: 670px;
+	float: left;
+	background-color: #fff;
+	padding-top: 8.5px;
+	padding-bottom: 7px;
+}
+.container .sale .sale50 .sale50-images{
+	float: left;
+	padding-left: 60px;
+	padding-top: 5px;
+}
+.container .sale .sale50 .text-sale{
+	float: left;
+	padding-left: 58px;
+	padding-left: 58px;
+}
+.container .sale .sale50 .text-sale .full-winter-kit_b3{
+	font-size: 15px;
+	color: #34404b;
+	font-weight: 900;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+.container .sale .sale50 .text-sale .hsb_b3{
+	font-size: 10px;
+}
+.container .sale .buy{
+	float: left;
+	padding-top: 30px;
+	padding-left: 150px;
+}
+.container .sale .buy .buy-icon{
+	float: left;
+	padding-right: 15px;
+}
+.container .sale .buy .d120{
+	float: left;
+	font-weight: 900;
+	font-size: 20px;
+	color: #ff5912
+}
+.container .sale .adv-area{
+	width: 470px;
+	float: right;
+	background-color: #fff;
+	text-align: center;
+	padding: 30px 0px;
+}
+.content-sale .container .row-sale{
+	margin: 0 -15px;
+	height: 161px;
+}
+.content-sale .container .row-sale .item-sale{
+	float: left;
+	background-color: #fff;
+	width: calc(100% / 3 - 30px);
+	margin: 0 15px;
+	height: 161px;
+}
+.content-sale .container .row-sale .item-sale .images-sale{
+	float: left;
+	padding-left: 24px;
+	padding-top: 34px;
+}
+.content-sale .container .row-sale .item-sale .figcaption1{
+	font-size: 18px;
+    font-weight: 600;
+}
+.content-sale .container .row-sale .item-sale .price-star{
+	float: left;
+	padding-top: 47px;
+	padding-left: 48px;
+}
+.content-sale .container .row-sale .item-sale .price-star .star{
+	float: left;
+	padding-top: 34px;
+}
+.content-sale .container .row-sale .item-sale .price-star .price{
+	float: left;
+	font-size: 20px;
+    font-weight: 900;
+    color: #ff5912;
+    padding-top: 30px;
+    padding-left: 50px;
+}
