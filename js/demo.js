@@ -1,4 +1,11 @@
-var html = '';
+ var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+  	console.log(this.readyState);
+    if (this.readyState == 4  && this.status == 200) {
+    	var result = this.responseText;
+    	result = JSON.parse(result);
+    	var products = result.data;
+  		var html = '';
 		for (var i = 0; i < products.length; i++) {
 			html += '<div class="item">';
 				html+='<div class="item-content">';
@@ -11,6 +18,16 @@ var html = '';
 				html+='span></p>';
 				html+='	</div></div>';
 		}
-document.getElementById("product_list").innerHTML = html;
+		document.getElementById("product_list").innerHTML = html;
+    }
+  };
+  xhttp.open("GET", "http://smsentertainment.club/api/get_products", true);
+  xhttp.send();
 
 
+
+
+	// var result = JSON.parse(this.responseText);
+ //    	console.log(result);
+ //    	var products = result.data;
+ 
