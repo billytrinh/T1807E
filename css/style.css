@@ -178,17 +178,6 @@ h3
 	transition: all 1050ms ease-out;
 	-webkit-transition:all 1050ms ease-out;
 }
-/*
-.products .rows .item:hover .show{
-	opacity: 0;
-}
-.products .rows .item:hover .show-hover{
-	opacity: 1;
-}
-.products .rows .item figcaption:hover{
-	color: red;
-}
-*/
 .price-box{
 	margin-bottom: 50px;
 }
@@ -246,7 +235,7 @@ h3
 }
 .checkbox label{
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
 	cursor: pointer;
 }
 .checkbox label:before{
@@ -289,11 +278,7 @@ header{
 	padding-left: 56px;
 	padding-top: 34px;
 	padding-bottom: 34px;
-}
-/* Standard syntax */
-.section .price-filter .form-data
-{
-	width: 190px;
+	vertical-align: baseline;
 }
 input
 {
@@ -423,6 +408,10 @@ footer
 	background:#f4f6f8;
 	display: inline-block;
 }
+.small-img .img:hover
+{
+	background-color: #ff5912;
+}
 .choose-img
 {
 	margin: 11px;
@@ -515,4 +504,26 @@ footer
 {
 	margin-left: 0px;	
 	margin-right: 0px;
+}
+.email-typing
+{
+	margin-left: 255px;
+	display: inline;
+	display: inline-block;
+	vertical-align: middle;
+}
+.email-typing .email
+{
+	width: 296px;
+	border: 0;
+}
+.submit
+{
+	float: center;
+	vertical-align: middle;
+
+}
+.form-data
+{
+	display: inline;
 }
