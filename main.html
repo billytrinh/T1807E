@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Main Page</title>
+        <link rel="stylesheet" href="css/style.css"/>
+	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="js/data.json"></script>
+        <script type="text/javascript" src="js/get-products.js"></script>
+    </head>
+<body>
+	<header>
+		<div class="section header-top">
+			<div class="container">
+				<span><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i></span>
+				<span>info@gmail.com</span>
+				<span class="m-l-15"><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">phone</i>453 - 5553 - 996</span>
+				<span class="icon-header">
+					<i class="fa fa-facebook m-l-15" style="font-size:20px;vertical-align: middle"></i>
+					<i class="fa fa-twitter m-l-15" style="font-size:20px;vertical-align: middle"></i>
+					<i class="fa fa-google-plus m-l-15" style="font-size:20px;vertical-align: middle"></i>
+					<i class="fa fa-instagram m-l-15" style="font-size:20px;vertical-align: middle"></i>
+				</span>
+			</div>
+		</div>
+		<div class="section header-bottom">
+			<div class="container">
+				<img style="vertical-align: middle" src="images/Logo.png"/>
+				<span style="margin-left: 80px"><a href="#">Home</a></span>
+				<span class="m-l-40"><a href="#">Products</a></span>
+				<span class="m-l-40"><a href="#">Hot Deals</a></span>
+				<span class="m-l-40"><a href="#">About</a></span>
+				<span class="m-l-40"><a href="#">Contact</a></span>
+				<span class="icon-header">
+						<i class="fa fa-search m-l-15" style="font-size:20px;vertical-align: middle"></i>		
+						<i class="fa fa-user-circle m-l-15" style="font-size:20px;vertical-align: middle"></i>	
+						<i class="fa fa-shopping-cart m-l-15" style="font-size:20px;vertical-align: middle"></i>				
+				</span>
+			</div>
+		</div>
+	</header>
+	<section class="section section-big-product" id="section-big-product-background">
+		<div class="container">
+			<div class="big-adv">
+				<div class="controller">
+					<a href="#"><img src="images/controller.png"></a>
+				</div>
+				<div class="content">
+					<h3 style="font-size: 52px" class="m-b-40">FULL WINTER KIT</h3>
+					<p class="item-list m-b-15">Half Jacket + Skinny Trouser + Leather Boot</p>
+					<p class="content">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+					<div class="order">
+						<span>
+							<a class="item-list">Price:</a>
+							<a class="item-list m-l-15">120$</a>
+							<a href="#" style="margin-left: 30px;"><img src="images/order-now-2.png"></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="new-arrivals">
+                <p style="font-weight: 900"><span class="color-orange">RELATED </span>PRODUCTS</p>
+                <p class="m-t-40" style="font-size: 16px;">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+            </div>
+            <div class="product-page">
+                <div class="products">
+                    <div class="rows" id="product-list">
+                            <script type="text/javascript">
+                                get_product_view(products2);
+                            </script>
+                    </div>
+                </div>
+			</div>
+			<div class="paginator paginator-main">
+				<a href="#"><i class="fa fa-dot-circle-o" style="color:orange"></i></a>
+				<a href="#"><i class="fa fa-dot-circle-o" style="color:orange"></i></a>
+				<a href="#"><i class="fa fa-dot-circle-o" style="color:orange"></i></a>
+			</div>
+			<div class="advertise">
+				<div class="left-adv">
+
+				</div>
+				<div class="right-adv">
+
+				</div>
+			</div>
+			<div class="best-sales">
+                <p style="font-weight: 900"><span class="color-orange">BEST </span>SALES</p>
+				<p class="m-t-40" style="font-size: 16px; margin-bottom: 80px;">Lorem Ipsum is simply dummy text of the printing and type setting industry</p>
+				<div class="product-page-2">
+					<div class="products">
+						<div class="rows" id="product-list2">
+							<script type="text/javascript">
+                                get_product_view_2(products3);
+                            </script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="newsletter">
+				<span><h3>NewsLetter</h3></span>
+				<span><h class="m-l-15">join us now to get all news and special offers</h></span>
+				<span>
+					<div class="email-typing">
+						<i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i>
+						<form method="post-get" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
+							<input class="email" type="email" placeholder="type your email here">
+						</form>
+					</div>
+				</span>
+				<span class="submit">
+					<a href="#"><img src="images/icons/Button-Bg.png"></a>
+				</span>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="section footer">
+			<div class="container">
+				<div class="logo">
+					<img style="vertical-align: top; margin-bottom: 25px;" src="images/Logo.png"/>
+					<p>shopy &copy; 2015 .your copy right here</p>
+				</div>
+				<div class="center">
+					<ul class="columns">
+						<li><a href="#">about us</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+					<ul class="columns">
+						<li><a href="#">our feed</a></li>
+						<li><a href="#">terms and conditions</a></li>
+						<li><a href="#">our privacy</a></li>
+					</ul>
+					<ul class="columns">
+						<li><a href="#">join us</a></li>
+						<li><a href="#">live support</a></li>
+					</ul>
+				</div>
+				<div class="payment">
+					<h3>Payment Methods</h3>
+					<div class="credit-icons">
+						<span>
+							<i class="fa fa-cc-amex" style="font-size:20px;"></i>
+							<i class="fa fa-cc-discover" style="font-size:20px;"></i>
+							<i class="fa fa-cc-visa" style="font-size:20px;"></i>
+							<i class="fa fa-cc-mastercard" style="font-size:20px;"></i>
+							<i class="fa fa-cc-paypal" style="font-size:20px;"></i>
+						</span>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
