@@ -3,14 +3,15 @@ var products = [
 				image: "images/image1.png",
 				name: "Reebok Track Jacket",
 				price: "100$",
-				size: "sizes : s-m-l-xl"
-				size-icon1: "images/dot1.png"
-				size-icon2: "images/dot2.png"
-				size-icon3: "images/dot3.png"
-				size-icon4: "images/dot4.png"
-				pay-icon1: "images/cau.png"
-				pay-icon2: "images/xe.png"
-				pay-icon3: "images/tim.png"
+				size: "sizes : s-m-l-xl",
+				sizeicon1: "images/dot1.png",
+				sizeicon2: "images/dot2.png",
+				sizeicon3: "images/dot3.png",
+				sizeicon4: "images/dot4.png",
+				cardicon1: "images/cau.png",
+				cardicon2: "images/xe.png",
+				cardicon3: "images/tim.png",
+			},
 			{
 				image: "images/image3.png",
 				name: "Reebok Track Jacket",
@@ -51,5 +52,28 @@ var products = [
 				name: "Reebok Track Jacket",
 				price: "100$",
 			}			
-		]; 
+];
+
+var related_products = [
+			{
+				image: "images/image3.png",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "images/image1.png",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},	
+			{
+				image: "images/image2.png",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "images/image3.png",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			}		
+];
 		
