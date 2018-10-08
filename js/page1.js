@@ -24,3 +24,4 @@ var html = '';
         html+='</li>';
 		}
 document.getElementById("product_list").innerHTML = html;
+
