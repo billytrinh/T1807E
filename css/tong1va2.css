@@ -503,29 +503,45 @@ body{
 }
 .cuoi{
 	width: 100%;
+	margin: 0px auto;
 	background: white;
 	height: 200px;
-	margin-top: 30px;
 	padding-left: 50px;
 	padding-right: 50px;
+	margin-top: 50px;
 }
 .cuoi .cuoitrai{
 	width: 350px;
 	float: left;
+	padding-left: -10px;
+	padding-top: 30px;
+}
+.cuoi .cuoitrai .shopyc2015{
+	padding-left: 60px;
+	font-size: 17px;
+	margin-top: -10px;
 }
 .cuoi .cuoigiua{
 	float: left;
-	width: 600px;
+	width: 700px;
 }
 .cuoi .cuoigiua .cot{
 	padding-top: 30px;
 	height: 200px;
 	width: 200px;
 	float: left;
+	padding-left: 30px;
 }
 .cuoi .cuoiphai{
-	float: right;
-	right: 400px;
+	float: left;
+	height: 200px;
+	padding-top: 30px;
+	padding-left: 70px;
+}
+.cuoi .cuoiphai .payment{
+	font-size: 20px;
+	color: red;
+	padding-left: 20px;
 }
 .mau{
 	color: red;
