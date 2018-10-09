@@ -1014,6 +1014,10 @@ input[type=checkbox]{
     color: #ff5912;
     font-weight: 700;
 }
+.best-sale .best-sale-product .best-sale-content img{
+    height: 90px;
+    width: auto;
+}
 
 
 

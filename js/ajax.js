@@ -1,10 +1,10 @@
-var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4  && this.status == 200) {
-    	var result = this.responseText;
-    	result = JSON.parse(result);
-    	var products = result.data;
-		var html = '';
+var get_product = new XMLHttpRequest();
+get_product.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status ==  200){
+        var result = this.responseText;
+        result = JSON.parse(result);
+        var products = result.data;
+        var html = '';
 		for (var i = 0; i < products.length - 1; i++) {
 			html+='	<li class="item">';
 			html+=' <div class="item-content">';
@@ -28,11 +28,9 @@ var xhttp = new XMLHttpRequest();
 			html+='</div>';                      
 			html+='</div>';
 			html+='</li>';
-		}
-document.getElementById("product_list").innerHTML = html;
+        }
+        document.getElementById("product_list").innerHTML = html;
     }
-  };
-  xhttp.open("GET", "http://smsentertainment.club/api/get_products", false);
-  xhttp.send();
-
-
+};
+get_product.open("GET","http://smsentertainment.club/api/get_products", true);
+get_product.send();
