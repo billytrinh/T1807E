@@ -75,6 +75,7 @@ header{
 	width: 100%;
 	background: #fff;
 }
+
 .container .menu1{
 	background: #fff;
 	border-bottom: 1px solid #f4f6f8;
@@ -191,7 +192,6 @@ header{
 a{
 	font-size: 14px;
 }	
-
 .menu1 .menu1-content .order{
 	height: 20px;
 	padding: 50px 0;	
@@ -204,7 +204,7 @@ a{
 }
 .menu1 .menu1-content .order .images-plus{
 	float: left;
-	padding-left: 230px;
+	padding-left: 210px;
 	margin-top: 15px;
 }
 .menu1 .menu1-content .order .images-plus a{
@@ -222,7 +222,7 @@ a{
 	color: #fff;
 }
 .menu2{
-	padding: 100px 0;
+	padding: 30px 0;
 	text-align: center;
 	background: #f4f6f8;
 }
@@ -233,21 +233,223 @@ a{
 	width: 100%;
 }
 .menu2 .row1 .row1-0{
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 900;
 	color: #ff5912;
 }
 .menu2 .row1 .row1-1{
 	padding-left: 5px;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 900;
 	color: #34404b;
 }
 .menu2 .row2{
 	color: #495662;
+	font-size: 16px;
 }
- 
- 
+
+.section0{
+	float: left;
+	width: 100%;
+	background: #fff;
+	background-image: url(../img/anhnen.png);
+	background-size: cover;
+	overflow: auto;
+	background-repeat: no-repeat;
+}
+.container .menu4{
+	border-bottom: 1px solid #f4f6f8;
+	padding: 229px 0;
+	margin-bottom: -1px;
+	float: left;
+	width: 100%;
+}
+.menu4 .menu4-images{
+	width: 670px;
+	float: left;
+}
+.menu4 .menu4-images .full-winter{
+	font-size: 55px;
+	color: #ff5912;
+	font-weight: 900;
+}
+.menu4 .menu4-images .text-winter0{
+	padding-top: 20px;
+	padding-bottom: 7px;
+	font-size: 20px;
+	color: #3c4751;
+	font-weight: 600;
+}
+.menu4 .menu4-images .text-winter{
+	padding-bottom: 55px;
+	font-size: 17px;
+	color: #495662;
+	font-weight: 500;
+}
+.menu4 .vuotdoc{
+	float: left;
+	margin-right: 75px;
+	margin-top: 50px;
+}
+.menu4 .winter-kit{
+	float: left;
+}
+.menu4 .price-winter{
+	float: left;
+	font-size: 15px;
+	font-weight: 600;
+	padding-right: 25px;
+	padding-top: 8px;
+}
+.menu4 .images-plus{
+	float: left;
+	padding-right: 5px;
+	width: 30px;
+}
+.menu4 .order-now{
+	float: left;
+	font-size: 15px;
+	padding-top: 7px;
+	color: #ff5912;
+}
+
+.menu5{
+	float: left;
+	padding: 8px 0;
+	margin-top: 120px;
+	width: 100%;
+}
+.menu5 .menu5-left{
+	background: #fff;
+	width: 670px;
+	float: left;
+	margin-right: 15px;
+}
+.menu5 .menu5-left .sale{
+	float: left;
+	width: 125px;
+	padding-top: 15px;
+	padding-left: 45px;
+}
+.menu5 .menu5-left .row2{
+	float: left;
+	width: 300px;
+}
+.menu5 .row2 .row2-0{
+	float: left;
+	margin-top: 25px;
+	font-size: 25px;
+	font-weight: 900;
+}
+.menu5 .row2 .row2-1{
+	float: left;
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.menu5 .menu5-left .cart{
+	float: left;
+	border-left: 1px solid #f4f6f8;
+	margin-top: 35px;
+}
+.menu5 .menu5-left .cart .cart1{
+	float: left;
+	padding-left: 28px;
+	width: 30px;
+}
+.menu5 .menu5-left .cart .price{
+	float: left;
+	padding-left: 20px;
+	font-size: 30px;
+	font-weight: 900;
+	color: #ff5912;
+}
+.menu5 .menu5-right{
+	background: #fff;
+	width: calc(100% - 700px);
+	height: 99px;
+	float: left;
+	margin-left: 15px;
+}
+.menu5 .menu5-right .row4{
+	padding-top: 27px;
+	text-align: center;
+}
+.menu5 .menu5-right .row4 .adv{
+	width: 125px;
+}
+
+.menu6{
+	float: left;
+	margin-top: 45px;
+	width: 100%;
+}
+.menu6 .menu6-left{
+	background: #fff;
+	width: 370px;
+	float: left;
+	margin-right: 15px;
+	padding: 35px 0;
+}
+.menu6 .menu6-center{
+	background: #fff;
+	width: 370px;
+	float: left;
+	margin:0 15px;
+	padding: 35px 0;
+}
+.menu6 .menu6-right{
+	background: #fff;
+	width: 370px;
+	float: left;
+	margin-left: 15px;
+	padding: 35px 0;
+}
+.menu6 .ao4{
+	float: left;
+	padding:0 25px;	
+}
+.menu6 .describe{
+	float: left;
+	padding-left: 25px;
+	border-left: 1px solid #f4f6f8;
+}
+.menu6 .describe .row2{
+	float: left;
+	font-size: 19px;
+	font-weight: 700;
+	color: #34404b;
+	padding-top: 10px;
+    padding-bottom: 27px;
+}
+.menu6 .describe .star .price{
+	padding-left: 77px;
+	color: #ff5912;
+	font-weight: 700;
+}
+.menu6 .show-hover{
+	display: none;
+}
+.menu6 .show-hover .star .cart{
+	float: left;
+	padding-right: 10px;
+    padding-left: 30px;
+}
+.menu6 .show-hover .star .text{
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+	color: #ff5912;
+	padding-top: 6px;
+}
+.menu6 .item:hover .show-hover{
+	display: inline-block;
+}
+.menu6 .item:hover .show{
+	display: none;
+}
+
+
 .section1 .products{
 	margin-left: -15px;
 	margin-right: -14px;
@@ -263,20 +465,47 @@ a{
 	text-align: center;
 	background: #fff;
 	margin: 14px;
-	padding: 30px 0px;
-		
+	padding: 30px 0px;		
+}
+.products .rows .item .show-hover{
+	display: none;
+}
+.products .rows .item:hover .show-hover{
+	display: inline-block;
+}
+.products .rows .item:hover .show{
+	display: none;
 }
 .products .rows figcaption{
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 55px;
 }
+.products .rows .item figcaption:hover{
+	color: #ff5912;
+}
 .products .rows .item .price{
 	font-size: 18px;
 	font-weight: 600;
 	color: #ff5912;
 }
-
+.products .rows .item .icon{
+	padding: 47px 10px 5px 10px;
+}
+.products .rows .item .color-icon{
+	padding: 20px 1px 5px 1px;
+}
+.section1 .pagenext{
+	margin-top: 60px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	background: #fff;
+}
+.section1 .pagenext .pagesymbol{
+	padding: 25px 3px;
+}
 
 .menu3{
 	float: left;
@@ -304,7 +533,7 @@ a{
 }
 
 .menu3 .sendmail{
-	padding: 0 160px 0 10px;
+	padding: 0 150px 0 10px;
 	font-size: 14px;
 	font-weight: 400;
 	font-style: italic;
