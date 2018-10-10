@@ -109,7 +109,7 @@ h3
 	float:left;
 	width: calc(100% / 3 - 30px);
 	text-align: center;
-	padding: 0px 15px;
+	margin: 0px 15px;
 	margin-bottom: 30px;
 	height: 340px;
 }
@@ -573,10 +573,36 @@ footer
 }
 .best-sales .products .rows .item-3
 {
+	float: left;
 	width: calc(100% / 3 - 30px); 
 	margin-bottom: 0px;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 35px 0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.best-sales .products .rows .item-3 img,.item-content
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 .best-sales .products
 {
 	margin-bottom: 120px;
+}
+.best-sales .products .rows .item-3 .item-content:hover .no-hover
+{
+	display: none;
+}
+.best-sales .products .rows .item-3 .item-content img
+{
+	display: none;
+}
+.best-sales .products .rows .item-3 .item-content:hover img
+{
+	display: block;
 }
