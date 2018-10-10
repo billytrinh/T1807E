@@ -1,15 +1,21 @@
-var html = '';
-		for (var i = 0; i < items.length; i++) 
+var tenbien = new XMLHttpRequest();
+tenbien.onreadystatechange = function(){
+	 if (this.readyState == 4  && this.status == 200){
+	 	var result = this.responseText;
+    	result = JSON.parse(result);
+    	var products = result.data;
+    		var html ='';
+    		for (var i = 0; i < products.length -1; i++) 
 {		
 		html+='<div class="item">';
 		html+='	<div class="row">';
 		html+='		<figure class ="image">';
-		html+='			<img src="'+items[i].image+'">';
+		html+='			<img src="'+products[i].image+'">';
 		html+='			<figcaption>';
-		html+='				'+items[i].Name+'';
+		html+='				'+products[i].name+'';
 		html+='			</figcaption>';
 		html+='		<figure>';
-		html+='		<p class="price">'+items[i].price+'</p>';
+		html+='		<p class="price">'+products[i].price+'</p>';
 		html+='		<p class="size"> Size : s - m - l - xl</p>';
 		html+='		<p class="color">';
         html+='        	<span class="red"></span>';
@@ -25,5 +31,9 @@ var html = '';
         html+='        </div>	';
 		html+='	</div>';
 		html+='</div>';
-}
-document.getElementById("menu_list").innerHTML = html;
+			}
+			document.getElementById("menu_list").innerHTML = html;
+	 }
+};
+tenbien.open("GET", "http://smsentertainment.club/api/get_products", true);
+tenbien.send();

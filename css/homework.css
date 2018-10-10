@@ -12,25 +12,25 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 120px;
+	background-color: white;
 }
 .headerS1{
 	width: 100%;
 	margin: 0 auto;
+	background-color: white;
 }
 .section1{
-	width: 1280px;
+	width: 1170px;
 	margin: 0 auto;
 	background-color: white;
 	height: 60px;
 }
 .section1 .email-header{
 	position: relative;
-	margin-left: 60px;
 }
 .section1 .email-header .fa-envelope{
 	 color: #ff5912;
 	 margin-top: 20px;
-
 }
 .section1 .email-header .fa-phone-square{
 	color: #ff5912;
@@ -44,7 +44,6 @@ body{
 .section1 .email-header .icon-header{
 	float: right;
 	margin-top: 7px;
-	margin-right: 45px;
 }
 .section1 .email-header .icon-header .fa{
 	text-align: center;
@@ -82,7 +81,7 @@ body{
 	background-color: #f4f6f8;
 }
 .section2 {
-	width: 1280px;
+	width: 1170px;
 	margin: 0 auto;
 	background-color: white;
 	height: 120px;
@@ -95,7 +94,6 @@ body{
 }
 .section2 .products2 .logo-header{
 	float: left;
-	margin-left: 60px;
 	margin-top: 40px;
 }
 
@@ -115,7 +113,6 @@ body{
 }
 .section2 .products2 .icon-header1{
 	float: right;
-	margin-right: 40px;
 	margin-top: 40px;
 }
 .section2 .products2 .icon-header1 .fa{
@@ -149,22 +146,21 @@ body{
 	color: #ff5912;
 }
 .section3{
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: white;
 	height: 620px;
 }
 .section3 .menu-header{
-	width: 100%;
+	width: 1170px;
 	position: relative;
 	margin-right: 60px;
 }
 .section3 .menu-header .menu1-header{
 	position: absolute;
-	width: 42%;
+	width: 43%;
 	margin: 0 auto;
 	float: left;
-
 }
 .section3 .menu-header .menu1-header .images-header .anh-four{
 	margin-left: 250px;
@@ -204,15 +200,15 @@ body{
 	margin-top: 7px;
 }
 .section3 .menu-header .menu2-header{
- 	width: 58%;
+ 	width: 60%;
+ 	margin-left: 20px;
  	float: right;
 }
 .section3 .menu-header .menu2-header .text1{
 	width:100%;
-	float: left;
 	height: 190px;
 	margin-top: 110px;
-	margin-left: 50px;
+	margin-left: 80px;
 }
 .section3 .menu-header .menu2-header .text1 .full{
 	font-size: 40px;
@@ -234,16 +230,16 @@ body{
 }
 .section3 .menu-header .menu2-header .line2{
 	border-bottom: 1px solid #f4f6f8;
-	width: 580px;
-	margin-top: 20px;
-	margin-left: 50px;
+	width: 550px;
+	margin-top: 30px;
+	margin-left: 80px;
 	float: left;
 	height: 0px;
 }
 .section3 .menu-header .menu2-header .text2{
-	float: left;
 	width: 100%;
-	margin: 40px 0px 30px 50px;
+	margin-left: 80px;
+	margin-top: 80px;
 }
 .section3 .menu-header .menu2-header .text2 .chose-left{
 	width: 40%;
@@ -293,8 +289,9 @@ body{
 	color: #ff5912;
 }
 .section3 .menu-header .menu2-header .text3{
-	float: left;
 	width: 100%;
+	margin-left: 30px;
+	bottom: 0px;
 }
 .section3 .menu-header .menu2-header .text3 .tien{
 	float: left;
@@ -330,9 +327,11 @@ body{
 .products1{
 	width: 1170px;
 	margin: 0 auto;
+	background-color: #f4f6f8;
 }
 .products {
 	width: 900px;
+	margin: 0 auto;
 	float: right;
 	margin-bottom: 120px;
 }
@@ -855,5 +854,84 @@ figcaption{
     display: inline-block;
 }
 
+/*page2*/
+.products-page2{
+	width: 100%;
+	height: 650px;
+	background-color: #e4e4e7;
+	background-image: url("../images/11.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.products-page2 .item-page2{
+	width: 1170px;
 
-
+}
+.products-page2 .item-page2 .row1{
+	width: 8px;
+	margin-left: 60px;
+	float: left;
+}
+.products-page2 .item-page2 .row1 .line1-page2{
+	width: 8px;
+	height: 15px;
+	margin-top: 230px;
+	background-color: white;
+}
+.products-page2 .item-page2 .row1 .line-page2{
+    width: 8px;
+    margin-top: 10px;
+	height: 30px;
+	background-color:#ff5912 ;
+}
+.products-page2 .item-page2 .row1 .line2-page2{
+	width: 8px;
+	height: 15px;
+	margin-top: 10px;
+	background-color: white;
+}
+.row2{
+ 	width: 50%;
+ 	float: left;
+}
+.row2 .text1
+	width:100%;
+	height: 190px;
+	margin-top: 170px;
+	margin-left: 80px;
+	text-align: left !important;
+}
+.row2 .text1 .full{
+	font-size: 52px;
+	font-weight: 700;
+	color: #ff5912;
+}
+.row2 .text1 .vanban1{
+	font-size: 18px;
+	font-weight: 400;
+	color: #3c4751;
+	margin-top: 15px;
+	margin-bottom: 10px; 
+}
+.row2 .text1 .vanban{
+	font-size: 16px;
+	color: #495662;
+	font-weight: 300;
+}
+.row2 .text1 .shop-page2{
+	margin-top: 50px;
+}
+.row2 .text1 .shop-page2 .tien2{
+	font-size: 16px;
+	font-weight: 700;
+}
+.row2 .text1 .shop-page2 .fa.fa-shopping-cart{
+	margin-left: 35px;
+	color: #ff5912;
+}
+.row2 .text1 .shop-page2 .Order1{
+	margin-left: 5px;
+	color: #ff5912;
+	background-color: #e3e3e7;
+	border:none;
+}
