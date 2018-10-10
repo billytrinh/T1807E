@@ -366,9 +366,9 @@ h2{
 	float: left;
 	width: 615px;
 }
-.body-1 .right-body .thong-tin .name-coak{
+.name-coak{
 	color:#ff5912;
-	font-size: 45px;
+	font-size: 52px;
 	font-weight: 800;
 }
 .style-coak{
@@ -472,18 +472,14 @@ h2{
 }
 
 /*page 3*/
-.bg{
-	width: 1540px;
+.body-page3{
+	float: left;
+	width: 100%;
 	height: 650px;
-	margin: 0px auto;
-	position: relative;
-	overflow: hidden;
+	background-image: url(../images/bg.png);  /* "../" di len mot lan */
+	background-size: cover;
 }
-.bg img{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
+
 .pagi3.paginator{
 	margin-top: 80px;
 }
@@ -492,7 +488,6 @@ h2{
 	width: 100%;
 	height: 100px;
 	margin-top: 120px;
-/*	background: #fff;*/
 }
 .left-sale{
 	float: left;
@@ -500,19 +495,101 @@ h2{
 	width: calc(100% - 500px);
 	background: #fff;
 }
+.sale .left-sale .sale-info{
+	padding:25px 60px 0px 60px;
+}
+.sale-icon{
+	padding-left: 60px;
+	padding-top: 8px;
+}
+.left-sale h1{
+	padding-top: 30px;
+	color: #ff5912;
+	font-size: 30px;
+	font-weight: 800;
+}
+.left-sale .sale-pay{
+	padding-top: 35px;
+	padding-right: 10px;
+}
+
+
 .right-sale{
 	height: 100%;
 	float: right;
 	width: 470px;
 	background: #fff;
+	text-align: center;
 }
+.moi-qc{
+	font-weight: 600;
+	font-size: 16px;
+	padding-top: 25px;
+}
+
 .products.best-sale{
 	width: 100%;
 	float: left;
 	padding: 0px;
 }
+.best-sale .item .item-content h3{
+	color: #34404b;
+	font-size: 18px;
+}
+.best-sale .item .item-content .sale-image{
+	padding-left:20px;
+	padding-top: 10px;
+	/*padding-right: */
+}
+.best-sale .item .item-content .sale-name{
+	padding:20px 25px 20px 0px;
+}
 .products.best-sale .rows .item{
 	height: 160px;
 }
-
-
+.sale-hover{
+	margin-bottom: 100px;
+}
+.add-cart{
+	float: left;
+	text-align: center;
+}
+.add-cart p{
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.add-cart img{
+	padding-left: 30px;
+}
+.products.best-sale .rows .item:hover .sale-hover{
+	display: none;
+	/*opacity: 0;
+	height: 0px;*/
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.body-page3 .info{
+	padding-top: 220px;
+	padding-left: 100px;
+}
+.info-price{
+	width: 100%;
+	float: left;
+	padding-top: 55px;
+}
+.info-name .style-coak{
+	line-height: 50px;
+}
+.info-price .left{
+	float: left;
+}
+.info-price img{
+	padding-right: 5px;
+	padding-left: 25px;
+}
+.sale-submit{
+	border: none;
+	color: #ff5912;
+	font-weight: 600;
+	background: none;
+}
