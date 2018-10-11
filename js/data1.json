@@ -1,0 +1,47 @@
+var products = [
+			{
+				image: "images/ao1.png",
+				name: "Reebok Track Jacket 1",
+				price: "110$",
+			},
+			{
+				image: "images/ao3.png",
+				name: "Reebok Track Jacket 2",
+				price: "120$",
+			},
+			{
+				image: "images/ao2.png",
+				name: "Reebok Track Jacket 3",
+				price: "100$",
+			},
+			{
+				image: "images/ao1.png",
+				name: "Reebok Track Jacket 1",
+				price: "110$",
+			},
+			{
+				image: "images/ao3.png",
+				name: "Reebok Track Jacket 2",
+				price: "120$",
+			},
+			{
+				image: "images/ao2.png",
+				name: "Reebok Track Jacket 3",
+				price: "100$",
+			},
+			{
+				image: "images/ao1.png",
+				name: "Reebok Track Jacket 1",
+				price: "110$",
+			},
+			{
+				image: "images/ao3.png",
+				name: "Reebok Track Jacket 2",
+				price: "120$",
+			},
+			{
+				image: "images/ao2.png",
+				name: "Reebok Track Jacket 3",
+				price: "100$",
+			},
+		];

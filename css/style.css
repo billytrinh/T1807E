@@ -66,7 +66,84 @@ a:hover{
 	float: right;
 	padding-top: 27px;
 }
+.container .left-page{
+	float: left;
+	width: 270px;
+	padding-top: 100px;
+	margin-bottom: 140px;
+}
+.container .left-page .Bg{
+	clear: both;
+	background-color: #fff;
+	padding-left: 40px;
+	margin-bottom: 28px;
+}
+.container .left-page .Bg .section-title{
+	font-size: 20px;
+	font-weight: 900;
+	color: #ff5912;
+	padding: 43px 0px;
 
+}
+.container .left-page .Bg .filters{
+
+}
+.container .left-page .Bg .filters-list{
+	padding-bottom: 43px;
+	font-weight: 800;
+	font-size: 18px;
+}
+.hidden{
+	display: none;
+}
+label{
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer
+}
+label:before{
+	content: " ";
+	width: 6px;
+	height: 6px;
+	border:5px solid #edf0f2;
+	background: #edf0f2;
+	display: inline-block;
+	margin-right: 15px
+}
+
+input[type="checkbox"]:checked + label {   
+    color: #ff5912
+}
+input[type="checkbox"]:checked + label:before {
+    border:5px solid #ff5912
+}
+.container .right-page{
+	width: 870px;
+	float: right;
+}
+.container .right-page .right-page-products{
+	padding-top: 100px;
+	width: 870px;
+	overflow: auto;
+	
+}
+.container .right-page .right-page-products .rows{
+	margin-bottom: 30px;
+	margin: 0 -15px;
+}
+.container .right-page .right-page-products .rows .item{
+	float: left;
+	background-color: #fff;
+	margin: 0 15px;
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	margin-bottom: 30px;
+	height: 325px;
+	padding-top: 30px;
+}
+.temp{
+	clear: both;
+}
 .content1{
 	padding-top: 104px;
 	overflow: auto;
@@ -191,14 +268,14 @@ a:hover{
 	width: calc(100% / 4 - 30px);
 	
 }
-.content3 .container .row .item figcaption{
+figcaption{
 	font-size: 18px;
     font-weight: 600;
     line-height: 45px;
 }
-.content3 .container .row .item .price{
+.price{
 	color: red;
-	font-weight: 600;
+	font-weight: 900;
 }
 
 .content4{
