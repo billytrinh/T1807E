@@ -109,17 +109,13 @@ h3
 	float:left;
 	width: calc(100% / 3 - 30px);
 	text-align: center;
-	margin: 0px 15px;
+	padding: 0px 15px;
 	margin-bottom: 30px;
 	height: 340px;
 }
 .products .rows .item .item-content{
 	background: #fff;
 	float:left;
-	width: 100%;
-	height: calc(100% - 40px);
-	padding-top: 20px;
-	padding-bottom: 20px;
 	overflow: hidden;
 }
 .products .rows .item figcaption{
@@ -568,7 +564,6 @@ footer
 
 .product-page .products .rows .item-4
 {
-	width: calc(100% / 4 - 30px); 
 	margin-bottom: 0px;
 }
 .best-sales .products .rows .item-3
@@ -579,9 +574,8 @@ footer
 	background: #fff;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 35px 0;
-	margin-left: 15px;
-	margin-right: 15px;
+	padding: 0px 15px;
+	
 }
 .best-sales .products .rows .item-3 img,.item-content
 {
