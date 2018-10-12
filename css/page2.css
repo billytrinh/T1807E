@@ -789,7 +789,11 @@ input[type=checkbox]{
     background: #ff5912;
     width: 140px;
     margin:0px;
-    height: 50px
+    height: 50px;
+    margin-top:22px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
 }
 .price-bot p{
     font-size: 20px;

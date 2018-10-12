@@ -1,8 +1,21 @@
-var ajax = new XMLHttpRequest();
-ajax.onreadystatechange = function(){
+if(localStorage.getItem('item')){
+    renderHtml(localStorage.getItem('item'));
+}
+else{
+    var ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function(){
     if(ajax.readyState ==  4 && ajax.status == 200){
-        var result = ajax.responseText;
-        result = JSON.parse(result);
+    var result = ajax.responseText;
+    localStorage.setItem('item', result);
+    renderHtml(localStorage.getItem('item'));
+        }
+    };
+    ajax.open("GET", "http://smsentertainment.club/api/get_products", true);
+    ajax.send();
+    }
+
+function renderHtml(result){
+        var result = JSON.parse(result);
         var related_products = result.data;
         var html2 = '';
         for(var i = 0; i < related_products.length - 6; i++){
@@ -30,16 +43,26 @@ ajax.onreadystatechange = function(){
             html2+= '</li>';
         }
     document.getElementById("related-products").innerHTML = html2;
-    }
-};
-ajax.open("GET", "http://smsentertainment.club/api/get_products", true);
-ajax.send();
+    };
 
-var ajax_page3 = new XMLHttpRequest();
-ajax_page3.onreadystatechange = function(){
+if(localStorage.getItem('items')){
+    runHTML(localStorage.getItem('items'));
+}
+else{
+    var ajax_page3 = new XMLHttpRequest();
+    ajax_page3.onreadystatechange = function(){
     if( ajax_page3.readyState == 4 && ajax_page3.status == 200){
-        var result_3 = ajax_page3.responseText;
-        result_3 = JSON.parse(result_3);
+    var result_3 = ajax_page3.responseText;
+    localStorage.setItem('items', result_3);
+    runHTML(localStorage.getItem('items'));
+        }
+    };
+    ajax_page3.open("GET", "http://smsentertainment.club/api/get_products", true);
+    ajax_page3.send();
+}
+
+function runHTML(result_3){
+        var result_3 = JSON.parse(result_3);
         var sale_products = result_3.data;
         var html3 = '';
         for(var i = 0; i < sale_products.length - 7; i++){
@@ -65,10 +88,8 @@ ajax_page3.onreadystatechange = function(){
         html3+='</li>';
         }
         document.getElementById("sale_products").innerHTML = html3;
-            }
-};
-ajax_page3.open("GET", "http://smsentertainment.club/api/get_products", true);
-ajax_page3.send();
+    };
+
 function checkForm(){
     var email = document.forms['form_data'].email.value;
     if(email.length > 0){
