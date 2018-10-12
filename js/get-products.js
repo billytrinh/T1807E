@@ -6,7 +6,7 @@ function get_product_view(products,itemnumber,productlist)
 		html+='	<div class="item-content">';
 		html+='	<figure>';
 		html+='		<img src="'+products[i].image+'"/>';
-		html+='			<figcaption>'+products[i].name+'</figcaption>';
+		html+='		<figcaption>'+products[i].name+'</figcaption>';
 		html+='	</figure>';
 		html+='		<p class="price-box"><span class="price">'+products[i].price+'</span></p>';
 		html+='<div class="size">';
@@ -38,4 +38,29 @@ function get_product_view(products,itemnumber,productlist)
 		html+='</div>';
 	}
 	document.getElementById(productlist).innerHTML = html;
+}
+
+function get_smaller_products(products)
+{
+	var html = '';
+	for (var i = 0; i < products.length; i++) 
+	{
+		html+='<div class="item-3">';
+		html+='<img width="90px" height="90px" src="'+products[i].image+'">';
+		html+='<div class="item-content">';
+		html+='	<p style="padding-bottom: 35px;">'+products[i].name+'</p> ';
+		html+='	<div class="no-hover">';
+		html+='		<div class="star" style="float:left;">';
+		html+='				<i class="fa fa-star" style="font-size:16px;color: orange"></i>';
+		html+='				<i class="fa fa-star" style="font-size:16px;color: orange"></i>';
+		html+='				<i class="fa fa-star" style="font-size:16px;color: orange"></i>';
+		html+='				<i class="fa fa-star-o" style="font-size:16px;color: orange"></i>';
+		html+='			</div>';
+		html+='		<p style="font-size:16px;color:orange;float: right;">100$</p>';
+		html+='	</div>';
+		html+='	<a href="#"><img width="110px" height=auto src="images/Add To Cart Ico.png"></a> ';
+		html+='</div>';
+		html+='</div>';
+	}
+	document.getElementById('product-list2').innerHTML = html;
 }

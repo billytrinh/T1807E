@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"/>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Main Page</title>
         <link rel="stylesheet" href="css/style.css"/>
 	    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script type="text/javascript" src="js/data.json"></script>
-        <script type="text/javascript" src="js/get-products.js"></script>
+		<script type="text/javascript" src="js/get-products.js"></script>
     </head>
 <body>
 	<header>
@@ -28,11 +29,13 @@
 		<div class="section header-bottom">
 			<div class="container">
 				<img style="vertical-align: middle" src="images/Logo.png"/>
-				<span style="margin-left: 80px"><a href="#">Home</a></span>
-				<span class="m-l-40"><a href="#">Products</a></span>
-				<span class="m-l-40"><a href="#">Hot Deals</a></span>
-				<span class="m-l-40"><a href="#">About</a></span>
-				<span class="m-l-40"><a href="#">Contact</a></span>
+				<div class="menu">
+					<span style="margin-left: 80px"><a href="#">Home</a></span>
+					<span class="m-l-40"><a href="#">Products</a></span>
+					<span class="m-l-40"><a href="#">Hot Deals</a></span>
+					<span class="m-l-40"><a href="#">About</a></span>
+					<span class="m-l-40"><a href="#">Contact</a></span>
+				</div>
 				<span class="icon-header">
 						<i class="fa fa-search m-l-15" style="font-size:20px;vertical-align: middle"></i>		
 						<i class="fa fa-user-circle m-l-15" style="font-size:20px;vertical-align: middle"></i>	
@@ -84,10 +87,11 @@
 			</div>
 			<div class="advertise">
 				<div class="left-adv">
+					<img src="images/sale.png">
+					<p>FULL WINTER KIT</p>
 
 				</div>
 				<div class="right-adv">
-
 				</div>
 			</div>
 			<div class="best-sales">
@@ -97,8 +101,8 @@
 					<div class="products">
 						<div class="rows" id="product-list2">
 							<script type="text/javascript">
-                                get_product_view(products3,"item-3","product-list2");
-                            </script>
+                                get_smaller_products(products3);
+							</script>
 						</div>
 					</div>
 				</div>
