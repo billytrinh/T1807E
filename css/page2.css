@@ -988,6 +988,9 @@ input[type=checkbox]{
     background: #fff;
     padding: 35px 30px;
 }
+.best-sale-content:hover{
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0,0,0,0.2);
+}
 
 .section2.best{
     background: transparent;
