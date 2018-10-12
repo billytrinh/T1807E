@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Demo 1</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css\bai3.css"/>
+	<script type="text/javascript" src="js/data.json"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="section header-top">
+			<div class="container">
+				<img style="padding:0 5px 0 0" src="image\mailbox.png"/>
+				<span style="padding:0 15px 0 0">info@gmail.com</span>
+				<img style="padding:0 5px 0 0" src="image\phone.png"/>
+				<span style="padding:0 15px 0 0">453 - 5553 - 996</span>
+				<a style="float:right; padding-left:15px" href="#"><img src="image\insta.png"/></a>
+				<a style="float:right; padding-left:15px" href="#"><img src="image\gg.png"/></a>
+				<a style="float:right; padding-left:15px" href="#"><img src="image\tw.png"/></a>
+				<a style="float:right; padding-left:15px" href="#"><img src="image\fb.png"/></a>
+			</div>
+		</div>
+		<div class="section header-bottom">
+			<div class="container">
+				<img style="float:left; margin-top:43px" src="image\logo.png"/>
+				<ul style="width:1052px; float:left">
+					<li><a style="float:left; padding-left:80px;" href="#">Home</a></li>
+					<li><a style="float:left; padding-left:35px;" href="#">Products</a></li>
+					<li><a style="float:left; padding-left:40px;" href="#">Hot Deals</a></li>
+					<li><a style="float:left; padding-left:45px;" href="#">About</a></li>
+					<li><a style="float:left; padding-left:45px;" href="#">Contact</a></li>
+					<li><a style="float:right; padding-left:30px" href="#"><img src="image\cart.png"/></a></li>
+					<li><a style="float:right; padding-left:30px" href="#"><img src="image\user.png"/></a></li>
+					<li><a style="float:right; padding-left:30px" href="#"><img src="image\search.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<section class="section">
+		<div class="container">
+			<div class="left-navigation">
+				<div class="block categories">
+					<h3 style="color:#ff5912; font-weight:bold">Categories</h3>
+					<ul>
+						<li><a href="#">Man</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">Children</a></li>
+						<li><a href="#">Hot deals</a></li>
+					</ul>
+				</div>
+				
+				<div class="block price-filter">
+					<h3 style="color:#ff5912; font-weight:bold">Price Filter</h3>
+					<div class="price-controls">
+						<input class="min-price" type="text" value="100$">
+						<input class="max-price" type="text" value="1000$">
+					</div>
+					<p class="line-box">
+						<span class="node no_1"></span>
+						<span class="line"></span>
+						<span class="node no_2"></span>
+					</p>
+					<h4 class="price-controls2">
+					From	<input class="min-price2" type="text" value=" ">
+					To	<input class="max-price2" type="text" value=" ">
+					</h4>
+				</div>
+				
+				<div class="block sizes">
+					<h3 style="color:#ff5912; font-weight:bold">Sizes</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox1">
+							<label for="checkbox1">Small</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size2" id="checkbox2">
+							<label for="checkbox2">Medium</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size3" id="checkbox3">
+							<label for="checkbox3">Large</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size4" id="checkbox4">
+							<label for="checkbox4">X Large</label>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="block brands">
+					<h3 style="color:#ff5912">Brands</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand1" id="checkbox1-1">
+							<label for="checkbox1-1">Reebok</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand2" id="checkbox2-2">
+							<label for="checkbox2-2">Addidas</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand3" id="checkbox3-3">
+							<label for="checkbox3-3">Nike</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="brand4" id="checkbox4-4">
+							<label for="checkbox4-4">Active</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="products">
+				<div class="rows" id="product_list">
+					
+				</div>
+				<div class="loadingmore-p3">
+					<a href="#"><img style="margin-top:26px" src="image\loadingdot.png"/></a>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<footer>
+		<div class="section footer-top">
+			<div class="container">
+				<div class="newsletter">
+					<span style="color:#ff5912; font-size:17px; margin-left:65px">NEWSLETTER</span>
+					<span style="color:#34404b; font-size:15px; font-style:italic; margin-left:25px">join us now to get all news and special offers</span>
+					<img style="padding-left:240px" src="image\mailbox.png"/>
+					<input class="email-footer-top" type="text" placeholder="type your email here">
+					<button class="join-button-footer-top">join us</button>
+				</div>
+			</div>
+		</div>
+		<div class="section footer-bottom">
+			<div class="container">
+				<span class="footer-left">
+					<a href="#"><img src="image\logo.png"></a>
+					<p style="line-height:40px; font-weight:bold" class="copyright">shopy &copy; 2015 . your copy right here</p>
+				</span>
+				<div class="footer-mid">
+					<ul class="collumn-footer-1">
+						<li><a href="#">about us</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+					<ul class="collumn-footer-2">
+						<li><a href="#">our feed</a></li>
+						<li><a href="#">terms and conditions</a></li>
+						<li><a href="#">our privacy</a></li>
+					</ul>	
+					<ul class="collumn-footer-3">
+						<li><a href="#">join us</a></li>
+						<li><a href="#">live support</a></li>
+					</ul>	
+				</div>
+				<div class="footer-right">
+					<span style="font-size:16px; line-height:20px; color:#ff5912">Payment Methods</span>
+					<img style="margin-top:15px" src="image\payment.jpg"/>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/demo.js"></script>
+</body>
+</html>
