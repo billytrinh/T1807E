@@ -69,3 +69,19 @@ ajax_page3.onreadystatechange = function(){
 };
 ajax_page3.open("GET", "http://smsentertainment.club/api/get_products", true);
 ajax_page3.send();
+function checkForm(){
+    var email = document.forms['form_data'].email.value;
+    if(email.length > 0){
+      return true;
+    }
+    else{
+      if(document.forms['form_data'].email.nextElementSibling){
+        document.forms['form_data'].email.nextElementSibling.remove();}
+        else{
+      var inputEmail = document.forms['form_data'].email.outerHTML;
+      inputEmail+= '<p class="warning">Please type your email again!</p>';
+      document.forms['form_data'].email.outerHTML = inputEmail;
+        }
+    }
+    return false;
+  }

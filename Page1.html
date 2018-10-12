@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>page1</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/NguyenTienDung.css">
+    <link rel="stylesheet" href="css/page2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -140,7 +140,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="products item-related">
+            <div class="products">
                 <ul class="rows" id="product_list">
                 </ul>
                 <div class="loading">
@@ -157,9 +157,11 @@
             <span class="letter">NEWS LETTER</span>
             <span class="joinus">join us now to get all news and special offers</span>
             <img src="images/mail.png" alt="icon-mail">
-            <form class="forms">
-                <input type="text" name="email" placeholder="type your email here">
-                <button class="button">join us</button>
+            <form class="forms" name="form_data">
+                <div class="inputs">
+                    <input type="text" name="email" placeholder="type your email here">
+                </div>
+                <button type="submit" class="button" onclick="return checkForm()" >join us</button>
             </form>
         </div>
     </section>
@@ -215,6 +217,6 @@
             </ul>
         </div>
     </footer>
-    <script src="js/page1.js"></script>
+    <script src="js/page2.js"></script>
 </body>
 </html>

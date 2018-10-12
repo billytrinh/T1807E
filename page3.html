@@ -153,9 +153,11 @@
             <span class="letter">NEWS LETTER</span>
             <span class="joinus">join us now to get all news and special offers</span>
             <img src="images/mail.png" alt="icon-mail">
-            <form class="forms">
-                <input type="text" name="email" placeholder="type your email here">
-                <button class="button">join us</button>
+            <form class="forms" name="form_data">
+                <div class="inputs">
+                    <input type="text" name="email" placeholder="type your email here">
+                </div>
+                <button type="submit" class="button" onclick="return checkForm()" >join us</button>
             </form>
         </div>
     </section>

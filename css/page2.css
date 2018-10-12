@@ -47,7 +47,18 @@ a{
 	background: #ffffff;
 	height: 303px;
 	overflow: hidden;
-	width: 100%;
+    width: 100%;
+}
+.item-content:hover{
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0,0,0,0.2);
+}
+.products .rows .item .item-content .size-icons span{
+	width: 13px;
+	height: 13px;
+    border-radius: 100%;
+    margin-right: 4px;
+    display: inline-block;
+    cursor: pointer;
 }
 .content-related .rows .item-related .item-content .size-icons span{
 	width: 13px;
@@ -80,8 +91,15 @@ a{
 	color: #ff5912;
 	font-weight: 600;
 }
+.products .rows .item .item-content:hover .price-box{
+	margin-bottom: 0px;
+}
 .related-product .products .rows .item .item-content:hover .price-box{
 	margin-bottom: 0px;
+}
+.products .rows .item .item-content:hover .price-box{
+	opacity: 0;height: 0px;
+
 }
 .related-product .products .rows .item .item-content:hover .price-box{
 	opacity: 0;height: 0px;
@@ -387,6 +405,9 @@ input[type=checkbox]{
 }
 .forms {
     display: inline-block;
+    width: 400px;
+    position: relative;
+    bottom: 23px;
 }
 .section2 .news img{
     margin-right: 10px;
@@ -399,6 +420,10 @@ input[type=checkbox]{
     height: 30px;
     font-weight: 400;
 }
+.inputs{
+    width: 200px;
+    position: absolute;
+}
 .button{
     background: #ff5912;
     border: none;
@@ -408,6 +433,14 @@ input[type=checkbox]{
     font-size: 14px;
     cursor: pointer;
     transition: 0.5;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+.warning{
+    color: #ff5912;
+    font-size: 12px;
+    font-style: italic;
 }
 .button:hover {
     background: #ff5912;
