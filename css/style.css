@@ -568,9 +568,9 @@ footer
 }
 .best-sales .products .rows .item-3
 {
-	float: left;
 	width: calc(100% / 3 - 30px); 
 	margin-bottom: 0px;
+<<<<<<< HEAD
 	background: #fff;
 	font-size: 18px;
 	font-weight: 700;
@@ -583,20 +583,10 @@ footer
 	vertical-align: middle;
 	padding-right: 25px;
 	padding-left: 25px;
+=======
+>>>>>>> parent of 48d6084... Continue
 }
 .best-sales .products
 {
 	margin-bottom: 120px;
-}
-.best-sales .products .rows .item-3 .item-content:hover .no-hover
-{
-	display: none;
-}
-.best-sales .products .rows .item-3 .item-content img
-{
-	display: none;
-}
-.best-sales .products .rows .item-3 .item-content:hover img
-{
-	display: block;
 }
