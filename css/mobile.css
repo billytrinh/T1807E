@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) and (min-width: 300px){
+
+}
+body{
+	background: green;
+}
+.container{width: 100%;}
+.products{width: 100%;}
+.products .rows .item{
+	width: calc(100% / 2);
+}

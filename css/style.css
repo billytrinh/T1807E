@@ -1,6 +1,8 @@
 *{
 	margin:0;
 	padding: 0;
+	
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Lato', sans-serif;
@@ -49,7 +51,7 @@ li{
 }
 .products .rows .item{
 	float:left;
-	width: calc(100% / 3 - 30px);
+	width: calc(100% / 3);
 	text-align: center;
 	padding: 0px 15px;
 	margin-bottom: 30px;
