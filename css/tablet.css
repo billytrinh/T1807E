@@ -1,0 +1,14 @@
+@media only screen and (max-width: 900px) and (min-width: 769px){
+	body{
+		background: red;
+	}
+	.section2 .menu3{
+		width: 750px;
+	}
+	.menu7{display: none;}
+	.products{width: 100%;}
+	.products .rows .item{
+		width: calc(100% / 4);
+	}
+}
+
