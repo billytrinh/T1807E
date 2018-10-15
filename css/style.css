@@ -42,7 +42,7 @@ a:hover
 	width: 100%;
 }
 .container{
-	width: 1170px;
+	width: 76%;
 	margin:0 auto;
 }
 .bg-white{
@@ -62,7 +62,7 @@ a:hover
 
 .left-column{
 	float: left;
-	width: 270px;
+	width: 23%;
 	margin-right: 15px;
 }
 h3
@@ -93,7 +93,7 @@ h3
 .products
 {
 	float:right;
-	width: 870px;
+	width: 74.35%;
 }
 .products .rows{
 	margin-left: -15px;	
@@ -102,8 +102,8 @@ h3
 .paginator
 {
 	background: #fff;
-	float: left;
-	width: 870px; 
+	float: right;
+	width: 74.35%; 
 	text-align: center;
 	padding: 28px 0px;
 	margin-bottom: 120px;
@@ -124,7 +124,7 @@ h3
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden;
-	height: 340px;
+	height: 92%;
 }
 .products .rows .item figcaption{
 	font-size: 18px;
@@ -191,7 +191,6 @@ h3
 	color: #ff5912;
 }
 .block .price-filter{
-	text-align: center;
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -200,10 +199,14 @@ h3
 	margin-top: 40px;
 	margin-bottom: 10px;
 }
-.price-filter .price
+.price-filter .price .price 
 {
-	margin-right: 20px;
-	margin-left: 20px;
+	margin: 0 21px;
+}
+.form-data
+{
+	margin-top: 30px;
+	font-size: 12px;
 }
 .price-filter .line-box{
 	width: 100%;
@@ -213,7 +216,7 @@ h3
 }
 .price-filter .line-box .lines{
 	display: inline-block;
-	width: 107px;
+	width: 60%;
 	border-bottom: 3px solid #34404b;
 	position: absolute;
 	top:0px;
@@ -283,9 +286,13 @@ header{
 	background: #fff;
 	padding: 45px 0px;
 }
+.header-bottom .icon-header a i
+{
+	font-size: 20px;
+}
 .newsletter{
 	float:left;
-	width: calc(100% - 56px);
+	width: 100%;
 	background: #fff;
 	padding-left: 55px;
 	padding-right: 55px;
@@ -516,21 +523,20 @@ footer
 }
 .email-typing
 {
+	width: 90%;
 	margin-left: 255px;
-	display: inline;
-	display: inline-block;
 	vertical-align: middle;
-	width: 100px;
-}
-.email-typing .email
-{
-	width: calc(100%-10px);
-	border: 0;
+	display: inline-block;
 }
 .submit
 {
 	vertical-align: middle;
-	display: inline-block;
+}
+.email-typing .email
+{
+	vertical-align: middle;
+	width: 60%;
+	border: 0;
 }
 #section-big-product-background
 {
@@ -618,11 +624,43 @@ footer
 {
 	display: block;
 }
+.register
+{
+	text-align: center;
+	margin-top: -23px;
+	font-size: 44px;
+}
+.register .container .form-register
+{
+	display: block;
+}
+.input-register
+{
+	width: 70%;
+}
 @media only screen and (max-width: 768px) and (min-width: 300px){
 	.container{width: 100%;}
 	.products{width: 100%;}
 	.products .rows .item{
 		width: calc(100% / 2 - 30px);
+	}
+	.header-bottom
+	{
+		text-align: center;
+	}
+	.header-bottom .icon-header
+	{
+		padding-top: 50px;
+		display: block;
+		float: none;
+	}
+	.header-bottom .icon-header a
+	{
+		padding: 0 30px;
+	}
+	.header-bottom .icon-header a i
+	{
+		font-size: 40px;
 	}
 	.menu
 	{
@@ -631,5 +669,37 @@ footer
 	.left-column
 	{
 		display: none;
+	}
+	.paginator
+	{
+		width: 100%;
+		margin-left:0;
+		margin-right: 0;
+	}
+	.newsletter
+	{
+		display: block;
+	}
+	.email-typing
+	{
+		margin: 0;
+	}
+	.footer .container
+	{
+		width: 50%; margin: 0 auto;
+	}
+	.footer .container div
+	{
+		display: block;
+	}
+	.footer .container .logo
+	{
+		text-align: center;
+		margin:0;
+		padding-bottom: 20px;
+	}
+	.footer .container .payment
+	{
+		float: left;
 	}
 }
