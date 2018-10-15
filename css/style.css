@@ -170,18 +170,6 @@ h3
 	-webkit-transition: all 250ms ease-out;
 	margin: 0 0;
 }
-.products .rows .item .show{
-	opacity: 1;
-}
-.products .rows .item .show-hover{
-	position: absolute;
-	opacity: 0;
-	top:20px;
-	left:20px;
-	width: calc(100% - 40px);
-	transition: all 1050ms ease-out;
-	-webkit-transition:all 1050ms ease-out;
-}
 .price-box{
 	margin-bottom: 50px;
 }
@@ -191,8 +179,8 @@ h3
 	color: #ff5912;
 }
 .block .price-filter{
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 .price-filter p
 {
@@ -205,7 +193,7 @@ h3
 }
 .form-data
 {
-	margin-top: 30px;
+	vertical-align: middle;
 	font-size: 12px;
 }
 .price-filter .line-box{
@@ -236,6 +224,10 @@ h3
 .price-filter .line-box .node.no_2{
 	top:-5px;
 	right:30px;
+}
+.price-filter .form-data
+{
+	padding-top: 40px;
 }
 .block .sizes, .block .brands
 {
@@ -521,21 +513,23 @@ footer
 {
 	width: calc(100% / 4 - 30px);
 }
-.email-typing
+.newsletter .email-typing
 {
-	width: 90%;
-	margin-left: 255px;
+	padding-left: 21%;
 	vertical-align: middle;
-	display: inline-block;
+	width: 57%;
 }
-.submit
+.newsletter .email-typing .submit
 {
+	float:right;
 	vertical-align: middle;
+	border: none;
+	padding-left: auto;
 }
 .email-typing .email
 {
+	width: 80%;
 	vertical-align: middle;
-	width: 60%;
 	border: 0;
 }
 #section-big-product-background
@@ -628,15 +622,60 @@ footer
 {
 	text-align: center;
 	margin-top: -23px;
-	font-size: 44px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.register .container
+{
+	width: 52%;
 }
 .register .container .form-register
 {
+	text-align: left;
 	display: block;
+	margin-bottom: 70px;
+	color: #7b7b7b;
+}
+.register .container .submit
+{
+	width: 24%;
+	border: none;
 }
 .input-register
 {
-	width: 70%;
+	width: 100%;
+}
+.icon-header .left-navigator-mobile
+{
+	display: none;
+}
+.section #left-navigator-mobile-menu
+{
+	padding-top: 50px;
+	display: none;
+	background: white;
+	font-size: 16px;
+	line-height: 3;
+	width: 100%;
+	text-align: right;
+}
+.section #left-navigator-mobile-menu ul li
+{
+	border-bottom: 1px solid #c9b8b8;
+	width: 100%;
+	text-align: center;
+}
+
+#form-error
+{
+	margin: 30px 0;
+	text-align: center;
+}
+#form-error ul, #form-error li
+{
+	color: red;
+	list-style-type: none;
+	font-size: 14px;
 }
 @media only screen and (max-width: 768px) and (min-width: 300px){
 	.container{width: 100%;}
@@ -702,5 +741,18 @@ footer
 	.footer .container .payment
 	{
 		float: left;
+	}
+	.icon-header .left-navigator-mobile
+	{
+		display: inline-block;
+	}
+	.section .left-navigator-mobile-menu
+	{
+		position: relative;
+	}
+	.newsletter .email-typing
+	{
+		padding: 0;
+		padding-top: 20px;
 	}
 }

@@ -10,39 +10,51 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script type="text/javascript" src="js/data.json"></script>
 		<script type="text/javascript" src="js/get-products.js"></script>
+		<script type="text/javascript" src="js/left-navigation-mobile.js"></script>
     </head>
 <body>
 	<header>
-		<div class="section header-top">
-			<div class="container">
-				<span><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i></span>
-				<span>info@gmail.com</span>
-				<span class="m-l-15"><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">phone</i>453 - 5553 - 996</span>
-				<span class="icon-header">
-					<i class="fa fa-facebook m-l-15" style="font-size:20px;vertical-align: middle"></i>
-					<i class="fa fa-twitter m-l-15" style="font-size:20px;vertical-align: middle"></i>
-					<i class="fa fa-google-plus m-l-15" style="font-size:20px;vertical-align: middle"></i>
-					<i class="fa fa-instagram m-l-15" style="font-size:20px;vertical-align: middle"></i>
-				</span>
-			</div>
-		</div>
-		<div class="section header-bottom">
-			<div class="container">
-				<img style="vertical-align: middle" src="images/Logo.png"/>
-				<div class="menu">
-					<span style="margin-left: 80px"><a href="#">Home</a></span>
-					<span class="m-l-40"><a href="#">Products</a></span>
-					<span class="m-l-40"><a href="#">Hot Deals</a></span>
-					<span class="m-l-40"><a href="#">About</a></span>
-					<span class="m-l-40"><a href="#">Contact</a></span>
+				<div class="section header-top">
+					<div class="container">
+						<span><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i></span>
+						<span>info@gmail.com</span>
+						<span class="m-l-15"><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">phone</i>453 - 5553 - 996</span>
+						<span class="icon-header">
+							<a href="#"><i class="fa fa-facebook m-l-15"  style="font-size:20px;vertical-align: middle"></i></a> 
+							<a href="#"><i class="fa fa-twitter m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+							<a href="#"><i class="fa fa-google-plus m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+							<a href="#"><i class="fa fa-instagram m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+						</span>
+					</div>
 				</div>
-				<span class="icon-header">
-						<i class="fa fa-search m-l-15" style="font-size:20px;vertical-align: middle"></i>		
-						<i class="fa fa-user-circle m-l-15" style="font-size:20px;vertical-align: middle"></i>	
-						<i class="fa fa-shopping-cart m-l-15" style="font-size:20px;vertical-align: middle"></i>				
-				</span>
-			</div>
-		</div>
+				<div class="section header-bottom">
+					<div class="container">
+						<img style="vertical-align: middle" src="images/Logo.png"/>
+						<span class="menu">
+							<span style="margin-left: 80px"><a href="#">Home</a></span>
+							<span class="m-l-40"><a href="#">Products</a></span>
+							<span class="m-l-40"><a href="#">Hot Deals</a></span>
+							<span class="m-l-40"><a href="#">About</a></span>
+							<span class="m-l-40"><a href="#">Contact</a></span>
+						</span>
+						<span class="icon-header">
+								<a href="#"><i id="open-menu" onclick="openmenu()"  class="fa fa-align-justify left-navigator-mobile" style="vertical-align: middle;"></i></a>
+								<a href="#"><i class="fa fa-search m-l-15" style="vertical-align: middle"></i></a>		
+								<a href="#"><i class="fa fa-user-circle m-l-15" style="vertical-align: middle"></i></aß>
+								<a href="#"><i class="fa fa-shopping-cart m-l-15" style="vertical-align: middle"></i></a>				
+						</span>
+						<div id="left-navigator-mobile-menu">
+							<a href="#"><i class="fa fa fa-close" onclick="closemenu()" style="text-align: right;font-size: 36px;"></i></a>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Hot Deals</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 	</header>
 	<section class="section section-big-product" id="section-big-product-background">
 		<div class="container">
@@ -129,42 +141,42 @@
 		</div>
 	</section>
 	<footer>
-		<div class="section footer">
-			<div class="container">
-				<div class="logo">
-					<img style="vertical-align: top; margin-bottom: 25px;" src="images/Logo.png"/>
-					<p>shopy &copy; 2015 .your copy right here</p>
-				</div>
-				<div class="center">
-					<ul class="columns">
-						<li><a href="#">about us</a></li>
-						<li><a href="#">contact us</a></li>
-						<li><a href="#">support</a></li>
-					</ul>
-					<ul class="columns">
-						<li><a href="#">our feed</a></li>
-						<li><a href="#">terms and conditions</a></li>
-						<li><a href="#">our privacy</a></li>
-					</ul>
-					<ul class="columns">
-						<li><a href="#">join us</a></li>
-						<li><a href="#">live support</a></li>
-					</ul>
-				</div>
-				<div class="payment">
-					<h3>Payment Methods</h3>
-					<div class="credit-icons">
-						<span>
-							<i class="fa fa-cc-amex" style="font-size:20px;"></i>
-							<i class="fa fa-cc-discover" style="font-size:20px;"></i>
-							<i class="fa fa-cc-visa" style="font-size:20px;"></i>
-							<i class="fa fa-cc-mastercard" style="font-size:20px;"></i>
-							<i class="fa fa-cc-paypal" style="font-size:20px;"></i>
-						</span>
+			<div class="section footer">
+				<div class="container">
+					<div class="logo">
+						<img style="vertical-align: top; margin-bottom: 25px;" src="images/Logo.png"/>
+						<p>shopy &copy; 2015 .your copy right here</p>
 					</div>
-				</div>	
-			</div>
-		</div>
+					<div class="center">
+						<ul class="columns">
+							<li><a href="#">about us</a></li>
+							<li><a href="#">contact us</a></li>
+							<li><a href="#">support</a></li>
+						</ul>
+						<ul class="columns">
+							<li><a href="#">our feed</a></li>
+							<li><a href="#">terms and conditions</a></li>
+							<li><a href="#">our privacy</a></li>
+						</ul>
+						<ul class="columns">
+							<li><a href="#">join us</a></li>
+							<li><a href="#">live support</a></li>
+						</ul>
+					</div>
+					<div class="payment">
+						<h3>Payment Methods</h3>
+						<div class="credit-icons">
+							<span>
+								<i class="fa fa-cc-amex" style="font-size:20px;"></i>
+								<i class="fa fa-cc-discover" style="font-size:20px;"></i>
+								<i class="fa fa-cc-visa" style="font-size:20px;"></i>
+								<i class="fa fa-cc-mastercard" style="font-size:20px;"></i>
+								<i class="fa fa-cc-paypal" style="font-size:20px;"></i>
+							</span>
+						</div>
+					</div>	
+				</div>
+		</div>		
 	</footer>
 </body>
 </html>

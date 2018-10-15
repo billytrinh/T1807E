@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="js/data.json"></script>
-	<script type="text/javascript" src="js/get-products.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
 </head>
 <body>
         <header>
@@ -47,24 +47,27 @@
         <section class="section register">
             <div class="container">
                 <img src="images/register/avatar.png">
-                <form method="post-get" action="#" name="form-data" class="form-register" enctype="multipart/form-data">
-                    <label for="email">Email</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <label for="email">Họ và Tên</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <label for="email">Số điện thoại</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <label for="email">Mật khẩu</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <label for="email">Nhập lại mật khẩu</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <label for="email">Mã giới thiệu</label><br>
-                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="type your email here"><br>
-                    <input type="checkbox" name="size" id="checkbox1">
-                    <label for="checkbox1">Small</label><br>
-                    <label class="submit" for="email"><a href="#"><img src="images/register/register.png"></a></label>
+                <form method="post-get" action="#" name="form-register" class="form-register" enctype="multipart/form-data">
+                    <label for="email">Email*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="Nhập email"><br>
+                    <label for="name">Họ và Tên*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="text" id="name" placeholder="Nhập Họ và Tên"><br>
+                    <label for="phone">Số điện thoại*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="number" id="phone" placeholder="Nhập Số điện thoại"><br>
+                    <label for="password">Mật khẩu*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="password" id="password" placeholder="Nhập Mật khẩu"><br>
+                    <label for="password-re">Nhập lại mật khẩu*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="password" id="passwordre" placeholder="Nhập lại Mật khẩu"><br>
+                    <label for="code">Mã giới thiệu</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="text" id="code" placeholder="Nhập Mã giới thiệu"><br>
+                    <input type="checkbox" id="checkboxreg">
+                    <label style="font-size:12px; vertical-align: middle;" for="checkbox">Đồng ý về chính sách bảo mật và điều khoản sử dụng</label><br>
                 </form>
-                
+                <div id="form-error">
+                    
+                </div>
+                <button style="margin-bottom: 30px;" class="submit" onclick="checkForm()"> <img width="100%" height="100%" src="images/register/register.png"></button>
+                <a href="#"><p style="margin-bottom: 100px;">Trở lại đăng nhập</p></a>
             </div>
         </section>
         <section class="section">
