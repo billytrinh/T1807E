@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Lato', san-serif;
@@ -97,10 +98,10 @@ li{
 }
 
 /*Products*/
-.products{
-	float: right;
-	width: 870px;
-	margin-bottom: 120px;
+.products {
+    float: right;
+    width: 77%;
+    margin-bottom: 120px;
 }
 
 
@@ -120,19 +121,19 @@ li{
 }
 
 .products .rows .item{
-	float:left;
-	width: calc(100% / 3 - 30px);
+	float: left;
+	width: calc(100% / 3);
 	text-align: center;
-	padding: 0px 15px;
+	padding: 0 15px;
 	margin-bottom: 30px;
 	height: 340px;
 	position: relative;
-	transition: all 800ms ease-out;
-	-webkit-transition: all 800ms ease-out;
+	transition: width 800ms ease-out;
+	-webkit-transition: width 800ms ease-out;
 }
 
 .products .rows .item .item-content{
-	background: #fff;
+	/*background: #fff;
 	float:left;
 	width: 100%;
 	height: calc(100% - 40px);
@@ -142,6 +143,18 @@ li{
 	/*animation-name: example;
     animation-duration: 20s;
     animation-iteration-count: infinite;*/
+    background: #fff;
+	float: left;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	animation-name: example;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	text-align: center;
+	padding: 20px 15px 15px 20px;
 }
 
 .products .rows .item figcaption{
@@ -208,6 +221,8 @@ li{
 .color-icon{
 	padding: 20px 1px 30px 1px
 }
+
+
 /*Menu trai*/
 .menu{
 	float: left;
@@ -479,8 +494,53 @@ li{
 
 /*Slide*/
 .slide{
-	text-align: center;
+	background-image: url("../img/slide.png");
+	background-size: cover;
+	width: auto;
+	height: 650px;
+	position: relative
 }
+.slide .scroll{
+	float: left;
+	height: 188px;
+	width: 100px;
+	padding-left: 90px
+}
+.slide .scroll .dot1{
+	float: left;
+	height: 17px;
+	width: 10px;
+	border-radius: 4px;
+	background-color: #fff;
+}
+.slide .scroll .dot2{
+	float: left;
+	height: 36px;
+	width: 10px;
+	border-radius: 4px;
+	background-color: #ff5912;
+}
+.slide .text{
+	float: left;
+	height: 188px;
+}
+.slide .text .tittle{
+	float: left;
+	color: #ff5912;
+	font-weight: 900
+}
+.slide .text .pack{
+	float: left;
+	color: #3c4751;
+	font-weight: 400
+}
+.slide .text .desciption{
+	float: left;
+	color: #495662;
+	font-weight: 100
+}
+
+
 /*Page*/
 .page {
 	text-align: center;
@@ -488,7 +548,7 @@ li{
 	height: 60px
 }
 .page .node{
-	/*float: left;*/
+	float: left;
 	width: 8px;
 	height: 8px;
 	border-radius: 100%;
@@ -527,8 +587,173 @@ li{
 	height: 100px
 }
 
+/*Best Sales*/
+.best_sale{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.best_sale .item{
+	float: left;
+	width: calc(100% / 3 - 30px);
+	margin: 0px 15px;
+	height: 160px;
+}
+
+.best_sale .item .thumb{
+	float: left;
+	padding: 35px 28px 0 28px;
+}
+
+.best_sale .item .caption{
+	float: left;
+	text-align: center;
+	padding: 45px 28px 50px 28px
+
+}
+.best_sale .item .caption .name{
+	float: left;
+	color: #34404b;
+	font-weight: 600
+}
+.best_sale .item .caption .pk1{
+	color: #ff5912
+}
+.best_sale .item .caption .pk1:hover img{
+	
+}
+
+.signup{
+	width: 45%;
+	text-align: center;
+	margin: 0 auto;
+}
+.signup img{
+	width: 100px;
+}
+.signup label{
+	float: left;
+	color: #7b7b7b;
+
+
+}
+.signup input{
+	border: 2px solid #9d9d9d;
+	border-radius: 6px;
+	width: 100%;
+	height: 50px;
+
+}
+
+.signup .checkcustom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.signup .checkcustom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.signup .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    border-radius: 100%;
+    border :2px solid #5ea2eb;
+    background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.signup .checkcustom:hover input ~ .checkmark {
+    
+}
+
+/* When the checkbox is checked, add a blue background */
+.signup .checkcustom input:checked ~ .checkmark {
+	position: absolute;
+    top: 2px;
+    left: 2px;
+	height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: #1860ad;
+    border :2px solid #5ea2eb;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.signup .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+/* Show the checkmark when checked */
+.signup .checkcustom input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.signup .checkcustom .checkmark:after {
+    display: none;
+    
+}
+.signup .submit {
+    width: 30%;
+    height: 60px;
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #3d46a6, #2c8aca);
+    color: #fff;
+}
+.signup .submit:hover {
+    cursor: pointer;
+}
+.signup a{
+    color: #334b91;
+    text-decoration-line: none;
+}
+
+.signup .error {
+	float: left;
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+.signup .error_pass {
+	float: left;
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+
 
 /*Modify Margin*/
+.m-t-10{
+	margin-top: 10px;
+}
+.m-t-28{
+	margin-top: 28px;
+}
+.m-t-30{
+	margin-top: 30px;
+}
+.m-t-40{
+	margin-top: 40px;
+}
 .m-t-50{
 	margin-top: 50px;
 }
@@ -541,7 +766,16 @@ li{
 .m-t-120{
 	margin-top: 120px;
 }
+.m-t-230{
+	margin-top: 230px;
+}
 
+.m-b-10{
+	margin-bottom: 10px;
+}
+.m-b-30{
+	margin-bottom: 30px;
+}
 .m-b-50{
 	margin-bottom: 50px;
 }
@@ -551,21 +785,16 @@ li{
 .m-b-118{
 	margin-bottom: 118px;
 }
-.m-l-15{ margin-left: 15px }
-.m-l-20{
-	margin-left: 20px;
-}
 
+.m-l-3{ margin-left: 3px }
+.m-l-15{ margin-left: 15px }
+.m-l-20{ margin-left: 20px }
+
+.m-r-3{ margin-right: 3px }
 .m-r-15{ margin-right: 15px }
-.m-r-160{
-	margin-right: 160px;
-}
-.m-r-240{
-	margin-right: 240px;
-}
-.m-r-260{
-	margin-right: 260px;
-}
+.m-r-160{ margin-right: 160px }
+.m-r-240{ margin-right: 240px }
+.m-r-260{ margin-right: 260px }
 
 /*Modify padding*/
 .p-b-30{
@@ -576,6 +805,7 @@ li{
 .p-t-10{ padding-top: 10px }
 .p-t-23{ padding-top: 23px }
 .p-t-33{ padding-top: 33px }
+.p-t-230{ padding-top: 230px }
 
 /*Modify Float*/
 .fl-left{
@@ -601,10 +831,13 @@ li{
 /*Modify Font-size*/
 .f-s-12{ font-size: 12px }
 .f-s-16{ font-size: 16px }
+.f-s-18{ font-size: 18px }
 .f-s-22{ font-size: 22px }
 .f-s-28{ font-size: 28px }
 .f-s-32{ font-size: 32px }
 .f-s-36{ font-size: 36px }
+.f-s-45{ font-size: 45px }
+.f-s-52{ font-size: 52px }
 
 /*Modify font-weight*/
 .f-w-100{ font-weight: 100 }
@@ -616,3 +849,106 @@ li{
 .f-w-700{ font-weight: 700 }
 .f-w-800{ font-weight: 800 }
 .f-w-900{ font-weight: 900 }
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 300px){
+	body{
+		background: green;
+	}
+	.menu{
+		display: none;
+	}
+	.container{width: 100%;}
+	.products{width: 100%;}
+	.products .rows .item{
+		width: calc(100% / 2);
+	}
+}
+
+
+@media only screen and (max-width: 900px) and (min-width: 769px){
+	.container{
+		width: 800px;
+	}
+
+	/*Menu trai*/
+	.menu{
+		float: left;
+		width: 220px;
+		font-family: 'Lato', san-serif
+	}
+	.menu .type{
+		float: left;
+		width: calc(100% - 20px);
+		padding-left: 40px;
+		margin-bottom: 20px
+	}
+	.menu .type span:hover{
+		color: #ff5912;
+		cursor: pointer
+	}
+	.menu .filter{
+		float: left;
+		width: calc(100% - 20px);
+		padding-left: 40px;
+		margin-bottom: 20px
+	}
+	.menu .check{
+		float: left;
+		width: calc(100% - 20px);
+		padding-left: 40px;
+		margin-bottom: 20px
+	}
+	.menu .check p{
+		line-height: 3
+	}
+	.menu .check label{
+		font-size: 16px;
+		font-weight: 600;
+		cursor: pointer
+	}
+	.menu .check label:before{
+		content: " ";
+		width: 6px;
+		height: 6px;
+		border:5px solid #edf0f2;
+		background: #edf0f2;
+		display: inline-block;
+		margin-right: 15px
+	}
+
+
+	/*khi input checked thì lấy thuộc tính input thêm vào label*/
+	/*Chữ ko vàng*/
+	.menu .check input[type="checkbox"]:checked + label {   
+	    color: #ff5912
+	}
+	/*Chữ vàng nhưng checkbox ko đc check*/
+	.menu .check input[type="checkbox"]:checked + label:before {
+	    border:5px solid #ff5912
+	}
+	.main{
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 90px;
+		color: #ff7013;
+	}
+	.medium{
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 50px;
+	}
+	.small{
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 50px;
+	}
+
+
+	.products{width: 100%;}
+	.products .rows .item{
+		width: calc(100% / 4);
+	}
+}
