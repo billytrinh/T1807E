@@ -679,6 +679,7 @@ footer
 	.newsletter
 	{
 		display: block;
+		text-align: center;
 	}
 	.email-typing
 	{
