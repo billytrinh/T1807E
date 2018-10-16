@@ -525,6 +525,12 @@ footer
 	vertical-align: middle;
 	border: none;
 	padding-left: auto;
+	background: #fff;
+}
+.newsletter .email-typing span
+{
+	padding-top: 12px;
+	float:left;
 }
 .email-typing .email
 {
@@ -677,10 +683,18 @@ footer
 	list-style-type: none;
 	font-size: 14px;
 }
-@media only screen and (max-width: 768px) and (min-width: 300px){
-	.container{width: 100%;}
-	.products{width: 100%;}
-	.products .rows .item{
+@media only screen and (max-width: 1200px) and (min-width: 300px)
+{
+	.container
+	{
+		width: 100%;
+	}
+	.products
+	{
+		width: 100%;
+	}
+	.products .rows .item
+	{
 		width: calc(100% / 2 - 30px);
 	}
 	.header-bottom
@@ -695,7 +709,7 @@ footer
 	}
 	.header-bottom .icon-header a
 	{
-		padding: 0 30px;
+		padding: 0 3%;
 	}
 	.header-bottom .icon-header a i
 	{
@@ -726,7 +740,9 @@ footer
 	}
 	.footer .container
 	{
-		width: 50%; margin: 0 auto;
+		width: 50%; 
+		margin: 0 auto;
+		padding-left: 7%;
 	}
 	.footer .container div
 	{
@@ -750,9 +766,66 @@ footer
 	{
 		position: relative;
 	}
+	.newsletter
+	{
+		text-align: center;
+	}
 	.newsletter .email-typing
 	{
 		padding: 0;
 		padding-top: 20px;
+	}
+	.newsletter span
+	{
+		display: block;
+	}
+	.newsletter .email-typing .submit
+	{
+		float: none;
+	}
+	.newsletter .email-typing span
+	{
+		float: none;
+	}
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px)
+{
+	.products .rows .item
+	{
+		width: calc(100% / 3 - 30px);
+	}
+	.header-bottom .icon-header a
+	{
+		padding: 0 8%;
+	}
+	footer .container
+	{
+		padding-left: 13%;
+	}
+}
+@media only screen and (max-width: 1200px) and (min-width: 1000px)
+{
+	.newsletter
+	{
+		text-align: left;
+	}
+	.newsletter .email-typing
+	{
+		padding: 0;
+		padding-top: 20px;
+	}
+	.newsletter span
+	{
+		display: inline-block;
+	}
+	.newsletter .email-typing .submit
+	{
+		float: left;
+	}
+	.newsletter .email-typing span
+	{
+		padding-left: 20%;
+		padding-right: 15%;
+		float: left;
 	}
 }
