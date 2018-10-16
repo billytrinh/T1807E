@@ -1,0 +1,15 @@
+body{
+
+}
+.container{
+	width: 800px;
+}
+.left-column{
+	display: none;
+}
+.products{
+	width: 100%;
+}
+.products .rows .item{
+	width: calc(100% / 4);
+}

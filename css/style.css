@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Lato', sans-serif;
@@ -12,6 +13,9 @@ body{
 a{
 	text-decoration: none;
 }
+/*img{
+	max-width: 100%;
+}*/
 .hidden{
 	display:none;
 }
@@ -44,7 +48,8 @@ a{
 }
 .products .rows .item{
 	float:left;
-	width: calc(100% / 3 - 30px);
+	/*width: calc(100% / 3 - 30px);*/
+	width: calc(100% / 3);
 	text-align: center;
 	padding: 0px 15px;
 	margin-bottom: 30px;
@@ -55,7 +60,8 @@ a{
 	background: #fff;
 	float:left;
 	width: 100%;
-	height: calc(100% - 40px);
+	height: 100%;
+	/*height: calc(100% - 40px);*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: hidden
@@ -65,20 +71,38 @@ a{
 	font-weight: 600;
 	line-height: 75px;
 }
-.products .rows .item:hover img{
+.products .rows .item:hover .item-image{
 	height: 90px;
 	width: auto;
 	transition: all 250ms ease-out;
 	-webkit-transition: all 250ms ease-out;
 }
-.products .rows .item:hover .price{
+.products .rows .item:hover .price-box{
 	opacity: 0;
 	height: 0px;
+	margin-bottom: 0px;
 	transition: all 250ms ease-out;
 	-webkit-transition: all 250ms ease-out;
 }
 .products .rows .item:hover figcaption{
 	color: #ff5912;
+}
+.over-flow .size{
+	padding-bottom: 30px;
+}
+.over-flow .size-icon{
+	padding-bottom: 30px;
+	margin: 0px 45px;
+	border-bottom: 0.1px solid #f4f6f8;
+}
+.over-flow .size-icon img{
+	padding: 0px 3px;
+}
+.over-flow .cart-icon{
+	padding-top: 30px;
+}
+.over-flow .cart-icon img{
+	padding: 0px 12px;
 }
 /*.products .rows .item .show-hover figcaption{
 	font-size: 18px;
@@ -244,7 +268,7 @@ h2{
 .letter .form-data{
 	float: right;
 }
-.email{
+.email-letter{
 	border:none;
 	padding-right: 160px;
 }
@@ -277,6 +301,9 @@ h2{
 	margin-bottom: 120px;
 	padding: 55px 0px;
 }
+.logo{
+	float: left;
+}
 .header-bottom .left{
 	float:left;
 	font-size: 18px;
@@ -296,28 +323,28 @@ h2{
 
 /*Footer*/
 .section-footer{
-	width: 1530px;
-	margin: 0px auto;
-	float: left;
-	width: calc(100% - 360px);
+	width: 100%;
+	/*margin: 0px auto;*/
 	background: #fff;
-	padding: 85px 180px;
+	float: left;
 }
-.bot-ele{
+.section-footer .bot-ele{
 	float:left;
 	padding-right: 120px;
 }
-.payment{
+.section-footer .payment{
 	padding:0px;
 	text-align: center;
 }
-.bot-menu{
+.section-footer .bot-menu{
 	list-style: disc;
 }
 .section-footer .container .bot-ele .bot-menu:hover{
 	color: #ff5922;
 }
-
+.section-footer .bot-ele li{
+	font-size: 14px;
+}
 /*Page 2*/
 .body-1{
 	width: 1170px;
@@ -592,4 +619,61 @@ h2{
 	color: #ff5912;
 	font-weight: 600;
 	background: none;
+}
+
+/*REGISTER*/
+/*.form .container{
+	text-align: center;
+}*/
+.container-reg{
+	width: 810px;
+	margin: 0px auto;
+}
+.form-group{
+	padding-bottom: 30px;
+	color: #7b7b7b;
+}
+.form-group label{
+	font-size: 45px;
+	font-weight: 400;
+}
+.form-group input{
+	width: 810px;
+	height: 90px;
+	border: 1px solid #7b7b7b;
+	border-radius: 10px;
+}
+.register-cen{
+	width: 100%;
+	text-align: center;
+	font-size: 35px;
+}
+.checkbox-reg label{
+	cursor: pointer;
+}
+.checkbox-reg label:before{
+	content: " ";
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	border: 1px solid #7b7b7b;
+	display: inline-block;
+}
+.checkbox-reg input[type="checkbox"]:checked + label:before{
+	box-sizing: border-box;
+	border: 5px solid white;
+	background: red;
+}
+.dang-ky{
+	width: 360px;
+	height: 100px;
+	background: #2e7fc4;
+	color: white;
+	font-size: 45px;
+	border-radius: 20px;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+.tro-lai{
+	margin-bottom: 90px;
 }
