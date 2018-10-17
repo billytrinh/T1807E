@@ -5,7 +5,7 @@ function get_product_view(products,itemnumber,productlist)
 		html+='<div class="item '+itemnumber+'">';
 		html+='	<div class="item-content">';
 		html+='	<figure>';
-		html+='		<img width=80% height=auto src="'+products[i].image+'"/>';
+		html+='		<img width=auto height=80% src="'+products[i].image+'"/>';
 		html+='		<figcaption>'+products[i].name+'</figcaption>';
 		html+='	</figure>';
 		html+='		<p class="price-box"><span class="price">'+products[i].price+'</span></p>';
@@ -46,7 +46,7 @@ function get_smaller_products(products)
 	for (var i = 0; i < products.length; i++) 
 	{
 		html+='<div class="item-3">';
-		html+='<img width="25%" height=auto src="'+products[i].image+'">';
+		html+='<img width="40%" height=auto src="'+products[i].image+'">';
 		html+='<div class="item-content">';
 		html+='	<p style="padding-bottom: 35px;">'+products[i].name+'</p> ';
 		html+='	<div class="no-hover">';

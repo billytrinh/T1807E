@@ -398,7 +398,6 @@ footer
 {
 	float: left;
 	width: 330px;
-	height: 100%;
 	margin-right: 70px;
 	text-align: center;
 }
@@ -437,7 +436,6 @@ footer
 {
 	float: left;
 	width: 615px;
-	height: 100%;
 	padding-left: 15px;
 }
 .section .related-product,.section .new-arrivals, .section .best-sales
@@ -569,7 +567,7 @@ footer
 	float: left;
 	height: 100%;
 	background: #fff;
-	width: 550px;
+	width: 57.3%;
 	margin-right: 15px;
 	padding: 0 60px;
 	vertical-align: middle;
@@ -579,7 +577,7 @@ footer
 	float: left;
 	height: 100%;
 	background: #fff;
-	width: 350px;
+	width: 30%;
 	margin-left: 15px;
 	padding: 0 60px;
 }
@@ -787,6 +785,38 @@ footer
 	{
 		float: none;
 	}
+	.section-big-product
+	{
+		height: 100%;
+	}
+	.section-big-product .container
+	{
+		position: relative;
+		width: 100%;
+	}
+	.section-big-product .container .big-product, .section-big-product .container .big-product .product-img , .section-big-product .container .big-product .detail
+	{
+		width: 100%;
+	}
+	.section-big-product .container .big-product .product-img 
+	{
+		margin: 0;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	.section-big-product .container .big-product .detail h3
+	{
+		text-align: center;
+	}
+	.description
+	{
+		text-align: center;
+	}
+	.product-page .products .rows .item
+	{
+		width: calc(100% / 2 - 30px);
+	}
+	
 }
 @media only screen and (max-width: 1200px) and (min-width: 768px)
 {
