@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Page 4</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/> -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/>
+	<!-- <script type="text/javascript" src="js/data.json"></script> -->
+</head>
+<body>
+	<header>
+		<section class="header-top">
+			<div class="container">
+				<img class="left" src="images/mailicon.png"/>
+				<p class="left">info@shopy.com</p>
+				<img class="left" src="images/phoneicon.png"/>
+				<p class="left">996 - 5553 - 453</p>
+				<img class="right" src="images/instaicon.png"/>
+				<img class="right" src="images/ggicon.png"/>
+				<img class="right" src="images/twittericon.png"/>
+				<img class="right" src="images/fbicon.png"/>
+			</div>
+
+		</section>
+		<section style="margin-bottom:0" class="header-bottom">
+			<div class="container">
+				
+				<a class="logo" href="#"><img src="images/logo.png"/></a>
+				<p class="menu-list">
+					<a class ="menu-ele left" href="#">Home</a>
+					<a class ="menu-ele left" href="#">Products</a>
+					<a class ="menu-ele left" href="#">Hot Deals</a>
+					<a class ="menu-ele left" href="#">About</a>
+					<a class ="menu-ele left" href="#">Contact</a>
+					<a class="right" href="#"><img src="images/cardicon.png"/></a>
+					<a class="right" href="#"><img src="images/usericon.png"/></a>
+					<a class="right" href="#"><img src="images/searchicon.png"/></a>
+				</p>
+				<div class="menu-mobile">
+					
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<section class="section form">
+		<!-- <div class="container"> -->
+			<div class="container-reg">
+				<div class="register-cen"><img  src="images/registericon.png"/></div>
+				<form method="post-get" action="#" name="form_data" class="register" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="email">Email</label><br>
+						<input type="email" name="email" class="email" placeholder="Email"/>
+						<p style="display: none;color:red">Chưa nhập email</p>
+					</div>
+					<div class="form-group">
+						<label for="ho_ten">Họ và tên</label><br>
+						<input type="text" name="ho_ten" pattern="[A-Za-z]" class="ho_ten" placeholder="Họ và tên"/>	
+						<p style="display: none;color:red">Chưa nhập họ và tên</p>
+					</div>
+					<div class="form-group">
+						<label for="dt">Số điện thoại</label><br>
+						<input type="tel" name="dt" pattern="[0-9]+" class="dt" placeholder="Số điện thoại"/>
+						<p style="display: none;color:red">Chưa nhập số điện thoại</p>						
+					</div>
+					<div class="form-group">
+						<label for="password">Mật khẩu</label><br>
+						<input type="password" name="password" class="password" placeholder="Mật khẩu"/>			
+					</div>
+					<div class="form-group">
+						<label for="re_password">Nhập lại mật khẩu</label><br>
+						<input type="password" name="re_password" class="re-password" placeholder="Nhập lại mật khẩu"/>			
+					</div>
+					<div class="form-group">
+						<label for="ma_gt">Mã giới thiệu</label><br>
+						<input type="text" name="ma_gt" class="ma-gt"placeholder="Mã giới thiệu"/>			
+					</div>
+					<div class="checkbox-reg">
+						<input class="checkbox-icon hidden" type="checkbox" name="checkbox_reg" id="checkbox_reg">
+						<label for="checkbox_reg">Đồng ý về chính sách bảo mật<br> và điều khoản sử dụng</label>
+					</div>
+					<div class="register-cen">
+						<button type="submit" class="dang-ky" onclick="return checkForm()">Đăng ký</button>
+					</div>
+					<div class="tro-lai">
+						<a href="#">Trở lại đăng nhập</a>
+					</div>
+				</form>
+				
+			</div>
+		<!-- </div> -->
+		
+		<!-- js -->
+		<script type="text/javascript">
+		function checkForm() {
+			var email = document.forms["form_data"].email.value;
+			var password = document.forms["form_data"].password.value;
+			var ho_ten = document.forms["form_data"].ho_ten.value;
+			var dt = document.forms["form_data"].dt.value;
+			var re_password = document.forms["form_data"].re_password.value;
+			var ma_gt = document.forms["form_data"].ma_gt.value;
+
+			if(email.length >0 && password.length >= 8){
+				return true;
+			}else{
+				if(email.length <=0){
+					document.forms["form_data"].email.nextElementSibling.style.display = "block";
+				}
+				if(email.length >0){
+					if(document.forms["form_data"].email.nextElementSibling){
+						document.forms["form_data"].email.nextElementSibling.remove();
+					}
+				}
+				
+				if(ho_ten.length <=0){
+					document.forms["form_data"].ho_ten.nextElementSibling.style.display = "block";
+				}
+				if(ho_ten.length >0){
+					if(document.forms["form_data"].ho_ten.nextElementSibling){
+						document.forms["form_data"].ho_ten.nextElementSibling.remove();
+					}
+				}
+				
+				if(dt.length <=0){
+					document.forms["form_data"].dt.nextElementSibling.style.display = "block";
+				}
+				if(dt.length >0){
+					if(document.forms["form_data"].dt.nextElementSibling){
+						document.forms["form_data"].dt.nextElementSibling.remove();
+					}
+				}
+				
+				if(password.length >=8) {
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+				}
+				if(password.length < 8 && password.length > 0){
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">Chưa đủ 8 ký tự</p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+
+				}
+				if(password.length <=0) {
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+					
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">Chưa nhập mật khẩu</p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+				}
+				if(re_password != password) {
+					if(document.forms["form_data"].re_password.nextElementSibling){
+						document.forms["form_data"].re_password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].re_password.outerHTML;
+					textInput += '<p style="color:red">Khác mật khẩu đã nhập</p>';
+					document.forms["form_data"].re_password.outerHTML = textInput;
+				}
+				if(re_password == password) {
+					if(document.forms["form_data"].re_password.nextElementSibling){
+						document.forms["form_data"].re_password.nextElementSibling.remove();
+					}
+				}
+				
+				
+			}
+			
+			return false;
+		}
+	</script>
+			
+	</section>
+	<footer class="section-footer">
+		<div class="container">
+			<div class="bot-ele logo-bot">
+				<a href="#"><img src="images/logo.png"/></a>
+				<p>shopy c 2015 . your copy right here</p>
+			</div>
+			<ul class="bot-ele">
+				<li class="bot-menu"><a class="bot-menu" href="#">about us </a></li>
+				<li class="bot-menu"><a class="bot-menu"href="#">contact us</a></li>
+				<li class="bot-menu"><a class="bot-menu"href="#">support </a></li>
+			</ul>
+			<ul class="bot-ele">
+				<li class="bot-menu"><a class="bot-menu"href="#">our feed </a></li>
+				<li class="bot-menu"><a class="bot-menu"href="#">terms and conditions </a></li>
+				<li class="bot-menu"><a class="bot-menu"href="#">our privacy </a></li>
+			</ul>
+			<ul class="bot-ele">
+				<li class="bot-menu"><a class="bot-menu"href="#"> join us </a></li>
+				<li class="bot-menu"><a class="bot-menu"href="#">live support </a></li>
+			</ul>
+			<div class="bot-ele payment">
+				<figure>
+					<figcaption>Payment Methods</figcaption>
+					<img src="images/payment.png"/>
+				</figure>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
