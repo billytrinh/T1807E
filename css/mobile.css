@@ -1,0 +1,38 @@
+body{
+
+}
+.container{
+	width: 100%;
+}
+.left-column{
+	display: none;
+}
+.products{
+	width: 100%;
+}
+.products .rows .item{
+	width: calc(100% / 2);
+}
+.header-top{
+	display: none;
+}
+.header-bottom .menu-list .menu-ele{
+	display: none;
+}
+
+.header-bottom .menu-list .right{
+	display: none;
+}
+.header-bottom{
+	text-align: center;
+}
+.logo{
+	float: none;
+}
+.letter{
+	width: 100%;
+	text-align: center;
+}
+.section-footer{
+	width: 100%;
+}

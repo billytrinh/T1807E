@@ -2,9 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Page 1</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/>
 	<script type="text/javascript" src="js/data.json"></script>
 </head>
 <body>
@@ -25,7 +28,7 @@
 		<section class="header-bottom">
 			<div class="container">
 				<p class="menu-list">
-					<a class="logo left" href="#"><img src="images/logo.png"/></a>
+					<a class="logo" href="#"><img src="images/logo.png"/></a>
 					<a class ="menu-ele left" href="#">Home</a>
 					<a class ="menu-ele left" href="#">Products</a>
 					<a class ="menu-ele left" href="#">Hot Deals</a>
@@ -35,6 +38,9 @@
 					<a class="right" href="#"><img src="images/usericon.png"/></a>
 					<a class="right" href="#"><img src="images/searchicon.png"/></a>
 				</p>
+				<div class="menu-mobile">
+					
+				</div>
 			</div>
 		</section>
 	</header>
@@ -117,9 +123,9 @@
 					<h2 class ="letter-ele left">NEWS LETTER</h2>
 					<p class ="letter-ele left">join us now to get all news and special offers</p>
 
-					<form method="post-get" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
-						<label class="" for="email"><img src="images/mailicon.png"/></label>
-						<input class="email" type="email" id="email" name="email" placeholder="type your email here"/>
+					<form method="post" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
+						<label class="" for="email_letter"><img src="images/mailicon.png"/></label>
+						<input class="email-letter" type="email" id="email_letter" name="email_letter" placeholder="type your email here"/>
 						<button class="sumit-email" type="submit">join us</button>
 					</form>
 					
@@ -160,28 +166,3 @@
 	<script type="text/javascript" src="js/nguyen.js"></script>
 </body>
 </html>
-
-
- 					<div class="item">
-						<div class="item-content">
-							<figure>
-								<img width="159px" height="214px" src="images/image3.png"/>
-								<figcaption>Reebok Track Jacket</figcaption>
-							</figure>
-							<p class="price-box"><span class="price">100$</span></p>
-							<div class="over-flow">
-								<p class="size">sizes : s - m - l -xl</p>
-								<div class="size-icon">
-									<img src="images/dot1.png"/>
-									<img src="images/dot2.png"/>
-									<img src="images/dot3.png"/>
-									<img src="images/dot4.png"/>
-								</div>
-								<div class="card-icon">
-									<img src="images/cau.png"/>
-									<img src="images/xe.png"/>
-									<img src="images/tim.png"/>
-								</div>
-							</div>
-						</div>
-					</div> 
