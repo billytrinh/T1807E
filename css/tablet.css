@@ -7,7 +7,6 @@ body{
 .left-column{
 	display: none;
 }
-<<<<<<< HEAD
 .header-top{
 	display: none;
 }
@@ -24,8 +23,6 @@ body{
 .header-bottom{
 	text-align: center;
 }
-=======
->>>>>>> 70d01189795af00515d8504b4040c6fd1a0340e1
 .products{
 	width: 100%;
 }
@@ -49,7 +46,3 @@ body{
 }
 .name-coak{
 	font-size: 45px;
-=======
-	width: calc(100% / 4);
->>>>>>> 70d01189795af00515d8504b4040c6fd1a0340e1
-}
