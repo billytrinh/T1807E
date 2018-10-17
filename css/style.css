@@ -486,8 +486,30 @@ footer
 }
 .order
 {
-	padding-top: 40px;
+	float: left;
+	margin-top: 71px;
+}
+.order .order-icons a
+{
+	float: left;
+	padding-top: 18px;
+}
+.order .order-icons a img
+{
 	vertical-align: middle;
+}
+.order-icons button
+{
+	float: right;
+	height: 50px;
+	width: 140px;
+	background-color: #ff5912;
+	margin-left: 25px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	border-radius: 25px;
+	margin-top: 55px;
 }
 .color-orange
 {
@@ -729,12 +751,17 @@ footer
 {
 	margin: 30px 0;
 	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
 }
 #form-error ul, #form-error li
 {
 	color: red;
 	list-style-type: none;
 	font-size: 14px;
+}
+#checkboxreg
+{
+	
 }
 @media only screen and (max-width: 1200px) and (min-width: 300px)
 {
@@ -867,6 +894,7 @@ footer
 	.description
 	{
 		text-align: center;
+		height: auto;
 	}
 	.product-page .products .rows .item
 	{
@@ -902,6 +930,10 @@ footer
 	.right-adv
 	{
 		height: 100%;
+	}
+	.order
+	{
+		height: auto;
 	}
 }
 @media only screen and (max-width: 1200px) and (min-width: 768px)
