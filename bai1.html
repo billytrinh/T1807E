@@ -4,12 +4,14 @@
 	<title>Home Page</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>		
+	<link rel="stylesheet"   href="css/tablet.css">
 	<script type="text/javascript" src="js/data1.json"></script>
+
 </head>
 <body>
 	<header>
-		<div class="section header-top">
+		<div class="section header-top background-white">
 			<div class="container">
 				<div class="left-header-top">
 					<a href="#"><img src="images/mail.png"></a>
@@ -26,7 +28,7 @@
 			</div>
 		</div>
 
-		<div class="section header-bottom">
+		<div class="section header-bottom background-white">
 			<div class="container">
 				<div class="left-header-bottom">
 					<p class = "logo-top">
@@ -50,85 +52,90 @@
 		</div>
 	</header>
 
-	<div class="container">
-		<div class="left-page">
-			<div class="Bg">
-				<div class="section-title">Categories</div>
-					<div class="filters-list"><a href="#">Man</a></div>
-					<div class="filters-list"><a href="#">Women</a></div>
-					<div class="filters-list"><a href="#">Chirdrenss</a></div>
-					<div class="filters-list"><a href="#">Hot Deals</a></div>
+	<div class="section">
+		<div class="container">
+			<div class="left-page">
+				<div class="Bg">
+					<div class="section-title">Categories</div>
+						<div class="filters-list"><a href="#">Man</a></div>
+						<div class="filters-list"><a href="#">Women</a></div>
+						<div class="filters-list"><a href="#">Chirdrenss</a></div>
+						<div class="filters-list"><a href="#">Hot Deals</a></div>
+				</div>
+
+				<div class="Bg">
+					<div class="section-title">Price Filtter</div>
+				</div>
+
+				<div class="Bg">
+					<div class="section-title">Sizes</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox1">
+						<label for="checkbox1">Small</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox2">
+						<label for="checkbox2">Medium</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox3">
+						<label for="checkbox3">Large</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox4">
+						<label for="checkbox4">X large</label>
+					</div>
+				</div>
+				<div class="Bg">
+					<div class="section-title">Brands</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox1b">
+						<label for="checkbox1b">Reebok</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox2b">
+						<label for="checkbox2b">Adidas</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox3b">
+						<label for="checkbox3b">Nike</label>
+					</div>
+					<div class="filters-list">
+						<input class="hidden" type="checkbox" name="size" id="checkbox4b">
+						<label for="checkbox4b">Active</label>
+					</div>
+				</div>
 			</div>
 
-			<div class="Bg">
-				<div class="section-title">Price Filtter</div>
-			</div>
-
-			<div class="Bg">
-				<div class="section-title">Sizes</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox1">
-					<label for="checkbox1">Small</label>
+			<div class="right-page">
+				<div class="right-page-products">
+					<div class="rows" id="product_list" ></div>
 				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox2">
-					<label for="checkbox2">Medium</label>
+				<div class="dots">
+					<img src="images/dots.png">
 				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox3">
-					<label for="checkbox3">Large</label>
-				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox4">
-					<label for="checkbox4">X large</label>
-				</div>
-			</div>
-			<div class="Bg">
-				<div class="section-title">Brands</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox1b">
-					<label for="checkbox1b">Reebok</label>
-				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox2b">
-					<label for="checkbox2b">Adidas</label>
-				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox3b">
-					<label for="checkbox3b">Nike</label>
-				</div>
-				<div class="filters-list">
-					<input class="hidden" type="checkbox" name="size" id="checkbox4b">
-					<label for="checkbox4b">Active</label>
-				</div>
-			</div>
-		</div>
-
-		<div class="right-page">
-			<div class="right-page-products">
-				<div class="rows" id="product_list" ></div>
-			</div>
-			<div class="dots">
-				<img src="images/dots.png">
 			</div>
 		</div>
 	</div>
 
-	<div class="temp"></div>	
-	<div class="container">
-		<div class="content4">
-			<a href="#"><div class="news-letter">NEWS LETTER</div></a>
-			<div class="join-us-now"><a href="#">join us now to get all news and special offers</a> </div>
-			<div class="type-mail">
-				<a href="#"><img class="img-mail" src="images/mail.png"></a>
-				<span class="type-mail-here"><a href="#">type your mail here</a></span>
+	<div class="temp"></div>
+
+	<div class="section">	
+		<div class="container">
+			<div class="content4">
+				<a href="#"><div class="news-letter">NEWS LETTER</div></a>
+				<div class="join-us-now"><a href="#">join us now to get all news and special offers</a> </div>
+				<div class="type-mail">
+					<a href="#"><img class="img-mail" src="images/mail.png"></a>
+					<span class="type-mail-here"><a href="#">type your mail here</a></span>
+				</div>
+				<a href="#"><div class="join-us-buttom">join us</div></a>
 			</div>
-			<a href="#"><div class="join-us-buttom">join us</div></a>
 		</div>
 	</div>
 
 	<footer>
-		<div class="section footer-top">
+		<div class="section footer-top background-white">
 			<div class="container">
 				<div class="copy-right">
 					<a href="#"><img src="images/logo.png"></a>
@@ -156,6 +163,6 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/demo.js"></script>
+	<script type="text/javascript" src="js/demo1.js"></script>
 </body>
 </html>

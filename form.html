@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+	<script type="text/javascript" src="js/data1.json"></script>
+</head>
+<body>
+	<header>
+		<div class="section header-top background-white">
+			<div class="container">
+				<div class="left-header-top">
+					<a href="#"><img src="images/mail.png"></a>
+					<a href="#"><p class="content-header-top">info@shopy.com</p></a>
+					<a href="#"><img src="images/phone.png"></a>
+					<a href="#"><p class="content-header-top">453-5553-996</p></a>
+				</div>
+				<div class="right-header-top">
+					<a href="#"><img class="images-header" src="images/facebook.png"></a>
+					<a href="#"><img class="images-header" src="images/twitter.png"></a>
+					<a href="#"><img class="images-header" src="images/google.png"></a>
+					<a href="#"><img class="images-header" src="images/insta.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="section header-bottom background-white">
+			<div class="container">
+				<div class="left-header-bottom">
+					<p class = "logo-top">
+						<a href="#"><img  src="images/logo.png"/></a>
+					</p>
+					<div class="main">
+						<span><a href="#">Home</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span><a href="#">Products</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span><a href="#">Hot Deals</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span><a href="#">About</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span><a href="#">Contact</a></span>
+					</div>
+				</div>
+				<div class="right-header-bottom">
+					<a href="#"><img class="images-header" src="images/seach.png"></a>
+					<a href="#"><img class="images-header" src="images/people.png"></a>
+					<a href="#"><img class="images-header" src="images/product.png"></a>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<div class="section">
+		<div class="container">
+			<div class="avatar">
+				<img src="images/avatar.png">
+			</div>
+			<form name="form_data" class="form-data">
+				<div class="form-group">
+					<label class="form-content" for="email">Email</label></br>
+					<input type="email" id="email" name="email" class = "input-box" title="Nhập địa chỉ Email" >
+					<!-- <p style="display: none;color: red">Chưa nhập Email</p> -->
+				</div>
+				<div class="form-group">
+					<label class="form-content" for="fullname">Họ Và Tên</label></br>
+					<input type="text" id="fullname" name="fullname" class = "input-box" title="Nhâp họ và tên" >
+					<!-- <p style="display: none;color: red">Chưa nhập Họ Và Tên</p> -->
+				</div>
+				<div class="form-group">
+					<label class="form-content" for="phonenumber">Số Điên Thoại</label></br>
+					<input type="tel" id ="phonenumber" name="phonenumlabelber" class = "input-box" title="Nhập số điện thoại" >
+					<!-- <p style="display: none;color: red">Chưa nhập Số điện thoại</p> -->
+				</div>
+				<div class="form-group">
+					<label class="form-content" for="password">Mật Khẩu</label></br>
+					<input type="password" id =password name="password" class = "input-box" title="Nhập mật khẩu" >
+					<!-- <p style="display: none;color: red">Chưa nhập Mật khẩu</p> -->
+				</div>
+				<div class="form-group">
+					<label class="form-content" for="password-old">Nhập Lại Mật Khẩu</label></br>
+					<input type="password" id =password-old name="password-old" class = "input-box" title="Nhập lại mật khẩu">
+					<!-- <p style="display: none;color: red"></p> -->
+				</div>
+				<div class="form-group">
+					<label class="form-content" for="gift_code">Mã Gới Thiệu</label></br>
+					<input type="text" id =gift_code name="gift_code"  class = "input-box" title="Nhập mã giới thiệu" >
+					<!-- <p style="display: none;color: red">Chưa nhập Mã giới thiệu</p> -->
+				</div>
+			</form>
+			
+			<div class="check">
+				<input type="checkbox" name="checkbox" class="checkbox">Đồng ý về chính sách bảo mật
+				<div class="checkbox-content">và điều khoản sử dụng</div>
+			</div>
+			<div class="submit0">
+				<input type="submit" onclick="return checkForm()" class="submit" name="submit" value="Đăng ký">
+			</div>
+
+			<a href="#"><div class="back">Trở lại đăng nhập</div></a>
+		</div>
+	</div>
+	<footer>
+		<div class="section footer-top background-white">
+			<div class="container">
+				<div class="copy-right">
+					<a href="#"><img src="images/logo.png"></a>
+					<div class="content-copy-right"><a href="#">shopy c 2015 . your copy right here</a></div>
+				</div>
+
+				<div class="choose1">
+					<div><a href="#">about us</a></div>
+					<div><a href="#">contact us</a></div>
+					<div><a href="#">support</a></div>
+				</div>
+				<div class="choose2">
+					<div><a href="#">our feed</a></div>
+					<div><a href="#">terms and conditions</a></div>
+					<div><a href="#">our privacy</a></div>
+				</div>
+				<div class="choose3">
+					<div><a href="#">join us</a></div>
+					<div><a href="#">live support</a></div>
+				</div>
+				<div class="payment">
+					<div class="payment-methods">Payment Methods</div>
+					<a href="#"><img src="images/card.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+        function checkForm()
+        {
+            var email = document.getElementById("email").value;
+            var fullname = document.getElementById("fullname").value;
+            var phonenumber = document.getElementById("phonenumber").value;
+            var password = document.getElementById("password").value;
+            var password_old = document.getElementById("password-old").value;
+            var gift_code = document.getElementById("gift_code").value;
+            
+            if(email.length>0 && fullname.length>0 && phonenumber.length>0 && password.length>=6 && password_old==password &&gift_code.length>0)
+            {
+            	return true;
+            }
+            else
+            {
+            	if(email.length<=0)
+            	{
+	            	if(document.forms["form_data"].email.nextElementSibling){
+						document.forms["form_data"].email.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].email.outerHTML;
+	                textInput += '<p style="color:red">chưa nhập email </p>';
+	                document.forms["form_data"].email.outerHTML = textInput;
+	            }else
+	            {
+	            	if(document.forms["form_data"].email.nextElementSibling){
+						document.forms["form_data"].email.nextElementSibling.remove();
+					}
+				}
+
+				if(fullname.length<=0)
+            	{
+	            	if(document.forms["form_data"].fullname.nextElementSibling){
+						document.forms["form_data"].fullname.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].fullname.outerHTML;
+	                textInput += '<p style="color:red">chưa nhập họ và tên </p>';
+	                document.forms["form_data"].fullname.outerHTML = textInput;
+	            }else
+	            {
+	            	if(document.forms["form_data"].fullname.nextElementSibling){
+						document.forms["form_data"].fullname.nextElementSibling.remove();
+					}
+				}
+
+				if(phonenumber.length<=0)
+            	{
+	            	if(document.forms["form_data"].phonenumber.nextElementSibling){
+						document.forms["form_data"].phonenumber.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].phonenumber.outerHTML;
+	                textInput += '<p style="color:red">chưa nhập số điện thoại </p>';
+	                document.forms["form_data"].phonenumber.outerHTML = textInput;
+	            }else
+	            {
+	            	if(document.forms["form_data"].phonenumber.nextElementSibling){
+						document.forms["form_data"].phonenumber.nextElementSibling.remove();
+					}
+				}
+
+				if(gift_code.length<=0)
+            	{
+	            	if(document.forms["form_data"].gift_code.nextElementSibling){
+						document.forms["form_data"].gift_code.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].gift_code.outerHTML;
+	                textInput += '<p style="color:red">chưa nhập mã giới thiệu </p>';
+	                document.forms["form_data"].gift_code.outerHTML = textInput;
+	            }else
+	            {
+	            	if(document.forms["form_data"].gift_code.nextElementSibling){
+						document.forms["form_data"].gift_code.nextElementSibling.remove();
+					}
+				}
+				if(password.length<=0)
+            	{
+	            	if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].password.outerHTML;
+	                textInput += '<p style="color:red">chưa nhập mật khẩu </p>';
+	                document.forms["form_data"].password.outerHTML = textInput;
+	            }else
+	            {
+	            	if(document.forms["form_data"].gift_code.nextElementSibling){
+						document.forms["form_data"].gift_code.nextElementSibling.remove();
+					}
+				}
+
+				if(password.length<6){
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+	                var textInput = document.forms["form_data"].password.outerHTML;
+	                textInput += '<p style="color:red">chưa đủ 6 kí tự </p>';
+	                document.forms["form_data"].password.outerHTML = textInput;
+				}
+
+            }        
+    	}
+    </script>
+</body>
+</html>

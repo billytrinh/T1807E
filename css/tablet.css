@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) and (min-width: 300px){
+	body{
+		background: cyan;
+	}
+	.container{
+		width: 100%;
+	}
+	.container .right-page .right-page-products{
+		width: 100%;
+	}
+	.container .right-page .right-page-products .rows .item{
+		width: calc(100% / 3);
+	}
+	.left-page{
+		display: none;
+	}
+ }	
