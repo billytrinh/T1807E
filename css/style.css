@@ -549,6 +549,7 @@ footer
 	width: 188px;
 	float: left;
 	height: 300px;
+	padding-top: 55px;
 }
 .paginator-main
 {
@@ -571,17 +572,70 @@ footer
 	margin-right: 15px;
 	padding: 0 60px;
 	vertical-align: middle;
+	padding-top: 12px;
+}
+.left-adv img
+{
+	float: left;
+	vertical-align: middle;
+	padding-right: 60px;
+}
+.description-left-adv
+{
+	float: left;
+	width: 50%;
+}
+.description-left-adv h3
+{
+	color: #34404b;
+	font-size: 22px;
+	padding-top: 10px;
+}
+.description-left-adv p
+{
+	padding-top: 15px;
+	font-size: 12px;
+}
+.left-adv .price-cart
+{
+	float: right;
+	padding-top: 20px;
+}
+.left-adv .price-cart i
+{
+	float: left;
+	padding-right: 22px;
+}
+.left-adv .price-cart p
+{
+	float: left;
+	font-size: 30px;
+	font-weight: 900;
+	color: #ff5912;
 }
 .right-adv
 {
 	float: left;
 	height: 100%;
 	background: #fff;
-	width: 30%;
+	width: 40%;
 	margin-left: 15px;
 	padding: 0 60px;
 }
-
+.right-adv .adv-area
+{
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 20px;
+}
+.right-adv .resolution
+{
+	color: #aeb3b7;
+	text-align: center;
+	letter-spacing: 10px;
+	padding-top: 15px;
+}
 .product-page .products .rows .item-4
 {
 	width: calc(100% / 4 - 30px); 
@@ -662,6 +716,7 @@ footer
 	line-height: 3;
 	width: 100%;
 	text-align: right;
+	padding: 0 10%;
 }
 .section #left-navigator-mobile-menu ul li
 {
@@ -788,6 +843,7 @@ footer
 	.section-big-product
 	{
 		height: 100%;
+		padding-bottom: 135px;
 	}
 	.section-big-product .container
 	{
@@ -816,7 +872,37 @@ footer
 	{
 		width: calc(100% / 2 - 30px);
 	}
-	
+	.small-img .img
+	{
+		margin-left: 5px;
+		margin-right: 5px;
+		width: calc(60%/3);
+	}
+	.section-big-product .big-product .detail
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.controller
+	{
+		width: auto;
+		padding-left: 5%;
+		padding-right: 10%;
+	}
+	.section .related-product,.section .new-arrivals, .section .best-sales
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.left-adv
+	{
+		height: auto;
+		
+	}
+	.right-adv
+	{
+		height: 100%;
+	}
 }
 @media only screen and (max-width: 1200px) and (min-width: 768px)
 {
@@ -831,6 +917,10 @@ footer
 	footer .container
 	{
 		padding-left: 13%;
+	}
+	.product-page .products .rows .item
+	{
+		width: calc(100% / 4 - 30px);
 	}
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px)

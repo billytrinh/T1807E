@@ -49,22 +49,22 @@ var products9 = [
 var products2 = [
     {
         image: "images/products/Gray-coat.jpg",
-        name: "Reebok Track Jacket 1",
+        name: "Reebok Track Jacket",
         price: "100$",
     },
     {
         image: "images/products/Red-Jacket.jpg",
-        name: "Reebok Track Jacket 2",
+        name: "Reebok Track Jacket",
         price: "100$",
     },
     {
         image: "images/products/Red-coat.jpg",
-        name: "Reebok Track Jacket 3",
+        name: "Reebok Track Jacket",
         price: "100$",
     },
     {
         image: "images/products/Gray-coat.jpg",
-        name: "Reebok Track Jacket 4",
+        name: "Reebok Track Jacket",
         price: "100$",
     }
 ];

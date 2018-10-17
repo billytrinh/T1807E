@@ -5,7 +5,7 @@ function get_product_view(products,itemnumber,productlist)
 		html+='<div class="item '+itemnumber+'">';
 		html+='	<div class="item-content">';
 		html+='	<figure>';
-		html+='		<img width=auto height=80% src="'+products[i].image+'"/>';
+		html+='		<img width=auto height=60% src="'+products[i].image+'"/>';
 		html+='		<figcaption>'+products[i].name+'</figcaption>';
 		html+='	</figure>';
 		html+='		<p class="price-box"><span class="price">'+products[i].price+'</span></p>';
