@@ -27,7 +27,7 @@
 		</section>
 		<section class="header-bottom">
 			<div class="container">
-				<p class="menu-list">
+				<div class="menu-list">
 					<a class="logo" href="#"><img src="images/logo.png"/></a>
 					<a class ="menu-ele left" href="#">Home</a>
 					<a class ="menu-ele left" href="#">Products</a>
@@ -37,9 +37,11 @@
 					<a class="right" href="#"><img src="images/cardicon.png"/></a>
 					<a class="right" href="#"><img src="images/usericon.png"/></a>
 					<a class="right" href="#"><img src="images/searchicon.png"/></a>
-				</p>
-				<div class="menu-mobile">
-					
+					<!-- MENU BUTTON -->
+					<div class="menu-button hidden">
+						<a href="#"><img class="menu-icon" style="width: 40px; height: 40px;" src="images/menuicon.png"/></a>
+
+					</div>
 				</div>
 			</div>
 		</section>
@@ -89,6 +91,89 @@
 				
 			</div>
 		<!-- </div> -->
+		<!-- js -->
+		<script type="text/javascript">
+		function checkForm() {
+			var email = document.forms["form_data"].email.value;
+			var password = document.forms["form_data"].password.value;
+			var ho_ten = document.forms["form_data"].ho_ten.value;
+			var dt = document.forms["form_data"].dt.value;
+			var re_password = document.forms["form_data"].re_password.value;
+			var ma_gt = document.forms["form_data"].ma_gt.value;
+
+			if(email.length >0 && password.length >= 8){
+				return true;
+			}else{
+				if(email.length <=0){
+					document.forms["form_data"].email.nextElementSibling.style.display = "block";
+				}
+				if(email.length >0){
+					if(document.forms["form_data"].email.nextElementSibling){
+						document.forms["form_data"].email.nextElementSibling.remove();
+					}
+				}
+				
+				if(ho_ten.length <=0){
+					document.forms["form_data"].ho_ten.nextElementSibling.style.display = "block";
+				}
+				if(ho_ten.length >0){
+					if(document.forms["form_data"].ho_ten.nextElementSibling){
+						document.forms["form_data"].ho_ten.nextElementSibling.remove();
+					}
+				}
+				
+				if(dt.length <=0){
+					document.forms["form_data"].dt.nextElementSibling.style.display = "block";
+				}
+				if(dt.length >0){
+					if(document.forms["form_data"].dt.nextElementSibling){
+						document.forms["form_data"].dt.nextElementSibling.remove();
+					}
+				}
+				
+				if(password.length >=8) {
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+				}
+				if(password.length < 8 && password.length > 0){
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">Chưa đủ 8 ký tự</p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+
+				}
+				if(password.length <=0) {
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+					
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">Chưa nhập mật khẩu</p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+				}
+				if(re_password != password) {
+					if(document.forms["form_data"].re_password.nextElementSibling){
+						document.forms["form_data"].re_password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].re_password.outerHTML;
+					textInput += '<p style="color:red">Khác mật khẩu đã nhập</p>';
+					document.forms["form_data"].re_password.outerHTML = textInput;
+				}
+				if(re_password == password) {
+					if(document.forms["form_data"].re_password.nextElementSibling){
+						document.forms["form_data"].re_password.nextElementSibling.remove();
+					}
+				}
+				
+				
+			}
+			
+			return false;
+		}
+	</script>
 			
 	</section>
 	<footer class="section-footer">

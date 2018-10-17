@@ -7,9 +7,42 @@ body{
 .left-column{
 	display: none;
 }
+.header-top{
+	display: none;
+}
+.header-bottom .menu-list .menu-ele{
+	display: none;
+}
+/*.header-bottom .menu-list .logo{
+	margin: auto;
+}*/
+.header-bottom .logo{
+	float: none;
+	padding: 0px;
+}
+.header-bottom{
+	text-align: center;
+}
 .products{
 	width: 100%;
 }
 .products .rows .item{
-	width: calc(100% / 4);
+	width: calc(100% / 2);
+}
+.menu-button{
+	display: inline-block;
+}
+.letter .join{
+	display: none;
+}
+
+/*PAGE2*/
+.body-1{
+	width: 800px;
+}
+.products.body-bot .rows .item{
+	width: calc(100% / 2);
+}
+.name-coak{
+	font-size: 45px;
 }
