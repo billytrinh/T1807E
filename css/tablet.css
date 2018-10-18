@@ -13,9 +13,6 @@ body{
 .header-bottom .menu-list .menu-ele{
 	display: none;
 }
-/*.header-bottom .menu-list .logo{
-	margin: auto;
-}*/
 .header-bottom .logo{
 	float: none;
 	padding: 0px;
@@ -27,7 +24,6 @@ body{
 	width: 100%;
 }
 .products .rows .item{
-<<<<<<< HEAD
 	width: calc(100% / 2);
 }
 .menu-button{
@@ -46,3 +42,9 @@ body{
 }
 .name-coak{
 	font-size: 45px;
+}
+
+/*Page4*/
+.container-reg{
+	width: 80%;
+}

@@ -743,7 +743,7 @@ h2{
 	border-radius: 10px;
 	font-size:35px;
 }
-::placeholder{
+.container-reg ::placeholder{
 	font-size:35px;
 	color:blue;
 	opacity:1;
