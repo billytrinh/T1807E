@@ -2,9 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Page3</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Page 3</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/>
 	<script type="text/javascript" src="js/data.json"></script>
 </head>
 <body>
@@ -24,7 +27,7 @@
 		</section>
 		<section class="header-bottom">
 			<div class="container">
-				<p class="menu-list">
+				<div class="menu-list">
 					<a class="logo left" href="#"><img src="images/logo.png"/></a>
 					<a class ="menu-ele left" href="#">Home</a>
 					<a class ="menu-ele left" href="#">Products</a>
@@ -34,7 +37,12 @@
 					<a class="right" href="#"><img src="images/cardicon.png"/></a>
 					<a class="right" href="#"><img src="images/usericon.png"/></a>
 					<a class="right" href="#"><img src="images/searchicon.png"/></a>
-				</p>
+					<!-- MENU BUTTON -->
+					<div class="menu-button hidden">
+						<a href="#"><img class="menu-icon" style="width: 40px; height: 40px;" src="images/menuicon.png"/></a>
+
+					</div>
+				</div>
 			</div>
 		</section>
 	</header>
@@ -88,7 +96,7 @@
 				<div class="left-sale">
 					<img class="sale-icon left" src="images/saleicon.png"/>
 					<div class="sale-info left">
-						<h2>FILL WINTER KIT</h2>
+						<h2>FULL WINTER KIT</h2>
 						<p>Half Jacket + Skiny Trousers + Boot leather</p>
 					</div>
 					<img class="sale-pay left "src="images/carticon.png"/>
@@ -96,7 +104,7 @@
 				</div>
 				<div class="right-sale">
 					<p class="moi-qc">
-						<span style=color:#ff5912;>adv</span>
+						<span style="color:#ff5912;">adv</span>
 						<span>area</span>
 					</p>
 					<p class="kt">4&nbsp;7&nbsp;0 &nbsp;&nbsp;&nbsp; x &nbsp;&nbsp; 1&nbsp;0&nbsp;0</p>
@@ -133,7 +141,7 @@
 									<p class="right" style=color:#ff5912;font-weight:800;>100$</p>
 								</div>
 								<div class="add-cart">
-									<img class = "left" style="width:22px;height: 21px;" src="images/xe.png"/>
+									<img class = "left" style="width:22px; height: 21px;" src="images/xe.png"/>
 									<p class="left" style=color:#ff5912;font-weight:800;>add to cart</p>
 								</div>
 							</div>
@@ -182,7 +190,7 @@
 		<div class="container">
 			<section class="letter">
 				<h2 class ="letter-ele left">NEWS LETTER</h2>
-				<p class ="letter-ele left">join us now to get all news and special offers</p>
+				<p class ="letter-ele left join">join us now to get all news and special offers</p>
 				<form method="post" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
 						<label class="" for="email_letter"><img src="images/mailicon.png"/></label>
 						<input class="email-letter" type="email" id="email_letter" name="email_letter" placeholder="type your email here"/>

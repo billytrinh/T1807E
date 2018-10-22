@@ -27,7 +27,7 @@
 		</section>
 		<section class="header-bottom">
 			<div class="container">
-				<p class="menu-list">
+				<div class="menu-list">
 					<a class="logo" href="#"><img src="images/logo.png"/></a>
 					<a class ="menu-ele left" href="#">Home</a>
 					<a class ="menu-ele left" href="#">Products</a>
@@ -37,9 +37,10 @@
 					<a class="right" href="#"><img src="images/cardicon.png"/></a>
 					<a class="right" href="#"><img src="images/usericon.png"/></a>
 					<a class="right" href="#"><img src="images/searchicon.png"/></a>
-				</p>
-				<div class="menu-mobile">
-					
+					<!-- MENU BUTTON -->
+					<div class="menu-button hidden">
+						<a href="#"><img class="menu-icon" style="width: 40px; height: 40px;" src="images/menuicon.png"/></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -66,7 +67,7 @@
 					</ul>
 				</div>
 				<div class ="block price-filtter">
-					<h3>Price Filtler</h3>
+					<h3>Price Filtter</h3>
 					<p class="line-box">
 						<span class="gia gia-1">100$</span>
 						<span class="gia gia-2">1000$</span>
@@ -74,6 +75,12 @@
 						<span class="line"></span>
 						<span class="node no-2"></span>
 					</p>
+					<form method="post" action="#" name="filtter-data" class="filtter-data" enctype="multipart/form-data">
+						<label class="" for="from">From</label>
+						<input class=" filtter-input filtter-from" type="email" id="from" name="filtter-from"/>
+						<label class="" for="to">To</label>
+						<input class="filtter-input filtter-to" type="email" id="to" name="filtter-to"/>
+					</form>
 				</div>
 				<div class ="block sizes">
 					<h3>Sizes</h3>
@@ -121,8 +128,7 @@
 			<div class = "letter">
 				<div>
 					<h2 class ="letter-ele left">NEWS LETTER</h2>
-					<p class ="letter-ele left">join us now to get all news and special offers</p>
-
+					<p class ="letter-ele left join">join us now to get all news and special offers</p>
 					<form method="post" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
 						<label class="" for="email_letter"><img src="images/mailicon.png"/></label>
 						<input class="email-letter" type="email" id="email_letter" name="email_letter" placeholder="type your email here"/>

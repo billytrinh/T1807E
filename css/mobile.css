@@ -36,3 +36,28 @@ body{
 .section-footer{
 	width: 100%;
 }
+/* them sua */
+.menu-list{
+	display:none;
+}
+.header-bottom{
+	border-bottom:0;
+}
+.logo{
+	padding:0;
+}
+.section-footer{
+	text-align:center;
+	padding:0;
+	border-top:25px solid white;
+}
+.container-reg{
+	width:90%;
+}
+.section-footer .bot-ele{
+	float:none;
+	padding:0;
+	padding-top:20px;
+}
+.bot-ele.payment{
+	border-bottom:30px solid white;
