@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .section-menu .container .left-column{
+        display: none;
+    }
+    .section-menu .container .products{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .section.section-menu.page1{
+        margin-top: 60px;
+    }
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .section.section-menu{
+        margin:0px;
+    }
+    .section2.page3{
+        margin-top: 60px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .logo .logo-container .menu li a {
+        font-size: 13px;
+    }
+    .item-related{
+        float: left;
+        width: calc(100% / 4);
+        padding: 0 15px;
+    }
+    .method p{
+        font-size: 12px;
+    }
+    .payment{
+        height: 15px;
+        width: 19px ;
+    }
+    .under li a{
+        font-size: 11px;
+    }
+    .copyright, .joinus, .section2 .news .forms input{
+        font-size: 12px;
+    }
+    .related_product .item{
+        width: calc(100% / 2);
+    }
+    .related{
+        height: 200px;
+        padding: 50px 0px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .joinus{
+        padding-right: 0px;
+    }
+    .price-bot-right{
+        padding-left: 100px;
+    }
+    .choose-right{
+        width: 40%;
+    }
+    .choose-left{
+        width: 60%;
+    }
+    .choose .choose-right p, .choose .choose-left p{
+        font-size: 16px;
+    }
+    .sale-price span{
+        font-size: 28px;
+    }
+    .page3{
+        margin-top: 0px;
+    }
+    .best-sale li .best-sale-content .descrip .caption{
+        font-size: 14px;
+    }
+    .best-sale li .best-sale-content .descrip{
+        padding: 30px 0px;
+    }
+    .sale_picture{
+        padding-left: 10px;
+        width: 30%;
+    }
+    .best-sale li .best-sale-content .descrip{
+        width: 63%;
+        float: right;
+    }
+    .best-sale-product{
+        height: 140px;
+    }
+    .best-sale li .best-sale-content .descrip .hide{
+        bottom: 30px;
+    }
+    .hide_tablet{
+        display: none;
+    }
+    .sale-left{
+        padding: 0px 20px;
+    }
+    .sale-50-content{
+        left: 8%;
+    }
+    .sale-price span{
+        font-size: 18px;
+    }
+    .sale-price .fa{
+        font-size: 25px;
+    }
+    .sale-price{
+        padding: 35px 0px;
+    }
+    .best-sale li .best-sale-content .descrip .rate i{
+        font-size: 12px;
+    }
+    .rate_price{
+        width: 20%;
+    }
+    .best-sale .best-sale-product .best-sale-content img{
+        height: 70px;
+        width: auto;
+    }
+    .icon_register i{
+        font-size: 150px;
+    }
+    .icon_register{
+        margin-bottom: 50px;
+    }
+    .star_box{
+        width: 75px;
+        height: 15px;
+        background-size: 15px 15px;
+    }
+    .star_box .star_rate{
+        height: 15px;
+        background-size: 15px 15px;
+    }
+}

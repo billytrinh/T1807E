@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/page2.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-    <nav class="section2 contact">
+    <nav class="contact backg hide_mobile">
         <div class="container contact-container">
             <ul class="nav-left">
                 <li><img src="images/mail.png">info@shopy.com</li>
@@ -40,9 +42,11 @@
             </ul>
         </div>
     </nav>
-    <section class="section2 logo">
-        <div class="logo-container">
-            <a class="pic-logo" href="#"><img src="images/logo.png"></a>
+    <section class="contact backg logo logo1">
+        <div class="logo-container container">
+            <div class="logo-picture">
+                <a class="pic-logo" href="#"><img src="images/logo.png"></a>
+            </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
@@ -51,6 +55,11 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="search">
+                <li class="hide_desktop hide_tablet" onclick="show_menu()">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-search"></i>
@@ -69,39 +78,57 @@
             </ul>
         </div>
     </section>
+    <section class="section2 hide_menu hide_desktop hide_tablet" id="hidden_menu">
+        <div class="container">
+            <ul>
+                <div class="exit_menu">
+                    <i class="fa fa-times" onclick="hide_menu()"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
     <section class="section2 detail">
-        <div class="container-2">
+        <div class="container">
             <div class="detail-left">
                 <div>
                     <img src="images/big-product.png">
                 </div>
-                <div class="small1">
-                    <img src="images/small1-product.png" alt="">
-                </div>
-                <div class="small1">
-                    <img src="images/small2-product.png" alt="">
-                </div>
-                <div class="small1">
-                    <img src="images/big-product.png" height="45px" width="auto">
+                <div class="small-picture">
+                    <div class="frame-small">
+                        <div class="small1">
+                            <img src="images/small1-product.png" alt="">
+                        </div>
+                    </div>
+                    <div class="frame-small">
+                        <div class="small1">
+                            <img src="images/small2-product.png" alt="">
+                        </div>
+                    </div>
+                    <div class="frame-small">
+                        <div class="small1">
+                            <img src="images/big-product.png" height="45px" width="auto">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="detail-right">
+            <div class="detail-right page2">
                 <div class="desc">
                     <div class="p1">FULL WINTER KIT</div>
                     <p class="p2">Half Jacket + Skiny Trousers + Boot leather</p>
-                    <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <p class="p4">Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry</p>
+                    <p class="p3 m-b-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p class="p4 m-b-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 </div>
                 <div class="choose">
                     <div class="choose-left">
-                        <p><span>Choos Size</p>
-                        <ul>
-                            <li><a href="#">S</a></li>
-                            <li><a href="#">M</a></li>
-                            <li><a href="#">L</a></li>
-                            <li><a href="#">XL</a></li>
-                        </ul>
+                        <p>
+                            <span class="choos_size">Choos Size:</span>
+                            <span class="sml">S - L - M - XL</span>
+                        </p>                      
                     </div>
                     <div class="choose-right">
                         <p class="quality">Choos Quantity</p>
@@ -111,42 +138,62 @@
                     </div>
                 </div>
                 <div class="price-bot">
-                    <p><span>Price : 120$</span></p>
-                    <div class="icon-bot">	
-                        <i class="fa fa-globe"></i>
-                        <i class="fa fa-cart-plus"></i>
-                        <i class="fa fa-heart-o"></i>
+                    <div class="price-bot-left">
+                        <p><span>Price : 120$</span></p>
                     </div>
-                    <button class="order-button">Order Now</button>
+                    <div class="price-bot-right">
+                        <div class="icon-bot hide_mobile">	
+                            <i class="fa fa-globe"></i>
+                            <i class="fa fa-cart-plus"></i>
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                        <div class="button_order">
+                            <button class="order-button">Order Now</button>
+                        </div>                                    
+                    </div>
+                       
                 </div>
-            </div>
+                <p class="hide_tablet hide_desktop line-footer"></p>
+                <div class="icon-bot hide_desktop hide_tablet">	
+                    <i class="fa fa-globe"></i>
+                    <i class="fa fa-cart-plus"></i>
+                    <i class="fa fa-heart-o"></i>
+                </div> 
         </div>
     </section>
     <section class="section2 related">
-        <p><span class="cam">RELATED </span><span>PRODUCTS</span></p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-    </section>
-    <section class="related-product section2">
         <div class="container">
-            <ul class="rows" id="related-products">
-            </ul>
+            <p><span class="cam">RELATED </span><span>PRODUCTS</span></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         </div>
     </section>
-    <section class="section2">
-        <div class="news">
-            <span class="letter">NEWS LETTER</span>
-            <span class="joinus">join us now to get all news and special offers</span>
-            <img src="images/mail.png" alt="icon-mail">
-            <form class="forms" name="form_data">
-                <div class="inputs">
-                    <input type="text" name="email" placeholder="type your email here">
-                </div>
-                <button type="submit" class="button" onclick="return checkForm()" >join us</button>
-            </form>
+    <section class="section section-menu">
+        <div class="container">
+            <div class="products related_product">
+                <ul class="rows" id="related-products">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section2 hide_mobile">
+        <div class="container news">
+            <div class="news_letter_left">
+                <p class="letter">NEWS LETTER</p>
+                <p class="joinus">join us now to get all news and special offers</p>
+            </div>
+            <div class="inputs">
+                <div class="mail_picture">
+                    <img src="images/mail.png" alt="icon-mail">
+                </div>               
+                <form class="forms" name="form_data">
+                    <input type="text" name="email" placeholder="type your email here">               
+                    <button type="submit" class="button" onclick="return checkForm()" >join us</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer class="section2 footer">
-        <div class="footer-container">
+        <div class="container">
             <span class="footer-left">
                 <a href="#"><img src="images/logo.png" alt="logo"></a>
                 <p class="copyright">shopy &copy; 2015 . your copy right here</p>
@@ -168,7 +215,7 @@
                 </ul>
             </span>
             <ul class="method">
-                <p class="">Payment Methods</p>
+                <p class="payment">Payment Methods</p>
                 <li>
                     <a href="#">
                         <img class="payment amex" src="images/amex.png">
@@ -194,6 +241,30 @@
                         <img class="payment american" src="images/american.png">
                     </a>
                 </li>
+            </ul>
+            <p class="hide_tablet hide_desktop line-footer"></p>
+            <p class="f-s-10 hide_tablet hide_desktop">shopy &copy; 2015 . your copy right here</p>
+            <ul class="nav-right hide_desktop hide_tablet">
+                <li class="fb">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="tw">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="gg">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="cmr">
+                    <a href="#">
+                        <i class="fa fa-camera-retro"></i>
+                    </a>
+                </li>     
             </ul>
         </div>
     </footer>

@@ -25,6 +25,7 @@ function renderHtml(result){
 	var html = '';
     for (var i = 0; i < products.length - 1; i++) {
         html+='<li class="item">';
+        html+='<a href="file:///Users/macbook/T1807E/Page2.html">';
         html+='<div class="item-content">';
         html+='<figure class="show">';
         html+='<img src="'+products[i].image+'">';
@@ -43,8 +44,10 @@ function renderHtml(result){
         html+='<i class="fa fa-globe"></i>';
         html+='<i class="fa fa-cart-plus"></i>';
         html+='<i class="fa fa-heart-o"></i>';
-        html+='</div>';                      
         html+='</div>';
+                              
+        html+='</div>';
+        html+='</a>';
         html+='</li>';
     }
     document.getElementById("product_list").innerHTML = html;
@@ -64,4 +67,10 @@ function checkForm(){
       }
   }
   return false;
+}
+function show_menu(){
+    document.getElementById('hidden_menu').style.display = 'block';
+}
+function hide_menu(){
+  document.getElementById('hidden_menu').style.display = 'none';
 }

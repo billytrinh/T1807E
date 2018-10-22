@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page3</title>
+    <title>Register</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/page2.css"/>
+    <link rel="stylesheet" href="css/page2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -92,83 +92,48 @@
             </ul>
         </div>
     </section>
-    <section class="section2 slide">
-        <div class="container">
-            <div class="slide-left">
-                <div class="slide-left-t-b"></div>
-                <div class="slide-left-mid"></div>
-                <div class="slide-left-t-b"></div>
-            </div>
-            <div class="slide-right detail-right">
-                <div class="desc">
-                    <div class="p1">FULL WINTER KIT</div>
-                    <p class="p2 f-w-700">Half Jacket + Skiny Trousers + Boot leather</p>
-                    <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </div>              
-                <p class="slide-price">
-                    <span class="f-w-700" >Price : 120$</span>
-                    <i class="fa fa-shopping-basket"></i>
-                    <span class="order-now f-w-700">Order now</span>
-                </p>
-            </div>
-    </section>
-    <section class="section2 related">
-        <p><span class="cam">RELATED </span><span>PRODUCTS</span></p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-    </section>
-    <section class="section section-menu">
-        <div class="container">
-            <div class="products related_product">
-                <ul class="rows" id="related-products">
-                </ul>
-            </div>
-            <div class="loading">
-                <p>
-                    <span class="circle">&nbsp;</span>
-                    <span class="circle">&nbsp;</span>
-                    <span class="circle">&nbsp;</span>
-                </p>
-            </div>
-        </div>   
-    </section>
-   <section class="section2 page3">
-       <div class="container">
-           <div class="sale-left">
-                <div class="sale-50">
-                    <div class="sale-50-content">
-                        <div class="sale-50-1"></div>
-                        <div class="sale-50-2"></div>
-                        <div class="word">
-                            <p class="p-sale">Sale</p>
-                            <br><p class="p-50">50%</p>
-                        </div>
+    <section class="section2 register">
+        <div class="container registion">
+            <div class="regist">
+                <div class="icon_register">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <form action="#" method="GET" name="form_register" class="form_register">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
                     </div>
-                </div>
-                <div class="sale-content">
-                    <div class="p1">FULL WINTER KIT</div>
-                    <p class="p2">Half Jacket + Skiny Trousers + Boot leather</p>
-                </div>
-                <div class="sale-price">
-                    <i class="fa fa-cart-plus"></i>
-                    <span>120$</span>
-                </div>
+                    <div>
+                        <label for="fullname">Họ và tên</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="phone">Số điện thoại</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <label for="password_again">Nhập lại mật khẩu</label>
+                        <input type="password" name="password_again" id="password_again">
+                    </div>
+                    <div>
+                        <label for="code_rec">Mã giới thiệu</label>
+                        <input type="text" name="code_rec" id="code_rec">
+                    </div>
+                    <div class="check_agree">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree" class="agree_fix">Đồng ý về chính sách bảo mật và</label>
+                        <p>điều khoản sử dụng</p>
+                    </div>
+                    <button type="submit" class="registion_submit" onclick="return checkRegister()">Đăng ký</button>
+                    <div class="sign_in">
+                        <a href="#">Trở lại đăng nhập</a>
+                    </div>
+                </form>
             </div>
-           <div class="sale-right">
-               <div class="adv">
-                    <p>adv <span>area</span>
-                    <p class="dimension">470 x 100</p>
-                </div> 
-           </div>
-       </div>
-   </section>
-   <section class="section2 related">
-        <p><span class="cam">BEST </span><span>SALE</span></p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-    </section>
-    <section class="section2 best">
-        <div class="container">
-            <ul class="best-sale" id="sale_products">
-            </ul>          
         </div>
     </section>
     <section class="section2 hide_mobile">
@@ -192,7 +157,7 @@
         <div class="container">
             <span class="footer-left">
                 <a href="#"><img src="images/logo.png" alt="logo"></a>
-                <p class="copyright">shopy &copy; 2015 . your copy right here</p>
+                <p class="copyright f-s-10">shopy &copy; 2015 . your copy right here</p>
             </span>
             <span class="order">
                 <ul class="under">
@@ -263,7 +228,8 @@
                 </li>     
             </ul>
         </div>
+        
     </footer>
-    <script src="js/page2+3.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>

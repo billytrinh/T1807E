@@ -6,7 +6,7 @@ get_product.onreadystatechange = function(){
         var products = result.data;
         var html = '';
 		for (var i = 0; i < products.length - 1; i++) {
-			html+='	<li class="item">';
+			html+='<a href="file:///Users/macbook/T1807E/Page2.html">';
 			html+=' <div class="item-content">';
 			html+='<figure class="show">';
 			html+='<img src="'+products[i].image+'">';
@@ -28,6 +28,7 @@ get_product.onreadystatechange = function(){
 			html+='</div>';                      
 			html+='</div>';
 			html+='</li>';
+			html+='</a>';
         }
         document.getElementById("product_list").innerHTML = html;
     }

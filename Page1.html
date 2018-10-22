@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/page2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-    <nav class="contact">
+    <nav class="contact backg hide_mobile">
         <div class="container contact-container">
             <ul class="nav-left">
                 <li><img src="images/mail.png">info@shopy.com</li>
@@ -40,9 +42,11 @@
             </ul>
         </div>
     </nav>
-    <section class="logo logo1">
-        <div class="logo-container">
-            <a class="pic-logo" href="#"><img src="images/logo.png"></a>
+    <section class="contact backg logo logo1">
+        <div class="logo-container container">
+            <div class="logo-picture">
+                <a class="pic-logo" href="#"><img src="images/logo.png"></a>
+            </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
@@ -51,6 +55,11 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="search">
+                <li class="hide_desktop hide_tablet" onclick="show_menu()">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <i class="fa fa-search"></i>
@@ -69,7 +78,21 @@
             </ul>
         </div>
     </section>
-    <section class="section">
+    <section class="section2 hide_menu hide_desktop hide_tablet" id="hidden_menu">
+        <div class="container">
+            <ul>
+                <div class="exit_menu">
+                    <i class="fa fa-times" onclick="hide_menu()"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section section-menu page1">
         <div class="container">
             <div class="left-column">
                 <div class="block categories">
@@ -83,18 +106,24 @@
                 </div>
                 <div class="block price-filter">
                     <h3>Price Filter</h3>
-                    <p class="from-to">
-                        <span class="from">100$</span>
-                        <span class="to">100$</span>
-                    </p>
-                    <p class="line-box">
-                        <span class="node no_1"></span>
-                        <span class="line"></span>
-                        <span class="node no_2"></span>
-                    </p>
-                    <div class="fill">
-                        <span>From</span><input id="slider2" type="number" step="10" min="100" max="1000">
-                        <span>To</span><input id="slider2" type="number" step="10">
+                    <div class="range_price">
+                        <p class="from-to">
+                            <span class="from">100$</span>
+                            <span class="to">1000$</span>
+                        </p>
+                        <p class="line-box">
+                            <span class="node no_1"></span>
+                            <span class="line"></span>
+                            <span class="node no_2"></span>
+                        </p>
+                        <div class="fill">
+                            <div class="from-div">
+                                <span>From</span><input id="slider2" type="number" step="10" min="100" max="1000">
+                            </div>
+                            <div class="to-div">
+                                <span>To</span><input id="slider2" type="number" step="10">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="block sizes">
@@ -150,26 +179,31 @@
                         <span class="circle">&nbsp;</span>
                     </p>
                 </div>
-            </div>          
+            </div>
+        </div>    
     </section>
-    <section class="section2">
-        <div class="news">
-            <span class="letter">NEWS LETTER</span>
-            <span class="joinus">join us now to get all news and special offers</span>
-            <img src="images/mail.png" alt="icon-mail">
-            <form class="forms" name="form_data">
-                <div class="inputs">
-                    <input type="text" name="email" placeholder="type your email here">
-                </div>
-                <button type="submit" class="button" onclick="return checkForm()" >join us</button>
-            </form>
+    <section class="section2 hide_mobile">
+        <div class="container news">
+            <div class="news_letter_left">
+                <p class="letter">NEWS LETTER</p>
+                <p class="joinus">join us now to get all news and special offers</p>
+            </div>
+            <div class="inputs">
+                <div class="mail_picture">
+                    <img src="images/mail.png" alt="icon-mail">
+                </div>               
+                <form class="forms" name="form_data">
+                    <input type="text" name="email" placeholder="type your email here">               
+                    <button type="submit" class="button" onclick="return checkForm()" >join us</button>
+                </form>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer-container">
+    <footer class="section2 footer">
+        <div class="container">
             <span class="footer-left">
                 <a href="#"><img src="images/logo.png" alt="logo"></a>
-                <p class="copyright">shopy &copy; 2015 . your copy right here</p>
+                <p class="copyright f-s-10">shopy &copy; 2015 . your copy right here</p>
             </span>
             <span class="order">
                 <ul class="under">
@@ -188,7 +222,7 @@
                 </ul>
             </span>
             <ul class="method">
-                <p class="">Payment Methods</p>
+                <p class="payment">Payment Methods</p>
                 <li>
                     <a href="#">
                         <img class="payment amex" src="images/amex.png">
@@ -213,9 +247,34 @@
                     <a href="#">
                         <img class="payment american" src="images/american.png">
                     </a>
-                </li>           
+                </li>
+            </ul>
+            <p class="hide_tablet hide_desktop line-footer"></p>
+            <p class="f-s-10 hide_tablet hide_desktop">shopy &copy; 2015 . your copy right here</p>
+            <ul class="nav-right hide_desktop hide_tablet">
+                <li class="fb">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="tw">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="gg">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="cmr">
+                    <a href="#">
+                        <i class="fa fa-camera-retro"></i>
+                    </a>
+                </li>     
             </ul>
         </div>
+        
     </footer>
     <script src="js/page2.js"></script>
 </body>
