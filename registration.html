@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Registration</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="css/ico/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<script>
+		var j = 5;
+		var k = j;
+		function buttonClickadd() {
+			if (document.getElementById('incproduct').innerText <9){
+				document.getElementById('incproduct').innerText = ++j;
+				++k;
+			}
+			if (document.getElementById('incproduct').innerText == 9){
+				document.getElementById('incproduct').innerText = 'N';
+				++k;
+			}
+			if (document.getElementById('incproduct').innerText == 'N'){
+				++k;
+			}
+			if (k==20){
+				alert("Your cart is full, please make order or remove some");
+			}
+		}
+		var i = 3;
+		function buttonClickup() {
+			document.getElementById('inc').value = ++i;
+		}
+		function buttonClickdown() {
+			if (document.getElementById('inc').value >1){
+				document.getElementById('inc').value = --i;
+			}
+		}
+		function myFunction() {
+			var mail, textmail, phone, textphone, pass, textpass, passmatch, textpassmatch, mailtype, phonetype, nametype, textname, refertype, textrefer;
+			submitOK = "true";
+			mail = document.getElementById("mail").value.indexOf("@");
+			phone = parseInt(document.getElementById("phonenumb").value);
+			pass = document.getElementById("password").value;
+			passmatch = document.getElementById("passwordmatch").value;
+			mailtype = document.getElementById("mail").value;
+			phonetype = document.getElementById("phonenumb").value;
+			nametype = document.getElementById("name").value;
+			refertype = document.getElementById("refercode").value
+			if (pass.length > 15){
+				textpass = "Password quá dài";
+				submitOK = "false";
+			}else if(pass.length < 8 && pass.length > 0){
+				textpass = "Password quá ngắn";
+				submitOK = "false";
+			}else if(pass.length <= 0){
+				textpass = "Bạn chưa nhập password";
+				submitOK = "false";
+			}else{
+				textpass = "";
+				if(passmatch != pass){
+					textpassmatch = "Password không khớp";
+					submitOK = "false";
+				}else{
+					textpassmatch = "";
+				}
+			}
+			if(passmatch <= 0){
+				textpassmatch = "Bạn cần nhập lại password";
+				submitOK = "false";
+			}
+			if(phonetype.length <= 0){
+				textphone = "Bạn chưa nhập số điện thoại";
+				submitOK = "false";
+			}else{
+				if(isNaN(phone)){
+					textphone = "Số điện thoại không hợp lệ";
+					submitOK = "false";
+				}else{
+					textphone = "";
+				}
+			}
+			if(mailtype.length <= 0){
+				textmail = "Bạn chưa nhập Email";
+				submitOK = "false";
+			}else{
+				if(mail == -1){
+					textmail = "Email không hợp lệ";
+					submitOK = "false";
+				}else{
+					textmail = "";
+				}
+			}
+			if(nametype <= 0){
+				textname = "Bạn chưa nhập tên";
+				submitOK = "false";
+			}else{
+				textname = "";
+			}
+			if(refertype.length > 10){
+				textrefer = "Mã giới thiệu không hợp lệ";
+				submitOK = "false";
+			}else{
+				textrefer = "";
+			}
+		
+			document.getElementById("refercodecheck").innerHTML = textrefer;
+			document.getElementById("namecheck").innerHTML = textname;
+			document.getElementById("passwordcheck").innerHTML = textpass;
+			document.getElementById("passwordmatchcheck").innerHTML = textpassmatch;
+			document.getElementById("phonecheck").innerHTML = textphone;
+			document.getElementById("mailcheck").innerHTML = textmail;
+			if (submitOK == "false"){
+				return false;
+			}
+		}	
+	</script>
+	<section class="section">
+		<div class="header">
+			<div class="contact">
+				<div class="contact-typeold">
+					<div class="contact1">
+						<figure class="contact-icon">
+							<div class="contact1-show">
+								<img class="label-icon" id="mail1" src="css/ico/mail.png"/>
+								<label for="mail1"><a href="#">info@shopy.com</a></label>
+							</div>
+							<div class="contact1-show-hover">
+								<img class="label-icon" id="mail1" src="css/ico/mail-hover.png"/>
+								<label for="mail1"><a href="#">info@shopy.com</a></label>
+							</div>
+						</figure>
+					</div>
+					<div class="contact1">
+						<figure class="contact-icon">
+							<div class="contact1-show">
+								<img class="label-icon" id="phone" src="css/ico/phone.png"/>
+								<label for="phone"><a href="#">453 - 5553 - 996</a></label>
+							</div>
+							<div class="contact1-show-hover">
+								<img class="label-icon" id="phone" src="css/ico/phone.png"/>
+								<label for="phone"><a href="#">453 - 5553 - 996</a></label>
+							</div>
+						</figure>
+					</div>
+				</div>
+				<div class="contact-typenew">
+					<a href="#"><img class="media" src="css/ico/instagram.png"/></a>
+					<a href="#"><img class="media" src="css/ico/google+.png"/></a>
+					<a href="#"><img class="media" src="css/ico/twitter.png"/></a>
+					<a href="#"><img class="media" src="css/ico/facebook.png"/></a>
+				</div>
+			</div>
+			<div id="separator1"></div>
+			<div class="navigator">
+				<div class="left-navigator">
+					<div class="navigation main-logo">
+						<a href="#"><img src="css/ico/main-logo.png"/></a>
+					</div>
+					<div class="navigation link">
+						<a href="#"><p>Home</p></a>
+					</div>
+					<div class="navigation link">
+						<a href="#"><p class="current">Products</p></a>
+					</div>
+					<div class="navigation link">
+						<a href="#"><p>Hot Deals</p></a>
+					</div>
+					<div class="navigation link">
+						<a href="#"><p>About</p></a>
+					</div>
+					<div class="navigation link">
+						<a href="#"><p>Contact</p></a>
+					</div>
+				</div>
+				<div class="right-navigator">
+					<figure class="icon-navigation">
+						<a href="#">
+						<div id="fix"><span id="incproduct">5</span></div>
+						<img  id="icon3" src="css/ico/cart.png"/>
+						</a>
+					</figure>
+					<figure class="icon-navigation">
+						<a href="#"><img  id="icon2" src="css/ico/user.png"/></a> 	
+					</figure>
+					<figure class="icon-navigation">
+						<a href="#"><img  id="icon1" src="css/ico/search.png"/></a>
+					</figure>
+				</div>
+			</div>
+			<div id="separator2"></div>
+		</div>
+	</section>
+	
+	
+	<section class="section registration">
+		<form class="container3" action="/action_page.php" onsubmit="return myFunction()">
+			<div class="avatar">
+				<img  id="icon1" src="images/avatar.png"/>
+			</div>
+			<div class="registrationinfo">
+				<div class="email resinfo">
+					<p>Email</p>
+					<input type="text" name="mail" id="mail">
+					<p id="mailcheck"></p>
+				</div>
+				<div class="fullname resinfo">
+					<p>Họ và tên</p>
+					<input type="text" name="name" id="name">
+					<p id="namecheck"></p>
+				</div>
+				<div class="phone resinfo">
+					<p>Số điện thoại</p>
+					<input type="text" name="phonenumb" id="phonenumb">
+					<p id="phonecheck"></p>
+				</div>
+				<div class="password resinfo">
+					<p>Mật khẩu</p>
+					<input type="password" name="password" id="password" size="25">
+					<p id="passwordcheck"></p>
+					
+				</div>
+				<div class="repassword resinfo">
+					<p>Nhập lại mật khẩu</p>
+					<input type="password" name="password" id="passwordmatch" size="25">
+					<p id="passwordmatchcheck"></p>
+				</div>
+				<div class="referralcode resinfo">
+					<p>Mã giới thiệu</p>
+					<input type="text" name="refercode" id="refercode">
+					<p id="refercodecheck"></p>
+				</div>
+			</div>
+			<div class="termsnrules">
+				<input class="hidden" type="checkbox" name="confirm" id="checkbox9" checked>
+				<label for="checkbox9">
+					<div id="box" class="textconfirm">
+						<div id="check">
+						</div>
+					</div>
+					<div class="textconfirm">
+						<p>Đồng ý về chính sách bảo mật</p>
+						<p>và điều khoản sử dụng</p>
+					</div>
+				</label>
+			</div>
+			<div class="accountnavigation">
+				<button type="submit" value="Submit" > ĐĂNG KÝ </button>
+				<a href="#"><p>Trở lại đăng nhập</p></a>
+			</div>
+		</form>
+	</section>
+	
+	
+	<section class="section foots">
+		<div class="footer">
+			<div class="credit foot">
+				<a href="#"><img src="css/ico/main-logo.png"/></a>
+				<p>shopy c 2018.pham-anh-dung</p>
+			</div>
+			<div class="info-table foot">
+				<div class="info-tab">
+					<div><li><a href="#">about us</a></li></div>
+					<br>
+					<div><li><a href="#">contact us</a></li></div>
+					<br>
+					<div><li><a href="#">support</a></li></div>
+				</div>
+				<div class="info-tab">
+					<div><li><a href="#">our feed</a></li></div>
+					<br>
+					<div><li><a href="#">terms and conditions</a></li></div>
+					<br>
+					<div><li><a href="#">our privacy</a></li></div>
+				</div>
+				<div class="info-tab">
+					<div><li><a href="#">join us</a></li></div>
+					<br>
+					<div><li><a href="#">live support</a></li></div>
+				</div>
+			</div>
+			<div class="pay-method foot">
+				<h3>Payment Methods</h3>
+				<img src="css/ico/pay-medthod.png"/>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

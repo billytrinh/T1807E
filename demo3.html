@@ -2,9 +2,10 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Demo2</title>
+	<title>Demo3</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="css/ico/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
@@ -113,84 +114,54 @@
 			<div id="separator2"></div>
 		</div>
 	</section>
-	<section class="section">
-		<div class="main-product">
-				<div class="fullset-kit">
-					<div class="tab-image block-right">
-						<div class="big-image">
-							<img class="fsproduct" src="images/fsproduct.png"/>
+	<section class="section featured">
+		<div class="container2">
+			<div class="controller featured1">
+				<div class="controller1">
+				</div>
+				<div class="controller2">
+				</div>
+				<div class="controller3">
+				</div>
+				<div class="controllermain">
+				</div>
+				<div class="controller3">
+				</div>
+				<div class="controller2">
+				</div>
+				<div class="controller1">
+				</div>
+			</div>
+			<div class="main-item featured1">
+				<div class="main-description description">
+					<h1>FULL WINTER KIT</h1>
+					<p>Half Jacket + Skiny Trousers + Boot Leather</p> 
+					<li>lorem ipsum is simply dummy text of the printing and typesetting industry</li>
+					<div class="order">
+						<div class="fsproduct-price">
+							<p>Price:120$</p>
 						</div>
-						<div class="small-image">
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-1.png"/>
-							</div>
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-2.png"/>
-							</div>
-							<div class="accessory accessory-1">
-								<img src="images/fsproduct-part-3.png"/>
-							</div>
-						</div>
-					</div>
-					<div class="product-details block-right">
-						<div class="description">
-							<h1>FULL WINTER KIT</h1>
-							<p>Half Jacket + Skiny Trousers + Boot Leather</p> 
-							<li>lorem ipsum is simply dummy text of the printing and typesetting industry</li>
-							<li>lorem ipsum is simply dummy text of the printing</li>
-							<li>and typesetting industry</li>
-						</div>
-						<div id="small-separator1"></div>
-						<div class="choosing-option">
-							<div class="size-choose">
-								<p>Choose Size&emsp;&emsp;<span class="size size-1">S</span> - <span class="size size-2">M</span> - <span class="size size-3">L</span> - <span class="size size-4">XL</span></p>
-							</div>
-							<div class="quantity-choose">
-								<div class="quantity-option">
-									<p>Choose Quantity</p>
+						<figure class="ordernow">
+							<a href="#">
+								<div class="ordernow-show">
+									<img class="label-icon" id="ordernow" src="css/ico/ordernow.png"/>
+									<label for="ordernow"><a href="#">Order Now</a></label>
 								</div>
-								<div class="quantity-option">
-									<button type="button" onclick="buttonClickup();">+</button>
+								<div class="ordernow-show-hover" onclick="buttonClickadd();">
+									<img class="label-icon" id="ordernow" src="css/ico/ordernow-hover.png"/>
+									<label for="ordernow"><a href="#">Order Now</a></label>
 								</div>
-								<div class="quantity-option">
-									<input name="quantity" value="3" id="inc" min="1">
-								</div>
-								<div class="quantity-option">
-									<button type="button" onclick="buttonClickdown();">-</button>
-								</div>
-							</div>
-						</div>
-						<div id="small-separator2"></div>
-						<div class="order">
-							<div class="fsproduct-price">
-								<p>Price:120$</p>
-							</div>
-							<div class="order-button order-action">
-								<a href="#"><button type="button">Order Now</button></a>
-							</div>
-							<div class="tabicon order-action"> 
-								<figure class="icon">
-									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
-									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
-								</figure>
-								<figure class="icon" id="icon-error">
-									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
-									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
-								</figure>
-								<figure class="icon">
-									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
-									<a href="#"> <img class="iconshowhover" src="css/ico/likehover.png"/> </a>
-								</figure>
-							</div>
-						</div>
+							</a>
+						</figure>
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<section class="section">
 		<div class="container2">
 			<div class="related-product">
-				<H1><span style="color:#ff5912">RELATED</span> PRODUCT</H1>
+				<H1><span style="color:#ff5912">NEW</span> ARRIVALS</H1>
 				<p>lorem ipsum is simply dummy text of the printing and typesetting industry</p>
 			</div>
 			<div class="products-below">
@@ -227,9 +198,9 @@
 									<a href="#" > <img class="iconshow" src="css/ico/share.png"/> </a>
 									<a href="#" > <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
 								</figure>
-								<figure class="icon">
-									<img class="iconshow" src="css/ico/addtocart.png"/>
-									<img class="iconshowhover" onclick="buttonClickadd();" src="css/ico/addtocarthover.png"/>
+								<figure class="icon" onclick="buttonClickadd();">
+									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
+									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
 								</figure>
 								<figure class="icon">
 									<a href="#"> <img class="iconshow" src="css/ico/like.png"/> </a>
@@ -270,7 +241,7 @@
 									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
 								</figure>
-								<figure class="icon">
+								<figure class="icon" onclick="buttonClickadd();">
 									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
 								</figure>
@@ -313,7 +284,7 @@
 									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
 								</figure>
-								<figure class="icon">
+								<figure class="icon" onclick="buttonClickadd();">
 									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
 								</figure>
@@ -356,7 +327,7 @@
 									<a href="#"> <img class="iconshow" src="css/ico/share.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/sharehover.png"/> </a>
 								</figure>
-								<figure class="icon">
+								<figure class="icon" onclick="buttonClickadd();">
 									<a href="#"> <img class="iconshow" src="css/ico/addtocart.png"/> </a>
 									<a href="#"> <img class="iconshowhover" src="css/ico/addtocarthover.png"/> </a>
 								</figure>
@@ -366,6 +337,117 @@
 								</figure>
 							</div>
 						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="paginator2">
+			<div class="page-button">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="hot">
+			<div class="salesoff hotdeals">
+				<img class="sales" src="images/sale-off.png"/>
+				<div class="sales text">
+					<h3>FULL WINTER KIT</h3>
+					<p>Half Jacket + Skiny Trousers + Boot Leather</p>
+				</div>
+				<div class="sales-right ordericon">
+					<figure id="order" class="icon">
+						<a href="#">
+						<img class="iconshow" src="css/ico/addtocart.png"/>
+						<img class="iconshowhover" onclick="buttonClickadd();" src="css/ico/addtocarthover.png"/>
+						</a>
+					</figure>
+				</div>
+				<div class="sales-right orderprice">
+					<p> 120$ </p>
+				</div>
+			</div>
+			<div class="adv hotdeals">
+				<div class="text">
+					<p id="adv1"> adv&nbsp<span style="color:#ff5912"> area </span></p>
+					<p id="adv2"> 4 7 0&emsp;x&emsp;1 0 0 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container2">
+			<div class="related-product bestsales">
+				<H1><span style="color:#ff5912">BEST</span> SALES</H1>
+				<p>lorem ipsum is simply dummy text of the printing and typesetting industry</p>
+			</div>
+			<div class="products-below">
+				<div class="best-item">
+					<div class="best-block best-image">
+						<img src="images/bestproduct.png"/>
+					</div>
+					<div class="best-block best-description">
+						<p class="productname">Reebok Track Jacket</p>
+						<div class="detail">
+							<div class="best-detail rating">
+								<div class="rated">
+									
+								</div>
+							</div>
+							<div class="best-detail">
+								<span class="price">100$</span>
+							</div>
+							<div class="hiddenorder" onclick="buttonClickadd();">
+								<img class="label-icon" id="addtocart" src="css/ico/addtocarthover.png"/>
+								<label for="addtocart"><a href="#">add to cart&emsp;&emsp;</a></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="best-item">
+					<div class="best-block best-image">
+						<img src="images/bestproduct.png"/>
+					</div>
+					<div class="best-block best-description">
+						<p class="productname">Reebok Track Jacket</p>
+						<div class="detail">
+							<div class="best-detail rating">
+								<div class="rated">
+									
+								</div>
+							</div>
+							<div class="best-detail">
+								<span class="price">100$</span>
+							</div>
+							<div class="hiddenorder" onclick="buttonClickadd();">
+								<img class="label-icon" id="addtocart" src="css/ico/addtocarthover.png"/>
+								<label for="addtocart"><a href="#">add to cart&emsp;&emsp;</a></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="best-item">
+					<div class="best-block best-image">
+						<img src="images/bestproduct.png"/>
+					</div>
+					<div class="best-block best-description">
+						<p class="productname">Reebok Track Jacket</p>
+						<div class="detail">
+							<div class="best-detail rating">
+								<div class="rated">
+									
+								</div>
+							</div>
+							<div class="best-detail">
+								<span class="price">100$</span>
+							</div>
+							<div class="hiddenorder" onclick="buttonClickadd();">
+								<img class="label-icon" id="addtocart" src="css/ico/addtocarthover.png"/>
+								<label for="addtocart"><a href="#">add to cart&emsp;&emsp;</a></label>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
