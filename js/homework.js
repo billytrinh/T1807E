@@ -7,6 +7,7 @@ tenbien.onreadystatechange = function(){
     		var html ='';
     		for (var i = 0; i < products.length -1; i++) 
 {		
+		html+='<div class="rows">';
 		html+='<div class="item">';
 		html+='	<div class="row">';
 		html+='		<figure class ="image">';
@@ -30,6 +31,7 @@ tenbien.onreadystatechange = function(){
         html+='            <i class="fa fa-heart-o"></i>';
         html+='        </div>	';
 		html+='	</div>';
+		html+='</div>';
 		html+='</div>';
 			}
 			document.getElementById("menu_list").innerHTML = html;

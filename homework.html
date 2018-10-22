@@ -3,18 +3,22 @@
 <head>
 	<title> Test Demo </title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/homework.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+	<link rel="stylesheet"  href="css/tabletto.css"/>
+	<link rel="stylesheet"  href="css/tabletnho.css"/>
+	<link rel="stylesheet"  href="css/iphone.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
 	<header class="headerS">
-		<section class="section1">
+		<div class="section1">
 			<div class="email-header">
 				<a href="#"><i class="fa fa-envelope"></i></a>
 				<input class="mail" type="text" value="" size="30" placeholder="info@shopy.com" />
-				<a href="#"><i class="fa fa-phone-square"></i></a>
-				<span> 453 - 5553 - 996</span>
+				<a class="phone" href="#"><i class="fa fa-phone-square"></i></a>
+				<span class="sdt"> 453 - 5553 - 996</span>
 				<span class="icon-header">
 					<a href="#"><i class="fa fa-facebook-f"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
@@ -22,9 +26,9 @@
 					<a href="#"><i class="fa fa-camera-retro"></i></a>
 				</span>
 			</div>
-		</section>
+		</div>
 		<p class="line-header"></p>
-		<section class="section2">
+		<div class="section2">
 			<div class="products2">
 				<img class="logo-header" src="images/logo.png">
 				<ul class="danhsach">
@@ -40,7 +44,7 @@
 					<a href="#"><i class="fa fa-shopping-cart"></i></a>
 				</span>
 			</div>
-		</section>
+		</div>
 	</header>
 	<section class="section">
 		<div class="products1">
@@ -70,10 +74,10 @@
 						</p>
 					</div>
 					<div class=" number">
-						From 
-						<input type="number" name="number1">
-						To
-						<input type="number" name="number2">
+						<span>From</span> 
+						<input class="kitu" type="number" name="number1">
+						<span>To</span>
+						<input class="kitu" type="number" name="number2">
 					</div>
 				</div>
 				<div class="item3">
@@ -125,6 +129,7 @@
 			</div>
 			<div class="products">
 				<div class="menu" id="menu_list">
+
 				</div>
 				<div class="edit-key">
 					<div class="edit">

@@ -1,0 +1,206 @@
+@media only screen and (max-width: 899px) and (min-width: 768px)
+{
+	.products
+	{
+		width: 100%;
+		padding-right: 30px;
+	}
+	.products1  
+		{
+			width: 738px;
+		}
+	.menu .item
+		{
+			width: calc(100% / 2);
+		}
+	.menu1
+		{
+			display: none;
+		}
+	.products .edit-key
+		{
+			width: 708px;
+		}
+	.section1
+		{
+			width: 738px;
+		}
+	.section2
+		{
+			width: 738px;
+		}
+	.section2 .products2
+		{
+			width: 100%;
+		    margin: 0 auto;
+		    position: relative;
+		    float: left;
+		}
+	.section2 .products2 .danhsach 
+		{
+		    width: 58%;
+		    height: 40px;
+		    float: left;
+		    display: block;
+		    padding-left: 55px;
+		    list-style: none;
+		    margin-top: 45px;
+		}
+	.sdt
+		{
+			font-size: 13px;
+		}
+	.danhsach li 
+		{
+		    float: left;
+		    padding-top: 10px;
+		    padding-right: 30px;
+		    font-size: 12px;
+		    font-weight: 600;
+		}
+	.section2 .products2 .icon-header1 .fa
+		{
+		    text-align: center;
+		    padding-top: 10px;
+		    width: 60px;
+		    height: 40px;
+		    float: left;
+		    color: #34404b;
+		    font-size: 20px;
+		}
+	.container{
+		width: 678px;
+	}	
+	.container .new
+	 	{
+		    float: left;
+		    width: 16%;
+		    display: inline-block;
+		    font-size: 24px;
+		    font-weight: 900;
+		    margin-top: 35px;
+		    padding-left: 35px;
+		    color: #ff5912;
+		}
+	.footer1 .show{
+		width: 738px;
+	}
+	.container .join{
+		width: 42%;
+	}
+	.footer1 .show .logo .shopy{
+		font-size: 12px;
+	}
+	.footer1 .show .logo {
+		width: 30%;
+		padding-left: 5px;
+	}
+	.footer1 .show .track1{
+		font-size: 12px;
+		width: 13%;
+	}
+	.footer1 .show .track2{
+		font-size: 12px;
+		width: 20%;
+	}
+	.footer1 .show .track3{
+		width: 13%;
+		font-size: 12px;
+	}
+	.footer1 .show .track4{
+		width: 24%;
+		font-size: 12px;
+	}
+	/* page1*/
+	.section3 .menu-header{
+		width: 738px;
+	}
+	.section3 .menu-header .menu1-header{
+		width: 35%;
+		padding-left: 0px;
+	}
+	.section3 .menu-header .menu1-header .images-header .anh-four {
+	    margin-top: 120px;
+	    padding-left: 38px;
+	}
+	.section3 .menu-header .menu1-header .images-header .anh-con .anh{
+		width: 74px;
+		height: 67px;
+	}
+	.section3 .menu-header .menu1-header .images-header .anh-con .con1 {
+	    float: left;
+	    padding-left: 15px;
+	}
+	.section3 .menu-header .menu1-header .images-header .anh-con .con2 {
+	    float: left;
+	    padding-left: 25px;
+	}
+	.section3 .menu-header .menu1-header .images-header .anh-con .con3 {
+	    float: left;
+	    width: 30px;
+	    height: 55px;
+	    margin-left: 21px;
+	    padding-top: 10px;
+	}
+	.section3 .menu-header .menu2-header {
+	    width: 62%;
+	    float: left;
+	    padding-left: 39px;
+	}
+	.section3 .menu-header .menu2-header .line2 {
+		width: 418px;
+	}
+	.section3 .menu-header .menu2-header .text1 .full {
+    	font-size: 30px;
+    }
+    .section3 .menu-header .menu2-header .text1 .vanban1{
+    	font-size: 15px;
+    }
+    .section3 .menu-header .menu2-header .text1 .vanban{
+    	font-size: 13px;
+    }
+	.section3 .menu-header .menu2-header .text2 .chose-left {
+	    width: 50%;
+	    float: left;
+	}
+	.section3 .menu-header .menu2-header .text2 .chose-left .chos-size {
+		font-size: 15px;
+	}
+	.section3 .menu-header .menu2-header .text2 .chose-left .chos-size .size{
+		font-size: 13px;
+	}
+	.section3 .menu-header .menu2-header .text2 .chose-right {
+	    width: 48%;
+	    float: right;
+	}
+	.section3 .menu-header .menu2-header .text2 .chose-right .Quantity{
+		font-size: 15px;
+		padding-left: 23px;
+		width: 147px;
+	}
+	.section3 .menu-header .menu2-header .text2 .chose-right .put-quanti input{
+		font-size: 14px;
+	}
+	.section3 .menu-header .menu2-header .text3 .icon-bot{
+		padding-left: 110px;
+	}
+	.section3 .menu-header .menu2-header .text3 .buton{
+		margin-left: 27px;
+	}
+	.products3 .menu3 {
+	    width: 738px;
+	    margin: 0 auto;
+	}
+	.page1 .item{
+		width: calc(100% / 2);
+	}
+	.container {
+    	width: 738px;
+	}
+	.container5{
+		width: 738px;
+	}
+	.container5 .row5 .products5 .dangnhap button {
+		width: 22%;
+	}
+}
