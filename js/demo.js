@@ -24,7 +24,7 @@ function renderHtml(result){
 	var products = result.data;
 	var html = '';
 		for (var i = 0; i < products.length; i++) {
-			html += '<div class="item">';
+			html += '<div class="item col-md-4">';
 				html+='<div class="item-content">';
 				html+='		<figure>';
 				html+='			<img src="'+products[i].image+'"/>';
