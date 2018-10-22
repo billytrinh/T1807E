@@ -15,7 +15,11 @@ body{
 }
 .header-bottom .logo{
 	float: none;
+<<<<<<< HEAD
 	padding: 0 0 0 60px;
+=======
+	padding: 0px;
+>>>>>>> 5aa3a2c950320d1c70aab35d89880cea0f7a3c25
 }
 .header-bottom{
 	text-align: center;
@@ -47,6 +51,7 @@ body{
 /*Page4*/
 .container-reg{
 	width: 80%;
+<<<<<<< HEAD
 }
 /*page3*/
 .body-page3{
@@ -68,3 +73,6 @@ body{
 .sale .kt{
 	display: none;
 }
+=======
+}
+>>>>>>> 5aa3a2c950320d1c70aab35d89880cea0f7a3c25

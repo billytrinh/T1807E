@@ -372,9 +372,12 @@ h2{
 	color: #ff5912;
 	font-weight: 700;
 	padding-bottom: 20px;
+<<<<<<< HEAD
 }
 .section-footer .payment img{
 	max-width: 100%;
+=======
+>>>>>>> 5aa3a2c950320d1c70aab35d89880cea0f7a3c25
 }
 .section-footer .bot-menu{
 	list-style: disc;
