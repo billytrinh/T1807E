@@ -13,14 +13,14 @@ draw = function() {
     background(151, 244, 247);
     
     // draw the car body
-    fill(255, 0, 115);
+    fill(128, 0, 128);
     rect(x, 200, 100, 20);
     rect(x + 15, 178, 70, 40);
     
     // draw the wheels
-    fill(77, 66, 66);
-    ellipse(x + 25, 221, 24, 24);
-    ellipse(x + 75, 221, 24, 24);
+    fill(128, 0, 128);
+    ellipse(x + 30, 227, 30, 30);
+    ellipse(x + 30, 227, 30, 30);
     
     x = x + 1;
 };
