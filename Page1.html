@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Page 1</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 992px) and (min-width: 769px)" href="css/tablet.css"/>
 	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/>
 	<script type="text/javascript" src="js/data.json"></script>
 </head>
@@ -14,14 +15,20 @@
 	<header>
 		<section class="header-top">
 			<div class="container">
-				<img class="left" src="images/mailicon.png"/>
-				<p class="left">info@shopy.com</p>
-				<img class="left" src="images/phoneicon.png"/>
-				<p class="left">996 - 5553 - 453</p>
-				<img class="right" src="images/instaicon.png"/>
-				<img class="right" src="images/ggicon.png"/>
-				<img class="right" src="images/twittericon.png"/>
-				<img class="right" src="images/fbicon.png"/>
+				<div class="row">
+					<div class="col-xs-6">	
+						<img class="left" src="images/mailicon.png"/>
+						<p class="left">info@shopy.com</p>
+						<img class="left" src="images/phoneicon.png"/>
+						<p class="left">996 - 5553 - 453</p>
+					</div>
+					<div class="col-xs-6">
+						<img class="right" src="images/instaicon.png"/>
+						<img class="right" src="images/ggicon.png"/>
+						<img class="right" src="images/twittericon.png"/>
+						<img class="right" src="images/fbicon.png"/>
+					</div>
+				</div>
 			</div>
 
 		</section>
@@ -67,7 +74,7 @@
 					</ul>
 				</div>
 				<div class ="block price-filtter">
-					<h3>Price Filtler</h3>
+					<h3>Price Filtter</h3>
 					<p class="line-box">
 						<span class="gia gia-1">100$</span>
 						<span class="gia gia-2">1000$</span>
@@ -75,6 +82,12 @@
 						<span class="line"></span>
 						<span class="node no-2"></span>
 					</p>
+					<form method="post" action="#" name="filtter-data" class="filtter-data" enctype="multipart/form-data">
+						<label class="" for="from">From</label>
+						<input class=" filtter-input filtter-from" type="email" id="from" name="filtter-from"/>
+						<label class="" for="to">To</label>
+						<input class="filtter-input filtter-to" type="email" id="to" name="filtter-to"/>
+					</form>
 				</div>
 				<div class ="block sizes">
 					<h3>Sizes</h3>
@@ -101,19 +114,19 @@
 					<h3>Brands</h3>
 					<ul>
 						<li class="checkbox">
-							<input class="hidden" type="checkbox" name="size" id="checkbox5">
+							<input class="hidden" type="checkbox" name="size" id="checkbox5"/>
 							<label for="checkbox5">Reebok</label>
 						</li>
 						<li class="checkbox">
-							<input class="hidden" type="checkbox" name="size" id="checkbox6">
+							<input class="hidden" type="checkbox" name="size" id="checkbox6"/>
 							<label for="checkbox6">Addidas</label>
 						</li>
 						<li class="checkbox">
-							<input class="hidden" type="checkbox" name="size" id="checkbox7">
+							<input class="hidden" type="checkbox" name="size" id="checkbox7"/>
 							<label for="checkbox7">Nike</label>
 						</li>
 						<li class="checkbox">
-							<input class="hidden" type="checkbox" name="size" id="checkbox8">
+							<input class="hidden" type="checkbox" name="size" id="checkbox8"/>
 							<label for="checkbox8">Active</label>
 						</li>
 					</ul>
@@ -126,7 +139,7 @@
 					<form method="post" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
 						<label class="" for="email_letter"><img src="images/mailicon.png"/></label>
 						<input class="email-letter" type="email" id="email_letter" name="email_letter" placeholder="type your email here"/>
-						<button class="sumit-email" type="submit">join us</button>
+						<button class="sumit-email btn btn-primary" type="submit">join us</button>
 					</form>
 					
 				</div>

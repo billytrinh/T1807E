@@ -8,14 +8,14 @@ body{
 	display: none;
 }
 .header-top{
-	display: none;
+	/*display: none;*/
 }
 .header-bottom .menu-list .menu-ele{
 	display: none;
 }
 .header-bottom .logo{
 	float: none;
-	padding: 0px;
+	padding: 0 0 0 60px;
 }
 .header-bottom{
 	text-align: center;
@@ -47,4 +47,24 @@ body{
 /*Page4*/
 .container-reg{
 	width: 80%;
+}
+/*page3*/
+.body-page3{
+	height: auto;
+}
+.body-page3 .info{
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+.sale .left-sale .sale-info p{
+	display: none;
+}
+.sale .left-sale .sale-info{
+	padding:35px 30px 0px 30px;
+}
+.sale-icon{
+	padding-left: 30px;
+}
+.sale .kt{
+	display: none;
 }
