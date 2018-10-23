@@ -1,0 +1,22 @@
+var products = [
+			{
+				image: "image/aobt3.png",
+				name: "Reebok Track Jacket ",
+				price: "110$",
+			},
+			{
+				image: "image/anh1.png",
+				name: "Reebok Track Jacket ",
+				price: "110$",
+			},
+			{
+				image: "image/aobt2.png",
+				name: "Reebok Track Jacket ",
+				price: "110$",
+			},
+			{
+				image: "image/aobt3.png",
+				name: "Reebok Track Jacket ",
+				price: "110$",
+			},
+		];
