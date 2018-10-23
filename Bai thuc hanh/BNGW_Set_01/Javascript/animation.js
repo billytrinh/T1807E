@@ -10,7 +10,7 @@ var x = 10;
     
 draw = function() {
     // all lines of code inside here will be run repeatedly
-    background(151, 244, 247);
+    background(0, 0, 0);
     
     // draw the car body
     fill(204, 153, 255);
