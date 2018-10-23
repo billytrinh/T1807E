@@ -19,6 +19,7 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	background-color: white;
+	border-bottom: 1px solid #f4f6f8;
 }
 .section1{
 	width: 1170px;
@@ -1214,5 +1215,12 @@ figcaption{
 	width: 19px;
 	height: 17px;
 }
-
-
+.water2{
+	display: none;
+}
+.fa.fa-bars{
+	display: none;
+}
+.section6{
+	display: none;
+}

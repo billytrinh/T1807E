@@ -38,3 +38,10 @@ tenbien.onreadystatechange = function(){
 };
 tenbien.open("GET", "http://smsentertainment.club/api/get_products", true);
 tenbien.send();
+
+function hien () {
+	document.getElementById("click_hien").style.display = 'block';
+}
+function an () {
+	document.getElementById("click_hien").style.display = 'none';
+}

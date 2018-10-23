@@ -7,7 +7,6 @@ tenbien.onreadystatechange = function(){
     		var html ='';
     		for (var i = 0; i < products.length -1; i++) 
 {		
-		html+='<div class="rows">';
 		html+='<div class="item">';
 		html+='	<div class="row">';
 		html+='		<figure class ="image">';
@@ -32,10 +31,16 @@ tenbien.onreadystatechange = function(){
         html+='        </div>	';
 		html+='	</div>';
 		html+='</div>';
-		html+='</div>';
 			}
 			document.getElementById("menu_list").innerHTML = html;
 	 }
 };
 tenbien.open("GET", "http://smsentertainment.club/api/get_products", true);
 tenbien.send();
+
+function hien () {
+	document.getElementById("click_hien").style.display = 'block';
+}
+function an () {
+	document.getElementById("click_hien").style.display = 'none';
+}

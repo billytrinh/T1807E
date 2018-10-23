@@ -150,5 +150,11 @@
 	.container {
     	width: 870px;
 	}
-	
+	.water2{
+	display: none;
+	}
+	.section6{
+		display: none;
+	}
+
 }

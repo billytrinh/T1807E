@@ -4,20 +4,25 @@
 	<title> Page2 </title>
 	<title>Le Cong Anh</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/homework.css">
+	<link rel="stylesheet" type="text/css" href="css/ipad.css">
+	<link rel="stylesheet"  href="css/ipad.css"/>
+	<link rel="stylesheet"  href="css/tabletnho.css"/>
+	<link rel="stylesheet"  href="css/iphone.css">
 	<script type="text/javascript" src="js/page1.json">
 		
 	</script>
 </head>
 <body>
 	<header class="headerS1">
-		<section class="section1">
+		<div class="section1">
 			<div class="email-header">
 				<a href="#"><i class="fa fa-envelope"></i></a>
 				<input class="mail" type="text" value="" size="30" placeholder="info@shopy.com" />
-				<a href="#"><i class="fa fa-phone-square"></i></a>
-				<span> 453 - 5553 - 996</span>
+				<a class="phone" href="#"><i class="fa fa-phone-square"></i></a>
+				<span class="sdt"> 453 - 5553 - 996</span>
 				<span class="icon-header">
 					<a href="#"><i class="fa fa-facebook-f"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
@@ -25,9 +30,9 @@
 					<a href="#"><i class="fa fa-camera-retro"></i></a>
 				</span>
 			</div>
-		</section>
+		</div>
 		<p class="line-header"></p>
-		<section class="section2">
+		<div class="section2">
 			<div class="products2">
 				<img class="logo-header" src="images/logo.png">
 				<ul class="danhsach">
@@ -38,14 +43,24 @@
 					<li class="ic"><a href="#"></a> Contact</li>
 				</ul>
 				<span class="icon-header1">
+					<a href="#" class="block-biencham" onclick="hien()" ><i class="fa fa-bars"></i></a>
 					<a href="#"><i class="fa fa-search"></i></a>
 					<a href="#"><i class="fa fa-user-o"></i></a>
 					<a href="#"><i class="fa fa-shopping-cart"></i></a>
 				</span>
 			</div>
-		</section>
-		<p class="line-header"></p>
+		</div>
 	</header>
+	<section class="water2" id="click_hien">
+		<ul class="bien2">
+			<li class="ics" onclick="an()"><i class="fa fa-times"></i></li>
+			<li class="ic"><a href="#"></a> Home </li>
+			<li class="ic"><a href="#"></a> Products</li>
+			<li class="ic"><a href="#"></a> Hot Deals</li>
+			<li class="ic"><a href="#"></a> About</li>
+			<li class="ic"><a href="#"></a> Contact</li>
+		</ul>
+	</section>
 	<section class="products-page2">
 		<div class="item-page2">
 			<div class="row1">
@@ -198,7 +213,7 @@
 					shopy c 2015 . your copy right here
 				</figcaption>
 			</figure>
-			<ul class="track track1">
+			<ul class="track track1 ">
 				<li>about us</li>
 				<li>contact us</li>
 				<li>support</li>
@@ -212,9 +227,23 @@
 				<li>join us</li>
 				<li>live support</li>
 			</ul>
-			<div class="track4">
+			<div class="track track4">
 				<p class="Payment">Payment Methods </p>
 				<img class="logo1" src="images/logo1.png">
+			</div>
+		</div>
+		<div class="section6">
+			<div class="email-header">
+				<a href="#"><i class="fa fa-envelope"></i></a>
+				<input class="mail" type="text" value="" size="30" placeholder="info@shopy.com" />
+				<a class="phone" href="#"><i class="fa fa-phone-square"></i></a>
+				<span class="sdt"> 453 - 5553 - 996</span>
+			</div>
+			<div class="icon-header">
+				<a href="#"><i class="fa fa-facebook-f"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-camera-retro"></i></a>
 			</div>
 		</div>
 	</footer>

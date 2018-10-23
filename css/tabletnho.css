@@ -62,12 +62,16 @@
 		{
 		    text-align: center;
 		    padding-top: 10px;
-		    width: 60px;
+		    width: 44px;
 		    height: 40px;
 		    float: left;
 		    color: #34404b;
 		    font-size: 20px;
 		}
+	.section2 .products2 .icon-header1 .fa.fa-bars{
+		display: none;
+	}
+
 	.container{
 		width: 678px;
 	}	
@@ -203,4 +207,14 @@
 	.container5 .row5 .products5 .dangnhap button {
 		width: 22%;
 	}
+	.water2{
+	display: none;
+	}
+	.water{
+	display: none;
+	}
+	.section6{
+		display: none;
+	}
+
 }

@@ -3,7 +3,7 @@
 	.products
 	{
 		width: 100%;
-		margin-bottom: 3px;
+		margin-bottom: 2px;
 	}
 	.products1  
 		{
@@ -75,70 +75,54 @@
 
 	}
 	.headerS{
-		margin-bottom: 3px;
+		margin-bottom: 2px;
 	}
 	footer {
 		margin-bottom: 0px;
 	}	
+	.footer{
+		display: none;
+	}
 	.footer1 .show{
+		text-align: center;
 		height: 100%;
 		margin: 0;
 		width: 100%;
+		border-bottom: 1px solid #f4f6f8;
 	}
 	.footer1 .show .logo .shopy{
 		font-size: 15px;
 		display: block;
-		padding-left: 35px;
 		float: none;
-	}
-	.footer1 .show .logo img{
-		padding-left: 84px;
 	}
 	.footer1 .show .logo {
 		width: 100%;
 		display: block;
-		padding-left: 49px;
 		float: none;
-		margin-top: -30px;
+		margin-top: -60px;
 	}
-	.footer1 .show .track1{
+	.footer1 .show .track{
 		font-size: 15px;
 		width: 100%;
 		display: block;
 		float: none;
-		margin-top: -60px;
-		padding-left: 30px;
+		margin-top: -75px;
 	}
-	.footer1 .show .track2{
-		font-size: 15px;
-		display: block;
-		width: 100%;
-		float: none;
-		margin-top: -60px;
-		padding-left: 30px;
+	.footer1 .show .track.track4{
+		margin-bottom: 10px;
 	}
-	.footer1 .show .track3{
-		width: 100%;
-		font-size: 15px;
-		display: block;
-		float: none;
-		margin-top: -60px;
-		padding-left: 30px;
-	}
-	.footer1 .show .track4{
-		width: 100%;
-		font-size: 15px;
-		display: block;
-		float: none;
-		margin-top: -60px;
-		padding-left: 30px;
+	.footer1 .show li {
+    	padding: 5px;
 	}
 	.container5{
-		width: 100%;
+		width: 320px;
 	}
 	.container5 .row5 .products5 .ten{
-		padding-left: 30px;
+		padding-left: 0px;
 		font-size: 20px;
+	}
+	.container5 .row5 .products5 .form-group input{
+		width: 100%;
 	}
 	.container5 .row5 .products5 .dangnhap button {
 	    width: 40%;
@@ -151,4 +135,213 @@
 		font-size: 120px;
 		
 	}
+	.water {
+		position: relative;
+		float: left;
+		margin-top: 50px;
+		padding-left: 90px;
+		display: block;
+	}
+	.water .biencham{
+		list-style: none;
+	}
+	.water .biencham .fa{
+		width: 28px;
+		height: 27px;
+	}
+	.water .biencham .fa.fa-bars{
+		font-size: 22px;
+		color:black;
+	}
+	.water .biencham .bien2{
+		list-style: none;
+		position: absolute;
+	
+	}
+	.water2 {
+		margin-bottom: 3px;
+		display: none;
+	}
+	.water2 .bien2 .ics{
+		float: right;
+		list-style: none;
+	}
+	.water2 .bien2 .ic{
+		width: 100%;
+		padding-left: 8px;
+		font-size: 15px;
+		padding-top: 18px;
+		color: #34404b;
+		height: 40px;
+		background-color: white;
+		border-top: 1px solid #f4f6f8;
+	}
+	.fa.fa-bars{
+		display: inline-block;
+	}
+	.section6{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	height: 78px;
+	text-align: center;
+}
+
+.section6 .email-header .fa-envelope{
+	 color: #ff5912;
+	 margin-top: 10px;
+}
+.section6 .email-header .fa-phone-square{
+	color: #ff5912;
+}
+.section6 .email-header .mail{
+	width: 92px;
+	height: 18px;
+	border:none;
+}
+.sdt{
+	font-size: 12px;
+}
+.section6 .icon-header .fa{
+	padding-top: 10px;
+	width: 35px;
+	height: 35px;
+	color: #34404b;
+}
+.section6 .icon-header .fa:hover.fa-facebook-f{
+	background-color: #4267b2;
+	transition: 250ms ;
+	color: white;
+	
+}
+.section6  .icon-header .fa:hover.fa-twitter{
+	color: white;
+	transition: 250ms ;
+	background-color:#1DA1F2;
+}
+.section6 .icon-header .fa:hover.fa-google-plus{
+	color: white;
+	transition: 250ms ;
+	background-color:#f93c19;
+}
+.section6 .icon-header .fa:hover.fa-camera-retro{
+	color: white;
+	transition: 250ms ;
+	background-color:#ec8470;
+}
+.section6{
+	display: block;
+}
+.section3 {
+	width: 100%;
+    margin: 0 auto;
+    float: left;
+    background-color: white;
+    padding-bottom: 100px;
+}
+.section3 .menu-header {
+    width: 320px;
+    margin: 0 auto;
+}
+.section3 .menu-header .menu1-header {
+	padding-left: 0px;
+    width: 100%
+}
+.section3 .menu-header .menu1-header .images-header .anh-four {
+    margin-top: 60px;
+    padding-left: 96px;
+}
+.section3 .menu-header .menu1-header .images-header .anh-con {
+    margin-top: 65px;
+    padding-left: 7px;
+}
+.section3 .menu-header .menu1-header .images-header .anh-con .anh {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    background-color: #f4f6f8;
+    margin-right: 0px;
+    float: none;
+}
+.section3 .menu-header .menu2-header {
+    width: 100%;
+    float: left;
+}
+.section3 .menu-header .menu2-header .text1 {
+    width: 100%;
+    height: 190px;
+    padding-left: 3px;
+    margin-top: 50px;
+}
+.section3 .menu-header .menu2-header .text1 .full {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ff5912;
+}
+.section3 .menu-header .menu2-header .text1 .vanban1 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #3c4751;
+    margin-top: 10px;
+}
+.section3 .menu-header .menu2-header .text1 .vanban {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #495662;
+    font-weight: 300;
+}
+.section3 .menu-header .menu2-header .text1 .vanban {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #495662;
+    font-weight: 300;
+}
+.section3 .menu-header .menu2-header .text1 .vanban {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #495662;
+    font-weight: 300;
+}
+.section3 .menu-header .menu2-header .line2{
+	margin-top: 0px;
+	width: 100%;
+}
+.section3 .menu-header .menu2-header .text2 {
+    width: 100%;
+    margin-top: 25px;
+    padding-left: 3px;
+}
+.section3 .menu-header .menu2-header .text2 .chose-left {
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
+}
+.section3 .menu-header .menu2-header .text2 .chose-right {
+    width: 100%;
+    float: right;
+}
+.section3 .menu-header .menu2-header .text3 {
+    width: 100%;
+    float: left;
+    padding-left: 3px;
+}
+.section3 .menu-header .menu2-header .text3 .icon-bot {
+    float: left;
+    margin-top: 80px;
+    padding-left: 10px;
+}
+.section3 .menu-header .menu2-header .text3 .buton {
+	margin-left: 25px;
+}
+.products3 .menu3 {
+    width: 320px;
+    margin: 0 auto;
+}
+.products3 .menu3 .related{
+	margin-top: 50px;
+}
+.products3 .menu3 .related .related1{
+	font-size: 25px;
+}.products3 .menu3 .related .PRODUCTS{
+	font-size: 25px;
 }

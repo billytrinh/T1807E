@@ -1,8 +1,8 @@
-var items =[
+var p =[
 	{
 		image:"images/anh1.png",
 		Name:"Reebok Track Jacket",
-		price:"100$",
+		price:"$100",
 	},
 	{
 		image:"images/anh2.png",
