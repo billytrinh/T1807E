@@ -49,14 +49,7 @@ a:hover{
 	float: left;
 	width: 270px;
 }
-.block{
-	float: left;
-	width: calc(100% - 80px);
-	padding: 25px 40px;
-	background: #fff;
-	margin-bottom: 35px;
-	line-height:40px;
-}
+
 .categories{
 }
 
@@ -262,6 +255,7 @@ a:hover{
 .right-block{
 	float:right;
 	width:700px;
+	margin-bottom:120px;
 }
 
 .details-mid-left{
@@ -325,6 +319,17 @@ a:hover{
 	margin-left:-15px;
 	margin-right:-15px;
 }
+.pic-p2{
+	text-align:center;
+}
+.small-p2{
+	margin-top:60px;
+	display:inline-block;
+	width:96px;
+	height:73px;
+	background:#f4f6f8;
+	
+}
 
 /* bai 3 */
 .loadingmore-p3{
@@ -337,11 +342,34 @@ a:hover{
 	/* giong o bai 1 */
 }
 .background-img-p3{
-	background-image: url("image\bg-img.png");
-	background-color:red;
+	background-image: url("../image/bg-img.png");
 	height:650px;
-	background-size: cover;
-	background-position: center;
+	background-position: right;
 	background-repeat:no-repeat;
+	background-size: contain;
+	position: relative;
 }
+/* bootstrap */
+.nav-item{
+	float:left;
+}
+.item-content{
+	height:370px;
+	background:white;
+	border-bottom:30px solid #f4f6f8;
+}
+.block{
+	float: left;
+	padding: 25px 40px;
+	background: #fff;
+	margin-bottom: 35px;
+	line-height:40px;
+}
+.price-controls input{
+	float:left;
+	display:inline-block;
+	height:50px;
+	text-decoration:s
+}
+
 
