@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/data.json"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+        <header>
+            <div class="section header-top">
+                <div class="container">
+                    <span><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i></span>
+                    <span>info@gmail.com</span>
+                    <span class="m-l-15"><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">phone</i>453 - 5553 - 996</span>
+                    <span class="icon-header">
+                        <a href="#"><i class="fa fa-facebook m-l-15" style="font-size:20px;vertical-align: middle"></i></a> 
+                        <a href="#"><i class="fa fa-twitter m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+                        <a href="#"><i class="fa fa-google-plus m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+                        <a href="#"><i class="fa fa-instagram m-l-15" style="font-size:20px;vertical-align: middle"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="section header-bottom">
+                <div class="container">
+                    <img style="vertical-align: middle" src="images/Logo.png"/>
+                    <span class="menu">
+                        <span style="margin-left: 80px"><a href="#">Home</a></span>
+                        <span class="m-l-40"><a href="#">Products</a></span>
+                        <span class="m-l-40"><a href="#">Hot Deals</a></span>
+                        <span class="m-l-40"><a href="#">About</a></span>
+                        <span class="m-l-40"><a href="#">Contact</a></span>
+                    </span>
+                    <span class="icon-header">
+                            <a href="#"><i class="fa fa-search m-l-15" style="vertical-align: middle"></i></a>		
+                            <a href="#"><i class="fa fa-user-circle m-l-15" style="vertical-align: middle"></i></aß>
+                            <a href="#"><i class="fa fa-shopping-cart m-l-15" style="vertical-align: middle"></i></a>				
+                    </span>
+                </div>
+            </div>
+        </header>
+        <section class="section register">
+            <div class="container">
+                <img src="images/register/avatar.png">
+                <form method="post-get" action="#" name="form-register" class="form-register" enctype="multipart/form-data">
+                    <label for="email">Email*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="email" id="email" placeholder="Nhập email"><br>
+                    <label for="name">Họ và Tên*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="text" id="name" placeholder="Nhập Họ và Tên"><br>
+                    <label for="phone">Số điện thoại*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="number" id="phone" placeholder="Nhập Số điện thoại"><br>
+                    <label for="password">Mật khẩu*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="password" id="password" placeholder="Nhập Mật khẩu"><br>
+                    <label for="password-re">Nhập lại mật khẩu*</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="password" id="passwordre" placeholder="Nhập lại Mật khẩu"><br>
+                    <label for="code">Mã giới thiệu</label><br>
+                    <input class="input-register" style="margin-bottom:38px;" type="text" id="code" placeholder="Nhập Mã giới thiệu"><br>
+                    <input type="checkbox" id="checkboxreg">
+                    <label style="font-size:12px; vertical-align: middle;" for="checkbox">Đồng ý về chính sách bảo mật và điều khoản sử dụng</label><br>
+                </form>
+                <div id="form-error">
+                    
+                </div>
+                <button style="margin-bottom: 30px;" class="submit" onclick="checkForm()"> <img width="100%" height="100%" src="images/register/register.png"></button>
+                <a href="#"><p style="margin-bottom: 100px;">Trở lại đăng nhập</p></a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="newsletter">
+                    <span><h3>NewsLetter</h3></span>
+                    <span><h style="padding-left: 15px;">join us now to get all news and special offers</h></span>
+                    <span class="email-typing">
+                        <span>
+                            <form method="post-get" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
+                                <label for="email"><i class="material-icons" style="font-size:20px;color:orange;vertical-align: middle">email</i></label>
+                                <input class="email" type="email" id="email" placeholder="type your email here">
+                            </form>
+                        </span>
+                        <div class="submit">
+                            <button style="border: none;height: 50px;" for="email"><a href="#"><img src="images/icons/Button-Bg.png"></a></label>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="section footer">
+                <div class="container">
+                    <div class="logo">
+                        <img style="vertical-align: top; margin-bottom: 25px;" src="images/Logo.png"/>
+                        <p>shopy &copy; 2015 .your copy right here</p>
+                    </div>
+                    <div class="center">
+                        <ul class="columns">
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">support</a></li>
+                        </ul>
+                        <ul class="columns">
+                            <li><a href="#">our feed</a></li>
+                            <li><a href="#">terms and conditions</a></li>
+                            <li><a href="#">our privacy</a></li>
+                        </ul>
+                        <ul class="columns">
+                            <li><a href="#">join us</a></li>
+                            <li><a href="#">live support</a></li>
+                        </ul>
+                    </div>
+                    <div class="payment">
+                        <h3>Payment Methods</h3>
+                        <div class="credit-icons">
+                            <span>
+                                <i class="fa fa-cc-amex" style="font-size:20px;"></i>
+                                <i class="fa fa-cc-discover" style="font-size:20px;"></i>
+                                <i class="fa fa-cc-visa" style="font-size:20px;"></i>
+                                <i class="fa fa-cc-mastercard" style="font-size:20px;"></i>
+                                <i class="fa fa-cc-paypal" style="font-size:20px;"></i>
+                            </span>
+                        </div>
+                    </div>	
+                </div>
+        </div>		
+        </footer>    
+</body>
+</html>
