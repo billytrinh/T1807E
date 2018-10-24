@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page3</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/page2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <nav class="contact backg hide_mobile">
+        <div class="container contact-container">
+            <ul class="nav-left">
+                <li><img src="images/mail.png">info@shopy.com</li>
+                <li><img src="images/phonenumber.png">453 - 5553 - 996</li>
+            </ul>
+            <ul class="nav-right">
+                <li class="fb">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="tw">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="gg">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="cmr">
+                    <a href="#">
+                        <i class="fa fa-camera-retro"></i>
+                    </a>
+                </li>     
+            </ul>
+        </div>
+    </nav>
+    <section class="contact backg logo logo1">
+        <div class="logo-container container">
+            <div class="logo-picture">
+                <a class="pic-logo" href="#"><img src="images/logo.png"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="search">
+                <li class="hide_desktop hide_tablet" onclick="show_menu()">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section2 hide_menu hide_desktop hide_tablet" id="hidden_menu">
+        <div class="container">
+            <ul>
+                <div class="exit_menu">
+                    <i class="fa fa-times" onclick="hide_menu()"></i>
+                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section2 slide">
+        <div class="container">
+            <div class="slide-left">
+                <div class="slide-left-t-b"></div>
+                <div class="slide-left-mid"></div>
+                <div class="slide-left-t-b"></div>
+            </div>
+            <div class="slide-right detail-right">
+                <div class="desc">
+                    <div class="p1">FULL WINTER KIT</div>
+                    <p class="p2 f-w-700">Half Jacket + Skiny Trousers + Boot leather</p>
+                    <p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                </div>              
+                <p class="slide-price">
+                    <span class="f-w-700" >Price : 120$</span>
+                    <i class="fa fa-shopping-basket"></i>
+                    <span class="order-now f-w-700">Order now</span>
+                </p>
+            </div>
+    </section>
+    <section class="section2 related">
+        <p><span class="cam">RELATED </span><span>PRODUCTS</span></p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    </section>
+    <section class="section section-menu">
+        <div class="container">
+            <div class="products related_product">
+                <ul class="rows" id="related-products">
+                </ul>
+            </div>
+            <div class="loading">
+                <p>
+                    <span class="circle">&nbsp;</span>
+                    <span class="circle">&nbsp;</span>
+                    <span class="circle">&nbsp;</span>
+                </p>
+            </div>
+        </div>   
+    </section>
+   <section class="section2 page3">
+       <div class="container">
+           <div class="sale-left">
+                <div class="sale-50">
+                    <div class="sale-50-content">
+                        <div class="sale-50-1"></div>
+                        <div class="sale-50-2"></div>
+                        <div class="word">
+                            <p class="p-sale">Sale</p>
+                            <br><p class="p-50">50%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-content">
+                    <div class="p1">FULL WINTER KIT</div>
+                    <p class="p2">Half Jacket + Skiny Trousers + Boot leather</p>
+                </div>
+                <div class="sale-price">
+                    <i class="fa fa-cart-plus"></i>
+                    <span>120$</span>
+                </div>
+            </div>
+           <div class="sale-right">
+               <div class="adv">
+                    <p>adv <span>area</span>
+                    <p class="dimension">470 x 100</p>
+                </div> 
+           </div>
+       </div>
+   </section>
+   <section class="section2 related">
+        <p><span class="cam">BEST </span><span>SALE</span></p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    </section>
+    <section class="section2 best">
+        <div class="container">
+            <ul class="best-sale" id="sale_products">
+            </ul>          
+        </div>
+    </section>
+    <section class="section2 hide_mobile">
+        <div class="container news">
+            <div class="news_letter_left">
+                <p class="letter">NEWS LETTER</p>
+                <p class="joinus">join us now to get all news and special offers</p>
+            </div>
+            <div class="inputs">
+                <div class="mail_picture">
+                    <img src="images/mail.png" alt="icon-mail">
+                </div>               
+                <form class="forms" name="form_data">
+                    <input type="text" name="email" placeholder="type your email here">               
+                    <button type="submit" class="button" onclick="return checkForm()" >join us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="section2 footer">
+        <div class="container">
+            <span class="footer-left">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+                <p class="copyright">shopy &copy; 2015 . your copy right here</p>
+            </span>
+            <span class="order">
+                <ul class="under">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">support </a></li>
+                </ul>
+                <ul class="under">
+                    <li><a href="#">our feed</a></li>
+                    <li><a href="#">terms and conditions</a></li>
+                    <li><a href="#">our privacy</a></li>
+                </ul>
+                <ul class="under">
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">live support</a></li>
+                </ul>
+            </span>
+            <ul class="method">
+                <p class="payment">Payment Methods</p>
+                <li>
+                    <a href="#">
+                        <img class="payment amex" src="images/amex.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="payment discover" src="images/discover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="payment visa" src="images/visa.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="payment master" src="images/master.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="payment american" src="images/american.png">
+                    </a>
+                </li>
+            </ul>
+            <p class="hide_tablet hide_desktop line-footer"></p>
+            <p class="f-s-10 hide_tablet hide_desktop">shopy &copy; 2015 . your copy right here</p>
+            <ul class="nav-right hide_desktop hide_tablet">
+                <li class="fb">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="tw">
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="gg">
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li class="cmr">
+                    <a href="#">
+                        <i class="fa fa-camera-retro"></i>
+                    </a>
+                </li>     
+            </ul>
+        </div>
+    </footer>
+    <script src="js/page2+3.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+@media only screen and (max-width: 767px) and (min-width: 300px){
+	.logo .logo-container .menu, .section-menu .container .left-column, .hide_mobile{
+		display: none;
+    }
+    .logo-picture{
+        width: 50%;
+        padding-left: 30px;
+        text-align: center;
+    }
+    .logo .logo-container .search{
+        width: 50%;
+        padding: 50px 0px 0px 10px;
+    }
+    .container{
+        width: 96%;
+        background: #fff;
+    }
+    .item, .products{
+        width: 100%;
+    }
+    .section.section-menu{
+        margin: 30px 0px;
+        padding: 0px;
+    }
+    .footer{
+        height: 650px;
+        margin-top: 40px;
+    }
+    .footer .container{
+        height: 100%;
+    }
+    .footer-left{
+        height: 10%;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .copyright{
+        display: none;
+    }
+    .order{
+        width: 100%;
+        height: 50%;
+        padding: 50px 0px 0px 10px;
+    }
+    .under{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .method{
+        width: 100%;
+        padding: 0px;
+        height: 15%;
+    }
+    .method p{
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .method li{
+        float: left;
+        width: calc(100% / 5);
+        margin-right: 0px;
+        text-align: center;
+    }
+    .hide_desktop{
+        display: block;
+    }
+    .f-s-10.hide_tablet.hide_desktop{
+        font-size: 12px;
+        height: 5%;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+    .under:nth-child(2n){
+        width: 100%;
+    }
+    .hide_tablet.hide_desktop.line-footer{
+        width: 100%;
+        height: 2px;
+        background: #f4f6f8;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .nav-right.hide_desktop.hide_tablet{
+        width: 100%;
+        padding: 0px 30%;
+    }
+    .nav-right li{
+        width: calc(100% / 4);
+        margin-top: 20px;
+    }
+    .detail-left{
+        width: 100%;
+        height: 470px;
+    }
+    .detail{
+        height: 1200px;
+    }
+    .detail-right.page2{
+        width: 100%;
+        padding: 0px;
+    }
+    .detail-right .p1{
+        font-size: 28px;
+    }
+    .detail-right .p2{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .detail-right .p3, .detail-right .p4{
+        font-size: 13px;
+    }
+    .desc{
+        margin-bottom: 30px;
+    }
+    .m-b-10{
+        margin-bottom: 0px;
+    }
+    .choose-left{
+        width: 100%;
+    }
+    .choose .choose-left p{
+        width: 100%;
+        margin-right: 0px;
+        font-size: 16px;
+    }
+   .choose{
+       margin-bottom: 125px;
+   }
+    .choos_size{
+        width: 40%;
+        float: left;
+    }
+    .sml{
+        width: 60%;
+        float: right;
+        text-align: right
+    }
+    .choose-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .choose .choose-right p{
+        font-size: 16px;
+        width: 47%;
+    }
+    .choose-number{
+        width: 53%;
+        float: right;
+        text-align: right
+    }
+    .detail-right .p4{
+        width: 100%;
+    }
+    .price-bot-left{
+        width: 50%;
+    }
+    .price-bot-right{
+        width: 50%;
+        padding-left: 0px;
+        float: right;
+    }
+    .icon-bot.hide_desktop.hide_tablet{
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .price-bot{
+        margin-top: 0px;
+        height: 50px;
+        position: none;
+        margin-bottom: 50px;
+    }
+    .price-bot p{
+        font-size: 16px;
+    }
+    .button_order{
+        width: 100%;
+    }
+    .order-button{
+        position: relative;
+        bottom: 0px;
+        float: right;
+        width: 65%;
+    }
+    .icon-bot .fa{
+        margin-right: 0px;
+        width: calc(100% / 3);
+        text-align: center;
+        float: left;
+    }
+    .related_product .item{
+        width: 100%;
+    }
+    .logo-container.container{
+        margin: 0px;
+        width: 100%;
+    }
+    .related p:last-child{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .related{
+        height: 150px;
+        padding: 20px 0px;
+        margin-top: 50px;
+    }
+    .best-sale-product{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .page3{
+        margin-top: 50px;
+    }
+    .sale-left{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sale-right{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .sale-50-content{
+        left: 10%;
+    }
+    .sale-content .p1{
+        font-size: 15px;
+    }
+    .sale-price span{
+        font-size: 15px;
+    }
+    .sale-price{
+        width: 18%;
+        float: left;
+        padding-left: 10px;
+    }
+    .sale-content{
+        padding: 30px 0px 0px 30px;
+        width: 57%;
+    }
+    .section2.best{
+        margin-bottom: 0px;
+    }
+    .products .rows .item .item-content img{
+        height: 150px;
+        width: auto;
+    }
+    .products .rows .item .price-box{
+        margin-bottom: 55px;
+    }
+    .item{
+        height: 305px;
+    }
+    .products .rows .item .item-content:hover img{
+        height: 70px;
+        width: auto;
+        transition: all 250ms;
+        -webkit-transition: all 250ms;
+    }
+    figcaption{
+        line-height: 45px;
+    }
+    .hide_menu ul li{
+        border-bottom: 1px solid rgba( 0,0,0,0.1);
+        line-height: 50px;
+    }
+    .hide_menu ul li:hover a{
+        color: #ff5912;
+    }
+    .hide_menu{
+        background: #fff;
+        display: none;
+    }
+    .exit_menu{
+        text-align: right;
+    }
+    .exit_menu i{
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    .icon_register i{
+        font-size: 100px;
+    }
+    .section2.register{
+        margin: 50px 0px 0px 0px;
+    }
+    .form_register div label{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .form_register input{
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .form_register input[type=checkbox] + label:before{
+        width: 15px;
+        height: 15px;
+    }
+    .form_register div label.agree_fix, .check_agree p{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0px;
+    }
+    .registion_submit{
+        height: 50px;
+        width: 30%;
+        font-size: 20px;
+    }
+    .sign_in a{
+        font-size: 20px;
+    }
+}
