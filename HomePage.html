@@ -2,9 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Home Page</title>
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/style870.css"/>
+		<link rel="stylesheet" href="css/style738.css"/>
+		<link rel="stylesheet" href="css/style700.css"/>
 		<script type="text/javascript" src="js/data.json"></script>
 	</head>
 	<body>
@@ -12,21 +18,24 @@
 			<div class="section header-top bg-white">
 				<div class="container">
 					<div class="fl-left">
-						<img src="img/mail.png"/>&nbsp;&nbsp;&nbsp;
+						<i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;
 						<a href="#"><span>info@gmail.com</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<img src="img/icon_phone.png"/>&nbsp;&nbsp;&nbsp;
+						<i class="fas fa-phone-square"></i>&nbsp;&nbsp;&nbsp;
 						<a href="#"><span class="space-top">098 369 1189</span></a>
 					</div>
 					<div class="fl-right">
-						<a href="https://facebook.com"><img src="img/icon_fb.png"/></a>&nbsp;&nbsp;&nbsp;
-						<a href="https://twitter.com/"><img src="img/icon_twister.png"/></a>&nbsp;&nbsp;&nbsp;
-						<a href="https://plus.google.com/"><img src="img/icon_gplus.png"/></a>&nbsp;&nbsp;&nbsp;
-						<a href="https://www.instagram.com/"><img src="img/icon_ig.png"/></a>
+						<a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+						<a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a>
+						<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
-			<div class="section header-bottom bg-white m-b-118">
+			<div class="section header-bottom bg-white">
 				<div class="container">
+					<div class="menu_an">
+						<a href="#" class="block-biencham" onclick="hien()" ><i class="fa fa-bars"></i></a>
+					</div>
 					<div class="fl-left">
 						<a href="#"><img id="logo" src="img/logo.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<a href="#"><span>Home</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -36,13 +45,24 @@
 						<a href="#"><span class="space-bottom">Contact</span></a>
 					</div>
 					<div class="fl-right">
-						<a href="#"><img src="img/icon_search.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="#"><img src="img/icon_user.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="#"><img src="img/icon_cart.png"/></a>
+
+						<a href="#"><i class="fa fa-search"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#"><i class="fa fa-user-o"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#"><i class="fa fa-shopping-cart"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 					</div>
 				</div>				
 			</div>
 		</header>
+		<section class="water2" id="click_hien"><!-- =======================================================-->
+			<ul class="bien2">
+				<li class="ics" onclick="an()"><i class="fa fa-times"></i></li>
+				<a href="#"><li class="ic"> Home </li></a>
+				<a href="#"><li class="ic"> Products</li></a>
+				<a href="#"><li class="ic"> Hot Deals</li></a>
+				<a href="#"><li class="ic"> About</li></a>
+				<a href="#"><li class="ic"> Contact</li></a>
+			</ul>
+		</section><!-- ==========================================================================================================-->
 		<section class="section">
 			<div class="slide">
 				<div class="scroll p-t-230">
@@ -73,8 +93,8 @@
 		</section>
 		<section class="section m-b-80">
 			<div class="container">
-				<div class="products4">
-					<div class="rows4" id="product_list_related">
+				<div class="products width100 m-b-0">
+					<div class="rows" id="product_list_related">
 						
 					</div>
 				</div>
@@ -82,8 +102,8 @@
 		</section>
 		<section class="section">
 			<div class="container ">
-				<div class="page bg-white">
-					<div class="">
+				<div class="page bg-white" >
+					<div >
 						<a href=""><span class="node m-t-28 m-r-3 m-l-3" ></span></a>
 						<a href=""><span class="node m-t-28 m-r-3 m-l-3" ></span></a>
 						<a href=""><span class="node m-t-28 m-r-3 m-l-3" ></span></a>
@@ -134,13 +154,18 @@
 						<div class="caption">
 							<span class="name f-s-18">Reebok Track Jacket</span>
 							<div class="pk1 m-t-40">
-								<img src="img/rate.png">
-								<span class="f-s-16">100$</span>
+								<div class="star-box width50 fl-left">
+									<div class="star-rate"></div>
+								</div>
+								<div class="width45 fl-right t-a-c">
+									<span class="f-s-16">100$</span>
+								</div>
+								
 							</div>
-							<!-- <div class="pk2 m-t-40">
-								<img src="img/cart.png">
-								<span class="f-s-16">add to cart</span>
-							</div> -->
+							<div class="pk2 m-t-40">
+								<img src="img/cart.png">&nbsp;&nbsp;&nbsp;
+								<span class="f-s-16"><a href="">add to cart</a></span>
+							</div>
 						</div>
 					</div>
 					<div class="item bg-white">
@@ -148,13 +173,18 @@
 						<div class="caption">
 							<span class="name f-s-18">Reebok Track Jacket</span>
 							<div class="pk1 m-t-40">
-								<img src="img/rate.png">
-								<span class="f-s-16">100$</span>
+								<div class="star-box width50 fl-left">
+									<div class="star-rate"></div>
+								</div>
+								<div class="width45 fl-right t-a-c">
+									<span class="f-s-16">100$</span>
+								</div>
+								
 							</div>
-							<!-- <div class="pk2 m-t-40">
-								<img src="img/cart.png">
-								<span class="f-s-16">add to cart</span>
-							</div> -->
+							<div class="pk2 m-t-40">
+								<img src="img/cart.png">&nbsp;&nbsp;&nbsp;
+								<span class="f-s-16"><a href="">add to cart</a></span>
+							</div>
 						</div>
 					</div>
 					<div class="item bg-white">
@@ -162,13 +192,18 @@
 						<div class="caption">
 							<span class="name f-s-18">Reebok Track Jacket</span>
 							<div class="pk1 m-t-40">
-								<img src="img/rate.png">
-								<span class="f-s-16">100$</span>
+								<div class="star-box width50 fl-left">
+									<div class="star-rate"></div>
+								</div>
+								<div class="width45 fl-right t-a-c">
+									<span class="f-s-16">100$</span>
+								</div>
+								
 							</div>
-							<!-- <div class="pk2 m-t-40">
-								<img src="img/cart.png">
-								<span class="f-s-16">add to cart</span>
-							</div> -->
+							<div class="pk2 m-t-40">
+								<img src="img/cart.png">&nbsp;&nbsp;&nbsp;
+								<span class="f-s-16"><a href="">add to cart</a></span>
+							</div>
 						</div>
 					</div>
 				</div>				
@@ -217,7 +252,23 @@
 					<a href="#"><img src="img/payment.png"/></a>
 				</div>
 			</div>
+			<div class="mobile">
+				<div class="email-header">
+					<a href="#"><i class="fa fa-envelope"></i></a>
+					<a href="">info@shopy.com</a>
+					<a class="phone" href="#"><i class="fa fa-phone-square"></i></a>
+					<a class="sdt"> 453 - 5553 - 996</a>
+				</div>
+				<div class="icon-header">
+					<a href="#"><i class="fa fa-facebook-f"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
 		</footer>
 		<script type="text/javascript" src="js/details.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
 	</body>
 </html>

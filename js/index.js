@@ -1,6 +1,6 @@
 var html = '';
 	for (var i = 0; i < products.length; i++) {
-		html+='<div class="item">';
+		html+='<div class="item width_p3 m-b-30">';
 			html+='<div class="item-content">';
 				html+='<figure class="show">';
 					html+='<img class="imgsrc" src="'+products[i].image+'"/>';
