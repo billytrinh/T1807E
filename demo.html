@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet"  media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css">
 	<link rel="stylesheet"   href="css/mobile.css">
-	<!--script type="text/javascript" src="js/data.json"></script-->
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 	
 </head>
 <body>
@@ -28,13 +28,18 @@
 	<section class="section">
 		<div class="container">
 			<div class="left-column left-navigation">
-				<div class="block categories">
-					<h3>Categories</h3>
+				<div class="block categories" data-id="10" score="20">
+					<h3>Categories
+						<div class="block-side" style="display: none;height: 50px;background-color: red"></div>
+					</h3>
+					
+				
 					<ul>
 						<li><a href="#">Man</a></li>
 						<li><a href="#">Women</a></li>
 						<li><a href="#">Children</a></li>
 						<li><a href="#">Hot deals</a></li>
+						<li><input name="hello" type="checkbox"/></li>
 					</ul>
 				</div>
 				<div class="block price-filter m-b-15">
@@ -79,5 +84,33 @@
 		</div>
 	</section>
 	<script type="text/javascript" src="js/demo.js"></script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+			jQuery("input[name=hello]").addClass("hello");	
+			// jQuery(".categories").animate({
+			// 	"margin-left": "200px"
+			// },2000);
+			jQuery("#product_list").fadeOut(1000); // hide()
+			jQuery("#product_list").fadeIn(1000); // show()
+		});
+		jQuery(".categories > h3").bind("mouseenter",function(){
+			jQuery(this).children("div").slideDown();
+		});
+		jQuery(".categories > h3").bind("mouseleave",function(){
+			jQuery(this).children("div").hide()
+		});
+
+		function number1(){
+			alert("a");	
+		};
+		function number2(){
+			alert("b");
+		}
+		// jQuery("#product_list").css({
+		// 	"margin-top": "100px",
+		// 	"margin-left":"100px"
+		// });
+	</script>
 </body>
 </html>

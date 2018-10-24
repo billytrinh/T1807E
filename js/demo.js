@@ -35,7 +35,8 @@ function renderHtml(result){
 				html+='span></p>';
 				html+='	</div></div>';
 		}
-		document.getElementById("product_list").innerHTML = html;
+		//document.getElementById("product_list").innerHTML = html;
+		jQuery("#product_list").append(html);
 }
 
 	// var result = JSON.parse(this.responseText);
