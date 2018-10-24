@@ -1,0 +1,205 @@
+body{
+
+}
+.container{
+	width: 100%;
+}
+.left-column{
+	display: none;
+}
+.products{
+	width: 100%;
+}
+.products .rows .item{
+	width: calc(100% / 2);
+}
+.header-top{
+	display: none;
+}
+.header-bottom .menu-list .menu-ele{
+	display: none;
+}
+
+.header-bottom .menu-list .right{
+	display: none;
+}
+.header-bottom{
+	text-align: center;
+}
+.logo{
+	float: none;
+}
+.letter{
+	width: 100%;
+	text-align: center;
+}
+.section-footer{
+	width: 100%;
+}
+/* them sua */
+.menu-ele.left{
+	display:none;
+}
+.right.hidden-mobile{
+	display:none;
+}
+.header-bottom{
+	border-bottom:0;
+}
+.logo{
+	padding:0;
+}
+.section-footer{
+	text-align:center;
+	padding:0;
+	border-top:25px solid white;
+}
+.container-reg{
+	width:90%;
+}
+.section-footer .bot-ele{
+	float:none;
+	padding:0;
+	padding-top:20px;
+}
+.bot-ele.payment{
+	border-top:20px solid white;
+}
+.header-bottom{
+	margin-bottom:30px;
+}
+.bot-ele.logo-bot{
+	width:100%;
+	border-bottom:20px solid white;
+}
+.section-footer .bot-ele{
+	width:100%;
+}
+.bot-menu{
+	max-width:100%;
+}
+.section-footer .bot-ele{
+	padding:0;
+}
+.letter .letter-ele.left{
+	float:none;
+}
+.letter .form-data{
+	float:none;
+	margin-top:20px;
+}
+.letter{
+	padding:0;
+	margin:60px auto;
+}
+.letter .email-letter{
+	padding-right:0;
+}
+.letter .left{
+	padding-left:0;
+}
+.products .rows .item{
+	width:100%;
+}
+.products{
+	padding-left:0;
+}
+.products.body-bot .rows .item{
+	width:100%;
+}
+.body-1{
+	width:100%;
+	height:auto;
+}
+.body-1 .left-body{
+	width:100%;
+}
+.body-1 .right-body{
+	float:left;
+	width:100%;
+	padding-top:50px;
+}
+.body-1 .right-body .container-thongtin{
+	width:100%;
+}
+.thong-tin .style-coak{
+	line-height:40px;
+	font-size:16px;
+	text-align:center;
+}
+.body-1 .right-body .container-thongtin .thong-tin{
+	text-align:center;
+}
+.thong-tin .name-coak{
+	text-align:center;
+}
+.lua-chon .style-coak.left{
+	width:40%;
+	box-sizing:border-box;
+	text-align:center;
+}
+.lua-chon .style-coak.right{
+	width:65%;
+	box-sizing:border-box;
+	text-align:center;
+}
+.lua-chon .style-coak.size-chu.left{
+	width:60%;
+	box-sizing:border-box;
+	text-align:center;
+}
+.lua-chon .style-coak.size-so.right{
+	width:35%;
+	box-sizing:border-box;
+	text-align:center;
+}
+.pay-price.left{
+	width:40%;
+	padding-top:50px;
+}
+.pay-order.right{
+	width:60%;
+	float:left;
+	padding-top:40px;
+}	
+.body-1 .right-body .thanh-toan .pay-price{
+	padding-top:30px;
+}
+.body-1 .right-body .thanh-toan .right{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+}
+.body-1 .right-body .thanh-toan{
+	text-align:center;
+}
+.body-page3 .info{
+	padding:100px 0 0 0;
+	text-align:center;
+}
+.info-price{
+	text-align:center;
+}
+.sale-price.style-coak.left{
+	width:50%;
+}
+.body-page3{
+	height:auto;
+	padding-bottom:50px;
+}
+.info-name .style-coak{
+	line-height:40px;
+}
+div.sale-info.left{
+	display:none;
+}
+img.sale-pay.left{
+	display:none;
+}
+h1.left{
+	display:none;
+}
+.sale{
+	margin-top:60px;
+}
+	
