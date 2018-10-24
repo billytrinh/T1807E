@@ -1,0 +1,146 @@
+body{
+	background: #f4f6f8;
+}
+.d1 .container1{
+	width: 100%;	
+}
+.d2 .container1{
+	width: 100%;	
+}
+.x1-2{
+	float: left;
+	
+}
+.x2{
+	display: none;
+	
+}
+.rung{
+	width: 100%;
+	
+}
+.rung .cay1{
+	width: calc(100%/3.5);
+}
+.rung .cay2{
+	width: calc(100%/1.4);
+	height: 100%;
+	float:right;
+	padding-top: 30px;
+}
+.rung .cay2 .goc{
+	width: 100%;
+	height: calc(100%-50px);
+}
+.rung .cay2 .goc .canh{
+	width: calc(100%/3 - 20px);
+	
+	margin-right: 20px;
+}
+.rung .khac{
+	display: none;
+}
+.duoi{
+		width: 100%;
+		padding: 0px;
+	}
+	.duoi .duoitrai{
+		width: auto;
+		font-size: calc(100%/1.2);
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.duoi .duoitrai .chuchinh{
+		font-size: calc(100%/0.7);
+	}
+	.dptrai{
+		width: 300px;
+		float: left;
+		padding-top: 0px;
+		
+	}
+	.duoi .duoiphai{
+		float: right;
+		width: calc(100%/1.8);
+		height: 100%;
+		
+		padding-top: 20px;
+		
+	}
+	.dptrai{
+		width: 300px;
+		float: left;
+		margin-top: 15px;
+		
+	}
+	.dpphai{
+		margin-top: 5px;
+}
+.thanduoi{
+	margin: 0px auto;
+	width: 100%;
+	
+}
+.quanao{
+	width: calc(100%/4 - 20px);
+	height: 350px;
+	margin-right: 20px;
+}
+.spbacham{
+	width: 100%;
+	
+}
+.sale-area{
+	width: 100%;
+		
+}
+
+.sale-area .sale .anhsale{
+	width: calc(100%/5);
+	height: 100%;
+	float: left;
+	
+	background-image: url('../image/sale50.jpg');
+	background-size: cover;
+	margin-left: 30px;
+}
+.sale-area .sale .sptext{
+	
+	padding-right: 20px;
+	
+}
+.aosale{
+	width: 100%;
+}
+.thongtin{
+	width: 100%;
+}
+.cuoi{
+	width: 100%;
+	height: auto;
+}
+.cuoi .container2{
+	width: 100%;
+	
+}
+.cuoi .container2 .cuoitrai{
+	float:left;
+	width: calc(100%/3);
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.cuoi .container2 .cuoigiua{
+	float:left;
+	width: calc(100%/3);
+	margin: 0 auto;
+	
+}
+.cuoi .container2 .cuoigiua .cot{
+	padding-left: 0px;
+	padding-top: 20px;
+}
+.cuoi .container2 .cuoiphai{
+	float:left;
+	margin: 0 auto;
+	width: calc(100%/3);
+}
