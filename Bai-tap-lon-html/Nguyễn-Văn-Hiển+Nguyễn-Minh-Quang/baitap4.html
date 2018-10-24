@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Fashion</title>
+	<link rel="stylesheet" href="css/hieuung2.css"/>
+	<script type="text/javascript" src="js/baitap.js"></script>
+</head>
+<body>
+	<header>
+		<div class="top-header">
+			<div class="container">
+				<p class="left-top-header">
+					<span><img src="images/Mailicon.gif"/>info@shopy.com</span>
+					<span><img src="images/Phoneicon.gif"/>453-5553-996</span>
+				</p>
+				<div class="right-top-header">
+					<span class="click2">
+						<a href="#"><img src="images/Facebookicon.gif"/></a>
+					</span>
+					<span class="click2">
+						<a href="#"><img src="images/Twittericon.gif"/></a>
+					</span>
+					<span class="click2">
+						<a href="#"><img src="images/Google+icon.gif"/></a>
+					</span>
+					<span class="click2">
+						<a href="#"><img src="images/Instagramicon.gif"/></a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<div class="left-bottom-header">
+					<a href="file:///C:/Users/PC/Desktop/Chuy%C3%AAn%20ng%C3%A0nh/HTML-CSS-JS/baitap1.html"><img src="images/Logo.gif"/></a>
+				</div>
+				<p class="center-bottom-header">
+					<span><a href="#">Home</a></span>
+					<span><a href="#">Products</a></span>
+					<span><a href="#">Hot Deals</a></span>
+					<span><a href="#">About</a></span>
+					<span><a href="#">Contact</a></span>
+				</p>
+				<div class="right-bottom-header">
+					<a class="click2" href="#"><img src="images/Searchicon.gif"/></a>
+					<a class="click2" href="file:///C:/Users/PC/Desktop/Chuy%C3%AAn%20ng%C3%A0nh/HTML-CSS-JS/baitap4.html"><img src="images/Usericon.gif"/></a>
+					<a class="click2" href="#"><img src="images/Carticon.gif"/></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<form name="form_data" method="post-get" action="#">
+			<div class="register">
+				<p class="id-picture">
+					<img src="images/Registericon.gif"/>
+				</p>
+				<div class="register-form">
+				
+					<label for="email">Email</label>
+						<input type="email" id="email" name="email" style="width: 805px; height: 40px" placeholder="type your email here">
+					<div>
+					<label for="name">Tên</label>
+						<input type="text" id="name" name="dienten" style="width: 805px; height: 40px">
+					</div>
+					<label for="telnumber">Số điện thoại</label>
+						<input type="tel" id="telnumber" name="sodienthoai" style="width: 805px; height: 40px" placeholder="type your telephone number">
+						<p style="display: none; color: red; font-size: 15px">Không được chứa kí tự chữ</p>
+					<label for="password" class="matkhau">Mật khẩu</label>
+						<input type="password" id="password" name="matkhau" style="width: 805px; height: 40px">
+						<p style="display: none; color: red; font-size: 15px">Không đủ độ dài</p>
+					<label for="rewrite" class="nhaplai">Nhập lại mật khẩu</p>
+						<input type="password" id="rewrite" name="nhaplaimatkhau" style="width: 805px; height: 40px">
+						<p style="display: none; color: red; font-size: 15px">Mật khẩu nhập lại không chính xác</p>
+					<label for="referralcode">Mã giới thiệu</label>
+						<input type="text" id="referralcode" style="width: 805px; height: 40px">
+
+					<div class="provision">
+						<label for="provision"></label>
+						<input type="radio" id="provision">Đồng ý về chính sách bảo mật<br>và điều khoản sử dụng.
+						<p style="display: none; "></p>
+					</div>
+
+					<div class="enter">
+						<button type="submit" style="height: 90px; width: 250px; font-size: 23px; border-radius: 11px; background-image: linear-gradient(to right, #3a4eaa, #3369b8, #2e7fc4); color: #ffffff" onclick="return check_form()">Đăng ký</button>
+						
+					</div>
+				</div>
+			</div>
+		</form>
+
+				<div class="return">
+					<a href="#"; style="color: #334b91">Trở lại đăng nhập</a>
+				</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="logo-right-coppy">
+				<img src="images/Shopycoppyicon.gif"/>
+			</div>
+			<div class="choose-column-1">
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#">support</a></li>
+				</ul>
+			</div>
+			<div class="choose-column-2">
+				<ul>
+					<li><a href="#">our feed</a></li>
+					<li><a href="#">terms and conditons</a></li>
+					<li><a href="#">our privacy</a></li>
+				</ul>
+			</div>
+			<div class="choose-column-3">
+				<ul>
+					<li><a href="#">join us</a></li>
+					<li><a href="#">live support</a></li>
+				</ul>
+			</div>
+			<div class="payment-method">
+				<p>Payment Methods</p>
+				<img src="images/paymenticon.gif"/>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

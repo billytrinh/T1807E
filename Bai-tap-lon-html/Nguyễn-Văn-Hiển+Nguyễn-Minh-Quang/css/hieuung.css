@@ -1,0 +1,273 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: Myriad Pro;
+	font-size: 14px;
+	line-height: 1.15;
+	background:#f4f6f8; 
+}
+li{
+	list-style: none;
+}
+.hidden{display: none;}
+h3{
+	color: #ff5912;
+}
+a{
+	text-decoration: none;
+}
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+.left-header{
+	float: left;
+}
+.right-header{
+	float: right;
+}
+.choice{
+	margin-left: 80px;
+}
+.bg-white{
+	background: #fff;
+}
+.m-b-15{
+	margin-top: 5px;
+}
+.left-column{
+	float: left;
+	width: 270px;
+}
+.block{
+	float: left;
+	width: calc(100% - 40px);
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 30px;
+}
+.products{
+	float:right;
+	width: 870px;
+	padding-left: 15px;
+}
+.products .rows{
+	margin-left: -15px;	
+	margin-right: -15px;
+}
+.products .rows .item{
+	float:left;
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+	height: 340px;
+
+}
+.products .rows .item .item-content{
+	background: #fff;
+	float:left;
+	width: 100%;
+	height: calc(100% - 40px);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.products .rows .item figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.products .rows .item{
+	position: relative;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.products .rows .item .size-icons span{
+	width: 13px;
+	height: 13px;
+	background: red;
+	border-radius: 100%;
+	display: inline-block;
+}
+.products .rows .item:hover img{
+	height: 90px;
+	width: auto;
+	transition: all 250ms ;
+	-webkit-transition: all 250ms ;
+}
+.products .rows .item:hover .price-box{
+	opacity: 0;
+	height: 0px;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.products .rows .item .show{
+	opacity: 1;
+}
+.products .rows .item .show-hover{
+	position: absolute;
+	opacity: 0;
+	top:20px;
+	left:20px;
+	width: calc(100% - 40px);
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+}
+.price-box{
+	margin-bottom: 50px;
+}
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.price-filter .line-box{
+	width: 186px;
+	border-bottom: 3px solid #edf0f2;
+	margin:0 auto;
+	position: relative;
+}
+.price-filter .line-box .line{
+	display: inline-block;
+	width: 107px;
+	border-bottom: 3px solid #34404b;
+	position: absolute;
+	top:0px;
+	left:40px;
+}
+.price-filter .line-box .node{
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	background: #34404b;
+	border-radius: 100%;
+}
+.price-filter .line-box .node.no_1{
+	top:-5px;
+	left:30px;
+}
+.price-filter .line-box .node.no_2{
+	top:-5px;
+	right:30px;
+}
+.checkbox{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.checkbox label{
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.checkbox label:before{
+	content: " ";
+	width: 6px;
+	height: 6px;
+	border: 5px solid #edf0f2;
+	background: #edf0f2;
+	display: inline-block;
+	margin-right: 15px;
+}
+.checkbox input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+.checkbox input[type="checkbox"]:checked + label:before{
+	border: 5px solid #ff5912;
+}
+header{
+	margin-bottom: 80px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	word-spacing: 25px;
+}
+.header-top{
+	background: #fff;
+	border-bottom: 1px solid #f4f6f8;
+	padding: 24px 0;
+	height: 12px;
+}
+.header-bottom{
+	background: #fff;
+	padding-top: 40px;
+	height: 80px;
+	font-size: 18px;
+}
+.paginator{
+	text-align: center;
+	color: #ff5912;
+	font-size: 60px;
+	background: white;
+	float: left;
+	width: 870px;
+	margin-bottom: 120px;
+}
+.newsletter{
+	font-family: Myriad Arabic;
+	height: 50px;
+	padding: 37px 0;
+	font-size: 18px;
+	float: right;
+	width: 100%;
+	background: #fff;
+}
+.left-newsletter{
+	font-size: 25px;
+	float: left;
+	color: #ff5912;
+	padding: 13px 20px;
+}
+.center-newsletter{
+	float: left;
+	padding: 18px 70px 18px 6px;
+}
+.right-newsletter{
+	float: right;
+	padding: 18px 160px;
+	text-align: center;
+}
+.icon-newsletter{
+	float: right;
+	padding-right: 40px;
+}
+ul{
+	list-style-type: disc;
+	float: left;
+	margin-right: 20px;
+	line-height: 34px;
+	font-size: 15px;
+}
+
+footer{
+	width: 100%;
+	margin-top: 120px;
+	background: #fff;
+	float: left;
+	height: 250px;
+}
+.left-footer{
+	float: left;
+	padding: 90px 0;
+}
+.center-footer{
+	padding: 85px 400px 85px;
+}
+.right-footer{
+	float: right;
+	padding-bottom: 300px;
+}
+.price-text{
+	padding: 150px 0 45px 0;
+	word-spacing: 23px;
+}

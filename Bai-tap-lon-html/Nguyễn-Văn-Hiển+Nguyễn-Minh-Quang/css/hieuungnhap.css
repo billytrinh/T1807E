@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0:;
+}
+a{
+	text-decoration: none;
+	color: #28313b;
+}
+a:hover{
+	color: #ff7e4e;
+}
+h4{
+	font-weight: 300;
+}
+body{
+	font-family: Myriad Pro;
+	color: #34404b;
+	background: #f4f6f8;
+}
+header{
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.top-header{
+	background: #ffffff;
+	width: 100%;
+	padding: 24px 0;
+	height: 12px;
+	border-bottom: 2px solid #f4f6f8;
+	word-spacing: 10px;
+}
+.left-top-header{
+	float: left;
+}
+.right-top-header{
+	float: right;
+	
+}
+.click1{
+	
+}
+.click1:hover{
+	
+}
+.bottom-header{
+	background: #ffffff;
+	width: 100%;
+	padding: 42px 0;
+	height: 60px;
+}
+.left-bottom-header{
+	float: left;
+}
+.center-bottom-header{
+	float: left;
+	word-spacing: 35px;
+	padding: 13px 0 13px 120px;
+	font-size: 20px;
+}
+.right-bottom-header{
+	float: right;
+	word-spacing: 25px;
+}
+.products{
+	width: 100%;
+	height: 450px;
+	background: #ffffff;
+	line-height: 35px;
+}
+.left-column{
+	float: left;
+	padding: 0 0 0 160px;
+}
+.big-product{
+	float: left;
+	width: 130px;
+	height: 320px;
+	padding-left: 60px;
+}
+.small-product{
+	float: left;
+	width: 100%;
+	height: 55px;
+}
+.small-item{
+	float: left;
+	width: 75px;
+	background: #f4f6f8;
+	margin: 0 8px;
+	text-align: center;
+	padding-top: 5px;
+}
+.right-column{
+	float: left;
+}
+.product-name{
+	color: orange;
+	padding-bottom: 34px;
+	font-size: 37px;
+}
+.product-info{
+	
+}
+.info-1{
+	height: 12px;
+	padding: 42px 0;
+}
+.size-choos{
+	float: left;
+	border-right: 2px solid #f4f6f8;
+	width: 210px;
+	word-spacing: 5px;
+	padding-right: 40px;
+}
+.detail-size{
+	color: #34404b;
+}
+.detail-size:hover{
+	color: orange;
+	font-size: 18px;
+}
+.quantity-choos{
+	float: right;
+	width: 120px;
+}
+.info-2{
+	border-top: 2px solid #f4f6f8;;
+}
+.price{
+	float: left;
+	padding-top: 50px;
+}
+.order-box{
+	float: right;
+	padding-top: 40px; 
+}
+.share-like-add{
+	float: right;
+	width: 100px;
+	padding: 50px 10px 0 0;
+	word-spacing: 10px;
+}
+.hint-items{
+	padding: 118px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+.related-product{
+	line-height: 20px;
+}
+.item{
+	margin: 80px 30px 0 0;
+	padding-top: 35px;
+	width: 260px;
+	height: 366px;
+	background: white;
+	float: left;
+}
+figcaption{
+	color: #80878d;
+	font-weight: 600;
+	padding-top: 40px;
+	font-size: 18px;
+}
+.price-box{
+	color: #ff5912;
+	font-weight: 500;
+	padding: 29px;
+	font-size: 18px;
+}
+
+.newsletter{
+	margin: 124px 0;
+	background: white;
+	padding: 42px;
+	height: 38px;
+	float: left;
+	width: 1080px;
+}
+.left-newsletter{
+	color: orange;
+	font-size: 20px;
+	padding: 11px 14px 0 0;
+	font-weight: 500;
+	float: left;
+	width: 160px;
+}
+.center-newsletter{
+	padding: 13px 20px 0 0;
+	font-size: 14px;
+	float: left;
+	width: 250px;
+
+}
+.type-email-box{
+	float: right;
+	font-size: 14px;
+	padding: 13px 150px 0 0;
+}
+.right-newsletter{
+	float: right;
+}
+footer{
+	height: 72px;
+	width: 100%;
+	background: #ffffff;
+	padding: 89px 0;
+	float: left;
+	line-height: 35px;
+}
+.logo-right-coppy{
+	width: 150px;
+	float: left;
+}
+.choose-column-1{
+	width: 120px;
+	float: left;
+	padding: 0 96px 0 130px;
+}
+.choose-column-2{
+	width: 200px;
+	float: left;
+	padding: 0 30px 0 0;
+}
+.choose-column-3{
+	float: left;
+	padding-right: 110px;
+	width: 145px;
+}
+.payment-method{
+	float: right;
+	color: orange;
+	font-weight: 500;
+	font-size: 18px;
+}
+
