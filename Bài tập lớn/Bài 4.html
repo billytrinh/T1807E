@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Bài 4</title>
+<link rel="stylesheet" href="css\style.css"/>
+<link rel="stylesheet"  media="only screen and (max-width: 1200px) and (min-width: 1001px)" href="css\tablet.css">
+<link rel="stylesheet"   href="css\mobile.css">
+</head>
+<body>
+
+	<header>
+		<div class="d1">
+		<div class="container1">
+			<div class="a1">
+				<div class="b"><img src="image\thu.jpg" width="30px" height="30px"></div>
+				<div  class="btext">info@shophy.com</div>
+				<div class="b"><img src="image\kb2.jpg" width="30px" height="30px"></div>
+				<div class="btext">453 - 5553 - 996</div>
+			</div>
+			<div class="a2-4">
+				<div class="gocphaitren"><img src="image\fb.jpg" width="40px" height="40px"></div>
+				<div class="gocphaitren"><img src="image\chim.jpg" width="40px" height="40px"></div>
+				<div class="gocphaitren"><img src="image\gmail.jpg" width="40px" height="40px"></div>
+				<div class="gocphaitren"><img src="image\kb.jpg" width="40px" height="40px"></div>
+			</div>
+		</div>
+		</div>
+		<div class="d2">
+		<div class="container1">
+			<div class="x1-1">
+				<img src="image\shopy.jpg">
+			</div>
+			<div class="x1-2">
+				<form method="post-get" action="#" name="hpscreen" class="hpscreen" enctype="multipart/form-data">	
+					<div class="homepage">
+						<input type="radio" name="hpscreen" value="home" id="home">
+						<label for="home">Home</label>
+					</div>
+					<div class="homepage">
+						<input type="radio" name="hpscreen" value="product" id="product">
+						<label for="product">Product</label>
+					</div>
+					<div class="homepage">
+						<input type="radio" name="hpscreen" value="hot-deals" id="hot-deals">
+						<label for="hot-deals">Hot Deals</label>
+					</div>
+					<div class="homepage">
+						<input type="radio" name="hpscreen" value="about" id="about">
+						<label for="about">About</label>
+					</div>
+					<div class="homepage">
+						<input type="radio" name="hpscreen" value="contact" id="contact">
+						<label for="contact">Contact</label>
+					</div>
+				</form>
+			</div>
+			<div class="x2">
+				<div class="klgh"><img src="image\kinhlup.jpg" width="37px" height="37px"></div>
+				<div class="klgh"><img src="image\kb3.jpg" width="37px" height="37px"></div>
+				<div class="klgh"><img src="image\giohang.jpg" width="37px" height="37px"></div>
+			</div>
+		</div>
+		</div>	
+	</header>
+	
+	<div class="thongtin">
+		<center>
+		<div class="anhdaidien">
+			<img src="image\anhdaidien.jpg">
+		</div>
+		</center>
+		<div class="nhapthongtin">
+			<form method="post-get" action="#" name="ttkh" class="tt-kh" enctype="multipart/form-data">
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="email">Email</label>
+				</div>
+				<div class="nhap">	
+					<input type="email" name="email" class="tttext">
+				</div>
+			</div>
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="hovaten">Họ và tên</label>
+				</div>
+				<div class="nhap">
+					<input type="text" name="hovaten" class="tttext">
+				</div>
+			</div>
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="sdt">Số điện thoại</label>
+				</div>
+				<div class="nhap">
+					<input type="text" name="sdt" class="tttext">
+				</div>
+			</div>
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="password">Mật khẩu</label>
+				</div>
+				<div class="nhap">
+					<input type="password" name="password" class="tttext">
+				</div>
+			</div>
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="nhaplaipassword">Nhập lại mật khẩu</label>
+				</div>
+				<div class="nhap">
+					<input type="password" name="nhaplaipassword" class="tttext">
+				</div>
+			</div>
+			<div class="nhaptt">
+				<div class="tieude">
+					<label for="magioithieu">Mã giới thiệu</label>
+				</div>
+				<div class="nhap">
+					<input type="text" name="magioithieu" class="tttext">
+				</div>
+			</div>
+			<div class="dieukhoansd">
+				<input type="radio" id="csbm" name="csbm">
+				<label for="csbm"><b>Đồng ý về chính sách bảo mật và điều khoản sử dụng</b></label>
+			</div>
+			<div class="dangky">
+				<button type="submit" onclick="return checkForm()">Đăng ký</button>
+			</div>
+			</form>
+			<div class="quaylaisignin">
+				<center>
+					<a href="#">Trở lại trang đăng nhập</a>
+				</center>
+			</div>
+		</div>
+		
+	<script type="text/javascript">
+		function checkForm() {
+			var hovaten = document.forms["ttkh"].hovaten.value;
+			var sdt = document.forms["ttkh"].sdt.value;
+			var email = document.forms["ttkh"].email.value;
+			var password = document.forms["ttkh"].password.value;
+			var nhaplaipassword = document.forms["ttkh"].nhaplaipassword.value;
+			var csbm = document.forms["ttkh"].csbm.checked;
+			
+			
+			if(password != nhaplaipassword){
+				if(document.forms["ttkh"].nhaplaipassword.nextElementSibling){
+					document.forms["ttkh"].nhaplaipassword.nextElementSibling.remove();
+				}
+				var textInput = document.forms["ttkh"].nhaplaipassword.outerHTML;
+				textInput += '<p style="color:red">password nhập lại không đúng</p>';
+				document.forms["ttkh"].nhaplaipassword.outerHTML = textInput;
+			}
+			
+			
+			if(email.length >0 && password.length >= 6 && hovaten.length >0 && sdt.length >0){
+				
+				if(csbm != true){
+					if(document.forms["ttkh"].csbm.nextElementSibling.nextElementSibling){
+						document.forms["ttkh"].csbm.nextElementSibling.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].csbm.nextElementSibling.outerHTML;
+					textInput += '<p style="color:red">Bạn chưa đồng ý với điều khoảng sử dụng</p>';
+					document.forms["ttkh"].csbm.nextElementSibling.outerHTML = textInput;
+				}
+				else{
+					if(document.forms["ttkh"].csbm.nextElementSibling.nextElementSibling){
+						document.forms["ttkh"].csbm.nextElementSibling.nextElementSibling.remove();
+					}
+					return true;
+				}
+			}else{
+				if(email.length <=0){	
+					if(document.forms["ttkh"].email.nextElementSibling){
+						document.forms["ttkh"].email.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].email.outerHTML;
+					textInput += '<p style="color:red">chưa nhập email </p>';
+					document.forms["ttkh"].email.outerHTML = textInput;
+				}	
+				if(password.length < 6 && password.length > 0){
+		
+					if(document.forms["ttkh"].password.nextElementSibling){
+						document.forms["ttkh"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].password.outerHTML;
+					textInput += '<p style="color:red">chưa đủ 6 ký tự </p>';
+					document.forms["ttkh"].password.outerHTML = textInput;
+				}else{
+					if(document.forms["ttkh"].password.nextElementSibling){
+						document.forms["ttkh"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].password.outerHTML;
+					textInput += '<p style="color:red">chưa nhập password</p>';
+					document.forms["ttkh"].password.outerHTML = textInput;
+				}
+				/*if(password != nhaplaipassword){
+					if(document.forms["ttkh"].nhaplaipassword.nextElementSibling){
+					document.forms["ttkh"].nhaplaipassword.nextElementSibling.remove();
+					}
+					var textInput =document.forms["ttkh"].nhaplaipassword.outerHTML;
+					textInput += '<p style="color:red">password nhập lại không đúng</p>';
+					document.forms["ttkh"].nhaplaipassword.outerHTML = textInput;
+				}*/
+				if(hovaten.length <=0){
+					
+					if(document.forms["ttkh"].hovaten.nextElementSibling){
+						document.forms["ttkh"].hovaten.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].hovaten.outerHTML;
+					textInput += '<p style="color:red">chưa nhập họ và tên </p>';
+					document.forms["ttkh"].hovaten.outerHTML = textInput;
+				}
+				if(sdt.length <=0){
+					
+					if(document.forms["ttkh"].sdt.nextElementSibling){
+						document.forms["ttkh"].sdt.nextElementSibling.remove();
+					}
+					var textInput = document.forms["ttkh"].sdt.outerHTML;
+					textInput += '<p style="color:red">chưa nhập số điện thoại </p>';
+					document.forms["ttkh"].sdt.outerHTML = textInput;
+				}				
+			}
+			
+			return false;
+			
+		}
+	</script>
+		
+	</div>
+	
+	<div class="cuoi">
+		<div class="container2">
+		<div class="cuoitrai">
+			<figure>
+				<img src="image\shopy.jpg" width="200px" height="100px"/>
+				<figcaption><b>shopy c 2015.your copy right here</b></figcaption>
+			</figure>
+		</div>
+		<div class="cuoigiua">
+		<form method="post-get" action="#" name="cott" class="cott" enctype="multipart/form-data">
+			<div class="cot">
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#">support</a></li>
+				</ul>
+			</div>
+			<div class="cot">
+				<ul>
+					<li><a href="#">our feed</a></li>
+					<li><a href="#">terms and conditions</a></li>
+					<li><a href="#">our privacy</a></li>
+				</ul>
+			</div>
+			<div class="cot">
+				<ul>
+					<li><a href="#">join us</a></li>
+					<li><a href="#">live support</a></li>
+				</ul>
+			</div>
+		</form>
+		</div>
+		<div class="cuoiphai">
+		<figure>
+			<figcaption class="payment"><b>Payment methods</b></figcaption>
+			<img src="image\payment1.jpg" width="300px" height="50px"/>
+		</figure>
+		</div>
+		</div>
+	</div>
+</body>
