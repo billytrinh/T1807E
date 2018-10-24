@@ -88,9 +88,9 @@ function get_smaller_products(products)
 	for (var i = 0; i < products.length; i++) 
 	{
 		html+='<div class="item-3">';
-		html+='<img width="40%" height=auto src="'+products[i].image+'">';
+		html+='<img height=auto src="'+products[i].image+'">';
 		html+='<div class="item-content">';
-		html+='	<p style="padding-bottom: 35px;">'+products[i].name+'</p> ';
+		html+='	<p style="padding-bottom: 35px; padding-top:20px;">'+products[i].name+'</p> ';
 		html+='	<div class="no-hover">';
 		html+='		<div class="star" style="float:left;">';
 		html+='				<i class="fa fa-star" style="font-size:16px;color: orange"></i>';

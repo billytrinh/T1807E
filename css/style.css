@@ -42,7 +42,7 @@ a:hover
 	width: 100%;
 }
 .container{
-	width: 76%;
+	width: 1200px;
 	margin:0 auto;
 }
 .bg-white{
@@ -292,15 +292,106 @@ header{
 	padding-top: 34px;
 	padding-bottom: 34px;
 	vertical-align: baseline;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
+
+.newsletter input[type=submit]{
+	width:90px;
+	height:50px;
+	background-color:#ff5912;
+	border:none;
+	font-family:arial;
+	font-size:16px;
+	color:white;	
+	}
+
 input
 {
 	width: 50px;
 	height: 25px;
+	
+}
+
+.checkboxtext p{
+	float:left;
+	text-align: center;
+}
+.checkboxcontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.checkboxcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+  background-color: white;
+    border-radius:50%;
+  
+    border:2px solid #909090;
+}
+
+
+.checkboxcontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.checkboxcontainer input:checked ~ .checkmark {
+    background-color: #f4f6f8;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.checkboxcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.checkboxcontainer .checkmark:after {
+    top: 2px;
+	left: 2px;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #1860ad;
+}
+.newslettertext{
+	margin-right:30px;
+	display:block;
 }
 .section .container .newsletter span
 {
-	display: inline-block;
+
+
 	font-weight: 600px;
 }
 
@@ -539,6 +630,7 @@ footer
 	padding-left: 21%;
 	vertical-align: middle;
 	width: 57%;
+	float:right;
 }
 .newsletter .email-typing .submit
 {
@@ -550,9 +642,18 @@ footer
 }
 .newsletter .email-typing span
 {
-	padding-top: 12px;
+	padding-top:10px;
 	float:left;
 }
+
+.section .container .newsletter span:nth-child(2){
+		
+	}
+
+	.section .container .newsletter span:first-child{
+		
+	}
+
 .email-typing .email
 {
 	width: 80%;
@@ -584,16 +685,19 @@ footer
 	width: 100%;
 	float: left;
 	margin-bottom: 120px;
-	height: 100px;
+	height: auto;
 }
 .left-adv
 {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
 	float: left;
 	height: 100%;
 	background: #fff;
-	width: 57.3%;
-	margin-right: 15px;
-	padding: 0 60px;
+	width:60%;
+	margin-bottom:0;
+	padding: 10px 30px;
 	vertical-align: middle;
 	padding-top: 12px;
 }
@@ -601,12 +705,12 @@ footer
 {
 	float: left;
 	vertical-align: middle;
-	padding-right: 60px;
+	padding-right:7%;
 }
 .description-left-adv
 {
 	float: left;
-	width: 50%;
+	width: 40%;
 }
 .description-left-adv h3
 {
@@ -619,15 +723,12 @@ footer
 	padding-top: 15px;
 	font-size: 12px;
 }
-.left-adv .price-cart
-{
-	float: right;
-	padding-top: 20px;
-}
+
 .left-adv .price-cart i
 {
 	float: left;
 	padding-right: 22px;
+
 }
 .left-adv .price-cart p
 {
@@ -639,11 +740,11 @@ footer
 .right-adv
 {
 	float: left;
-	height: 100%;
+	height: 100px;
 	background: #fff;
-	width: 40%;
-	margin-left: 15px;
-	padding: 0 60px;
+	width: calc(40% - 30px);
+	margin-left:30px;
+	padding: 0 30px;
 }
 .right-adv .adv-area
 {
@@ -775,10 +876,18 @@ footer
 }
 .left-adv .price-cart
 {
+	
 	float: left !important;
 }
 @media only screen and (max-width: 1200px) and (min-width: 300px)
 {
+	.price-cart{
+		text-align: center;
+		vertical-align: middle;
+	}
+ .left-adv{
+ 	padding:20px 10px;
+ }
 	.container
 	{
 		width: 100%;
@@ -825,9 +934,18 @@ footer
 	}
 	.newsletter
 	{
-		display: block;
-		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding:20px 5px;
 	}
+
+	.section .container .newsletter span:nth-child(2){
+		display:none;
+	}
+	
+	
+
 	.email-typing
 	{
 		margin: 0;
@@ -864,23 +982,15 @@ footer
 	{
 		text-align: center;
 	}
-	.newsletter .email-typing
+
+		.newsletter .email-typing
 	{
 		padding: 0;
-		padding-top: 20px;
+		padding-top: 0px;
+	
 	}
-	.newsletter span
-	{
-		display: block;
-	}
-	.newsletter .email-typing .submit
-	{
-		float: none;
-	}
-	.newsletter .email-typing span
-	{
-		float: none;
-	}
+	
+	
 	.section-big-product
 	{
 		height: 100%;
@@ -931,19 +1041,18 @@ footer
 		padding-left: 5%;
 		padding-right: 10%;
 	}
-	.section .related-product,.section .new-arrivals, .section .best-sales
-	{
-		padding-left: 10%;
-		padding-right: 10%;
-	}
+	
 	.left-adv
 	{
 		height: auto;
-		
+		width:100%;
 	}
 	.right-adv
 	{
-		height: 100%;
+		height: 100px;
+		width:100%;
+		margin-left:0;
+		margin-top:30px;
 	}
 	.order
 	{
@@ -953,6 +1062,8 @@ footer
 	{
 		float: left;
 	}
+
+
 }
 @media only screen and (max-width: 1200px) and (min-width: 768px)
 {
@@ -975,14 +1086,32 @@ footer
 }
 @media only screen and (max-width: 1200px) and (min-width: 1000px)
 {
+
+
+	.newsletter .email-typing
+	{
+	
+		width:57%;
+	}
+.advertise
+{
+	width: 100%;
+	float: left;
+	margin-bottom: 120px;
+	height: auto;
+}
 	.newsletter
 	{
+		padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 34px;
+	padding-bottom: 34px;
 		text-align: left;
 	}
 	.newsletter .email-typing
 	{
 		padding: 0;
-		padding-top: 20px;
+		
 	}
 	.newsletter span
 	{
@@ -998,9 +1127,93 @@ footer
 		padding-right: 15%;
 		float: left;
 	}
+
+	.section .container .newsletter span:nth-child(2){
+		display:block;
+		
+	}
+	
+	.left-adv
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	float: left;
+	height: 100px;
+	background: #fff;
+	width:60%;
+	margin-bottom:0;	
+	padding: 10px 30px;
+	vertical-align: middle;
+	padding-top: 12px;
+}
+
+.right-adv
+{
+	float: left;
+	height: 100px;
+	background: #fff;
+	width: calc(40% - 30px);
+	margin-left:30px;
+	padding: 0 30px;
+	margin-top:0px;
+}
 }
 @media only screen and (max-width: 580px) and (min-width: 300px)
 {
+	.newslettertext{
+		display:none;
+	}
+
+.left-adv .price-cart i
+{
+	width:100%;
+	margin-left:0;
+
+	
+}
+.price-cart a{
+	width:100%;
+}
+.price-cart p{
+	width:100%;}
+	.best-sales .products .rows .item-3
+}
+{
+	float: left;
+	width: 100% ;
+	margin-bottom: 0px;
+	background: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 35px 0;
+	margin-top:15px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.product-page .products .rows{
+	margin-left:0px;
+	margin-right:0;
+}
+
+
+
+	
+	.newsletter .email-typing{
+		display:flex;
+		justify-content: space-around;
+		width:100%;
+	}
+		.newsletter .email-typing
+	}
+	{
+		padding: 0;
+		padding-top: 0px;
+
+	}
+
+	
 	.detail .sizes span
 	{
 		display: block;	
