@@ -3,25 +3,25 @@
 // 	localStorage.removeItem("productsX");
 // }
 
-if(localStorage.getItem("productsX")){
-	renderHtml(localStorage.getItem("productsX"));
-}else{
-	var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4  && this.status == 200) {
-    	var result = this.responseText;   
-    	localStorage.setItem("productsX",result); 
-  		renderHtml(result);
-    }
-  };
-  xhttp.open("GET", "http://smsentertainment.club/api/get_products", true);
-  xhttp.send();
+// if(localStorage.getItem("productsX")){
+// 	renderHtml(localStorage.getItem("productsX"));
+// }else{
+// 	var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function() {
+//     if (this.readyState == 4  && this.status == 200) {
+//     	var result = this.responseText;   
+//     	localStorage.setItem("productsX",result); 
+//   		renderHtml(result);
+//     }
+//   };
+//   xhttp.open("GET", "http://smsentertainment.club/api/get_products", true);
+//   xhttp.send();
 
-}
+// }
 
-function renderHtml(result){
-	var result = JSON.parse(result);
-	var products = result.data;
+function renderHtml(products){
+	//var result = JSON.parse(result);
+	//var products = result.data;
 	var html = '';
 		for (var i = 0; i < products.length; i++) {
 			html += '<div class="item col-md-4">';

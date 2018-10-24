@@ -93,6 +93,19 @@
 			// },2000);
 			jQuery("#product_list").fadeOut(1000); // hide()
 			jQuery("#product_list").fadeIn(1000); // show()
+
+			// jquery ajax
+			jQuery.ajax({
+				url: "http://smsentertainment.club/api/get_products",
+				method: "GET", // POST
+				//data:{email:"quanghoa@gmail.com",password:"123456"},
+				success: function(result){
+					renderHtml(result.data);
+				},
+				error: function(){
+					alert("error");
+				}
+			});
 		});
 		jQuery(".categories > h3").bind("mouseenter",function(){
 			jQuery(this).children("div").slideDown();
