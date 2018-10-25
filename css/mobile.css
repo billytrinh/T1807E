@@ -1,17 +1,432 @@
-@media only screen and (max-width: 768px) and (min-width: 300px){
+@media only screen and (max-width: 768px) and (min-width: 400px){
 	body{
-		background: green;
+		background: #f4f6f8;
 	}
+
 	.container{width: 100%;}
-	.products{width: 100%;}
+	.menu7{display: none;}
+	.section6 .products{width: 100%;}
 	.section6 .products .rows .item{
-		width: calc(100% / 2);
+		width: calc(100% / 2 - 5%);
+	    float: left;
+	    text-align: center;
+	    background: #fff;
+	    margin: 15px;
+	    padding: 30px 0px;
+	}
+	.section6 .pagenext {
+	    float: left;
+	    width: 45%;
+	    background: #fff;
+	    text-align: center;
+	    margin-right: 0;
+	    margin-left: 15px;
+	    padding: 50px 0;
+	    margin-top: 258px;
 	}
 	.section2 .menu3{
-		width: 500px;
+		width: 100%;
+		float: left;
+	    margin: 60px 0;
+	    height: 100px;
+	    background: #fff;
+	}	
+	.menu3 .head {
+		float: left;
+		width: 18%;
+	    padding: 0;
+	    font-size: 15px;
+	    font-weight: 900;
+	    line-height: 100px;
+	    color: #ff5912;
 	}
-	.menu7{
+	.menu3 .description {
+		float: left;
+		width: 44%;
+	    font-size: 13px;
+	    font-weight: 600;
+	    font-style: italic;
+	    line-height: 100px;
+	    color: #34404b;
+	}
+	.menu3 .iconmain {
+		width: 3%;
+		float: left;
+	    padding-left: 0;
+	    padding-top: 43px;
+	}
+	.menu3 .sendmail {
+		float: left;
+		width: 21%;
+	    padding: 0;
+	    font-size: 13px;
+	    font-weight: 400;
+	    font-style: italic;
+	    line-height: 100px;
+	    color: #7c8791;
+	}
+	.menu3 .join {
+		float: left;
+	    margin-left: 0;
+	    margin-top: 28px;
+	    padding: 15px 20px;
+	    background-color: #ff5912;
+	    font-size: 12px;
+	    font-weight: 600;
+	    color: #fff;
+	}
+	.menu3 .join:hover{
+		cursor: pointer;
+	}
+	.header-top .text {
+	    padding-left: 0;
+	    font-weight: 600;
+	    font-size: 12px;
+	}
+	.header-top .tool {
+    	padding-right: 0;
+	    float: left;
+	    width: 18%;
+	}
+	.header-top .tool .imail{
+		float: left;
+		width: 15%;
+	}
+	.header-top .tool1 {
+    	padding-right: 0;
+	    float: left;
+	    width: 68%;
+	}
+	.header-top .tool1 .iphone{
+		float: left;
+		width: 3%;
+	}
+	.header-top .right-headertop{
+		width: 14%;
+		float: left;
+	}
+	.header-top .right-headertop .icon {
+	    width: 25%;
+	    float: left;
+	    padding-left: 0;
+	}
+	
+	.header-bottom .logo {
+	    float: left;
+	    padding-left: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.header-bottom .header-li ul {
+	    display: inline;
+	    padding-top: 28px;
+	    float: left;
+	    width: 100%;
+    	text-align: center;
+	}
+	.header-bottom .header-li ul li {
+	    display: inline;
+	    padding: 0 40px;
+	    margin-top: 200px;
+	}
+	.container .right-headerbottom {
+	    float: right;
+	    display: none;
+	}
+	.menu1 .menu1-images {
+	    width: 52%;
+	    float: left;
+	}
+	.menu1 .menu1-images .aokhoac {
+	    float: left;
+	    padding-left: 0;
+	    padding-bottom: 58px;
+	    text-align: center;
+    	width: 100%;
+	}
+	.menu1 .menu1-images .list-clothes {
+	    margin: 0;
+	    padding-top: 0;
+	    width: 100%;
+	    text-align: center;
+	    clear: both;
+	}
+	.menu1 .menu1-content {
+	    float: left;
+	    width: 48%;
+	}
+	.menu1 .menu1-content .winter-kit {
+	    height: 245px;
+	    border-bottom: 0px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .full-winter {
+	    font-size: 31px;
+	    color: #ff5912;
+	    font-weight: 900;
+	}
+	.menu1 .menu1-content .text-winter0 {
+	    padding-top: 15px;
+	    padding-bottom: 30px;
+	    font-size: 13px;
+	    color: #3c4751;
+	    font-weight: 600;
+	}
+	.menu1 .menu1-content .text-winter {
+	    padding-bottom: 10px;
+	    font-size: 12px;
+	    color: #495662;
+	    font-weight: 500;
+	}
+	.menu1 .menu1-content .choose {
+		width: 100%;
+	    padding: 0;
+	    margin-right: 0;
+	    border-bottom: 0px solid #f4f6f8;
+	    border-top: 2px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .choose .choose-size {
+		padding-top: 10px;
+	    float: left;
+	    font-size: 15px;
+	    font-weight: 700;
+	    width: 100%;
+	    border-right: 0px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .choose .size li {
+		width: 5%;
+	    float: left;
+	    display: inline;
+	    font-size: 13px;
+	    padding-left: 0;
+	    font-weight: 600;
+	    line-height: 20px;
+	}
+	.menu1 .menu1-content .choose .choose-quantity {
+		width: 100%;
+	    float: left;
+	    padding: 10px 0;
+	    padding-left: 0;
+	    font-size: 15px;
+	    font-weight: 700;
+	    border-bottom: 2px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .choose .choose-number {
+		width: 40%;
+	    float: left;
+	    margin-left: 0;
+	}
+	.menu1 .menu1-content .choose .choose-number .number {
+	    float: left;
+	    margin-right: 0;
+	    margin-left: 0;
+	}
+	.menu1 .menu1-content .choose .choose-number span{
+		padding-left: 0;
+	}
+	.menu1 .menu1-content .choose .text {
+		width: 60%;
+	    float: left;
+	    padding-right: 0;
+	    line-height: 18px;
+	}
+	.menu1 .menu1-content .order .price-winter {
+		width: 64%;
+	    float: left;
+	    font-size: 17px;
+	    font-weight: 900;
+	    margin-top: 62px;
+	}
+	.menu1 .menu1-content .order .images-plus {
+	    float: left;
+	    padding-left: 210px;
+	    margin-top: 15px;
+	    display: none;
+	}
+	.menu1 .menu1-content .order .order-now {
+	    float: left;
+	    border: none;
+	    border-width: 20px;
+	    border-radius: 25px 25px;
+	    background-color: #ff5912;
+	    width: 30%;
+	    height: 50px;
+	    font-weight: 600;
+	    color: #fff;
+	    margin-top: 45px;
+	}
+	.menu2 .row1 .row1-0 {
+	    font-size: 24px;
+	    font-weight: 900;
+	    color: #ff5912;
+	}
+	.menu2 .row1 .row1-1 {
+	    padding-left: 5px;
+	    font-size: 24px;
+	    font-weight: 900;
+	    color: #34404b;
+	}
+	.menu2 .row2 {
+	    color: #495662;
+	    font-size: 13px;
+	}
+	.products .rows .item {
+	    width: calc(100% / 2 - 31px);
+	    float: left;
+	    text-align: center;
+	    background: #fff;
+	    margin: 14px;
+	    padding: 30px 0px;
+	}
+	footer .logo {
+	    float: left;
+	    font-weight: 600;
+	    margin: 90px auto auto 0;
+	    width: 34%;
+	}
+	footer .lists {
+	    float: left;
+	    font-weight: 600;
+	    font-size: 13px;
+	    width: 15%;
+	    line-height: 2;
+	    margin-top: 82px;
+	}
+	.copyright{
+		font-size: 12px;
+	}
+	footer .payment {
+	    font-size: 17px;
+	    font-weight: 600;
+	    color: #ff5912;
+	    float: left;
+	    width: 20%;
+	    margin-top: 87px;
+	}
+	footer .payment .card{
+		width: 100%;
+	}
+
+
+	.menu3 {
+	    width: 100%;
+	}
+	.menu4 .menu4-images {
+	    width: 75%;
+	    float: left;
+	}
+	.menu4 .vuotdoc {
+	    width: 20%;
+	    float: left;
+	    margin-right: 0;
+	    margin-top: 50px;
+	    text-align: center;
+	}
+	.menu4 .winter-kit {
+	    width: 80%;
+	    float: left;
+	}
+	.menu4 .menu4-images .full-winter {
+	    font-size: 35px;
+	    color: #ff5912;
+	    font-weight: 900;
+	}
+	.menu4 .menu4-images .text-winter0 {
+	    padding-top: 20px;
+	    padding-bottom: 7px;
+	    font-size: 16px;
+	    color: #3c4751;
+	    font-weight: 600;
+	}
+	.menu4 .menu4-images .text-winter {
+	    padding-bottom: 50px;
+	    font-size: 14px;
+	    color: #495662;
+	    font-weight: 500;
+	}
+	.menu5 .menu5-left {
+	    background: #fff;
+	    width: 65%;
+	    float: left;
+	    margin-right: 0;
+	}
+	.menu5 .menu5-left .sale {
+	    float: left;
+	    width: 22%;
+	    padding-top: 13px;
+	    padding-bottom: 10px;
+	    padding-left: 0;
+	}
+	.menu5 .menu5-left .row2 {
+	    float: left;
+	    width: 48%;
+	}
+	.menu5 .row2 .row2-0 {
+	    float: left;
+	    margin-top: 25px;
+	    font-size: 20px;
+	    font-weight: 900;
+	}
+	.menu5 .row2 .row2-1 {
+	    float: left;
+	    margin-top: 10px;
+	    font-size: 11px;
+	    font-weight: 500;
+	}
+	.menu5 .menu5-left .cart {
+	    float: left;
+	    width: 29%;
+	    border-left: 1px solid #f4f6f8;
+	    margin-top: 35px;
+	}
+	.menu5 .menu5-left .cart .cart1 {
+	    float: left;
+	    padding-left: 22px;
+	    padding-top: 7px;
+	    width: 37%;
+	}
+	.menu5 .menu5-left .cart .cart1 .cart1-1{
+		width: 85%;
+	}
+	.menu5 .menu5-left .cart .price {
+	    float: left;
+	    padding-left: 20px;
+	    padding-top: 4px;
+	    font-size: 20px;
+	    font-weight: 900;
+	    color: #ff5912;
+	}
+	.menu5 .menu5-right {
+	    background: #fff;
+	    width: 35%;
+	    height: 108px;
+	    float: left;
+	    margin-left: 0;
+	}
+	.menu5 .menu5-right .row4 .adv {
+	    width: 45%;
+	}
+	.menu6 {
+	    float: left;
+	    margin-top: 45px;
+	    width: 100%;
+	}
+	.menu6 .menu6-left {
+	    background: #fff;
+	    width: 50%;
+	    float: left;
+	    margin-right: 0;
+	    padding: 35px 0;
+	}
+	.menu6 .menu6-center {
+	    background: #fff;
+	    width: 50%;
+	    float: left;
+	    margin: 0;
+	    padding: 35px 0;
+	}
+	.menu6 .menu6-right{
 		display: none;
 	}
+
 
 }

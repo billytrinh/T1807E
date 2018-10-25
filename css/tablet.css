@@ -1,14 +1,525 @@
 @media only screen and (max-width: 900px) and (min-width: 769px){
 	body{
-		background: red;
+		background: #f4f6f8;
 	}
-	.section2 .menu3{
-		width: 750px;
-	}
-	.menu7{display: none;}
-	.products{width: 100%;}
-	.products .rows .item{
-		width: calc(100% / 4);
-	}
-}
 
+	.container{width: 100%;}
+	.menu7{
+		float: left;
+	    width: 25%;
+	    padding: 5px 15px 20px 0;
+	    font-family: 'Lato', san-serif;
+	}
+	.menu7 .type {
+	    height: 240px;
+	    background: #fff;
+	    padding: 15px 20px;
+	    margin-bottom: 26px;
+	}
+	.menu7 .filter {
+	    height: 200px;
+	    background: #fff;
+	    padding: 15px 20px;
+	    margin-bottom: 26px;
+	}
+	.menu7 .filter .small {
+	    float: left;
+	    padding: 7px 50px 10px 10px;
+	    font-weight: 600;
+	}
+	.menu7 .filter .big {
+	    float: left;
+	    padding-top: 7px;
+	    font-weight: 600;
+	}
+	.menu7 .main{
+		font-size: 16px;
+	    font-weight: 900;
+	    line-height: 43px;
+	    color: #FF7013;
+	}
+	.menu7 .medium {
+	    font-size: 15px;
+	    font-weight: 600;
+	    line-height: 43px;
+	}
+	.menu7 .block.price-filter {
+	    text-align: center;
+	    padding: 45px 0;
+	}
+	.menu7 .price-filter .line-box {
+	    width: 80%;
+	    border-bottom: 3px solid #edf0f2;
+	    margin: 0 auto;
+	    position: relative;
+	}
+	.menu7 .price-filter .line-box .node.no_1 {
+	    top: -5px;
+	    left: 7px;
+	}
+	.menu7 .price-filter .line-box .line {
+	    display: inline-block;
+	    width: 71%;
+	    border-bottom: 3px solid #34404b;
+	    position: absolute;
+	    top: 0px;
+	    left: 13px;
+	}
+	.menu7 .price-filter .line-box .node.no_2 {
+	    top: -5px;
+	    right: 16px;
+	}
+	.menu7 .filter .input .from {
+	    float: left;
+	    padding-right: 5px;
+	    padding-top: 7px;
+	    font-weight: 600;
+	    font-size: 13px;
+	}
+	.menu7 .filter .input .input1{
+		float: left;	
+		width: 25%;
+	}
+	.menu7 .filter .input .to {
+	    float: left;
+	    padding: 7px 5px 0 10px;
+	    font-weight: 600;
+	    font-size: 13px;
+	}
+	.menu7 .sizes {
+	    height: 240px;
+	    background: #fff;
+	    padding: 15px 20px;
+	    margin-bottom: 26px;
+	}
+	.menu7 .tick {
+	    line-height: 43px;
+	}
+	.menu7 .brand{
+		height: 240px;
+	    background: #fff;
+	    padding: 15px 20px;
+	    margin-bottom: 26px;
+	}
+	.section6 .pagenext {
+	    float: right;
+	    width: 100%;
+	    background: #fff;
+	    text-align: center;
+	    margin-left: 0;
+	    padding: 15px 0;
+	}
+
+	.section2 .menu3{
+		width: 100%;
+		float: left;
+	    margin: 60px 0;
+	    height: 123px;
+	    background: #fff;
+	}	
+	.menu3 .head {
+		float: left;
+		width: 18%;
+	    padding: 0;
+	    font-size: 18px;
+	    font-weight: 900;
+	    line-height: 120px;
+	    color: #ff5912;
+	}
+	.menu3 .description {
+		float: left;
+		width: 46%;
+	    font-size: 14px;
+	    font-weight: 600;
+	    font-style: italic;
+	    line-height: 120px;
+	    color: #34404b;
+	}
+	.menu3 .iconmain {
+		width: 3%;
+		float: left;
+	    padding-left: 0;
+	    padding-top: 53px;
+	}
+	.menu3 .sendmail {
+		float: left;
+		width: 21%;
+	    padding: 0;
+	    font-size: 14px;
+	    font-weight: 400;
+	    font-style: italic;
+	    line-height: 120px;
+	    color: #7c8791;
+	}
+	.menu3 .join {
+		float: left;
+	    margin-left: 0;
+	    margin-top: 35px;
+	    padding: 17px 22px;
+	    background-color: #ff5912;
+	    font-size: 14px;
+	    font-weight: 600;
+	    color: #fff;
+	}
+	.menu3 .join:hover{
+		cursor: pointer;
+	}
+	
+	.section6 .products{
+		width: 75%;
+	}
+	.section6 .products .rows {
+	    margin-right: -5px;
+	    margin-left: -5px;
+	}
+	.section6 .products .rows .item{
+		width: calc(100% / 3 - 10px);
+	    float: left;
+	    text-align: center;
+	    background: #fff;
+	    margin: 5px;
+	    padding: 10px 0px;
+	}
+
+	.section {
+	    float: left;
+	    width: 100%;
+	    background: #fff;
+	}
+	.header-top .left-headertop{
+		
+	}
+	.header-top .text {
+	    padding-left: 0;
+	    font-weight: 600;
+	    font-size: 13px;
+	}
+	.header-top .tool {
+    	padding-right: 0;
+	    float: left;
+	    width: 18%;
+	}
+	.header-top .tool .imail{
+		float: left;
+		width: 15%;
+	}
+	.header-top .tool1 {
+    	padding-right: 0;
+	    float: left;
+	    width: 68%;
+	}
+	.header-top .tool1 .iphone{
+		float: left;
+		width: 3%;
+	}
+	.header-top .right-headertop{
+		width: 14%;
+		float: left;
+	}
+	.header-top .right-headertop .icon {
+	    width: 25%;
+	    float: left;
+	    padding-left: 0;
+	}
+	.header-bottom .left-header{
+		width: 100%;
+    	float: left;
+	}
+	.header-bottom .logo {
+		width: 100%;
+	    float: left;
+	    text-align: center;
+	}
+	.header-bottom .header-li ul {
+	    display: inline;
+	    padding-top: 28px;
+	    float: left;
+	    width: 100%;
+    	text-align: center;
+	}
+	.header-bottom .header-li ul li {
+	    display: inline;
+	    padding: 0 40px;
+	    margin-top: 200px;
+	}
+	.container .right-headerbottom {
+	    float: right;
+	    display: none;
+	}
+	.menu1 .menu1-images {
+	    width: 48%;
+	    float: left;
+	    text-align: center;
+	}
+	.menu1 .menu1-images .aokhoac {
+	    float: left;
+	    padding-left: 0;
+	    padding-bottom: 58px;
+	    text-align: center;
+    	width: 100%;
+	}
+	.menu1 .menu1-images .list-clothes {
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	    clear: both;
+	}
+	.menu1 .menu1-images .list-clothes .clothes:hover{
+		background-color: #ff5912;
+	}
+	.menu1 .menu1-content {
+	    float: left;
+	    width: 50%;
+	}
+	.menu1 .menu1-content .full-winter {
+	    font-size: 32px;
+	    color: #ff5912;
+	    font-weight: 900;
+	}
+	.menu1 .menu1-content .choose {
+	    padding-top: 26px;
+    	padding-bottom: 50px;
+	    border-bottom: 2px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .choose .choose-size {
+	    float: left;
+	    font-size: 15px;
+	    font-weight: 700;
+	    width: 51%;
+	    border-right: 2px solid #f4f6f8;
+	}
+	.menu1 .menu1-content .choose .text {
+	    float: left;
+	    padding-right: 6px;
+	    line-height: 5px;
+	    font-size: 13px;
+	}
+	.menu1 .menu1-content .choose .size li {
+	    float: left;
+	    display: inline;
+	    font-size: 12px;
+	    padding-left: 6px;
+	    font-weight: 600;
+	    line-height: 40px;
+	}
+	.menu1 .menu1-content .choose .choose-quantity {
+	    float: left;
+	    padding-left: 25px;
+	    font-size: 15px;
+	    font-weight: 700;
+	}
+	.menu1 .menu1-content .choose .choose-number {
+	    float: left;
+	    margin-left: -20px;
+	    margin-top: 10px;
+	}
+	.menu1 .menu1-content .order {
+	    height: 20px;
+	    padding: 70px 0;
+	    width: 100%;
+	}
+	.menu1 .menu1-content .order .price-winter {
+		width: 50%;
+	    float: left;
+	    font-size: 15px;
+	    font-weight: 900;
+	    margin-top: 0px;
+	}
+	.menu1 .menu1-content .order .images-plus {
+		width: 23%;
+	    float: left;
+	    padding-left: 0;
+	    margin-top: -1px;
+	}
+	.menu1 .menu1-content .order .images-plus .images{
+		width: 70%;
+	}
+	.menu1 .menu1-content .order .images-plus a {
+	    padding-right: 0;
+	    float: left;
+    	width: 30%;
+	}
+	.menu1 .menu1-content .order .order-now {
+	    float: left;
+	    border: none;
+	    border-width: 20px;
+	    border-radius: 25px 25px;
+	    background-color: #ff5912;
+	    width: 25%;
+	    height: 50px;
+	    font-weight: 600;
+	    color: #fff;
+	    margin-top: -15px;
+	}
+	.menu2 .row1 .row1-0 {
+	    font-size: 27px;
+	    font-weight: 900;
+	    color: #ff5912;
+	}
+	.menu2 .row1 .row1-1 {
+	    padding-left: 5px;
+	    font-size: 27px;
+	    font-weight: 900;
+	    color: #34404b;
+	}
+	.menu2 .row2 {
+	    color: #495662;
+	    font-size: 14px;
+	}
+
+	footer .logo {
+	    float: left;
+	    font-weight: 600;
+	    margin: 90px auto auto 0;
+	    width: 34%;
+	}
+	footer .lists {
+	    float: left;
+	    font-weight: 600;
+	    font-size: 13px;
+	    width: 14%;
+	    line-height: 2;
+	    margin-top: 82px;
+	}
+	.copyright{
+		font-size: 13px;
+	}
+	footer .payment {
+	    font-size: 17px;
+	    font-weight: 600;
+	    color: #ff5912;
+	    float: left;
+	    width: 20%;
+	    margin-top: 87px;
+	}
+	footer .payment .card{
+		width: 100%;
+	}
+
+	.menu4 .menu4-images {
+	    width: 75%;
+	    float: left;
+	}
+	.menu4 .vuotdoc {
+	    width: 20%;
+	    float: left;
+	    margin-right: 0;
+	    margin-top: 50px;
+	    text-align: center;
+	}
+	.menu4 .winter-kit {
+	    width: 80%;
+	    float: left;
+	}
+	.menu4 .menu4-images .full-winter {
+	    font-size: 45px;
+	    color: #ff5912;
+	    font-weight: 900;
+	}
+	.menu4 .menu4-images .text-winter0 {
+	    padding-top: 20px;
+	    padding-bottom: 7px;
+	    font-size: 17px;
+	    color: #3c4751;
+	    font-weight: 600;
+	}
+	.menu4 .menu4-images .text-winter {
+	    padding-bottom: 55px;
+	    font-size: 15px;
+	    color: #495662;
+	    font-weight: 500;
+	}
+	.menu5 .menu5-left {
+	    background: #fff;
+	    width: 65%;
+	    float: left;
+	    margin-right: 0;
+	}
+	.menu5 .menu5-left .sale {
+	    float: left;
+	    width: 22%;
+	    padding-top: 13px;
+	    padding-bottom: 10px;
+	    padding-left: 0;
+	}
+	.menu5 .menu5-left .row2 {
+	    float: left;
+	    width: 48%;
+	}
+	.menu5 .row2 .row2-0 {
+	    float: left;
+	    margin-top: 25px;
+	    font-size: 22px;
+	    font-weight: 900;
+	}
+	.menu5 .row2 .row2-1 {
+	    float: left;
+	    margin-top: 10px;
+	    font-size: 13px;
+	    font-weight: 500;
+	}
+	.menu5 .menu5-left .cart {
+	    float: left;
+	    width: 29%;
+	    border-left: 1px solid #f4f6f8;
+	    margin-top: 35px;
+	}
+	.menu5 .menu5-left .cart .cart1 {
+	    float: left;
+	    padding-left: 22px;
+	    width: 37%;
+	}
+	.menu5 .menu5-left .cart .cart1 .cart1-1{
+		width: 85%;
+	}
+	.menu5 .menu5-left .cart .price {
+	    float: left;
+	    padding-left: 20px;
+	    padding-top: 4px;
+	    font-size: 26px;
+	    font-weight: 900;
+	    color: #ff5912;
+	}
+	.menu5 .menu5-right {
+	    background: #fff;
+	    width: 35%;
+	    height: 108px;
+	    float: left;
+	    margin-left: 0;
+	}
+	.menu5 .menu5-right .row4 .adv {
+	    width: 45%;
+	}
+	.menu6 {
+	    float: left;
+	    margin-top: 45px;
+	    width: 100%;
+	}
+	.menu6 .menu6-left {
+	    background: #fff;
+	    width: 50%;
+	    float: left;
+	    margin-right: 0;
+	    padding: 35px 0;
+	}
+	.menu6 .menu6-center {
+	    background: #fff;
+	    width: 50%;
+	    float: left;
+	    margin: 0;
+	    padding: 35px 0;
+	}
+	.menu6 .menu6-right {
+	    display: none;
+	}
+
+
+	.menu3 {
+	    float: left;
+	    margin: 80px 0;
+	    width: 100%;
+	    height: 123px;
+	    background: #fff;
+	}
+
+}

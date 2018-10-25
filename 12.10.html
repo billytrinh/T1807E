@@ -2,33 +2,50 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>12-10-2018</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/29.9.css"/>
+	<link rel="stylesheet" href="css/tablet.css"/>
+	<link rel="stylesheet" href="css/mobile.css"/>
 </head>
 <body>
 	<header>
 		<div class="section header-top">
 			<div class="container">
-				<span class="tool">
-					<img src="img/mail.png"/>
+				<div class="tool">
+					<div class="imail">
+						<img src="img/mail.png"/>
+					</div>
 					<span class="text">info@gmail.com</span>
-				</span>
-				<span class="tool1">
-					<img src="img/phone.png"/>
+				</div>
+				<div class="tool1">
+					<div class="iphone">
+						<img src="img/phone.png"/>
+					</div>
 					<span class="text">453 - 5553 - 996</span>
-				</span>
-				<span class="right-header">
-					<img class="icon" src="img/facebook.png">
-					<img class="icon" src="img/chim.png">
-					<img class="icon" src="img/g+.png">
-					<img class="icon" src="img/mayanh.png">
-				</span>
+				</div>
+				<div class="right-headertop">
+					<div class="icon">
+						<img src="img/facebook.png">
+					</div>
+					<div class="icon">
+						<img src="img/chim.png">
+					</div>
+					<div class="icon">
+						<img src="img/g+.png">
+					</div>
+					<div class="icon">
+						<img src="img/mayanh.png">
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section header-bottom">
 			<div class="container">
-				<img class="logo" src="img/shopy.png">
+				<div class="logo">
+					<img src="img/shopy.png">
+				</div>
 				<span class="header-li">
 					<ul>
 						<li><a>Home</a></li>
@@ -38,7 +55,7 @@
 						<li><a>Contact</a></li>
 					</ul>
 				</span>
-				<div class="right-header">
+				<div class="right-headerbottom">
 					<img class="icon2" src="img/kinhlup.png">
 					<img class="icon2" src="img/nguoi.png">
 					<img class="icon2" src="img/ro.png">
@@ -48,57 +65,86 @@
 	</header>
 
 	<section class="section-center">
-		<div class="container">
+		<div class="login-container">
 			<div class="layer">
-				<img src="img/layer1.png"/>
+				<img class="layer1" src="img/layer1.png"/>
 			</div>
-			<div class="inputs">
-				<div class="email">
-					<span class="information">Email</span>
-					<div class="input">
-						<input type="text" name="email" size="50">
-					</div>
+			<form method="post-get" action="#" name="form_data" class="form-data" enctype="multipart/form-data">
+				<div class="form-group">
+					<label class="information">Email</label>
+					</br>
+						<input class="input" type="text" name="email"/>					
+					<p style="display: none;color:red">Invalid</p>
 				</div>
-				<div class="name">
-					<span class="information">Họ và tên</span>
-					<div class="input">
-						<input type="text" name="fullname" size="50">
-					</div>
+				<div class="form-group">
+					<label class="information">Họ và tên</label>
+					</br>
+					<input class="input" type="text" name="fullname"/>				
 				</div>
-				<div class="phones">
-					<span class="information">Số điện thoại</span>
-					<div class="input">
-						<input type="text" name="phone" size="50">
-					</div>
+				<div class="form-group">
+					<label class="information">Số điện thoại</label>
+					</br>
+					<input class="input" type="text" name="phone"/>
 				</div>
-				<div class="password">
-					<span class="information">Mật khẩu</span>
-					<div class="input">
-						<input type="password" name="pass" size="50">
-					</div>
+				<div class="form-group">
+					<label class="information">Mật khẩu</label>
+					</br>
+					<input class="input" type="password" name="password" min="6"/>
 				</div>
-				<div class="again-pass">
-					<span class="information">Nhập lại mật khẩu</span>
-					<div class="input">
-						<input type="password" name="again" size="50">
-					</div>
+				<div class="form-group">
+					<label class="information">Nhập lại mật khẩu</label>
+					</br>
+					<input class="input" type="password" name="again"/>
 				</div>
-				<div class="codes">
-					<span class="information">Mã giới thiệu</span>
-					<div class="input">
-						<input type="text" name="code" size="50">
-					</div>
+				<div class="form-group">
+					<label class="information">Mã giới thiệu</label>
+					</br>
+					<input class="input" type="text" name="codes"/>
 				</div>
-			</div>
-			<div class="radios">
-				<input type="radio" name="policy"> Đồng ý về chính sách bảo mật và điều khoản sử dụng
-			</div>
-			<button>Đăng ký</button>
-			<div class="comeback">
-				<span>Trở lại đăng nhập</span>
-			</div>
+				<div class="radios">
+					<input type="radio" name="policy"> Đồng ý về chính sách bảo mật và điều khoản sử dụng
+				</div>
+				<button type="submit" onclick="return checkForm()">Đăng ký</button>
+				<div class="comeback">
+					<span>Trở lại đăng nhập</span>
+				</div>
+			</form>						
 		</div>
 	</section>
+	<script type="text/javascript">
+		function checkForm() {
+			var email = document.forms["form_data"].email.value;			
+			var fullname = document.forms["form_data"].fullname.value;
+			var phone = document.forms["form_data"].phone.value;
+			var password = document.forms["form_data"].password.value;
+			var again = document.forms["form_data"].again.value;
+			var codes = document.forms["form_data"].codes.value;
+
+			if(email.length >0 && fullname.length > 6 && phone.length >= 10 && password.length >= 6 && again.length >= 6){
+				return true;
+			}else{
+				if(email.length <=0){
+					document.forms["form_data"].email.nextElementSibling.style.display = "block";
+				}	
+				if(password.length < 6 && password.length > 0){
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">chưa đủ 6 ký tự </p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+				}else{
+					if(document.forms["form_data"].password.nextElementSibling){
+						document.forms["form_data"].password.nextElementSibling.remove();
+					}					
+					var textInput = document.forms["form_data"].password.outerHTML;
+					textInput += '<p style="color:red">chưa nhập password</p>';
+					document.forms["form_data"].password.outerHTML = textInput;
+				}
+			}			
+			return false;			
+		}
+	</script>
 
 	<footer>
 		<div class="section">

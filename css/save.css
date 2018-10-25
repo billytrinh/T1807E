@@ -12,7 +12,7 @@ body{
 }
 header{
 	float: left;
-		
+	width: 100%;	
 }
 .header-top{
 	background: #fff;
@@ -30,31 +30,16 @@ header{
 }
 .header-top .tool{
 	padding-right: 30px;
-	float: left;
-}
-.header-top .tool .imail{
-	float: left;
-}
-.header-top .tool1{
-	float: left;
-}
-.header-top .tool1 .iphone{
-	float: left;
 }
 .header-top .text{
 	padding-left: 5px;
 	font-weight: 600;
-	float: left;
 }
-.container .right-headertop{
+.container .right-header{
 	float: right;
 }
-.container .right-headerbottom{
-	float: right;
-}
-.header-top .right-headertop .icon{
+.header-top .right-header .icon{
 	padding-left: 15px;
-	float: left;
 }
 .header-bottom .logo{
 	float: left;
@@ -81,7 +66,7 @@ header{
 	padding-top: 18px;
 	float: left;
 }
-.header-bottom .right-headerbottom .icon2{
+.header-bottom .right-header .icon2{
 	padding-left: 30px;
 	margin-bottom: 20px;
 }
@@ -90,11 +75,7 @@ header{
 	width: 100%;
 	background: #fff;
 }
-.section5{
-	width: 100%;
-	float: left;
-	background: #fff;
-}
+
 .container .menu1{
 	background: #fff;
 	border-bottom: 1px solid #f4f6f8;
@@ -148,8 +129,7 @@ header{
 	border-bottom: 2px solid #f4f6f8;
 }
 .menu1 .menu1-content .choose{
-	padding-top: 26px;
-    padding-bottom: 44px;
+	padding: 30px 0;
 	border-bottom: 2px solid #f4f6f8;
 }
 .menu1 .menu1-content .choose .choose-size{
@@ -206,6 +186,9 @@ header{
 	float: left;
 	margin-right: -20px;
 	margin-left: 10px;
+}
+a{
+	font-size: 14px;
 }	
 .menu1 .menu1-content .order{
 	height: 20px;
@@ -241,18 +224,12 @@ header{
 	cursor: pointer;
 }
 .menu2{
-	width: 100%;
-	float: left;
-	padding: 50px 0;
+	padding: 30px 0;
 	text-align: center;
-
-}
-.section1{
-	width: 100%;
-	float: left;
+	background: #f4f6f8;
 }
 .menu2 .row1{
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 30px;
 	float: left;
 	width: 100%;
@@ -354,8 +331,7 @@ header{
 	float: left;
 	width: 125px;
 	padding-top: 15px;
-	padding-left: 27px;
-	padding-bottom: 10px;
+	padding-left: 45px;
 }
 .menu5 .menu5-left .row2{
 	float: left;
@@ -380,11 +356,8 @@ header{
 }
 .menu5 .menu5-left .cart .cart1{
 	float: left;
-	padding-left: 59px;
-	width: 93px;
-}
-.menu5 .menu5-left .cart .cart1 .cart1-1{
-	width: 100%;
+	padding-left: 28px;
+	width: 30px;
 }
 .menu5 .menu5-left .cart .price{
 	float: left;
@@ -396,7 +369,7 @@ header{
 .menu5 .menu5-right{
 	background: #fff;
 	width: calc(100% - 700px);
-	height: 110px;
+	height: 99px;
 	float: left;
 	margin-left: 15px;
 }
@@ -405,16 +378,9 @@ header{
 	text-align: center;
 }
 .menu5 .menu5-right .row4 .adv{
-	width: 140px;
+	width: 125px;
 }
-.section3{
-	width: 100%;
-	float: left;
-}
-.section4{
-	width: 100%;
-	float: left;
-}
+
 .menu6{
 	float: left;
 	margin-top: 45px;
@@ -488,12 +454,13 @@ header{
 
 
 .section1 .products{
-	width: 100%;
-	float: left;
+	margin-left: -15px;
+	margin-right: -14px;
 }
 .section1 .products .rows{
-	margin-left: -14px;
-	margin-right: -14px;
+	width: 100%;
+	margin-bottom: 30px;
+
 }
 .products .rows .item{
 	width: calc(100% / 4 - 28px);
@@ -510,7 +477,6 @@ header{
 .products .rows .item:hover .show-hover{
 	display: inline-block;
 }
-
 .products .rows .item:hover .show{
 	display: none;
 }
@@ -545,10 +511,6 @@ header{
 	padding: 25px 3px;
 }
 
-.section2{
-	width: 100%;
-	float: left;
-}
 .menu3{
 	float: left;
 	margin: 80px 0;
@@ -557,49 +519,38 @@ header{
 	background: #fff;
 }
 .menu3 .head{
-	float: left;
-	padding:  0 30px 0 30px;
-	font-size: 19px;
+	padding:  0 30px 0 40px;
+	font-size: 17px;
 	font-weight: 900;
 	line-height: 120px;
 	color: #ff5912;
 }
 .menu3 .description{
-	float: left;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	font-style: italic;
 	line-height: 120px;
 	color: #34404b;
 }
 .menu3 .iconmain{
-	float: left;
-	padding-left: 220px;
-	padding-top: 53px;
+	padding: 0 0 0 250px;
 }
 
 .menu3 .sendmail{
-	float: left;
-	padding: 0 130px 0 10px;
-	font-size: 16px;
+	padding: 0 150px 0 10px;
+	font-size: 14px;
 	font-weight: 400;
 	font-style: italic;
 	line-height: 120px;
 	color: #7c8791;
 }
 .menu3 .join{
-	float: left;
-	margin-top: 35px;
 	margin-left: 20px;
 	padding:  17px 22px;
 	background-color: #ff5912;
 	font-size: 14px;
 	font-weight: 600;
 	color: #fff;
-}
-.menu3 .join:hover{
-	cursor: pointer;
-	background-color: #fb6b2d;
 }
 
 footer{
@@ -612,12 +563,12 @@ footer .logo{
 	float: left;
 	font-weight: 600;
 	margin: 75px auto auto 0;	
-	width: 400px; 
+	width: 400px;
 }
 footer .lists{
 	float: left;
 	font-weight: 600;
-	width: 200px; 
+	width: 200px;
 	line-height: 2.5;
 	margin-top: 75px;
 }
@@ -634,10 +585,11 @@ footer .payment{
 	margin-top: 95px;
 }
 
+
 .menu7{
 	float: left;
 	width: 270px;
-	padding: 14px 15px 20px 0;
+	padding: 14px 15px 120px 0;
 	font-family: 'Lato', san-serif;
 }
 .menu7 .type{
@@ -652,14 +604,10 @@ footer .payment{
 	line-height: 50px;
 	color: #FF7013;
 }
-.menu7 .medium{
+.menu7 .type .medium{
 	font-size: 15px;
 	font-weight: 600;
 	line-height: 50px;
-}
-.menu7 .medium:hover{
-	color: #ff5912;
-	cursor: pointer;
 }
 .menu7 .filter{
 	height: 220px;
@@ -736,9 +684,9 @@ footer .payment{
 .menu7 .tick1{
 	padding-right: 30px;
 }
-.menu7 .tick1:hover{
-	color: #ff5912;
-	cursor: pointer;
+.menu7 .medium{
+	font-weight: 600;
+	font-size: 15px;
 }
 .menu7 .brand{
 	height: 295px;
@@ -746,20 +694,12 @@ footer .payment{
 	padding: 15px 40px;
 	margin-bottom: 26px;
 }
-.section6{
-	width: 100%;
-	float: left;
-	margin-top: 100px;
-}
 .section6 .products{
-	width: 900px;
-    float: left;
-}
-.section6 .products .rows{
-	margin-right: -15px;
+	margin-top: 120px;
+	margin-right: -29px;
 }
 .section6 .products .rows .item{
-	width: calc(100% / 3 - 28px);
+	width: calc(100% / 4 - 23px);
 	float:left;	
 	text-align: center;
 	background: #fff;
@@ -767,61 +707,55 @@ footer .payment{
 	padding: 30px 0px;		
 }
 .section6 .pagenext{
-	float: left;
-	width: calc(100% - 14px);
+	float: right;
+	width: calc(100% - 313px);
 	background: #fff;
 	text-align: center;
+	margin-right: 29px;
 	padding: 15px 0;
-	margin-left: 14px;
 }
 
 // PSD Register
 .section-center{
-	width: 100%;
-	float: left;
+	width: 100%
 }
-.section-center .login-container{
-	width: 410px;
+.section-center .container{
 	margin:0 auto;
 	text-align: left;
 }
-.section-center .login-container .layer{
+.section-center .container .layer{
 	text-align: center;
 	margin-bottom: 20px;
 }
-.section-center .login-container .layer .layer1{
-	width: 140px;
-	margin-top: 70px;
+.section-center .container .form-data{
+	margin-left: 388px;
 }
-.section-center .login-container .form-data{
-	margin-left: 0;
-}
-.section-center .login-container .form-group input{
+.section-center .container .form-group input{
 	margin-bottom: 20px;
 	border-radius: 5px;
 	border: 1px solid #7b7b7b;
-	width: 410px;
+	width: 400px;
 	height: 50px;
-	font-size: 23px;
+	font-size: 20px;
 }
 .section-center .information{
-	font-size: 24px;
+	font-size: 26px;
 	font-weight: 500;
 	color: #7b7b7b;
 }
-.section-center .login-container .radios{
-	margin-left: 45px;
+.section-center .container .radios{
+	margin-left: 40px;
 	margin-top: 15px;
 	width: 320px;
 	text-align: center;
 	color: #7b7b7b;
 	font-size: 22px;
 }
-.section-center .login-container .radios input{
+.section-center .container .radios input{
 	width: 20px;
 }
 .section-center button{
-	margin-left: 115px;
+	margin-left: 109px;
 	margin-top: 30px;
 	font-size: 23px;
 	border: none;
@@ -836,7 +770,7 @@ footer .payment{
 	cursor: pointer;
 }
 .section-center .comeback{
-	text-align: center;
+	margin-left: 115px;
 	margin-bottom: 70px;
 	font-size: 22px;
 	font-weight: 500;
