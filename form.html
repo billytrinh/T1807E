@@ -4,27 +4,44 @@
 	<meta charset="UTF-8"/>
 	<title>Demo</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 </head>
 <body>
 	<section class="section form-demo">
 		<div class="container">
-			<form method="post-get" action="#" name="form_data" class="form-data" enctype="multipart/form-data">
+			<form method="post-get" action="#" name="form_data" class="form-data col-lg-6 col-lg-offset-3 col-xs-12 col-sm-8 col-sm-offset-2" enctype="multipart/form-data">
 				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="text" name="email" placeholder="Email" />
+					<label for="email">Email <span class="glyphicon glyphicon-euro"></span></label>
+					<input class="form-control email" type="text" name="email" placeholder="Email" />
 					<p style="display: none;color:red">Invalid </p>
 				</div>
 				<div class="form-group">
 					<label>Password</label>
-					<input type="password" name="password" min="6" placeholder="password">
+					<input class="form-control password" type="password" name="password" min="6" placeholder="password">
 					
 				</div>
-				<button type="submit" onclick="return checkForm()">SUBMIT</button>
+				<div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				  </div>
+				<button type="button" class="btn btn-primary" onclick="checkForm2()">SUBMIT</button>
+				<!-- <button type="submit" class="btn btn-success" onclick="return checkForm()">SUBMIT</button>
+				<button type="submit" class="btn btn-info" onclick="return checkForm()">SUBMIT</button>
+				<button type="submit" class="btn btn-warning" onclick="return checkForm()">SUBMIT</button>
+				<button type="submit" class="btn btn-danger" onclick="return checkForm()">SUBMIT</button>
+				<button type="submit" class="btn btn-default" onclick="return checkForm()">SUBMIT</button> -->
 			</form>
 		</div>
 	</section>
 	<script type="text/javascript">
+		function checkForm2(){
+			var param = "";
+			param = param+jQuery(".email").attr("name")+"="+jQuery(".email").val();
+		
+		}
 		function checkForm() {
 			// var email = document.getElementById("email").value;
 			// var password = document.getElementById("password").value;
