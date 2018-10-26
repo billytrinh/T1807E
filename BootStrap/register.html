@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/data.json"></script>
+    <script type="text/javascript" src="js/get-products.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<section class="section">
+		<div class="container">
+			<form class="cmxform" id="commentForm" method="get" action="">
+				<fieldset>
+					<legend>Please provide your name, email address (won't be published) and a comment</legend>
+					<p>
+						<label for="cname">Name (required, at least 2 characters)</label>
+						<input id="cname" name="name" minlength="2" type="text" required>
+					</p>
+					<p>
+						<label for="cemail">E-Mail (required)</label>
+						<input id="cemail" type="email" name="email" required>
+					</p>
+					<p>
+						<label for="curl">URL (optional)</label>
+						<input id="curl" type="url" name="url">
+					</p>
+					<p>
+						<label for="ccomment">Your comment (required)</label>
+						<textarea id="ccomment" name="comment" required></textarea>
+					</p>
+					<p>
+						<input class="submit" type="submit" value="Submit">
+					</p>
+				</fieldset>
+			</form>
+			<script>
+				jQuery("#commentForm").validate();
+			</script>
+		</div>
+	</section>
+</body>
+</html>

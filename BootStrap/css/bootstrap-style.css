@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+	color: #34404b;
+	background:#f4f6f8; 
+}
+.container
+{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+header .header-top
+{
+    background: #fff;
+    height: 60px;
+    padding-top: 30px;
+}
+header .header-bottom
+{
+    background: #fff;
+    height: 122px;
+    margin-bottom: 118px;
+}
+header .top-right
+{
+    float: right;
+}
+.logo
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+a
+{
+    color: #34404b;
+}
+a:hover
+{
+    color: orange;
+    text-decoration: none;
+}
+.top-right ul li
+{
+    list-style: none;
+    float: left;
+}
+
+.navigation-header-bottom 
+{
+    padding: 55px 0;
+}
+.navigation-header-bottom li
+{
+    list-style: none;
+}
+.user-info-navigation
+{
+    padding: 55px 0;
+}
+.user-info-navigation span
+{
+    padding: 0 15px;
+}
+.block-left
+{
+    padding-left: 40px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+.categories
+{
+    height: 305px;
+}
+.price-filter
+{
+    height: 233px;
+}
+.sizes
+{
+    height: 305px;
+}
+.brands
+{
+    height: 305px;
+}
+.section .container .rows .item
+{
+    height: 370px;
+    margin-bottom: 30px;
+}
+.section .container .rows .item .item-content
+{
+    background: #fff;
+    text-align: center;
+    height: calc(100% - 40px);
+    padding: 20px 0;
+}
+.rows
+{
+    padding-right: 0px;
+}
+figcaption
+{
+    padding: 30px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+p
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: orange;
+}
+.paginator
+{
+    padding: 0 15px;
+}
+.paginator-content
+{
+    background: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+.newsletter
+{
+    height: 125px;
+    background: #fff;
+    margin-top: 120px;
+}
