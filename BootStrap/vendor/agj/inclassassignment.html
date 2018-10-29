@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>In Class Assignment</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+</head>
+<body ng-app="InClassAssignment">
+    <div ng-controller="Search">
+        <input type="text" ng-model="haha" ng-keypress="filterInSystem()">
+        <button type="button" name="show-list" ng-model="show-list" ng-click="test()">Show List</button>
+        <ul ng-show="show-list">
+            <li ng-repeat="contact in contacts | filter: haha">
+                {{contact.name}} -- {{contact.phonenumber}}
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var InClassAssignment = angular.module("InClassAssignment", [])
+        InClassAssignment.controller("Search", function test($scope)
+        {
+            $scope.contacts = contacts;
+        });
+    </script>
+</body>
+</html>
