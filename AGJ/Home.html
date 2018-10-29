@@ -6,6 +6,8 @@
 </head>
 <body ng-app="demoApp">
 	<div ng-controller="demoController" ng-init="total=10;name='hello'">
+		<h2>{{total | currency : "VND"}}</h2>
+		<h2>{{name | uppercase }}</h2>
 		<input type="number" ng-model="total"/>
 		<input type="text" ng-model="name"/>
 		<h1>4 + 5 = {{total}}</h1>
@@ -13,20 +15,21 @@
 		<button type="button" ng-click="addTotal()">Add Total</button>
 	</div>
 	<div ng-controller="demo2Controller">
-		<input id="show" type="checkbox" name="show_list" ng-model="show_list"> <label for="show">Show list</label>
-		<ul ng-if="show_list">
-			<li ng-repeat="student in students">
+		<input type="text" ng-model="xx" />
+		<ul>
+			<li ng-repeat="student in students | filter: xx">
 				{{student.name}} -- {{student.birthday}}
 			</li>
 		</ul>
+		<input id="show" type="checkbox" name="show_list" ng-model="show_list"> <label for="show">Show list</label>
 		<ul ng-show="show_list">
 			<li ng-repeat="student in students">
 				{{student.name}} -- {{student.birthday}}
 			</li>
 		</ul>
 		<ul ng-hide="show_list">
-			<li ng-repeat="student in students">
-				{{student.name}} -- {{student.birthday}}
+			<li ng-repeat="sv in students">
+				{{sv.name}} -- {{sv.birthday}}
 			</li>
 		</ul>
 	</div>
@@ -38,7 +41,7 @@
 			};
 		});
 		demo.controller("demo2Controller",function($scope) {
-			var students = [
+			var studentsXX = [
 				{
 					name: "Le van A",
 					birthday: 2999
@@ -60,7 +63,7 @@
 					birthday: 2003
 				},
 			];	
-			$scope.students = students;
+			$scope.students = studentsXX;
 		});
 	</script>
 </body>
