@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="demoApp">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8"/>
@@ -7,4 +7,56 @@
 	<script type="text/javascript" src="js/angular.js"></script>
 </head>
 <body>
+	<div ng-controller="DemoController" ng-init="total=10;name='hello'">
+		<input type="number" ng-model="total"/>
+		<input type="text" ng-model="name"/>
+		<h1>{{total}}</h1>
+		<h1>{{name}}</h1>
+		<button type="button" ng-click="addtotal()">add total</button>
+		<button type="button" ng-click="addname()">add name</button>
+	</div>
+	<div ng-controller="demo2controller">
+		<button id="show" type="checkbox" name="show_list" ng-model="show_list"><label for="show">SHOW LIST</label></button>
+		<ul ng-show="show_list"><li ng-repeat="student in students">{{student.name}} -- {{student.birthday}}</li></ul>
+		<ul ng-show="show_list"><li ng-repeat="student in students">{{student.name}} -- {{student.birthday}}</li></ul>
+		<ul ng-hide="show_list"><li ng-repeat="student in students">{{student.name}} -- {{student.birthday}}</li></ul>
+	</div>
+	<script type="text/javascript">
+		var demo = angular.module("demoApp",[]);
+		demo.controller("DemoController",function($scope){
+			$scope.total	= 10000;
+			$scope.name		= "Angular";
+			$scope.addtotal = function(){
+				$scope.total++;
+			};
+			$scope.addname = function(){
+				$scope.name = "Angular Added";
+			};
+		});
+		demo.controller("DemoController",function($scope){
+			var students = [
+				{
+					name: "Le A",
+					birthday: 1999
+				},
+				{
+					name: "Le B",
+					birthday: 2000
+				},
+				{
+					name: "Le C",
+					birthday: 2001
+				},
+				{
+					name: "Le D",
+					birthday: 2002
+				},
+				{
+					name: "Le E",
+					birthday: 2003
+				},
+			];
+			$scope.students = students;	
+		});
+	</script>
 </body>
