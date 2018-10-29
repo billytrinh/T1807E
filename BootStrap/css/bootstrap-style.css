@@ -54,6 +54,15 @@ a:hover
     list-style: none;
     float: left;
 }
+.user-info-navigation ul li
+{
+    list-style: none;
+    float: left;
+}
+.hidden
+{
+    list-style: none;
+}
 .orange
 {
     color: #ff5912;
@@ -69,7 +78,6 @@ a:hover
 .user-info-navigation
 {
     padding: 55px 0;
-    float: right !important;
 }
 .user-info-navigation span
 {
@@ -164,8 +172,8 @@ p
 footer
 {
     background: #fff;
-    height: 250px;
     margin-top: 122px;
+    padding-bottom: 90px;
 }
 .logo-footer figure figcaption
 {
