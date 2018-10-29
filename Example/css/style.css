@@ -195,3 +195,43 @@ header{
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
 }
+
+/* Mobile menu */
+.mobile-menu{
+	position: fixed;
+	top:0;
+	left: -67%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 10;
+}
+.mobile-click.active{
+	z-index: 101;
+	position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0 11px;
+}
+.bg-fade{
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 9;
+	display: none;
+}
+li.has-sub{
+	position: relative;
+}
+ul.sub-menu{
+	 position: absolute;
+    left: 0px;
+    top: 16px;
+}
+.has-sub .has-sub ul.sub-menu{
+	position: absolute;
+    left: 45px;
+    top: 0px;
+}
