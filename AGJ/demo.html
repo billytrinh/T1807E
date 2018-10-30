@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Agular Js</title>
+	<script type="text/javascript" src="js/angular.js"> </script>
+</head>
+<body ng-app="demoApp">
+	<div ng-controller="demoController" ng-init="total=10;name'hello'">
+		<input type="number"  ng-model="total"/>
+		<input type="text" ng-model="name">
+		
+		<button type="buton" ng-click="addTotal()"> Add Total </button>
+	</div>	
+	<div ng-controller2="demo2Controller">
+		<input id="show" type="checkbox" name="show_list"> <label for="show"> Show_list</label>
+		<ul ng-if="show_list">
+			<li ng-repeat="student in students">
+				{{ student.name}}--{{student.number}}
+				
+			</li>
+		</ul>
+		<ul ng-show="show_list">
+			<li ng-repeat="student in students">
+				{{ student.name}}--{{student.number}}
+				
+			</li>
+			
+		</ul>
+		<ul ng-hide="show_list">
+			<li ng-repeat="student in students">
+				{{ student.name}}--{{student.number}}
+				
+			</li>
+			
+		</ul>
+		
+	</div>
+
+	<script type="text/javascript">
+	    var demo= angular.module("demoApp", []);
+	    demo.controller("demaController", function ($scope){
+	    	$scope.total=10;
+	    	$scope.name="";
+	    	$scope.addTotal= function(){
+	    		$scope.total++;
+	    	};
+	    	
+            
+	    	});
+	    demo.controller("demo2.controller", function($scope){
+	    	var student=[
+	    	{
+	    		name:"nguyen van a"
+	    		number:12345
+	    	},
+	    	{
+	    		name:"nguyen van b"
+	    		number:6789
+	    	},
+	    	{
+	    		name:"nguyen van c"
+	    		number:5678
+	    	},
+
+
+	    	];
+	    	$scope.students= students;
+
+
+
+
+	    	});
+	</script>
+
+
+</body>
+</html>
