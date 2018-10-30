@@ -34,14 +34,7 @@
 		</ul>
 	</div>
 	<script type="text/javascript">
-		var demo = angular.module("demoApp",[]);
-		demo.controller("demoController",function($scope) {
-			$scope.addTotal = function(){
-				$scope.total++;	
-			};
-		});
-		demo.controller("demo2Controller",function($scope) {
-			var studentsXX = [
+		var xyz = [
 				{
 					name: "Le van A",
 					birthday: 2999
@@ -62,8 +55,16 @@
 					name: "Le van E",
 					birthday: 2003
 				},
-			];	
-			$scope.students = studentsXX;
+			];
+		var demo = angular.module("demoApp",[]);
+		demo.controller("demoController",function($scope) {
+			$scope.addTotal = function(){
+				$scope.total++;	
+			};
+		});
+		demo.controller("demo2Controller",function($scope) {
+				
+			$scope.students = xyz;
 		});
 	</script>
 </body>
