@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AGL</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/Contacts.json"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+<body ng-app="demoApp">
+	
+	<!-- <div ng-controller="demoController">
+		<input type="number" min="0" ng-model="total"/>
+		<input type="text" ng-model="name"/>
+		<h1>4+5={{total}}</h1>
+		<h2>{{name}}</h2>
+		<button type="button" ng-click="addTotal()">Add</button>
+		<button type="button" ng-click="truTotal()">Trừ</button>
+	</div>
+	<div ng-controller=demo2Controller>
+		<input type="checkbox" id="show" name="show_list" ng-model="show_list">
+		<label for="show">Show list</label>
+		<ul ng-if="show_list">
+			<li ng-repeat="student1 in students">{{student1.name}} -- {{student1.birthday}}</li>
+		</ul>
+		<input type="text" ng-model="xx">
+		<label >Search</label>
+		<ul >
+			<li ng-repeat="student1 in students | filter: xx">{{student1.name}} -- {{student1.birthday}}</li>
+		</ul>
+	</div> -->
+	<div class="col-xs-12">
+		<div class="container" >
+			<h3 class="jumbotron col-lg-8 col-md-8 col-sm-10 col-xs-10">DANH SÁCH LIÊN HỆ</h3>
+			<div class=" col-lg-8 col-md-8 col-sm-10 col-xs-10" ng-controller=demo2Controller>
+				
+			<div class="form-group">
+				<input class="form-control  " placeholder="Tìm kiếm liên hệ" type="text" ng-model="xx">
+			</div>
+				
+				
+			<table class="table table-striped">
+				<thead>
+					<tr >
+						<th>Họ tên</th>
+						<th>Số điện thoại</th>
+					</tr>				
+				</thead>
+				<tbody>
+					<tr ng-repeat="contact in contacts | filter: xx">
+						<td><i class="fas fa-user-circle"></i>&nbsp;{{contact.name}}</td>
+						<td>{{contact.phone}}</td>
+					</tr>			
+				</tbody>
+				
+			</table>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var demo = angular.module("demoApp",[]);
+		// demo.controller("demoController",function($scope){
+		// 	$scope.total = 0;
+		// 	$scope.name = "phong";
+		// 	$scope.addTotal = function(){
+		// 		$scope.total++;
+		// 	};
+		// 	$scope.truTotal = function(){
+		// 		$scope.total--;
+		// 	};
+		// });
+		// demo.controller("demo2Controller",function($scope){
+		// 	var studentAA = [
+		// 		{
+		// 			name: "Le Van A",
+		// 			birthday: 1256
+		// 		},
+		// 		{
+		// 			name: "Le Van B",
+		// 			birthday: 1200
+		// 		},
+		// 		{
+		// 			name: "Le Van C",
+		// 			birthday: 1243
+		// 		},
+		// 		{
+		// 			name: "Le Van D",
+		// 			birthday: 1299
+		// 		},
+		// 		{
+		// 			name: "Le Van E",
+		// 			birthday: 1211
+		// 		},
+		// 		{
+		// 			name: "Le Van F",
+		// 			birthday: 1234
+		// 		},
+		// 	];
+		// 	$scope.students = studentAA;
+		// });
+		demo.controller("demo2Controller",function($scope){
+			$scope.contacts = contacts;
+		});
+				
+	
+	</script>
+</body>
+</html>

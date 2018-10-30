@@ -1,0 +1,40 @@
+var contacts = [
+	{
+		name: "Kim Jong Un",
+		phone: "0916548623",
+	},
+	{
+		name: "Trump Donal",
+		phone: "0916103629",
+	},
+	{
+		name: "Cristiano Ronaldo",
+		phone: "0984125963",
+	},
+	{
+		name: "Marvel Thanos",
+		phone: "0923487651",
+	},
+	{
+		name: "Marvel Loki",
+		phone: "0949324158",
+	},
+	{
+		name: "Marvel Thor",
+		phone: "0974125952",
+	},
+	{
+		name: "Marvel Hulk",
+		phone: "0903259657",
+	},
+	{
+		name: "Marvel Captain",
+		phone: "0964159623",
+	},
+	{
+		name: "Marvel IronMan",
+		phone: "0931458965",
+	},
+	
+];
+		
