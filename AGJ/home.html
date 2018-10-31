@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 hidden-xs" style="background-color: red;height: 100px;"></div>
 				<div class="col-lg-7 col-md-7 hidden-sm" style="background-color: white;height: 100px;">
-					<H1 class="visible-xs">Contact</H1>
+					<H1 class="header visible-xs"></H1>
 					<ul class="hidden-xs">
 						<li class="pull-left">
 							<a href="#">Home</a>
@@ -125,6 +125,12 @@
 			jQuery(this).children("ul.sub-menu").hide();
 		});
 		var demo = angular.module("demoApp",[]);
+		demo.directive("header", function() {
+			return {
+				restrict : "C",
+				template : "<h1>Contact</h1>"
+			};
+		});
 		demo.controller("DemoController",function($scope){
 			var contacts = [
 				{
