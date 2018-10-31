@@ -18,7 +18,7 @@
 	</div>
 	<div ng-controller="demo3Controller">
 			<h1>{{color}}</h1>
-		</div>
+	</div>
 	<div ng-controller="demo2Controller">
 		<h1>List Product</h1>
 		<ul>
@@ -73,9 +73,11 @@
 			];
 		var demo = angular.module("demoApp",[]);
 		demo.directive("headerDemo",function(){
+			var  html = "<header>Day la header ABC <h2>Header</h2></header>";
+				html+="aaaaa";
 			return {
 					restrict: 'AE',
-					template: '<header>Day la header ABC <h2>Header</h2></header'
+					template: html
 				};
 		});
 		demo.controller("demoController",function($scope) {
@@ -88,7 +90,7 @@
 			$scope.students = xyz;
 			$http.get('http://smsentertainment.club/api/get_products').
                 then(function(result, status, headers, config) {
-                	console.log(result);
+                	//console.log(result);
                   	$scope.products = result.data.data;
                 });
 			});
