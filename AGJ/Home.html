@@ -16,6 +16,9 @@
 		<button type="button" ng-click="addTotal()">Add Total</button>
 	
 	</div>
+	<div ng-controller="demo3Controller">
+			<h1>{{color}}</h1>
+		</div>
 	<div ng-controller="demo2Controller">
 		<h1>List Product</h1>
 		<ul>
@@ -26,9 +29,7 @@
 			</li>
 		</ul>
 
-		<div ng-controller="demo3Controller">
-			<h1>{{color}}</h1>
-		</div>
+		
 		<input type="text" ng-model="xx" />
 		<ul>
 			<li ng-repeat="student in students | filter: xx">
@@ -74,7 +75,7 @@
 		demo.directive("headerDemo",function(){
 			return {
 					restrict: 'AE',
-					template: '<header>Day la header ABC <h2>Header</h2></header'
+					template: '<header>Day la header ABC <h2>Header</h2></header>'
 				};
 		});
 		demo.controller("demoController",function($scope) {
@@ -90,7 +91,7 @@
                 	console.log(result);
                   	$scope.products = result.data.data;
                 });
-		});
+			});
 		demo.controller("demo3Controller",function($scope) {
 			
 		});
