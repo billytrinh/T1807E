@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="../Style/style_n.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="../js/DATA.json"></script>
+	<script type="text/javascript" src="../js/js_form.js"></script>
+</head>
+<body>
+	<header>
+		<div class="section header-top">
+			<div class="container">
+				<span class="mail">
+					<img src="../images/mail.gif">
+					<span>info@gmail.com</span>
+				</span>
+				<span class="phone">
+					<img src="../images/phone.gif">
+					<span>453-5553-996</span>
+				</span>
+				<span class="internet">	
+					<span class="face"><img src="../images/fb.gif"></span>
+					<span class="face"><img src="../images/twist.gif"></span>
+					<span class="face"><img src="../images/gg.gif"></span>
+					<span class="face"><img src="../images/inster.gif"></span>
+				</span>
+			</div>
+		</div>
+		<div class="section header-bottom">
+			<div class="container">
+				<div class="logo">
+					<img src="../images/logo.gif"><br>
+				</div>
+				<div class="Tab">
+					<span>Home</span>
+					<span>Products</span>
+					<span>Hot Deal</span>
+					<span>About</span>
+					<span>Contact</span>
+				</div>
+				<div class="tool">
+					<img src="../images/lup.gif">
+					<img src="../images/face.gif">
+					<img src="../images/shopbag.gif">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section form-demo">
+		<div class="container">
+			<div class="id_face"><img src="../images/id_face.png"></div>
+			<form method="post-get" action="#" name="form_data" class="form-data" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="Email">Email</label><br>
+					<input type="text" name="email"/>
+					<p style="display: none;color:red">Invalid </p>
+				</div>
+
+				<div class="form-group">
+					<label for="Họ và Tên">Họ và Tên</label><br>
+					<input type="text" name="name"/>
+					<p style="display: none;color:red">Invalid </p>
+				</div>
+
+				<div class="form-group">
+					<label for="Số Điện Thoại">Số Điện Thoại</label><br>
+					<input type="text" name="phone"/>
+					<p style="display: none;color:red">Invalid </p>
+				</div>
+
+				<div class="form-group">
+					<label>Mật Khẩu</label><br>
+					<input type="password" name="password" min="8">
+
+				<div class="form-group">
+					<label>Nhập lại Mật Khẩu</label><br>
+					<input type="password" name="passwordcomfirm" min="8">	
+				</div>
+
+				<div class="form-group">
+					<label for="Mã Giới Thiệu">Mã Giới Thiệu</label><br>
+					<input type="text" name="code"/>
+					<p style="display: none;color:red">Invalid </p>
+				</div>
+
+				<button type="submit" onclick="return checkForm()">ĐĂNG KÝ</button>
+				<div class="register">
+                        <a href="#">Trở lại đăng nhập</a>
+                    </div>
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function CheckForm{
+	var email = document.getElementById('email').value;
+	var name = document.getElementById('name').value;
+	var mobile = document.getElementById('mobile').value;
+	var password = document.getElementById('password').value;
+	var passwordcomfirm = document.getElementById('passwordcomfirm').value;
+	var code = document.getElementById('code').value;
+	var checkbox = document.getElementById("checkbox");
+
+	var err = '';
+	if (email == '') {
+		alert('Bạn chưa nhập email');
+	}else if (mobile.length<1) {
+		alert('Bạn chưa nhập số điện thoại');
+	}else if (mobile.length != 10) {
+		alert('Nhập số điện thoại 10 số');
+	}else if (password.length<1) {
+		alert('Bạn chưa nhập mật khẩu');
+	}else if (password.length<=8 && password.length>1) {
+		alert('Mật khẩu không dưới 8 kí tự');
+	}else if (passwordcomfirm!=password) {
+		alert('Mật khẩu nhập lại không khớp');
+	}else if (checkbox.checked == false) {
+		alert('Bạn chưa đồng ý về chính sách bảo mật và điều kiện sử dụng');
+	}else{
+		return true;
+	}
+	}
+	return false;
+	
+	</script>
+	<footer>
+		<div class="section footer">
+			<div class="container">
+				<div class="logo">
+					<img src="../images/logo.gif"><br>
+					<span>shopy c 2015. your copy right here</span>
+				</div>
+				<div class="list">
+					<ul class="col">
+						<li>about us</li>
+						<li>contact us</li>
+						<li>support</li>
+					</ul>
+					<ul class="col">
+						<li>our feed</li>
+						<li>term and condition</li>
+						<li>our privacy</li>
+					</ul>
+					<ul class="col">
+						<li>join us</li>
+						<li>live support</li>
+					</ul>
+				</div>
+				<div class="pay">
+					<span>Payment method</span><br>
+					<img src="../images/Paymethod.gif">
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/js1.js"></script>
+</body>
+</html>

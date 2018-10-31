@@ -1,0 +1,97 @@
+var products = [
+			{
+				image: "../images/Ao1.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao3.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao1.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao3.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+					{
+				image: "../images/Ao1.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao3.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+		]; 
+		
+var products2 = [
+			{
+				image: "../images/Ao3.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+
+			},
+			{
+				image: "../images/Ao1.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao3.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+		]; 
+
+var products3 = [
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+
+			},
+			{
+				image: "../images/Ao1.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+			{
+				image: "../images/Ao2.gif",
+				name: "Reebok Track Jacket",
+				price: "100$",
+			},
+		]; 	
+

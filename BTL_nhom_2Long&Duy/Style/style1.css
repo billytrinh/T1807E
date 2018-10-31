@@ -1,0 +1,406 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 1.15;
+	color: #34404b;
+	background: #f4f6f8; 
+}
+li{
+	list-style: none;
+}
+.hidden{display: none;}
+.section{
+	float: left;
+	width: 100%;
+}
+.container{
+	width: 1170px;
+	margin:0 auto;
+}
+.bg-white{
+	background: #fff;
+}
+.m-b-15{
+	margin-top: 5px;
+}
+.left-column{
+	float: left;
+	width: 270px;
+}
+.header-top
+{
+	height: 60px;
+	line-height: 50px;
+}
+.header-bottom
+{
+	height:122px;
+	padding-top: 50px;
+}
+.header-top .phone 
+{
+	padding-left: 42px;
+}
+.header-top .internet
+{
+	float: right;
+}
+.header-top .internet span
+{
+	padding-right: 20px;
+}
+}
+.header-bottom .logo span
+{
+	width: 200px;
+	height: auto;
+	font-weight: bold;
+	font-size: 100px;
+}
+.header-bottom .logo
+{
+	font-size:15px;
+	width: 150px;
+	float: left;
+}
+.Tab
+{
+	width: 800px;
+	font-size: 25px;
+	float: left;
+	line-height: 50px;
+}
+.Tab span
+{
+	padding-left:50px;
+}
+.Tab :hover
+{
+	color: #ff5912;
+}
+
+.tool
+{
+	float: right;
+}
+.tool img
+{
+	padding-right: 20px;
+
+}
+.block
+{
+	float: left;
+	width: calc(100% - 40px);
+	height: 250px;
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 30px;
+	line-height: 38px;
+}
+.block h3
+{
+	color:#ff5912;
+
+}
+.block.price-filter
+{
+	text-align: center;
+}
+.price-filter .line-box{
+	width: 186px;
+	border-bottom: 3px solid #edf0f2;
+	margin:0 auto;
+	position: relative;
+	line-height: 1.5;
+}
+.price-filter .line-box .line{
+	display: inline-block;
+	width: 107px;
+	border-bottom: 3px solid #34404b;
+	position: absolute;
+	top:0px;
+	left:40px;
+}
+.price-filter .line-box .node{
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	background: #34404b;
+	border-radius: 100%;
+}
+.price-filter .line-box .node.no_1{
+	top:-5px;
+	left:30px;
+}
+.price-filter .line-box .node.no_2{
+	top:-5px;
+	right:30px;
+}
+.price-filter .money1
+{
+	padding-left:0px;
+}
+.price-filter .money2
+{
+	padding-left:70px;
+}
+.price-filter .from
+{
+	padding-left:0px;
+}
+.price-filter .to
+{
+	padding-left:70px;
+}
+.checkbox{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.checkbox label{
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.checkbox label:before{
+	content: " ";
+	width: 6px;
+	height: 6px;
+	border:5px solid #edf0f2;
+	background: #edf0f2;
+	display: inline-block;
+	margin-right: 15px;
+}
+.checkbox input[type="checkbox"]:checked + label {
+    color: #ff5912;
+}
+.checkbox input[type="checkbox"]:checked + label:before{
+	border:5px solid #ff5912;
+}
+header{
+	margin-bottom: 80px;
+	float: left;
+	width: 100%;
+}
+.header-top{
+	background: #fff;
+	border-bottom: 1px solid #f4f6f8;
+}
+.header-bottom{
+	background: #fff;
+}
+.products{
+	float:right;
+	width: 870px;
+	padding-left: 15px;
+}
+.products .rows
+{
+	margin-left: -15px;	
+	margin-right: -15px;
+	width: 900px;
+}
+.products .rows .item
+{
+	float:left;
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	padding: 0px 15px;
+	margin-bottom: 30px;
+	height: 365px;
+
+}
+.products .rows .item .item-content{
+	background: #fff;
+	float:left;
+	width: 100%;
+	height: calc(100% - 40px);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.products .rows .item figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.products .rows .item{
+	position: relative;
+	transition: all 250ms ease-out;
+	-webkit-transition: 250ms ease-out;
+}
+.products .rows .item .icons
+{
+	padding-top: 20px;
+}
+.products .rows .item .icons span
+{
+	width: 13px;
+	height: 13px;
+	border-radius: 100%;
+	display: inline-block;
+	line-height: 50px;
+}
+.icon1 { background: red;}
+.icon2 { background: black;}
+.icon3 { background: blue;}
+.icon4 { background: green;}
+.products .rows .item .item-content .symbol img
+{
+	width: calc(100% / 3);
+	height: 20px;
+	width: auto;
+	padding: 10px 10px;
+}
+.products .rows .item .show
+{
+	opacity: 1;
+}
+.products .rows .item .show-hover
+{
+	display: none;
+}
+.products .rows .item:hover .show-hover
+{
+	display: inline-block;
+}
+.products .rows .item:hover img{
+	height: 90px;
+	width: auto;
+	transition: 250ms;
+}
+.products .rows .item:hover figcaption
+{
+	color: #ff5912;
+}
+.products .rows .item:hover .price-box{
+	opacity: 0;height: 0px;
+	transition: 250ms ease-out;
+}
+.price-box
+{
+	margin-bottom: 50px;
+}
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+.paginator
+{
+	margin-bottom: 50px;
+	width:	870px;
+	font-size: 80px;
+	color: #ff5912;
+	background: white;
+	text-align: center;
+	float: right;
+}
+.newsletter{
+	float:left;
+	width: 100%;
+	background: #fff;
+	height: 100px;
+	line-height: 100px;
+	margin-bottom: 120px;
+}
+.newsletter .news
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ff5912;
+	font-size: 20px;
+}
+.newsletter{
+	float:left;
+	width: 100%;
+	background: #fff;
+	height: 100px;
+	line-height: 100px;
+	margin-bottom: 120px;
+	padding-left: 55px;
+	
+}
+.newsletter .news
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ff5912;
+	font-size: 20px;
+}
+.newsletter .offers
+{
+	font-style: italic;
+	padding-left: 50px;
+	font-size: 15px;
+}
+.newsletter .form-data
+{
+	display: inline;
+	margin-left: 200px;
+}
+.newsletter .join
+{
+	padding-top: 20px;
+	padding-right: 55px;
+	float: right;
+
+}
+.footer
+{
+	background: white;
+	padding-top: 25px;
+	height: 122px;
+	float: left;
+}
+.footer .logo
+{
+	width: 220px;
+	float: left;
+}
+.footer .list
+{
+	width: 700px;
+	float: left;
+	padding-left: 60px;
+}
+.footer .list .col li:hover
+{
+	color: #ff5912;
+}
+.footer .list .col
+{
+	width: calc(100% / 3 - 150px);
+	float: left;
+	padding-left: 100px;
+}
+.footer .list .col .about
+{
+	color: #ff5912;
+}
+.footer .pay
+{
+	width: 150px;
+	float: left;
+	color: #ff5912;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+
+/* Standard syntax 
+@keyframes example {
+     0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
