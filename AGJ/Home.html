@@ -5,6 +5,7 @@
 	<script type="text/javascript" src="js/angular.js"></script>
 </head>
 <body ng-app="demoApp">
+	<div header-demo></div>
 	<div ng-controller="demoController" ng-init="total=10;name='hello'">
 		<h2>{{total | currency : "VND"}}</h2>
 		<h2>{{name | uppercase }}</h2>
@@ -13,8 +14,21 @@
 		<h1>4 + 5 = {{total}}</h1>
 		<h2>{{name}}</h2>
 		<button type="button" ng-click="addTotal()">Add Total</button>
+	
 	</div>
 	<div ng-controller="demo2Controller">
+		<h1>List Product</h1>
+		<ul>
+			<li ng-repeat="product in products">
+				<img src="{{product.image}}"/>
+				<p>{{product.name}}</p>
+				<p>{{product.price}}</p>
+			</li>
+		</ul>
+
+		<div ng-controller="demo3Controller">
+			<h1>{{color}}</h1>
+		</div>
 		<input type="text" ng-model="xx" />
 		<ul>
 			<li ng-repeat="student in students | filter: xx">
@@ -57,14 +71,28 @@
 				},
 			];
 		var demo = angular.module("demoApp",[]);
+		demo.directive("headerDemo",function(){
+			return {
+					restrict: 'AE',
+					template: '<header>Day la header ABC <h2>Header</h2></header'
+				};
+		});
 		demo.controller("demoController",function($scope) {
 			$scope.addTotal = function(){
 				$scope.total++;	
 			};
 		});
-		demo.controller("demo2Controller",function($scope) {
-				
+		demo.controller("demo2Controller",function($scope,$rootScope,$http) {
+			$rootScope.color = "red";
 			$scope.students = xyz;
+			$http.get('http://smsentertainment.club/api/get_products').
+                then(function(result, status, headers, config) {
+                	console.log(result);
+                  	$scope.products = result.data.data;
+                });
+		});
+		demo.controller("demo3Controller",function($scope) {
+			
 		});
 	</script>
 </body>
