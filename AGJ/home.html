@@ -4,36 +4,167 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8"/>
 	<title>Angular JS</title>
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/mobile.css"/>
+	<link rel="stylesheet" href="css/tablet.css"/>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/angular.js"></script>
 </head>
-<body>
-	<div ng-controller="DemoController">
-		<p>Search contact</p>
-		<input type="text" ng-model="searchname"/>
-		<ul><li ng-repeat="contact in contacts | filter:searchname">Name: {{contact.name}} <br>Phonenumb: {{contact.phonenumb}}</li></ul>
+<body style="background-color: white">
+	<div class="col-xs-12">
+		<div class="container" >
+			<div class="row">
+				<div class="col-sm-6 col-xs-12" style="background-color: white;height: 100px;">
+				<a href="javascript:void(0);" onclick="openMenu()"  style="font-size: 70px;" class="pull-left mobile-click visible-xs"><i class="fas fa-bars"></i></a>	
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs" style="background-color: white;height: 100px;" >
+					
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="col-xs-12">
+		<div class="container" >
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 hidden-xs" style="background-color: red;height: 100px;"></div>
+				<div class="col-lg-7 col-md-7 hidden-sm" style="background-color: white;height: 100px;">
+					<H1 class="visible-xs">Contact</H1>
+					<ul class="hidden-xs">
+						<li class="pull-left">
+							<a href="#">Home</a>
+						</li>
+						<li class="pull-left has-sub">
+							<a href="#">Product</a>
+							<ul class="sub-menu" style="display: none">
+								<li>Menu 1</li>
+								<li class="has-sub">
+									Menu 2
+									<ul class="sub-menu" style="display: none;">
+										<li>Sub 1</li>
+										<li>Sub 2</li>
+										<li>Sub 3</li>
+									</ul>
+								</li>
+								<li>Menu 3</li>
+								<li>Menu 4</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 hidden-xs" style="background-color: white;height: 100px;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3" style="background-color: white; ">
+					<div class="visible-xs contactlist"  ng-controller="DemoController">
+						<br><br>
+						<p>Search contact</p>
+						<input type="text" placeholder="search" ng-model="searchname"/>
+						<br>
+						<br>
+						<ul><li ng-repeat="contact in contacts | filter:searchname">Name: {{contact.name}} <br>Phonenumb: {{contact.phonenumb}}<br><br></li></ul>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						<div class="col-lg-4 text-center" style="background-color: white;height: 0px;" >
+							
+						</div>
+						<div class="col-lg-4" style="background-color: orange;height: 700px;" >
+							
+						</div>
+						<div class="col-lg-4" style="background-color: yellow;height: 700px;" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-8 mobile-menu visible-xs">
+		<ul>
+			<li id="logo"><img width="70%" height="70%" src="images/logo.png"></li>
+			<li id="separate"></li>
+			<a href="https://google.com"><li class="content">Home</li></a>
+			<a href="https://google.com"><li class="content">Menu</li></a>
+			<a href="https://google.com"><li class="content">Products</li></a>
+			<a href="https://google.com"><li class="content">Cart</li></a>
+			<a href="https://google.com"><li class="content">Checkout</li></a>
+		</ul>
+	</div>
+	<div class="bg-fade" onclick="closeMenu()"></div>
 	<script type="text/javascript">
+		function openMenu() {
+			jQuery(".mobile-menu").animate({
+				"left":"0"
+			},500);
+			jQuery(".bg-fade").show();
+		}
+		// jQuery(".mobile-click").bind("click",function(){
+		// 	jQuery(".mobile-menu").animate({
+		// 		"left":"0"
+		// 	},500);
+			
+		// 	jQuery(".bg-fade").show();
+		// });
+		function closeMenu(){
+			jQuery(".mobile-menu").animate({
+				"left":"-67%"
+			},500);
+			jQuery(".bg-fade").hide();
+		}
+		jQuery(".has-sub").bind("mouseenter",function(){
+			jQuery(this).children("ul.sub-menu").slideDown();
+		});
+		jQuery(".has-sub").bind("mouseleave",function(){
+			jQuery(this).children("ul.sub-menu").hide();
+		});
 		var demo = angular.module("demoApp",[]);
 		demo.controller("DemoController",function($scope){
 			var contacts = [
 				{
-					name: "Le A",
+					name: "Le A1",
 					phonenumb: 8491200000
 				},
 				{
-					name: "Le B",
+					name: "Le A2",
+					phonenumb: 8491200000
+				},
+				{
+					name: "Le B1",
 					phonenumb: 84122111111
 				},
 				{
-					name: "Le C",
+					name: "Le B2",
+					phonenumb: 84122111111
+				},
+				{
+					name: "Le C1",
 					phonenumb: 84167444444
 				},
 				{
-					name: "Le D",
+					name: "Le C2",
+					phonenumb: 84167444444
+				},
+				{
+					name: "Le D1",
 					phonenumb: 8491144444
 				},
 				{
-					name: "Le E",
+					name: "Le D2",
+					phonenumb: 8491144444
+				},
+				{
+					name: "Le E1",
+					phonenumb: 84167555555
+				},
+				{
+					name: "Le E2",
 					phonenumb: 84167555555
 				},
 			];
@@ -41,3 +172,4 @@
 			});
 	</script>
 </body>
+</html>
