@@ -7,43 +7,37 @@
 	<script type="text/javascript" src="js/angular.js"></script>
 </head>
 <body>
-	<div ng-controller="DemoController" ng-init="total=10;name='hello'">
-		<input type="number" ng-model="total"/>
-		<input type="text" ng-model="name"/>
-	</div>
-	<div ng-controller="Demo2Controller">
-		<ul><li ng-repeat="contact in contacts">Name: {{contact.name}} <br>Phonenumb: {{contact.phonenumb}}</li></ul>
+	<div ng-controller="DemoController">
+		<p>Search contact</p>
+		<input type="text" ng-model="searchname"/>
+		<ul><li ng-repeat="contact in contacts | filter:searchname">Name: {{contact.name}} <br>Phonenumb: {{contact.phonenumb}}</li></ul>
 	</div>
 	<script type="text/javascript">
 		var demo = angular.module("demoApp",[]);
 		demo.controller("DemoController",function($scope){
-			$scope.total	= 0;
-			$scope.name		= "";
-		});
-		demo.controller("Demo2Controller",function($scope){
 			var contacts = [
 				{
 					name: "Le A",
-					phonenumb: 091200000
+					phonenumb: 8491200000
 				},
 				{
 					name: "Le B",
-					phonenumb: 0122111111
+					phonenumb: 84122111111
 				},
 				{
 					name: "Le C",
-					phonenumb: 0167444444
+					phonenumb: 84167444444
 				},
 				{
 					name: "Le D",
-					phonenumb: 091144444
+					phonenumb: 8491144444
 				},
 				{
 					name: "Le E",
-					phonenumb: 0167555555
+					phonenumb: 84167555555
 				},
 			];
-			$scope.contacts = contacts;	
-		});
+				$scope.contacts = contacts;	
+			});
 	</script>
 </body>
