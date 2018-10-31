@@ -49,12 +49,12 @@
 
 	<!----------------------------------------------------------------------------------------------->
 	<script type="text/javascript">
-		var demo = angular.module("demoApp",[]);
+		var demo = angular.module("demoApp",[ngRoute]);
 		demo.directive("headerDemo",function($http){
 			var html = $http.get('header.html')
 			return {
 					restrict: 'AE',
-					template: html
+					templateUrl:'/header.html'
 				};
 		});
 
