@@ -9,8 +9,17 @@
     <script type="text/javascript" src="js/data.json"></script>
     <script type="text/javascript" src="js/get-products.js"></script>
     <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    
 </head>
 <body>
+                                         <!-- Draggable DIV -->
+                                         <div id="mydiv">
+                                                <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+                                                <div id="mydivheader">Click here to move</div>
+                                                <p>Move</p>
+                                                <p>this</p>
+                                                <p>DIV</p>
+                                            </div> 
     <header class="section">
         <div class="header-top">
             <div class="container">
@@ -78,10 +87,12 @@
                     </div>
                     <div class="price-filter block-left">
                         <p>Price Filter</p>
-                        <div id = "slider"></div>
-                        <script>
-                            
-                        </script>
+                        <div class="line-box">
+                            <span class="node no_1"></span>
+                            <span class="line"></span>
+                            <span class="node no_2"></span>
+                        </div>
+
                     </div>
                     <div class="sizes block-left">
                         <p>Sizes</p>
@@ -172,5 +183,6 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/drag.js"></script>
 </body>
 </html>
