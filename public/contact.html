@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Samsung</title>
+    <link rel="stylesheet" href="css/jquery.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="agj/data.json"></script>
+    <script type="text/javascript" src="agj/angular.min.js"></script>
+</head>
+<body ng-app='Contact'>
+	<header>
+		<span>Contacts</span>
+		<i class='fa fa-plus pull-right' style="font-size:30px; color: #0e76e7;"></i>
+	</header>
+	<div class="contact" ng-controller="list-contact">
+		<div class="search">
+			<input type="text" placeholder="Search" ng-model="sct" ng-keypress="filterInSystem()">
+		</div>
+		<ul>
+			<li ng-repeat="contact in contacts | filter: sct">
+				{{contact.name}}
+			</li>
+		</ul>
+	</div>
+
+	<!----------------------------------------------->
+	<script type="text/javascript">
+		var iPhoneContact = angular.module("Contact",[])
+		iPhoneContact.controller("list-contact",function ($scope)
+		{
+			$scope.contacts = contacts;
+		});
+	</script>
+</body>
+</html>

@@ -4,27 +4,27 @@ var contacts = [
         phonenumber:"0852351994",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "Le Van A",
         phonenumber:"0852351995",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "Nguyen Van B",
         phonenumber:"0852351996",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "gfdklg",
         phonenumber:"0852351997",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "uogfudo",
         phonenumber:"0852351998",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "gfdsg",
         phonenumber:"0852351999",
     },
     {
-        name: "Hai Ninh Hoang",
+        name: "dsadsa",
         phonenumber:"0852352000",
     }
 ];
