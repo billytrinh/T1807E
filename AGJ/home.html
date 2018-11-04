@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
 </head>
 <body style="background-color: white">
 	<div class="col-xs-12">
@@ -62,25 +63,38 @@
 	<div class="col-xs-12">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3" style="background-color: white; ">
+				<div class="col-lg-3" style="background-color: white; display:inline-block">
 					<div class="visible-xs contactlist"  ng-controller="DemoController">
 						<br><br>
-						<p>Search contact</p>
-						<input type="text" placeholder="search" ng-model="searchname"/>
-						<br>
-						<br>
-						<ul><li ng-repeat="contact in contacts | filter:searchname">Name: {{contact.name}} <br>Phonenumb: {{contact.phonenumb}}<br><br></li></ul>
+						<div class="toolapp"></div>
+						<br><br>
+						<div class="contact" ng-repeat="contact in contacts | filter:searchname | orderBy : 'name'">
+							<div class="contactcolumn bullet"><i class="control fas fa-angle-right fa-2x"></i></div>
+							<div class="contactcolumn info">
+								<div class="maininfo">
+									<p class="name">{{contact.name}}</p>
+									<p class="phonenumb">Phone: {{contact.phonenumb}}</p>
+								</div>
+								<div class="detail">
+									<p class="link">Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{contact.email}}"> {{contact.email}}</a></p>
+									<p class="link">Twitter: <a href="https://twitter.com"> {{contact.twitter}}</a></p>
+								</div>
+							</div>
+							<div class="contactcolumn call">
+								<i class="fas fa-phone fa-lg"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-9">
 					<div class="row">
-						<div class="col-lg-4 text-center" style="background-color: white;height: 0px;" >
+						<div class="col-lg-4 text-center" style="background-color: white;height: 150px;" >
 							
 						</div>
-						<div class="col-lg-4" style="background-color: orange;height: 700px;" >
+						<div class="col-lg-4 hidden-xs" style="background-color: orange;height: 700px;" >
 							
 						</div>
-						<div class="col-lg-4" style="background-color: yellow;height: 700px;" ></div>
+						<div class="col-lg-4 hidden-xs" style="background-color: yellow;height: 700px;" ></div>
 					</div>
 				</div>
 			</div>
@@ -98,84 +112,5 @@
 		</ul>
 	</div>
 	<div class="bg-fade" onclick="closeMenu()"></div>
-	<script type="text/javascript">
-		function openMenu() {
-			jQuery(".mobile-menu").animate({
-				"left":"0"
-			},500);
-			jQuery(".bg-fade").show();
-		}
-		// jQuery(".mobile-click").bind("click",function(){
-		// 	jQuery(".mobile-menu").animate({
-		// 		"left":"0"
-		// 	},500);
-			
-		// 	jQuery(".bg-fade").show();
-		// });
-		function closeMenu(){
-			jQuery(".mobile-menu").animate({
-				"left":"-67%"
-			},500);
-			jQuery(".bg-fade").hide();
-		}
-		jQuery(".has-sub").bind("mouseenter",function(){
-			jQuery(this).children("ul.sub-menu").slideDown();
-		});
-		jQuery(".has-sub").bind("mouseleave",function(){
-			jQuery(this).children("ul.sub-menu").hide();
-		});
-		var demo = angular.module("demoApp",[]);
-		demo.directive("header", function() {
-			return {
-				restrict : "C",
-				template : "<h1>Contact</h1>"
-			};
-		});
-		demo.controller("DemoController",function($scope){
-			var contacts = [
-				{
-					name: "Le A1",
-					phonenumb: 8491200000
-				},
-				{
-					name: "Le A2",
-					phonenumb: 8491200000
-				},
-				{
-					name: "Le B1",
-					phonenumb: 84122111111
-				},
-				{
-					name: "Le B2",
-					phonenumb: 84122111111
-				},
-				{
-					name: "Le C1",
-					phonenumb: 84167444444
-				},
-				{
-					name: "Le C2",
-					phonenumb: 84167444444
-				},
-				{
-					name: "Le D1",
-					phonenumb: 8491144444
-				},
-				{
-					name: "Le D2",
-					phonenumb: 8491144444
-				},
-				{
-					name: "Le E1",
-					phonenumb: 84167555555
-				},
-				{
-					name: "Le E2",
-					phonenumb: 84167555555
-				},
-			];
-				$scope.contacts = contacts;	
-			});
-	</script>
 </body>
 </html>

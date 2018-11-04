@@ -266,21 +266,101 @@ ul.sub-menu{
 .col-md-7 H1{
 	font-size: 100px;
 }
-.contactlist{
-	font-size: 60px;
-}
-.contactlist p{
-	font-size: 70px;
-	font-weight: 400;
-}
 .contactlist input{
-	border: 2px solid gray;
+	border: 3.5px solid gray;
 	border-radius: 12px;
 	font-size: 50px;
 	font-weight: 300;
+	height: 90px;
+	width: 90%;
+	box-shadow: 10px 10px 8px #888888;
 }
-
-
+.contact{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	display:inline-block;
+	box-shadow: 10px 10px 8px #888888;
+}
+.bullet{
+	margin-left: 25px;
+	margin-top: 15px;
+	width: 135px;
+}
+.contactcolumn{
+	display:inline-block;
+	float: left;
+}
+.info{
+	width: 500px;
+}
+.fa-angle-right{
+	margin-left: 9px;
+}
+@keyframes rotateforward {
+    from{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+    to{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+}
+@keyframes rotatebackward {
+    from{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+    to{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+.rotateforward{
+    animation-name: rotateforward;
+    animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.rotatebackward{
+	animation-name: rotatebackward;
+    animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.detail{
+	display: none;
+}
+.call{
+	margin-top: 40px;
+	margin-right: 40px;
+}
+.contactlist{
+	font-size: 45px;
+}
+.contactlist .name{
+	font-size: 55px;
+}
+.contactlist .phonenumb{
+	font-size: 35px;
+}
+.contactlist .link{
+	font-size: 35px;
+}
+.contactlist .address{
+	font-size: 35px;
+}
 
 
 
