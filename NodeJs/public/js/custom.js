@@ -17,22 +17,22 @@ app.config(['$routeProvider',function($routeProvider) {
         templateUrl : "list.html"
     }).when("/detail/:contact_id", {
         templateUrl : "detail.html",
-        controller: "detailController"
+       // controller: "detailController"
     }).otherwise({ redirectTo: '/' });
 }]);
 app.controller("dataController",function($scope){
 	$scope.contacts = contacts;
 	$scope.isHome = true;
-	$scope.changePage = function(){
-		if($scope.isHome){
-			$scope.isHome = false;
-		}else{
-			$scope.isHome = true;
-		}
-	}
+	// $scope.changePage = function(){
+	// 	if($scope.isHome){
+	// 		$scope.isHome = false;
+	// 	}else{
+	// 		$scope.isHome = true;
+	// 	}
+	// }
 });
-app.controller("detailController",function($scope,$routeParams){
-	$scope.isHome = false;
-	$scope.contact_id = $routeParams.contact_id;
-	$scope.detail = contacts[$scope.contact_id];
-});
+// app.controller("detailController",function($scope,$routeParams){
+// 	$scope.isHome = false;
+// 	$scope.contact_id = $routeParams.contact_id;
+// 	$scope.detail = contacts[$scope.contact_id];
+// });
