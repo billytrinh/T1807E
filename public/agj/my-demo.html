@@ -5,7 +5,7 @@
 	<script type="text/javascript" src="angular.min.js"></script>
 </head>
 <body ng-app="demoApp">
-	<div headerdemo></div>
+	<div haha></div>
 	<div ng-controller="demoController" ng-init="total='10';name='hhn772'">
 		<input type="number" ng-model="total">
 		<input type="text" ng-model="name">
@@ -50,7 +50,7 @@
 	<!----------------------------------------------------------------------------------------------->
 	<script type="text/javascript">
 		var demo = angular.module("demoApp",[]);
-		demo.directive("headerdemo",function($http){
+		demo.directive("haha",function($http){
 			var html = $http.get('header.html')
 			console.log("done");
 			return {

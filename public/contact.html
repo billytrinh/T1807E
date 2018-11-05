@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Samsung</title>
+	<title>Contact iPhone</title>
     <link rel="stylesheet" href="css/jquery.css">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -13,10 +13,7 @@
     <script type="text/javascript" src="agj/angular.min.js"></script>
 </head>
 <body ng-app='Contact'>
-	<header>
-		<span>Contacts</span>
-		<i class='fa fa-plus pull-right' style="font-size:30px; color: #0e76e7;"></i>
-	</header>
+	<div header-demo></div>
 	<div class="contact" ng-controller="list-contact">
 		<div class="search">
 			<input type="text" placeholder="Search" ng-model="sct" ng-keypress="filterInSystem()">
@@ -31,6 +28,13 @@
 	<!----------------------------------------------->
 	<script type="text/javascript">
 		var iPhoneContact = angular.module("Contact",[])
+		iPhoneContact.directive("headerDemo",function() {
+			return {
+					restrict: 'AE',
+					templateUrl: 'agj/header-demo.html'
+				};
+			console.log("done");
+		});
 		iPhoneContact.controller("list-contact",function ($scope)
 		{
 			$scope.contacts = contacts;
