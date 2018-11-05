@@ -15,10 +15,11 @@ app.config(['$routeProvider',function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "list.html"
-    }).when("/detail/:contact_id", {
-        templateUrl : "detail.html",
+    })
+    //.when("/detail/:contact_id", {
+      //  templateUrl : "detail.html",
        // controller: "detailController"
-    }).otherwise({ redirectTo: '/' });
+    //}).otherwise({ redirectTo: '/' });
 }]);
 app.controller("dataController",function($scope){
 	$scope.contacts = contacts;
