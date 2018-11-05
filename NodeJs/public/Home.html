@@ -35,7 +35,7 @@
 			$scope.addTotal = function(){
 				$scope.total++;	
 			};
-		});
+		}); 
 		demo.controller("demo2Controller",function($scope,$rootScope,$http) {
 			$rootScope.color = "red";
 			$http.get('http://smsentertainment.club/api/get_products').
