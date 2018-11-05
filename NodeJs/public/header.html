@@ -1,1 +1,8 @@
-<header>Day la header ABC <h2>Header</h2></header>
+<div class="header1" ng-if="isHome">
+ <h3 class="text-center">Liên hệ</h3>
+<input type="text" class="form-control text-center" placeholder="Tìm kiếm" ng-model="search" />
+<p>Số của tôi: 0123456789</p>
+</div>
+<div class="header2" ng-if="isHome == false">
+	<a href="#!/" ng-click="changePage()">Back</a>
+</div>

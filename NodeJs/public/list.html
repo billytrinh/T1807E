@@ -1,0 +1,3 @@
+<div class="contact col-xs-12" ng-repeat="contact in contacts | filter:search">
+	<a href="#!/detail/{{contacts.indexOf(contact)}}" ng-click="changePage()"><strong>{{contact.name}}</strong></a>
+</div>

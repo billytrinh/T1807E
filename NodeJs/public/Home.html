@@ -14,7 +14,7 @@
 			<li><a href="#!/home2">Home2</a></li>
 		</ul>
 		<div class="view-container content">
-		<div ng-view class="slide">
+		<div ng-view class="flip">
 	
 		</div>
 	</div>
@@ -55,8 +55,8 @@
 		        templateUrl : "home2.html"
 		    }).when("/", {
 		        templateUrl : "home_content.html"
-		    })
-		   ;
+		    }).otherwise({ redirectTo: '/' });
+		   
 		
 		}]);
 
