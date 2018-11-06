@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: #000000;
+    background: #ffffff;
+}
+header
+{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 30px 15px;
+    font-weight: 700;
+    font-size: 20px;
+    position: fixed !important;
+}
+.contact
+{
+    font-size: 30px;
+    padding-top: 300px;
+}
+.contact ul li
+{
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+input
+{
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+.search
+{
+    border: 5px solid #cbcad0;
+    background: #cbcad0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
