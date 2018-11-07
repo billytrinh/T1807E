@@ -20,7 +20,7 @@ app.config(['$routeProvider',function($routeProvider) {
        templateUrl : "detail.html",
        controller: "detailController"
     })
-    .when("/edit/:contact_id", {
+    .when("/edit/:id_xx", {
        templateUrl : "edit.html",
        controller: "editController"
     }).otherwise({ redirectTo: '/' });
@@ -34,9 +34,9 @@ app.controller("dataController",function($scope,$rootScope,$routeParams){
 	$rootScope.contact_id = -1;
 });
 app.controller("detailController",function($scope,$rootScope,$routeParams){
-	var contact_id = $routeParams.contact_id;
-	$scope.detail = $scope.contacts[contact_id];
-	$rootScope.contact_id = contact_id;
+	var xxx = $routeParams.id_xx;
+	$scope.detail = $scope.contacts[xxx];
+	$rootScope.contact_id = xxx;
 });
 app.controller("editController",function($scope,$rootScope,$routeParams){
 	$scope.detail = $rootScope.contacts[$rootScope.contact_id];
