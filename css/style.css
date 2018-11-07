@@ -17,9 +17,6 @@ a{
 /*img{
 	max-width: 100%;
 }*/
-.hidden{
-	display:none;
-}
 .section{
 	float: left;
 	width: 100%;
@@ -105,6 +102,7 @@ a{
 .over-flow .cart-icon img{
 	padding: 0px 12px;
 }
+<<<<<<< HEAD
 /*.products .row .item .show-hover figcaption{
 	font-size: 18px;
 	font-weight: 600;
@@ -153,6 +151,8 @@ a{
 .products .row .item figcaption:hover{
 	color: red;
 }*/
+=======
+>>>>>>> 91f1d361576c17595ac049954483fc35138e9750
 .price-box{
 	margin-bottom: 50px;
 }
@@ -262,6 +262,7 @@ h3{
 	background: #edf0f2;
 	display: inline-block;
 	margin-right: 15px;
+	box-sizing: content-box;
 }
 .checkbox input[type="checkbox"]:checked + label {
     color: #ff5912;
@@ -292,12 +293,12 @@ h2{
 	border:none;
 	padding-right: 160px;
 }
-.sumit-email{
+/*.sumit-email{
 	width: 100px;
 	height: 52px;
 	background: #ff5912;
 }
-
+*/
 /*Header*/
 .header-top{
 	background: #fff;

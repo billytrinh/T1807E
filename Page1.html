@@ -5,18 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Page 1</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
+<<<<<<< HEAD
 	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	
 	<!-- <link rel="stylesheet" media="only screen and (max-width: 900px) and (min-width: 769px)" href="css/tablet.css"/> -->
 	<!-- <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/> -->
+=======
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 992px) and (min-width: 769px)" href="css/tablet.css"/>
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 300px)" href="css/mobile.css"/>
+>>>>>>> 91f1d361576c17595ac049954483fc35138e9750
 	<script type="text/javascript" src="js/data.json"></script>
 	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>  
 </head>
 <body>
 	<header>
+<<<<<<< HEAD
 		<div class="row">
 			<section class="header-top col-xs-12">
 				<div class="container">
@@ -33,6 +41,42 @@
 							<img src="images/twittericon.png"/>
 							<img src="images/fbicon.png"/>
 						</div>
+=======
+		<section class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">	
+						<img class="left" src="images/mailicon.png"/>
+						<p class="left">info@shopy.com</p>
+						<img class="left" src="images/phoneicon.png"/>
+						<p class="left">996 - 5553 - 453</p>
+					</div>
+					<div class="col-xs-6">
+						<img class="right" src="images/instaicon.png"/>
+						<img class="right" src="images/ggicon.png"/>
+						<img class="right" src="images/twittericon.png"/>
+						<img class="right" src="images/fbicon.png"/>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="header-bottom">
+			<div class="container">
+				<div class="menu-list">
+					<a class="logo" href="#"><img src="images/logo.png"/></a>
+					<a class ="menu-ele left" href="#">Home</a>
+					<a class ="menu-ele left" href="#">Products</a>
+					<a class ="menu-ele left" href="#">Hot Deals</a>
+					<a class ="menu-ele left" href="#">About</a>
+					<a class ="menu-ele left" href="#">Contact</a>
+					<a class="right" href="#"><img src="images/cardicon.png"/></a>
+					<a class="right" href="#"><img src="images/usericon.png"/></a>
+					<a class="right" href="#"><img src="images/searchicon.png"/></a>
+					<!-- MENU BUTTON -->
+					<div class="menu-button hidden">
+						<a href="#"><img class="menu-icon" style="width: 40px; height: 40px;" src="images/menuicon.png"/></a>
+>>>>>>> 91f1d361576c17595ac049954483fc35138e9750
 					</div>
 				</div>
 			</section>
@@ -82,6 +126,7 @@
 					</div>
 				</div>
 
+<<<<<<< HEAD
 				<div class = "left-column col-lg-3 col-md-0 col-xs-0 visible-lg">
 					<div class ="block categories">
 						<h3>Categories
@@ -164,6 +209,87 @@
 						</form>
 						
 					</div>
+=======
+			<div class = "left-column">
+				<div class ="block categories">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Man</a></li>
+						<li><a href="#">Woman</a></li>
+						<li><a href="#">Childrens</a></li>
+						<li><a href="#">Hot Deals</a></li>
+					</ul>
+				</div>
+				<div class ="block price-filtter">
+					<h3>Price Filtter</h3>
+					<p class="line-box">
+						<span class="gia gia-1">100$</span>
+						<span class="gia gia-2">1000$</span>
+						<span class="node no-1"></span>
+						<span class="line"></span>
+						<span class="node no-2"></span>
+					</p>
+					<form method="post" action="#" name="filtter-data" class="filtter-data" enctype="multipart/form-data">
+						<label class="" for="from">From</label>
+						<input class=" filtter-input filtter-from" type="email" id="from" name="filtter-from"/>
+						<label class="" for="to">To</label>
+						<input class="filtter-input filtter-to" type="email" id="to" name="filtter-to"/>
+					</form>
+				</div>
+				<div class ="block sizes">
+					<h3>Sizes</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox1">
+							<label for="checkbox1">Small</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox2">
+							<label for="checkbox2">Midum</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox3">
+							<label for="checkbox3">Larg</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox4">
+							<label for="checkbox4">X Larg</label>
+						</li>
+					</ul>
+				</div>
+				<div class ="block brands">
+					<h3>Brands</h3>
+					<ul>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox5"/>
+							<label for="checkbox5">Reebok</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox6"/>
+							<label for="checkbox6">Addidas</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox7"/>
+							<label for="checkbox7">Nike</label>
+						</li>
+						<li class="checkbox">
+							<input class="hidden" type="checkbox" name="size" id="checkbox8"/>
+							<label for="checkbox8">Active</label>
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class = "letter">
+				<div>
+					<h2 class ="letter-ele left">NEWS LETTER</h2>
+					<p class ="letter-ele left join">join us now to get all news and special offers</p>
+					<form method="post" action="#" name="form-data" class="form-data" enctype="multipart/form-data">
+						<label class="" for="email_letter"><img src="images/mailicon.png"/></label>
+						<input class="email-letter" type="email" id="email_letter" name="email_letter" placeholder="type your email here"/>
+						<button class="sumit-email btn btn-primary" type="submit">join us</button>
+					</form>
+					
+>>>>>>> 91f1d361576c17595ac049954483fc35138e9750
 				</div>
 			</div>
 		</div>

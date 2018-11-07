@@ -8,7 +8,7 @@ body{
 	display: none;
 }
 .header-top{
-	display: none;
+	/*display: none;*/
 }
 .header-bottom .menu-list .menu-ele{
 	display: none;
