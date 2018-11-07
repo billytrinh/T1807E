@@ -1,0 +1,11 @@
+/*.contacts{
+	border: 8px solid brown;
+}*/
+.block-side{
+	display: none;
+	height: 50px;
+	background-color: green;
+}
+input{
+	height: 35px;
+}

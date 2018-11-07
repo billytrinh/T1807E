@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"col",
+				"col-xs-12"
+			],
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"visi",
+				"visible-sm"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"paddi",
+				"padding-right\tproperty"
+			],
+			[
+				"padding",
+				"padding-right\tproperty"
+			],
+			[
+				"paddin",
+				"padding-right\tproperty"
+			],
+			[
+				"boder",
+				"border\tproperty"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"pad",
+				"padding-top\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"paddign",
+				"padding-right\tproperty"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"magin",
+				"margin-right\tproperty"
+			],
+			[
+				"o",
+				"overflow\tproperty"
+			],
+			[
+				"e",
+				"ease-out"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"fla",
+				"float\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"borde",
+				"border-style\tproperty"
+			],
+			[
+				"bar",
+				"background\tproperty"
+			],
+			[
+				"border",
+				"border-top\tproperty"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"conter",
+				"container1"
+			],
+			[
+				"bor",
+				"border-bottom\tproperty"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Program/HTML/BT HTML/nodejs/public/danhba2.html",
+		"/C/Users/zzz/Desktop/Nodejs/Public/danhba.html",
+		"/D/Program/HTML/BT HTML/js/nguyen.js",
+		"/D/Program/HTML/BT HTML/agj/danhba.html",
+		"/D/Program/HTML/BT HTML/agj/home.html",
+		"/D/Program/HTML/BT HTML/js/data.json",
+		"/C/Users/zzz/Desktop/Nodejs/index.js",
+		"/D/Program/HTML/BT HTML/css/danhba.css",
+		"/D/Program/HTML/BT HTML/vendor/bootstrap/css/bootstrap.css",
+		"/D/Program/HTML/BT HTML/Page1.html",
+		"/D/Program/HTML/BT HTML/agj/js/angular.js",
+		"/D/Program/HTML/BT HTML/css/style.css",
+		"/D/Program/HTML/Tailieu/css/style.css",
+		"/D/Program/HTML/Tailieu/bootstrap_demo.html",
+		"/C/Program Files (x86)/MacroRecorder/MacroRecorder.exe",
+		"/D/Program/HTML/Tailieu/demo.html",
+		"/D/Program/HTML/BT HTML/Page3.html",
+		"/D/Program/HTML/BT HTML/js/page2.js",
+		"/D/Program/HTML/BT HTML/Page2.html",
+		"/D/Program/HTML/BT HTML/Page1 bootstrap.html",
+		"/D/Program/HTML/BT HTML/css/tablet.css",
+		"/D/Program/HTML/BT HTML/Page4.html",
+		"/D/MMO/Bookmarks FireFox/bookmarks-2016-07-26.json",
+		"/D/Program/HTML/BT HTML/css/mobile.css",
+		"/D/Program/HTML/BT HTML/form.html",
+		"/D/Program/HTML/BT HTML/demo.js",
+		"/D/Program/T1807E/demo.html",
+		"/D/Program/HTML/BT HTML/styletest.css",
+		"/D/Program/HTML/BT HTML/testrow.html",
+		"/D/Program/HTML/BT HTML/TranVanNguyen.html",
+		"/D/Program/T1807E/css/style.css",
+		"/D/Program/HTML/T1807E/style/NguyenTienDung.css",
+		"/D/Program/HTML/Test HTML/style 2.css",
+		"/D/Program/HTML/Test HTML/style1.css",
+		"/D/Program/HTML/Test HTML/css/style.css",
+		"/D/Program/HTML/Test HTML/BTMau.html",
+		"/D/Program/HTML/Test HTML/hover.html",
+		"/D/Program/HTML/Test HTML/style.css",
+		"/D/Program/HTML/BT HTML/BTVN.html",
+		"/D/Program/HTML/BT HTML/style.css",
+		"/D/Program/T1807E/ex_17_09.html",
+		"/D/Program/HTML/BT HTML/style1.css",
+		"/D/Program/HTML/Test HTML/homepage.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Page1 bootstrap.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

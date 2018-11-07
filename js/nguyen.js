@@ -1,5 +1,6 @@
 
 // //Luu du lieu tren trinh duyet may khach
+// ------------------------------------------------------------------------------------------
 //  if (localStorage.getItem("productsX")) {
 //  	renderHtml(localStorage.getItem("productsX"));
 //  }else{
@@ -39,7 +40,7 @@
 
 
 //Lay du lieu tu sever:
-
+// -----------------------------------------------------------------------------------------
  // var xhttp = new XMLHttpRequest();
  //  xhttp.onreadystatechange = function() {
  //  	console.log(this.readyState);
@@ -73,7 +74,7 @@
 
 var html = '';
 		for (var i = 0; i < products.length; i++) {
-			html += '<div class="item">';
+			html += '<div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12">';
 			html +=			'<div class="item-content">';
 			html +=				'<figure>';
 			html +=					'<img class="item-image" width="159px" height="214px" src="'+products[i].image+'"/>';

@@ -34,9 +34,9 @@
 					<a class ="menu-ele left" href="#">Hot Deals</a>
 					<a class ="menu-ele left" href="#">About</a>
 					<a class ="menu-ele left" href="#">Contact</a>
-					<a class="right" href="#"><img src="images/cardicon.png"/></a>
-					<a class="right" href="#"><img src="images/usericon.png"/></a>
-					<a class="right" href="#"><img src="images/searchicon.png"/></a>
+					<a class="right hidden-mobile" href="#"><img src="images/cardicon.png"/></a>
+					<a class="right hidden-mobile" href="#"><img src="images/usericon.png"/></a>
+					<a class="right hidden-mobile" href="#"><img src="images/searchicon.png"/></a>
 					<!-- MENU BUTTON -->
 					<div class="menu-button hidden">
 						<a href="#"><img class="menu-icon" style="width: 40px; height: 40px;" src="images/menuicon.png"/></a>
@@ -50,46 +50,49 @@
 		<!-- <div class="container"> -->
 			<div class="container-reg">
 				<div class="register-cen"><img  src="images/registericon.png"/></div>
-				<form method="post" action="#" name="form-register" class="register" enctype="multipart/form-data">
+				<form method="post-get" action="#" name="form_data" class="register" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="email">Email</label><br>
-						<input type="email" name="email" class="email" placeholder="Email"/>
-						<p style="display: none;color:red">Invalid </p>
+						<input type="email" name="email" class="email" placeholder="Email" required/>
+						<p class="form-alert hidden">Chưa nhập email</p>
 					</div>
 					<div class="form-group">
 						<label for="ho_ten">Họ và tên</label><br>
-						<input type="text" name="ho_ten" class="ho_ten" placeholder="Họ và tên"/>			
+						<input type="text" name="ho_ten" pattern="[A-Za-z\s]+" class="ho_ten" placeholder="Họ và tên" required/>	
+						<p class="form-alert hidden">Chưa nhập họ và tên</p>
 					</div>
 					<div class="form-group">
 						<label for="dt">Số điện thoại</label><br>
-						<input type="number" name="dt" class="dt" placeholder="Số điện thoại"/>			
+						<input type="tel" name="dt" pattern="[0-9]+" class="dt" placeholder="Số điện thoại" required/>
+						<p class="form-alert hidden">Chưa nhập số điện thoại</p>						
 					</div>
 					<div class="form-group">
 						<label for="password">Mật khẩu</label><br>
-						<input type="password" name="password" class="password" placeholder="Mật khẩu"/>			
+						<input type="password" name="password" class="password" placeholder="Mật khẩu" required/>			
 					</div>
 					<div class="form-group">
 						<label for="re_password">Nhập lại mật khẩu</label><br>
-						<input type="password" name="re_password" class="re-password" placeholder="Nhập lại mật khẩu"/>			
+						<input type="password" name="re_password" class="re-password" placeholder="Nhập lại mật khẩu" required/>			
 					</div>
 					<div class="form-group">
 						<label for="ma_gt">Mã giới thiệu</label><br>
 						<input type="text" name="ma_gt" class="ma-gt"placeholder="Mã giới thiệu"/>			
 					</div>
-					<div class="register-cen checkbox-reg">
+					<div class="checkbox-reg">
 						<input class="checkbox-icon hidden" type="checkbox" name="checkbox_reg" id="checkbox_reg">
 						<label for="checkbox_reg">Đồng ý về chính sách bảo mật<br> và điều khoản sử dụng</label>
 					</div>
 					<div class="register-cen">
-						<button type="submit" class="dang-ky">Đăng ký</button>
+						<button type="submit" class="dang-ky" onclick="return checkForm()">Đăng ký</button>
 					</div>
-					<div class="register-cen tro-lai">
+					<div class="tro-lai">
 						<a href="#">Trở lại đăng nhập</a>
 					</div>
 				</form>
 				
 			</div>
 		<!-- </div> -->
+		
 		<!-- js -->
 		<script type="text/javascript">
 		function checkForm() {
@@ -140,7 +143,7 @@
 						document.forms["form_data"].password.nextElementSibling.remove();
 					}
 					var textInput = document.forms["form_data"].password.outerHTML;
-					textInput += '<p style="color:red">Chưa đủ 8 ký tự</p>';
+					textInput += '<p class="form-alert">Chưa đủ 8 ký tự</p>';
 					document.forms["form_data"].password.outerHTML = textInput;
 
 				}
@@ -150,15 +153,23 @@
 					}
 					
 					var textInput = document.forms["form_data"].password.outerHTML;
-					textInput += '<p style="color:red">Chưa nhập mật khẩu</p>';
+					textInput += '<p class="form-alert">Chưa nhập mật khẩu</p>';
 					document.forms["form_data"].password.outerHTML = textInput;
+				}
+				if(re_password.length <=0) {
+					if (document.forms["form_data"].re_password.nextElementSibling){
+						document.forms["form_data"].re_password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["form_data"].re_password.outerHTML;
+					textInput += '<p class="form-alert">Chưa nhập lại mật khẩu</p>';
+					document.forms["form_data"].re_password.outerHTML = textInput;
 				}
 				if(re_password != password) {
 					if(document.forms["form_data"].re_password.nextElementSibling){
 						document.forms["form_data"].re_password.nextElementSibling.remove();
 					}
 					var textInput = document.forms["form_data"].re_password.outerHTML;
-					textInput += '<p style="color:red">Khác mật khẩu đã nhập</p>';
+					textInput += '<p class="form-alert">Khác mật khẩu đã nhập</p>';
 					document.forms["form_data"].re_password.outerHTML = textInput;
 				}
 				if(re_password == password) {
