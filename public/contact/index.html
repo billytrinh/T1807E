@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app='iphonecontact'>
-    <div class="view-container">
+    <div class="view-container" ng-controller="appController">
         <header class="col-xs-12" header-app></header>
-        <div class="col-xs-12 content"></div>
+        <div class="col-xs-12 content" list-app ng-view></div>
         <footer class="col-xs-12" footer-app></footer>
     </div>
 </body>

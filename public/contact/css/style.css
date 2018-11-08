@@ -15,6 +15,12 @@ header
     background: #f4f6f8;
     top: 0;
     left: 0;
+    z-index: 9;
+}
+header .header-top h4
+{
+    font-weight: 700;
+    font-size: 20px;
 }
 footer
 {
@@ -22,4 +28,33 @@ footer
     background: #f4f6f8;
     bottom: 0;
     left: 0;
+    z-index: 9;
+}
+footer ul li
+{
+    list-style: none;
+    text-align: center;
+}
+footer ul li i
+{
+    font-size: 30px;
+}
+.content
+{
+    padding-top: 100px;
+    padding-bottom: 65px;
+}
+.content ul li
+{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.content ul li a
+{
+    text-decoration: none;
+    color: black;
 }
