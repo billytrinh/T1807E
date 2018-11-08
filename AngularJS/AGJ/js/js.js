@@ -1,60 +1,29 @@
 
 		var demo = angular.module("demoApp",["ngRoute","ngAnimate"]);
-		// demo.controller("demoController",function($scope){
-		// 	$scope.total = 0;
-		// 	$scope.name = "phong";
-		// 	$scope.addTotal = function(){
-		// 		$scope.total++;
-		// 	};
-		// 	$scope.truTotal = function(){
-		// 		$scope.total--;
-		// 	};
-		// });
-		// demo.controller("demo2Controller",function($scope){
-		// 	var studentAA = [
-		// 		{
-		// 			name: "Le Van A",
-		// 			birthday: 1256
-		// 		},
-		// 		{
-		// 			name: "Le Van B",
-		// 			birthday: 1200
-		// 		},
-		// 		{
-		// 			name: "Le Van C",
-		// 			birthday: 1243
-		// 		},
-		// 		{
-		// 			name: "Le Van D",
-		// 			birthday: 1299
-		// 		},
-		// 		{
-		// 			name: "Le Van E",
-		// 			birthday: 1211
-		// 		},
-		// 		{
-		// 			name: "Le Van F",
-		// 			birthday: 1234
-		// 		},
-		// 	];
-		// 	$scope.students = studentAA;
-		// });
-		demo.controller("demo2Controller",function($scope){
-			$scope.contacts = contacts;
+		
+		demo.controller("demo2Controller",function($scope, $rootScope){
+			$rootScope.contacts = contacts;
 		});
 				
-		// demo.directive("headerDemo",function(){
-		// 	var html = ''
-		// 	html += '<h3 class="jumbotron col-lg-8 col-md-8 col-sm-10 col-xs-10">DANH SÁCH LIÊN HỆ</h3>'
-		// 	return {
-		// 		restrict: 'AE',
-		// 		template : html
-		// 	}
-		// });
 		
-		demo.controller('contactInfoCtrl', function ($scope, $routeParams){
+		
+		demo.controller('contactInfoCtrl', function ($scope, $rootScope, $routeParams){
 		  var index = $routeParams.contact_index;
 		  $scope.currentContact = contacts[index];
+		  $rootScope.editContact = index;
+		});
+
+
+		demo.controller("formControllerEdit",function($scope,$rootScope,$routeParams){
+			$scope.editContact = contacts[$routeParams.edit_index];
+			$scope.submit = function(){
+				$rootScope.contacts[$rootScope.edit_index] = {
+					name: $scope.editContact.name,
+					phone: $scope.editContact.phone,
+					address: $scope.editContact.address,
+				}
+				// window.location.href='#!/detail/{{editContact}}';
+			};
 		});
 
 		demo.directive("headerDemo",function(){
@@ -63,14 +32,6 @@
 				restrict: 'AE',
 				templateUrl : "/header.html"
 			}
-		});
-
-		demo.config(function($routeProvider){
-			$routeProvider
-			.when("/home2",{
-				templateUrl: "home2.html"
-			})
-			
 		});
 		
 		demo.config(['$routeProvider',function($routeProvider){
@@ -87,12 +48,9 @@
 			      templateUrl: 'formAdd.html',
 			      controller: 'formController'
 		    })
-		    .when('/edit', {
+		    .when('/edit/:edit_index', {
 			      templateUrl: 'formEdit.html',
 			      controller: 'formControllerEdit'
 		    })
-   //     		$locationProvider.html5Mode({
-			//   enabled: true,
-			//   requireBase: false
-			// })
+		    .otherwise({ redirectTo: '/' });
 		}]);

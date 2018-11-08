@@ -79,9 +79,8 @@ h1,h2,h3,h4 {
     background-attachment: fixed;
 }
 .headerDetailForm{
-    width: 92%;
     position: fixed !important;
-    left: 15px;
+    /*left: 15px;*/
     top: 0;
     z-index: 9 !important;
     background-image: url("../img/bg.jpg");
