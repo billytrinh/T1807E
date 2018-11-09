@@ -32,7 +32,7 @@ app.config(['$routeProvider', function($routeProvider) {
 
 app.controller('appController', function($scope,$rootScope,$http) {
     var contact_node = $http.get('/data');
-    $rootScope.contacts = contact_node;
+    $rootScope.contacts = contacts;
 });
 
 app.controller("detailController",function($scope,$rootScope,$routeParams) {
