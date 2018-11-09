@@ -27,11 +27,11 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: "components/edit.html",
         controller: "editController"
     })
-    //.otherwise({ redirectTo: '/' });
+    .otherwise({ redirectTo: '/' });
 }]);
 
 app.controller('appController', function($scope,$rootScope) {
-    $scope.contacts = contacts;
+    $rootScope.contacts = contacts;
 });
 
 app.controller("detailController",function($scope,$rootScope,$routeParams) {
@@ -40,6 +40,13 @@ app.controller("detailController",function($scope,$rootScope,$routeParams) {
     $rootScope.contact_id = index_list;
 });
 
-app.controller("editController", function($scope, $rootscope){
-    $scope.index = $rootscope.contacts;
-})
+app.controller("editController", function($scope, $rootScope) {
+    $scope.edit = contacts[$rootScope.contact_id];
+    $scope.submit = function(){
+		$rootScope.contacts[$rootScope.contact_id] = {
+			name: $scope.edit.name,
+			phone: $scope.edit.phone,
+			address: $scope.edit.address,
+		}
+	};
+});

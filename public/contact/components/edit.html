@@ -1,3 +1,7 @@
 <div class="edit">
     <a href="#!/detail/{{contact_id}}"><button>Back</button></a>
+    <input type="text" value="{{edit.name}}" ng-model="edit.name"/>
+    <input type="text" value="{{edit.phone}}" ng-model="edit.phone"/>
+    <input type="text" value="{{edit.address}}" ng-model="edit.address"/>
+    <button type="button" ng-click="submit()">Save</button>
 </div>
