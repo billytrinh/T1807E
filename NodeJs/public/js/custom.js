@@ -25,8 +25,14 @@ app.config(['$routeProvider',function($routeProvider) {
        controller: "editController"
     }).otherwise({ redirectTo: '/' });
 }]);
-app.controller("dataController",function($scope,$rootScope,$routeParams){
-	$rootScope.contacts = contacts;
+app.controller("dataController",function($scope,$rootScope,$routeParams,$http){
+	$http.get('/contacts').
+                then(function(result, status, headers, config) {
+                	console.log(result);
+                	$rootScope.contacts = result.data;
+                });
+			
+	
 	$rootScope.page = 1;
 	$scope.changePage = function(p){
 		$rootScope.page = p;
