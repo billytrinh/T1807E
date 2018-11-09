@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <script type="text/javascript" src="vendor/agj/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/agj/angular-animate.js"></script>
+    <script type="text/javascript" src="vendor/agj/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/student.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="studentapp">
+    <div class="viewcontainer" ng-controller="studentController">
+        <div class="col-lg-12">
+            <ul ng-repeat="student in students">
+                <li>{{student.name}} -- {{student.phone}} -- {{student.address}}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

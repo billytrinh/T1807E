@@ -30,8 +30,9 @@ app.config(['$routeProvider', function($routeProvider) {
     .otherwise({ redirectTo: '/' });
 }]);
 
-app.controller('appController', function($scope,$rootScope) {
-    $rootScope.contacts = contacts;
+app.controller('appController', function($scope,$rootScope,$http) {
+    var contact_node = $http.get('/data');
+    $rootScope.contacts = contact_node;
 });
 
 app.controller("detailController",function($scope,$rootScope,$routeParams) {
