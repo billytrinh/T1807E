@@ -1,62 +1,31 @@
 var express = require('express');
 var app = express();
+
+var server = app.listen(3000, function () {
+  console.log("Ung dung Node.js dang hoat dong");
+});
+
+
 // Dung de chay cac file tinh html
 app.use(express.static('public'));
 // ---- 
+app.get("/xxx",function(req,res){
+	res.send("heelo");
+});
 app.get('/products', function (req, res) {
 	var products = {
-	    "status": 1,
-	    "message": "Success!",
-	    "data": [
+	    status: 1,
+	    message: "Success!",
+	    data: [
 	        {
-	            "image": "http://smsentertainment.club/images/img1.jpg",
-	            "name": "Reebok Track Jacket 1",
-	            "price": "110$"
+	            image: "http://smsentertainment.club/images/img1.jpg",
+	            name: "Reebok Track Jacket 1",
+	            price: "110$"
 	        },
 	        {
-	            "image": "http://smsentertainment.club/images/img2.jpg",
-	            "name": "Reebok Track Jacket 2",
-	            "price": "210$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img3.jpg",
-	            "name": "Reebok Track Jacket 3",
-	            "price": "310$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img4.jpg",
-	            "name": "Reebok Track Jacket 4",
-	            "price": "410$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img5.jpg",
-	            "name": "Reebok Track Jacket 5",
-	            "price": "150$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img6.jpg",
-	            "name": "Reebok Track Jacket 6",
-	            "price": "160$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img7.jpg",
-	            "name": "Reebok Track Jacket 7",
-	            "price": "260$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img8.jpg",
-	            "name": "Reebok Track Jacket 8",
-	            "price": "180$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img9.jpg",
-	            "name": "Reebok Track Jacket 9",
-	            "price": "390$"
-	        },
-	        {
-	            "image": "http://smsentertainment.club/images/img10.jpg",
-	            "name": "Reebok Track Jacket 10",
-	            "price": "1100$"
+	            image: "http://smsentertainment.club/images/img2.jpg",
+	            name: "Reebok Track Jacket 2",
+	            price: "210$"
 	        }
 	    ]
 	};
@@ -154,8 +123,4 @@ app.get("/contacts",function(req,res){
 ];
 	
 	res.send(contacts);
-});
-
-var server = app.listen(3000, function () {
-  console.log("Ung dung Node.js dang hoat dong");
 });
