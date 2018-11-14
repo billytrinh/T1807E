@@ -294,7 +294,7 @@ ul.sub-menu{
 	color: #733c6c;
 }
 .toolapp input{
-	margin-top: 2%;
+	margin-top: 10px;
 	margin-left: 2%;
 	outline: none;
 	width: 88%;
@@ -304,7 +304,7 @@ ul.sub-menu{
 }
 .fa-search{
 	color: #888888;
-	margin-top: 2%;
+	margin-top: 10px;
 	margin-right: 2%;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
@@ -419,7 +419,7 @@ ul.sub-menu{
 	border-bottom: 1px solid #cdcdcd;
 }
 .studentinfo{
-	width: 370px;
+	width: 100%;
 	padding-top: 11px;
 	padding-bottom: 11px;
 	box-sizing: border-box;
@@ -481,16 +481,13 @@ ul.sub-menu{
 	display:inline-block;
 	text-align: center;
 }
-.editname{
-	
-}
 .studentedit input{
 	cursor: text;
 	border: none;
 	font-size: 25px;
 	width: 94%;
 	outline: none;
-	margin: 3px auto;
+	margin: 7px auto 5px;
 }
 .edit-box{
 	cursor: text;
