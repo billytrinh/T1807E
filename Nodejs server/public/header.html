@@ -1,0 +1,44 @@
+<div class="header1" ng-show="page==1">
+	<div class="navigatebar">
+		<div class="navigate navigate-bullet">
+			<a href="javascript:void(0);" onclick="openMenu()"  style="font-size: 30px;" class="mobile-click"><i class="fas fa-bars fa-sm"></i></a>
+		</div>
+		<div class="navigate navigate-title">
+		<p style="font-size: 30px; font-weight:600; text-align: center;">Student List</p>
+		</div>
+		<div class="navigate navigate-bullet">
+			<p style="font-size: 15px">&nbsp;</p>
+		</div>
+	</div>
+	<div class="toolapp">
+		<input class="input searchbox" type="text" ng-model="searchname"/>
+		<i class="fas fa-search fa-2x searchbox pull-right"></i>
+	</div>
+</div>
+
+<div class="header2" ng-show="page==2">
+	<div class="navigatebar">
+		<div class="navigate navigate-bullet">
+			<a href="#!/" ng-click="changePage(1)"><i class="fas fa-backspace fa-2x"></i></a>
+		</div>
+		<div class="navigate navigate-title">
+			<p style="font-size: 30px; font-weight:600; text-align: center;">Student Info</p>
+		</div>
+		<div class="navigate navigate-bullet">
+			<a href="#!/edit/{{contact_id}}" ng-click="changePage(3)"><i class="fas fa-user-edit fa-2x pull-right"></i></a>
+		</div>
+	</div>
+</div>
+<div class="header3" ng-show="page==3">
+	<div class="navigatebar">
+		<div class="navigate navigate-bullet">
+			<a href="#!/detail/{{contact_id}}" ng-click="changePage(2)"><i class="fas fa-backspace fa-2x"></i></a>
+		</div>
+		<div class="navigate navigate-title">
+			<p style="font-size: 30px; font-weight:600; text-align: center;">Edit Info</p>
+		</div>
+		<div class="navigate navigate-bullet">
+			<a href="#!/detail/{{contact_id}}" ng-click="submit();changePage(2)"><i class="fas fa-user-check fa-2x pull-right"></i></a>
+		</div>
+	</div>
+</div>

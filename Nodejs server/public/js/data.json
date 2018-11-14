@@ -1,0 +1,137 @@
+var contacts = [
+				{
+					name: "Cornelia Corina",
+					phonenumb: "+8491200000",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "York Esmé",
+					phonenumb: "+8491200000",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Carlton Norbert",
+					phonenumb: "+84122111111",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Merritt Amber",
+					phonenumb: "+84122111111",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Brandi Ezekiel",
+					phonenumb: "+84167444444",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Isabel Adolph",
+					phonenumb: "+84167444444",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Roxane Gemma",
+					phonenumb: "+8491144444",
+					twitter: " @Loremipsum",
+					email: " Lorem.ipsum@Gmail.com",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Bennett Alton",
+					phonenumb: "+8491144444",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Genevieve Damon",
+					phonenumb: "+84167555555",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Inez Emil",
+					phonenumb: "+84167555555",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Charleen Sheryll",
+					phonenumb: "+847815492226",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Aretha Chrissy",
+					phonenumb: "+841637715076",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Ariel Brian",
+					phonenumb: "+841990357557",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Yolonda Leon",
+					phonenumb: "+84708039543",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Harley Alethea",
+					phonenumb: "+84911920856",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Larry Mason",
+					phonenumb: "+842313297743",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Madison Andi",
+					phonenumb: "+841648522348",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Vicki Jude",
+					phonenumb: "+84703551177",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				{
+					name: "Nicholas Jenna",
+					phonenumb: "+841282588734",
+					email: " Lorem.ipsum@Gmail.com",
+					twitter: " @Loremipsum",
+					address: "Lorem Ipsum is simply dummy text of the printing"
+				},
+				
+			];
+	

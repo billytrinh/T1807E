@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8"/>
+	<title>Angular JS</title>
+	<link rel="icon" href="favicon.png" type="image">
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"/>
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/data.json"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-animate.js"></script>
+	<script type="text/javascript" src="js/angularroute.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+</head>
+<body style="background-color: white;">
+	<div class="col-xs-12 view-container visible-xs" ng-controller="dataController">
+		<div class="col-xs-12 header" header-app></div>
+		<div class="col-xs-12 content fade contactlist" ng-view>	
+			
+		</div>
+	</div>
+	<div class="col-xs-8 mobile-menu visible-xs">
+		<ul>
+			<li id="logo" style="text-align: center;"><i class="fas fa-user-circle fa-10x"></i></li>
+			<a href="https://google.com"><li class="contents">Home</li></a>
+			<a href="https://google.com"><li class="contents">Menu</li></a>
+			<a href="https://google.com"><li class="contents">Student</li></a>
+			<a href="https://google.com"><li class="contents">Tearcher</li></a>
+			<a href="https://google.com"><li class="contents">Course</li></a>
+			<a href="https://google.com"><li class="contents">About</li></a>
+			<a href="https://google.com"><li class="contents">Logout</li></a>
+		</ul>
+	</div>
+	<div class="bg-fade" onclick="closeMenu()"></div>
+</body>
+</html>

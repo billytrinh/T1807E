@@ -1,0 +1,22 @@
+<div class="blankspace"></div>
+<div class="contact" ng-repeat="contact in contacts | filter:searchname" ng-model="collapsed[$index]" ng-click="collapsed[$index]=!collapsed[$index]">
+	<div class="contactcolumn bullet"><i class="fas fa-user-circle fa-2x"></i></div>
+	<div class="contactcolumn info">
+		<div class="maininfo">
+			<p class="name">{{contact.name}}</p>
+			<p class="phonenumb">Phone: {{contact.phonenumb}}</p>
+		</div>
+		<div class="detail animate-show" ng-show="collapsed[$index]">
+			<p class="link">Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{contact.email}}"> {{contact.email}}</a></p>
+			<p class="link">Twitter: <a href="https://twitter.com"> {{contact.twitter}}</a></p>
+			<div class="moredetail" style="float:right;">
+				<p> <a href="#!/detail/{{$index}}" ng-click="changePage(2);">See Detail</a> </p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer"></div>
+						
+						
+						
+						
