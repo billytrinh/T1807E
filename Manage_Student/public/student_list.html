@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student List</title>
+    <script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="get_student.js"></script>
+</head>
+<body>
+    <div id="student_list">
+
+    </div>
+
+    <script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery.ajax({
+				url: "http://localhost:2904/list_students",
+				method: "GET", // POST
+				success: function(result){
+					get_student(result.data)
+				},
+				error: function(){
+					alert("error");
+				}
+			});
+		});
+        </script>
+</body>
+</html>
