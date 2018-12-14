@@ -143,10 +143,7 @@ MongoClient.connect(url, function (err, db) {
     });
     //app.post("/save-student",function(req,res){
     app.post("/save-student",upload.single("image"),function(req,res){
-      var originalFileName = req.file.originalname
-      //console.log(req.body);
-    	//res.send('aa');
-
+        var originalFileName = req.file.originalname;
         var id = req.body.id;
         var mssv = req.body.mssv;
         var name = req.body.name;
