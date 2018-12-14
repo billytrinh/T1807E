@@ -4,16 +4,50 @@ var app = express();
 // Dung de chay cac file tinh html
 app.use(express.static('public'));
 
-
-
 app.listen("3003",function(){
 	console.log("Server is running");
 });
 
 var bodyParser = require('body-parser');
-app.use(bodyParser.json()); // for parsing application/json
-app.use(bodyParser.raw()); // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: false })); // for parsing 
+var multer = require("multer");
+const multerConfig = {
+    
+	storage: multer.diskStorage({
+	 //Setup where the user's file will go
+	 destination: function(req, file, next){
+	   next(null, './public/uploads');
+	   },   
+	    
+	    //Then give the file a unique name
+	    filename: function(req, file, next){
+	        next(null, file.originalname);
+	      }
+	    }),   
+	    
+	    //A means of ensuring only images are uploaded. 
+	    fileFilter: function(req, file, next){
+	          if(!file){
+	            next();
+	          }
+	        const image = file.mimetype.startsWith('image/');
+	        if(image){
+	          //console.log('photo uploaded');
+	          next(null, true);
+	        }else{
+	          //console.log("file not supported");
+	          
+	          //TODO:  A better message response to user on failure.
+	          return next();
+	        }
+	    }
+  };
+
+var upload = multer(multerConfig);  
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json 
+app.use(bodyParser.json());
+
 
 var mongodb = require('mongodb');
 
@@ -27,8 +61,6 @@ MongoClient.connect(url, function (err, db) {
   if (err) {
     console.log('Unable to connect to the mongoDB server. Error:', err);
   } else {
-    //HURRAY!! We are connected. :)
-    //console.log('Connection established to', url);
     var database = db.db();
     var collection = database.collection("students");
     var class_collection = database.collection("class");
@@ -109,30 +141,35 @@ MongoClient.connect(url, function (err, db) {
 			}			
 	    });
     });
-    app.post("/save-student",function(req,res){
+    //app.post("/save-student",function(req,res){
+    app.post("/save-student",upload.single("image"),function(req,res){
+      var originalFileName = req.file.originalname
+      //console.log(req.body);
+    	//res.send('aa');
+
         var id = req.body.id;
         var mssv = req.body.mssv;
         var name = req.body.name;
         var birthday = req.body.birthday;
         var class_id = req.body.class_id;
         var gender = req.body.gender;
+        var avatar = "/uploads/"+originalFileName;
         var student = {
             id: id,
             student_name: name,
             mssv: mssv,
             birthday: birthday,
             class_id: class_id,
-            gender: gender
+            gender: gender,
+            avatar: avatar
         };
-        console.log(req.body.name);
-        res.send('aa');
-        // collection.insert([student], function (err, result) {
-        //   if (err) {
-        //     res.send("error");
-        //  } else {
-        //     res.send('Inserted');
-        //   }
-        // });
+        collection.insert([student], function (err, result) {
+          if (err) {
+            res.send("error");
+         } else {
+            res.send('Inserted');
+          }
+        });
     });
   }
 });
