@@ -1,0 +1,25 @@
+var contacts=[
+	{
+		name: "nguyen van a",
+		phone: "01234567",
+		address: "Ha Noi",
+	},
+	{
+		name: "nguyen van b",    
+		phone: "987654321",
+		address: "Ha Noi",
+	},
+	{
+		name: "nguyen van c",
+		phone: "12435738",
+		address: "Ha Noi",
+
+	},
+	{
+		name: "nguyen van d",
+		phone: "27357297",
+		address: "Ha Noi",
+	},
+
+
+];

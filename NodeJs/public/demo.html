@@ -1,3 +1,6 @@
+<!-- Họ và tên, Ngày sinh, sđt, tên lớp, mssv 
+nodejs npm node-persist--save -->
+
 <!DOCTYPE html>
 <html ng-app="demoApp">
 <head>
@@ -6,22 +9,16 @@
 </head>
 <body>
 	<div ng-controller = "Contact">
-		<div header-demo></div>
-		<input type="text" ng-model="zz">
+		
 		<ul>
 			<li ng-repeat = "telephone_number in telephone_numbers | filter : zz">
-				{{telephone_number.name}} --- {{telephone_number.telephone_number}}
+				{{telephone_number.name}} ---{{telephone_number.telephone_number}}
 			</li>
+			
 		</ul>
 	</div>
 	<script type="text/javascript">
 		var demo = angular.module("demoApp",[]);
-		demo.directive("headerDemo",function(){
-      return {
-          restrict: 'AE',
-          templateUrl: "/header.html"
-        };
-    });
 		demo.controller("Contact",function ($scope) {
 			var telephone_number = [
 				{
