@@ -463,6 +463,22 @@ nav{
 .hide_desktop{
     display: none;
 }
+.add-menu{
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    z-index: 9999;
+    background: #fff;
+    height: 100%;
+}
+.add-menu ul{
+    padding-left: 20px;
+}
+.add-menu ul li{
+    height: 50px;
+    border-bottom: 1px solid black;
+    line-height: 50px;
+}
 .range_price{
     width: 100%;
 }
@@ -779,6 +795,7 @@ footer{
 }
 .section2.logo, .section2.contact{
     background: #fff;
+    position: fixed;
 }
 .order-button {
     position: absolute;

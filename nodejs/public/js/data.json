@@ -1,0 +1,144 @@
+var contacts = [
+	{
+		name: "Mây Mây - Teen dễ thương",
+		phone: "0916548623",
+		address: "Nguyễn Khánh Toàn",
+	},
+	{
+		name: "Hải Anh - Thiên thần",
+		phone: "0916103629",
+		address: "Đình Thôn",
+	},
+	{
+		name: "Ngân Alice",
+		phone: "0984125963",
+		address: "Hoàng Quốc Việt",
+	},
+	{
+		name: "Thảo Vy - Đoá hoa mộc",
+		phone: "0923487651",
+		address: "Xã Đàn",
+	},
+	{
+		name: "Bảo Trâm",
+		phone: "0949324158",
+		address: "Hoàng Cầu",
+	},
+	{
+		name: "Ngân Anh",
+		phone: "0974125952",
+		address: "Gia Lâm - Long Biên",
+	},
+	{
+		name: "Hoài Mango - Teen girl dễ thương",
+		phone: "0903259657",
+		address: "Hà Đông",
+	},
+	{
+		name: "Mai Mai miền Tây",
+		phone: "0964159623",
+		address: "Đào Tấn",
+	},
+	{
+		name: "Bảo Quyên - Xinh duyên",
+		phone: "0931458965",
+		address: "Phố Cổ",
+	},
+	{
+		name: "Lan Trinh",
+		phone: "0969854198",
+		address: "Trần Duy Hưng",
+	},
+	{
+		name: "Ngọc Loan - Da trắng",
+		phone: "0922365874",
+		address: "Cầu Giấy",
+	},
+	{
+		name: "Thu Lan",
+		phone: "0912568596",
+		address: "Dương Quảng Hàm",
+	},
+	{
+		name: "Thuý Hằng",
+		phone: "0984216985",
+		address: "Đại học Hà Nội",
+	},
+	{
+		name: "Ngọc Mai - Face Xinh",
+		phone: "0912987581",
+		address: "Triều Khúc",
+	},
+	{
+		name: "Hà Linh",
+		phone: "0911958745",
+		address: "Quan Hoa",
+	},
+	{
+		name: "My Vân - Teen dễ thương",
+		phone: "0962548963",
+		address: "Phạm Văn Đồng",
+	},
+	{
+		name: "Quỳnh búp bê",
+		phone: "0912548956",
+		address: "Mỹ Đình",
+	},
+	{
+		name: "Thuý Hằng",
+		phone: "0984216985",
+		address: "Đại học Hà Nội",
+	},
+	{
+		name: "Ngọc Mai - Face Xinh",
+		phone: "0912987581",
+		address: "Triều Khúc",
+	},
+	{
+		name: "Hà Linh",
+		phone: "0911958745",
+		address: "Quan Hoa",
+	},
+	{
+		name: "My Vân - Teen dễ thương",
+		phone: "0962548963",
+		address: "Phạm Văn Đồng",
+	},
+	{
+		name: "Quỳnh búp bê",
+		phone: "0912548956",
+		address: "Mỹ Đình",
+	},
+	{
+		name: "Quỳnh búp bê",
+		phone: "0912548956",
+		address: "Mỹ Đình",
+	},
+	{
+		name: "Thuý Hằng",
+		phone: "0984216985",
+		address: "Đại học Hà Nội",
+	},
+	{
+		name: "Ngọc Mai - Face Xinh",
+		phone: "0912987581",
+		address: "Triều Khúc",
+	},
+	{
+		name: "Hà Linh",
+		phone: "0911958745",
+		address: "Quan Hoa",
+	},
+	{
+		name: "My Vân - Teen dễ thương",
+		phone: "0962548963",
+		address: "Phạm Văn Đồng",
+	},
+	{
+		name: "Quỳnh búp bê",
+		phone: "0912548956",
+		address: "Mỹ Đình",
+	}
+	
+];
+	

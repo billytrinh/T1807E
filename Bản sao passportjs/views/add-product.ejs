@@ -1,0 +1,77 @@
+<% include template/headeradmin %>
+<div class="col-sm-9 session">
+    <h1 class="text-center title-block title-block-admin">Add Product</h1>
+    <div class="row">
+        <div class="add-img col-sm-12">
+            <p> Thumbnail Image</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <form id="upload-widget" method="post" action="/admin/uploadthumb" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="add-img col-sm-12">
+            <p>Detail Images</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <form id="upload-widget" method="post" action="/admin/uploadimgs" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data"></form>
+                </div>
+                <div class="col-sm-3">
+                    <form id="upload-widget" method="post" action="/admin/uploadimgs" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data"></form>
+                </div>
+                <div class="col-sm-3">
+                    <form id="upload-widget" method="post" action="/admin/uploadimgs" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data"></form>
+                </div>
+                <div class="col-sm-3">
+                    <form id="upload-widget" method="post" action="/admin/uploadimgs" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data"></form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 content">
+            <div class="row">
+                <form action="/admin/add-new-product" method="POST" name="form_register" class="col-sm-12">
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label for="">Product Name</label>
+                            <input type="text" name="pro_name" id="pro_name" class="form-control" placeholder="Product Name"
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="">Product Description</label>
+                            <input type="text" name="pro_desc" id="pro_desc" class="form-control" placeholder="Product Description"
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="">Product Amount</label>
+                            <input type="number" name="pro_amount" id="pro_amount" class="form-control" placeholder="Product Amount"
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="">Product Price</label>
+                            <input type="number" name="pro_price" id="pro_price" class="form-control" placeholder="Product Price"
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Category</label>
+                            <select class="form-control" name="selectpicker" multiple>
+                                <% category.forEach(function(motphantu){ %>
+                                <option value="<%= motphantu._id %>">
+                                    <%= motphantu.cate_name %>
+                                </option>
+                                <% }) %>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-reg btn btn-success btn-block col-sm-6 offset-sm-3">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include template/footeradmin %>

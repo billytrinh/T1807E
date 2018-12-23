@@ -1,0 +1,6 @@
+
+<div class="contact col-xs-12" ng-repeat="contact in contacts | filter:search">
+	<div class="row">
+		<a href="#!/detail/{{$index}}" ng-click="changePage(2);"><strong>{{contact.name}}</strong></a>
+	</div>
+</div>

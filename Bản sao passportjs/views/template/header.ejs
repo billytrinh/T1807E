@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> <%= title %> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../fonts/KaushanScript-Regular.ttf">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/font-awesome.css">
+
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/ipadto.css">
+    <link rel="stylesheet" href="../stylesheets/ipadnho.css">
+    <link rel="stylesheet" href="../stylesheets/iphone.css">
+</head>
+
+<body>
+    
+    <div class="nav col-md-12">
+        <div class="col-md-6 logo">
+            <p class="logo-word wow bounceIn" data-wow-delay="0.1s"><a href="/alithea">Alithea</a></p>
+        </div>
+        <div class="col-md-6 menu">
+            <ul>
+                <li class="wow bounceIn" data-wow-delay="0.2s"><a href="/alithea/service">Services</a> </li>
+                <li class="wow bounceIn" data-wow-delay="0.3s"><a href="#">Categories</a></li>
+                <li class="wow bounceIn" data-wow-delay="0.4s"><a href="/alithea/aboutus">About us</a></li>
+                <li class="wow bounceIn" data-wow-delay="0.5s"><a href="/alithea/contact">Contact</a></li>
+                <% if(!locals.user){ %>
+                    
+                <li class="wow bounceIn" data-wow-delay="0.6s"><a href="/users/login"><i class="fa fa-shopping-cart"></i> Log in</a></li>
+                <% } %>
+                <% if(locals.user){ %>
+                <li class="wow bounceIn" data-wow-delay="0.6s"><a href="/users/logout"></i>Log out</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+   

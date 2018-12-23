@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <script src="vendor/jquery/jquery.js"></script>
 </head>
 <body>
     <nav class="contact backg hide_mobile">
@@ -55,7 +56,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
             <ul class="search">
-                <li class="hide_desktop hide_tablet" onclick="show_menu()">
+                <li class="hide_desktop click_me hide_tablet">
                     <a href="#">
                         <i class="fa fa-bars"></i>
                     </a>
@@ -78,19 +79,14 @@
             </ul>
         </div>
     </section>
-    <section class="section2 hide_menu hide_desktop hide_tablet" id="hidden_menu">
-        <div class="container">
-            <ul>
-                <div class="exit_menu">
-                    <i class="fa fa-times" onclick="hide_menu()"></i>
-                </div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Hot Deals</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+    <section class="add-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Hot Deals</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </section>
     <section class="section section-menu page1">
         <div class="container">
@@ -273,8 +269,7 @@
                     </a>
                 </li>     
             </ul>
-        </div>
-        
+        </div>     
     </footer>
     <script src="js/page2.js"></script>
 </body>

@@ -44,33 +44,15 @@ function renderHtml(result){
         html+='<i class="fa fa-globe"></i>';
         html+='<i class="fa fa-cart-plus"></i>';
         html+='<i class="fa fa-heart-o"></i>';
-        html+='</div>';
-                              
+        html+='</div>';                           
         html+='</div>';
         html+='</a>';
         html+='</li>';
     }
     document.getElementById("product_list").innerHTML = html;
 }
-function checkForm(){
-  var email = document.forms['form_data'].email.value;
-  if(email.length > 0){
-    return true;
-  }
-  else{
-    if(document.forms['form_data'].email.nextElementSibling){
-      document.forms['form_data'].email.nextElementSibling.remove();}
-      else{
-    var inputEmail = document.forms['form_data'].email.outerHTML;
-    inputEmail+= '<p class="warning">Please type your email again!</p>';
-    document.forms['form_data'].email.outerHTML = inputEmail;
-      }
-  }
-  return false;
-}
-function show_menu(){
-    document.getElementById('hidden_menu').style.display = 'block';
-}
-function hide_menu(){
-  document.getElementById('hidden_menu').style.display = 'none';
-}
+jQuery(document).ready(function(){
+  jQuery('.click_me').bind('click', function(){
+    jQuery('.add-menu').addClass('active')
+  });
+});

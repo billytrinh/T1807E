@@ -1,0 +1,38 @@
+ <% include template/headeradmin %>
+    <section class="col-sm-7 register float-right">
+        <div class="row">
+            <h2 class="text-center col-sm-12">Register form below</h2>
+                <form action="/add-user" method="POST" enctype="multipart/form-data" class="col-sm-12">
+                    <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input type="text" class="form-control" name="fullname" id="" aria-describedby="helpId" placeholder="Fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" name="email" id="" aria-describedby="helpId" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                            <label for="">Telephone</label>
+                            <input type="text" class="form-control" name="telephone" id="" aria-describedby="helpId" placeholder="Telephone">
+                        </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="password" id="" aria-describedby="helpId" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                            <label for="">Confirm Password</label>
+                            <input type="password" class="form-control" name="password2" id="" aria-describedby="helpId" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                                <label for="">Profile Image</label>
+                                <input type="file" class="form-control" name="prifile_image" id="" aria-describedby="helpId" placeholder="Confirm Password">
+                            </div>
+                    <button type="submit" class="btn btn-block btn-success">Register</button>
+                </form>
+        </div>
+    </section>
+ <% include template/footer %>

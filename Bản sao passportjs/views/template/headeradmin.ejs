@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> <%=title %> </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <link rel="stylesheet" href="../../stylesheets/dropzone.css">
+    <link rel="stylesheet" href="../../stylesheets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <% if(err_msg.length >0){ %>
+        <div class="alert alert-primary" role="alert">
+            <strong>
+                <%= err_msg %></strong>
+        </div>
+        <%} %>
+    </div>
+    <% if(locals.errors){ %>
+    <div class="container"></div>
+    <% errors.forEach(function(err){ %>
+    <div class="alert alert-danger">
+        <p>
+            <%=err.msg%>
+        </p>
+    </div>
+    <% });%>
+    </div>
+    <%}%>
+    
+    <div class="wrapper col-sm-3">
+            <div class="row">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <div class="row">
+                        <div class="col-xs-12 admin-pic">
+                            <img src="../../images/admin.png" alt="" class="logo-admin">
+                        </div>
+                        <h4 class="col-sm-12">Administrator</h4>
+                        
+                        <ul class="col-sm-12">
+                                <div class="row">
+                            <li>
+                                <h6><a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-circle online"></i>Online</a></h6>	
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="/alithea"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="/admin/list-users/1"><i class="fa fa-users"></i>Users</a>
+                    </li>
+                    <li>
+                        <a href="/admin/list-products/1"><i class="fa fa-gift"></i>Products</a>
+                    </li>
+                    <li>
+                        <a href="/admin/list-categories/1"><i class="fa fa-align-center"></i>Categoraries</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i>Orders</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-birthday-cake"></i>Occasion</a>
+                    </li>
+                    <li class="calendar-btn">
+                        <a href="/users/calendar"><i class="fa fa-calendar"></i> Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i>Mail box</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-map-marker"></i>Map</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pie-chart"></i>Chart</a>
+                    </li>
+        
+                    <li>
+                        <a href="#"><i class="fa fa-wrench"></i> Services</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-phone-square"></i>Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <div class="content">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+    

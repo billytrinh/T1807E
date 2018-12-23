@@ -1,0 +1,191 @@
+header{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 9;
+	padding: 0px;
+}
+footer{
+	position: fixed !important;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 9;
+	height: 60px;
+	border-top: 1px solid #cdcdcd;
+	padding: 10px 0px;
+}
+.content{
+	padding: 145px 15px 70px 15px;
+
+}
+.content .contact{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cdcdcd;
+}
+.search{
+	padding: 10px;
+	background: lightgray;
+	margin-bottom: 10px;
+}
+.header1 p{
+	padding-left: 15px;
+}
+.header1 h3{
+	padding:0px 15px;
+}
+h3 i{
+	float: right;
+	cursor:pointer;
+	font-size: 25px;
+	font-weight: 300;
+}
+a,p{
+	color: #333;
+}
+.icons{
+	width: 20%;
+	float: left;
+	cursor: pointer;
+}
+.icon i{
+	color: lightgray;
+	font-size: 25px;
+}
+.icon p{
+	font-size: 12px;
+}
+.header2{
+padding-top: 15px;
+}
+.edit{
+	float: right;
+}
+.image_detail{
+	font-size: 80px;
+	margin-top: 15px;
+}
+.call{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
+	height: 70px;
+}
+.call1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cdcdcd;
+	height: 70px;
+}
+
+.name{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.action p{
+	border-bottom: 1px solid #cdcdcd;
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 0px;
+}
+.note{
+	border-bottom: 1px solid #cdcdcd;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 12px;
+	color: lightgray;
+}
+a:hover{
+	text-decoration: none;
+	cursor: pointer;
+	color: rgba(0, 0, 255, 0.699);
+	transition: 0.2s;
+}
+.directory i{
+	color: rgba(0, 0, 255, 0.699);
+}
+.directory p{
+	color: rgba(0, 0, 255, 0.699);
+}
+.active{
+	color: rgba(0, 0, 255, 0.699);
+}
+a{
+	transition: 0.2s;
+}
+.unfr{
+	height: 90px !important;
+	vertical-align: text-bottom;
+	padding-top: 50px;
+}
+.edit-form .row input{
+	border-bottom: 1px solid #cdcdcd;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.form-custom{
+	height: 40px;
+	line-height: 40px;
+}
+a.form-custom{
+	border-right: 1px solid #cdcdcd;
+	border-bottom: 1px solid #cdcdcd;
+}
+.company{
+	margin-bottom: 20px;
+}
+.add-number{
+	border-right: none !important;
+}
+.p-d-10{
+	padding: 0px 10px;
+}
+.edit-icon{
+	font-size: 20px;
+}
+.minus{
+	color: #ff3300;
+}
+.plus{
+	color: #40ff00;
+}
+.add-email{
+	height: 90px;
+	padding: 50px 0px 10px 15px;
+}
+.music{
+	height: 90px;
+	padding: 60px 0px 0px 30px;
+	border-bottom: 1px solid #cdcdcd;
+}
+.note-edit{
+	height: 120px;
+	padding: 50px 30px;
+}
+.contacted{
+	height: 55px;
+	padding: 30px 0px 0px 15px;
+	border-bottom: 1px solid #cdcdcd;
+	background: rgba(211, 211, 211, 0.384);
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.delete{
+	color: #ff3300;
+	padding-left: 40px;
+}
+.contacted1{
+	height: 40px;
+	border-bottom: 1px solid #cdcdcd;
+	background: rgba(211, 211, 211, 0.384);
+	margin-bottom: 0px;
+}
+
+
+
+

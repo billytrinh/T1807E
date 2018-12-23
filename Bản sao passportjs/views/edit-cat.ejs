@@ -1,0 +1,59 @@
+<% include template/headeradmin %>
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLongTitle">Are you sure delete this image?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-9 session">
+    <h1 class="text-center title-block title-block-admin">Edit Category</h1>
+    <div class="row">
+        <% data.forEach(function(mot){ %>
+        <div class="col-sm-12 content">
+            <form action="/admin/edit-cat/<%= mot._id %>" method="POST" class="col-sm-12">
+                <div class="form-group">
+                    <label for="">Name's Category</label>
+                    <input type="text" class="form-control" name="cate_name" id="" aria-describedby="helpId" value="<%= mot.cate_name%>"
+                        placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="">Description's Category</label>
+                    <input type="text" class="form-control" name="cate_desc" id="" aria-describedby="helpId" value="<%= mot.cate_desc%>"
+                        placeholder="">
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p>Old imgage</p>
+                        <div class="row">
+                            
+                            <img src=" <%= mot.cate_images[0] %> " class="col-sm-12 img-edit-cat" alt="">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-block save-changes">Save</button>
+            </form>
+            <% }) %>
+            <div class="add-img col-sm-12">
+                <p>New image</p>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <form id="upload-widget" method="post" action="/admin/upload" class="dropzone col-sm-12 content box"
+                            enctype="multipart/form-data"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<% include template/footeradmin %>
