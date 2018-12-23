@@ -573,6 +573,12 @@ header.to {
     margin-bottom: 30px;
 }
 
+.add-img.col-sm-12.edit-thumb {
+    position: absolute;
+    left: 26%;
+    top: 41%;
+}
+
 img.anhslide {
     width: 320px;
     height: auto;

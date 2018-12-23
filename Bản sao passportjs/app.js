@@ -83,6 +83,7 @@ app.use('/admin/imagecate', express.static('imagecate'));
 app.use('/admin/list-categories/imagecate', express.static('imagecate'));
 app.use('/admin/edit-cat/imagecate', express.static('imagecate'));
 app.use('/admin/list-product/imagecate', express.static('imagecate'));
+app.use('/admin/edit-product/imagecate', express.static('imagecate'));
 app.use('/users', users);
 app.use('/admin', admins)
 

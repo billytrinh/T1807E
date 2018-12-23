@@ -165,7 +165,6 @@ router.post('/edit-cat/:idcansua', function (req, res, next) {
     cate_images = [];
     res.redirect('/admin/list-categories/1');
   });
-  
 });
 
 
@@ -220,7 +219,75 @@ router.post('/add-new-product', function (req, res, next) {
   res.redirect('/admin/list-product/1');
 });
 
-//list category
+//xoa product
+
+router.get('/delete/product/:idcanxoa', function (req, res, next) {
+  var id = req.params.idcanxoa;
+  Product.findByIdAndRemove(id).exec();
+  req.flash('success_msg', 'You have successfully deleted a product!');
+  res.redirect('/admin/list-product/1');
+});
+
+
+//edit product
+router.get('/edit-product/:idcansua', function (req, res, next) {
+  var id = req.params.idcansua;
+  Product.find({
+    _id: id
+  }, function (err, dulieu) {
+    var id_cate = dulieu[0].category;
+    Cate.find({_id: id_cate},function (err, docs1) {
+      Cate.find({},function(err, docs2){
+        // console.log(docs2);
+        res.render('edit-product', {
+          title: 'Edit product',
+          all_category: docs2,
+          category : docs1,
+          data: dulieu,
+      });
+      });
+  });
+  })
+});
+
+router.post('/edit-product/:idcansua', function (req, res, next) {
+  var id = req.params.idcansua;
+  var pro_name = req.body.pro_name;
+  var pro_desc = req.body.pro_desc;
+  var pro_amount = req.body.pro_amount;
+  var pro_price = req.body.pro_price;
+  var category_them = req.body.selectpicker_edit;
+  Product.findById(id, function (err, dulieu) {
+    console.log(dulieu);
+    console.log(dulieu.category.length);
+    if (err) return handleError(err);
+    dulieu.pro_name = pro_name;
+    dulieu.pro_desc = pro_desc;
+    dulieu.pro_amount = pro_amount;
+    dulieu.pro_price = pro_price;
+    console.log(dulieu.category);
+     if(thumb_images.length == 0 ){
+      thumb_images = dulieu.big_image;
+    }
+    if(detail_images.length == 0){
+      detail_images = dulieu.small_image;
+    }
+    // console.log(category.length);
+      if(category_them && category_them.length > 0){
+       dulieu.category = category_them;
+    }
+    dulieu.big_image = thumb_images;
+    dulieu.small_image = detail_images;
+    dulieu.save();
+    thumb_images = [];
+    detail_images = [];
+    res.redirect('/admin/list-product/1');
+  });
+  
+});
+
+
+//list product
 
 router.get('/list-product/:page', function (req, res, next) {
   var perPage = 5; /* perPage - số dòng dữ liệu trên mỗi trang */
