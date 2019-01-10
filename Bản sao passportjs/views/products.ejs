@@ -1,0 +1,270 @@
+<% include template/header %>
+<div class="detail12">
+    <div class="container ">
+        <div class="row">
+            <div class="nav-detail col-sm-12 wow bounceInLeft" data-wow-delay="0.1s">
+                <nav aria-label="breadcrumb col-sm-6">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Categories</a></li>
+                        <% category.forEach(function(motcate){ %>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <%= motcate.cate_name %> <span class="f-s-10">(<%= qty %> products in this category)</span>
+                        </li>
+                        <%}) %>
+
+                    </ol>
+                </nav>
+
+            </div>
+            <div class="col-sm-3 ">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 block1 box">
+                            <p class="wow bounceIn" data-wow-delay="<%= i %>ms"><i class="fa fa-align-center"
+                                    aria-hidden="true"></i> Categories</p>
+                            <hr>
+                            <ul>
+                                <% 
+                                var i = 80;
+                                allcate.forEach(function(motcate){ 
+                                    i+=80;
+                                    %>
+                                <a href="/list-products/<%= motcate._id %>/1">
+                                    <li class="wow bounceIn" data-wow-delay="<%= i %>ms">
+                                        <%= motcate.cate_name %>
+                                    </li>
+                                </a>
+                                <hr class="wow bounceIn" data-wow-delay="<%= i %>ms">
+                                <%}); %>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 block1 box">
+                            <p class="wow bounceIn" data-wow-delay="0.1"><i class="fa fa-dollar-sign" aria-hidden="true"></i>
+                                Price Filter</p>
+                            <hr>
+                            <div class="block1">
+                                <ul>
+                                    <form action="/list-product-filter/1" method="GET">
+
+                                        <li class="wow bounceIn" data-wow-delay="0.2">
+                                            <input class="inputcheck" id="checkbox1" name="price1" type="checkbox"
+                                                value="5" style="display: none;" />
+                                            <label class="checkbox" for="checkbox1">
+                                                <span>
+                                                    <div width="12px" height="10px"></div>
+                                                </span>
+                                                <span>
+                                                    <= 5$</span> </label> </li> <hr>
+                                        <li class="wow bounceIn" data-wow-delay="0.3">
+                                            <input class="inputcheck" id="checkbox2" name="price2" value="9" type="checkbox"
+                                                style="display: none;" />
+                                            <label class="checkbox" for="checkbox2">
+                                                <span>
+                                                    <div width="12px" height="10px">
+
+                                                    </div>
+                                                </span>
+                                                <span>5$ - 9$</span>
+                                            </label>
+
+                                        </li>
+                                        <hr>
+                                        <li class="wow bounceIn" data-wow-delay="0.4">
+                                            <input class="inputcheck" id="checkbox3" type="checkbox" name="price3"
+                                                value="13" style="display: none;" />
+                                            <label class="checkbox" for="checkbox3">
+                                                <span>
+                                                    <div width="12px" height="10px">
+                                                    </div>
+                                                </span>
+                                                <span>9$ - 13$</span>
+                                            </label>
+                                        </li>
+                                        <hr>
+                                        <li class="wow bounceIn" data-wow-delay="0.5">
+                                            <input class="inputcheck" id="checkbox4" name="price4" value="13" type="checkbox"
+                                                style="display: none;" />
+                                            <label class="checkbox" for="checkbox4">
+                                                <span>
+                                                    <div width="12px" height="10px">
+
+                                                    </div>
+                                                </span>
+                                                <span> > 13$</span>
+                                            </label>
+                                        </li>
+                                        <hr>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 block1 box">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1" class="wow bounceIn" data-wow-delay="0.2">Select
+                                    category</label>
+                                <select class="form-control wow bounceIn" data-wow-delay="0.3" name="selectpicker" id="exampleFormControlSelect1">
+                                    <option value="1">
+                                        All Categories
+                                    </option>
+                                    <% allcate.forEach(function(mot_loai){ %>
+                                    <option value="<%= mot_loai._id %>">
+                                        <%= mot_loai.cate_name %>
+                                    </option>
+                                    <% }) %>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 block1 box">
+                            <p class="wow bounceIn" data-wow-delay="0.3"><i class="fa fa-dollar-sign" aria-hidden="true"></i>Size
+                                Filter</p>
+                            <hr>
+                            <div class="block1">
+                                <ul>
+                                    <li class="wow bounceIn" data-wow-delay="0.4">
+                                        <input class="inputcheck" name="size1" value="10" id="checkbox5" type="checkbox"
+                                            style="display: none;" />
+                                        <label class="checkbox" for="checkbox5">
+                                            <span>
+                                                <div width="12px" height="10px">
+
+                                                </div>
+                                            </span>
+                                            <span>5 - 10 inches</span> </label>
+                                    </li>
+                                    <hr>
+                                    <li class="wow bounceIn" data-wow-delay="0.5">
+                                        <input class="inputcheck" id="checkbox6" name="size2" value="14" type="checkbox"
+                                            style="display: none;" />
+                                        <label class="checkbox" for="checkbox6">
+                                            <span>
+                                                <div width="12px" height="10px">
+
+                                                </div>
+                                            </span>
+                                            <span>10 - 14 inches</span>
+                                        </label>
+                                    </li>
+                                    <hr>
+                                    <li class="wow bounceIn" data-wow-delay="0.6">
+                                        <input class="inputcheck" id="checkbox7" name="size3" value="15" type="checkbox"
+                                            style="display: none;" />
+                                        <label class="checkbox" for="checkbox7">
+                                            <span>
+                                                <div width="12px" height="10px">
+                                                </div>
+                                            </span>
+                                            <span> >= 14 inches</span>
+                                        </label>
+                                    </li>
+                                    <hr>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 m-b-30 wow bounceIn" data-wow-delay="0.2">
+                            <div class="form-group">
+                                <div class="row">
+                                    <button type="submit" class="btn btn-primary btn-block kieu2">Filter</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <% 
+                            var i = 100;
+
+                            products.forEach(function(product){
+                                i+=100;
+                                %>
+                            <div class="col-sm-4 m-b-30 wow bounceIn" data-wow-delay="<%= i %>ms">
+                                <a href="/detail-product/<%= product._id %>">
+                                    <div class="card col-sm-12 box a-product" style="width: 18rem;">
+                                        <div class="card-img">
+                                            <img src="/../<%= product.big_image %>" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <p class="card-title text-center">
+                                                    <%= product.pro_name %>
+                                                </p>
+                                                <div class="card-text text-center">
+                                                    <p> <strong class="price-zone">$
+                                                            <%= (product.pro_price)/100 %></strong>
+                                                        <span class="star-rate">★</span>
+                                                        <span class="star-rate">★</span>
+                                                        <span class="star-rate">★</span>
+                                                        <span class="star-rate">★</span>
+                                                        <span class="star-rate">★</span>
+                                                    </p>
+                                                </div>
+                                                <div class="row text-center">
+                                                    <a href="/add-to-cart/<%= product._id %>" class="col-md-12"><button type="submit" class="btn btn-primary kieu2 col-sm-12">Add to cart</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <% category.forEach(function(motcate){ %>
+                        <% if (locals.pages > 0) { %>
+                        <nav aria-label="Page navigation example" class="col-sm-4 offset-sm-4">
+                            <ul class="pagination">
+                                <% if (current == 1) { %>
+                                <li class="page-item">
+                                    <a class="page-link cus-page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">First</span>
+                                    </a>
+                                </li>
+                                <% } else { %>
+                                <li class="page-item"><a class="page-link cus-page-link" href="/list-products/<%= motcate._id%>/1"><span
+                                            aria-hidden="true">First</span></a></li>
+                                <% } %>
+                                <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                                <% if (i !== 1) { %>
+                                <li class="page-item disabled"><a class="page-link cus-page-link" href="#">...</a></li>
+                                <% } %>
+                                <% for (; i <= (Number(current) + 4) && i <= locals.pages; i++) { %>
+                                <% if (i == current) { %>
+                                <li class="page-item active"><a class="page-link cus-page-link" href="#">
+                                        <%= i %></a></li>
+                                <% } else { %>
+                                <li class="page-item"><a class="page-link cus-page-link" href="/list-products/<%= motcate._id%>/<%= i %>">
+                                        <%= i %></a></li>
+                                <% } %>
+                                <% if (i == Number(current) + 4 && i < locals.pages) { %>
+                                <li class="page-item disabled"><a class="page-link cus-page-link">...</a></li>
+                                <% } %>
+                                <% } %>
+                                <li class="page-item">
+                                    <a class="page-link cus-page-link" href="/list-products/<%= motcate._id%>/<%= pages %>"
+                                        aria-label="Next">
+                                        <span aria-hidden="true">Last</span>
+                                    </a>
+                                </li>
+                                <!-- <% if (current == locals.pages) { %>
+                                    <li class="page-item">
+                                        <a class="page-link cus-page-link" href="/admin/list-users/<%= pages %>" aria-label="Next">
+                                            <span aria-hidden="true">Last</span>
+                                        </a>
+                                    </li>
+                                    <% } %> -->
+                            </ul>
+                        </nav>
+                        <% } %>
+                        <%}) %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <% include template/footer %>

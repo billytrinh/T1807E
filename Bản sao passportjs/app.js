@@ -27,7 +27,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //uncomment after placing your favicon in /public
-// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -35,10 +35,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Handle Sessions
 app.use(session({
   secret:'secret',
-  saveUninitialized: true,
-  resave: true
+  saveUninitialized: false,
+  resave: false
 }));
-
+app.use(function (req, res, next) { 
+  res.locals.session = req.session;
+  next();
+ })
 // Passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -66,6 +69,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(flash());
 app.use(function (req, res, next) {
+  
   res.locals.currentUser = req.user;
   res.locals.success_msg = req.flash('success_msg');
   res.locals.err_msg = req.flash('err_msg');
@@ -80,8 +84,15 @@ app.get('*', function(req, res, next){
 
 app.use('/', routes);
 app.use('/admin/imagecate', express.static('imagecate'));
+app.use('/admin/detail-order/imagecate', express.static('imagecate'));
+
+app.use('/alithea/imagecate', express.static('imagecate'));
+app.use('/alithea/remove-product/imagecate', express.static('imagecate'));
+app.use('/imagecate', express.static('imagecate'));
 app.use('/admin/list-categories/imagecate', express.static('imagecate'));
 app.use('/admin/edit-cat/imagecate', express.static('imagecate'));
+app.use('/detail-product/imagecate', express.static('imagecate'));
+app.use('/list-products/imagecate', express.static('imagecate'));
 app.use('/admin/list-product/imagecate', express.static('imagecate'));
 app.use('/admin/edit-product/imagecate', express.static('imagecate'));
 app.use('/users', users);

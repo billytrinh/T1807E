@@ -1,0 +1,214 @@
+<% include template/header %>
+<div class="detail11">
+    <div class="container">
+    </div>
+    <% detail.forEach(function(mot){  %>
+    <section class="section detail-product">
+        <div class="container w-7">
+            <div class="row">
+                <div class="nav-detail col-sm-12 wow bounceInLeft" data-wow-delay="0.1s">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/alithea">Home</a></li>
+
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <%= mot.pro_name %>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="bock-img-sp col-sm-6">
+                    <div class="with-100">
+                        <div class="top-thumbnail box wow bounceInLeft" data-wow-delay="0.2s">
+                            <img src="../images/trai.jpg" class="nut-trai" alt="">
+                            <img src="<%= mot.big_image[0] %>" class="anh-thumbnail" alt="">
+                            <img src="../images/phai.jpg" class="nut-phai" alt="">
+                        </div>
+                        <div class="bot-thumbnail wow bounceInRight" data-wow-delay="0.3s">
+                            <div class="row">
+                                <% mot.small_image.forEach(function(motanh){ %>
+
+                                <div class="col-sm-4">
+                                    <img src="<%= motanh %>" class="anh-thumbnail box" alt="">
+                                </div>
+                                <%}) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pull-right gt_sanpham">
+                    <p class="tieude wow bounceInRight" data-wow-delay="0.2s">
+
+                        <%= mot.pro_name %>
+                    </p>
+                    <div class="price wow bounceInRight" data-wow-delay="0.3s">
+                        <div class="row">
+                            <p class="col-sm-12"><strong>Price:</strong> $
+                                <%= (mot.pro_price)/100 %>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="addtocard wow bounceInRight" data-wow-delay="0.4s">
+                        <p>
+                            <span class="get">Get it<strong> ~</strong> with</span>
+                            <span class="free">Free Shipping!</span>
+                        </p>
+                    </div>
+                    <div class="row m-top-30 wow bounceInRight" data-wow-delay="0.5s">
+                        <div class="col-sm-12 col-sm-offset-4">
+                            <div class="row">
+                                <p class="col-sm-3"><strong>Quantity:</strong> </p>
+                                <div class="input-group col-sm-5 mb-3">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-light btn-sm" id="minus-btn"><i class="fa fa-minus"></i></button>
+                                    </div>
+                                    <input type="number" id="qty_input" class="form-control form-control-sm" value="1"
+                                        min="1">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-light btn-sm" id="plus-btn"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                                <small>
+                                    <%= mot.pro_qty %> products are available!</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-top-30 wow bounceInRight" data-wow-delay="0.6s">
+                        <div class="col-sm-12 col-sm-offset-4">
+                            <div class="row">
+                                <p class="col-sm-3"><strong>Color:</strong></p>
+                                <div class="input-group col-sm-8 mb-3">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-danger btn-sm pick-color"></button>
+                                    </div>
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-info btn-sm pick-color"></button>
+                                    </div>
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-success btn-sm pick-color"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-top-30 wow bounceInRight" data-wow-delay="0.7s">
+                        <div class="col-sm-12 col-sm-offset-4">
+                            <div class="row">
+                                <p class="col-sm-3"><strong>Size:</strong></p>
+                                <div class="input-group col-sm-8 mb-3">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-light btn-sm pick-size box">
+                                            <%= mot.pro_size %> inch</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row m-top-30 wow bounceInRight" data-wow-delay="0.8s">
+                        <div class="col-sm-12 col-sm-offset-4">
+                            <div class="row">
+                                <p class="col-sm-12 j-center"><strong>Description:</strong>
+                                    <%= mot.pro_desc %>
+                                </p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row m-top-30">
+                        <div class="col-sm-12 col-sm-offset-4">
+                            <div class="input-group col-sm-8 mb-3">
+                                <div class="row">
+                                    <a href="/add-to-cart/<%= mot._id %>"><button class="btn btn-danger add-to-cart wow bounceInRight"
+                                            data-wow-delay="0.2s"><i class="fa fa-cart-plus"></i> Add to
+                                            cart</button></a>
+                                    <button class="btn btn-danger buy-now wow bounceInRight" data-wow-delay="0.3s"></i>
+                                        Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bot-detail">
+                    <div class="bock-video-sp col-sm-6">
+                        <div class="with-100">
+                            <div class="top-thumbnail box wow bounceIn" data-wow-delay="0.2s">
+                                <video class="edit-video" controls autoplay>
+                                    <source src="<%= mot.video[0] %>" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bock-video-sp col-sm-6">
+                        <div class="with-100">
+                            <div class="top-thumbnail wow bounceIn" data-wow-delay="0.2s">
+                                <p class="col-sm-12 j-center"><strong>Description:</strong>
+                                    <%= mot.pro_desc %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <%}) %>
+</div>
+<section class="session1">
+    <div class="row">
+        <h2 class="text-center title-block wow bounceIn m-t-100" data-wow-delay="0.1s" data-wow-offset="50">RELATED PRODUCTS</h2>
+        <div class="col-lg-12 grid-uniform">
+            <div class="row">
+                <% 
+                                var j = 100;
+                                related.forEach(function(product){
+                                    j+=100;
+                                    %>
+                <div class="col-sm-3 float-left">
+                    <a href="/detail-product/<%= product._id %>">
+                        <div class=" wow bounceIn" data-wow-delay="<%= j %>ms">
+                            <div class="grid__item  product-item">
+                                <div class="grid__image">
+                                    <img class="anhthem1" src="<%= product.big_image[0] %>">
+                                    <img class="anhthem2" src="<%= product.small_image[0] %>">
+                                </div>
+                                <form action="" class="variants AddToCartForm">
+                                    <h3 class="h6"><a href="">
+                                            <%= product.pro_name %></a></h3>
+                                    <div class="price">
+                                        <span class="product-price">
+                                            $
+                                            <%= (product.pro_price)/100 %>
+                                        </span>
+                                        <span class="collection-ratings__wrap">
+                                            <div class="star-ratings-css">
+                                                <div class="star-ratings-css-top">
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                </div>
+                                                <span class="text">(4685)</span>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <% if(locals.user){ %>
+                                    <a href="/add-to-cart/<%= product._id %>"><button type="button" class="btn btn-primary kieu">Add
+                                            to cart</button></a>
+                                    <%} %>
+                                    <% if(!locals.user){ %>
+                                    <a href="/alithea/check-out"><button type="button" class="btn btn-primary kieu">Buy
+                                            Now</button></a>
+                                    <%} %>
+                                </form>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <%}) %>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<% include template/footer %>

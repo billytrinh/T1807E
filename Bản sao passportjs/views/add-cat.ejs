@@ -1,9 +1,13 @@
 <% include template/headeradmin %>
 <div class="col-sm-9 session">
-    <h1 class="text-center title-block title-block-admin">Add Category</h1>
+        <div class="row">
+                <div class="w-100 tieude-bang">
+                        <p class="chu-tieude" ><i class="fa fa-plus-circle canh-tieude"></i>Add Category</p>
+                </div>
+            </div>
     <div class="row">
         <div class="add-img col-sm-12">
-            <p> Category Image</p>
+            <p class="tieumuc"> Category Image</p>
             <div class="row">
                 <div class="col-sm-3">
                     <form id="upload-widget" method="post" action="/admin/upload" class="dropzone col-sm-12 content box"
@@ -16,17 +20,17 @@
                 <form action="/admin/add-new-cat" method="POST" name="form_register" class="col-sm-12">
                     <div class="row">
                         <div class="form-group col-sm-12">
-                            <label for="">Category Name</label>
+                            <label for="" class="tieumuc">Category Name</label>
                             <input type="text" name="cate_name" id="cate_name" class="form-control" placeholder="Name Category"
                                 aria-describedby="helpId">
                         </div>
                         <div class="form-group col-sm-12">
-                            <label for="">Category Description</label>
-                            <input type="text" name="cate_desc" id="cate_desc" class="form-control" placeholder="Description's Category"
-                                aria-describedby="helpId">
+                            <label for="" class="tieumuc">Category Description</label>
+    
+                                <textarea class="form-control" rows="5" id="cate_desc" name="cate_desc"></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="submit-reg btn btn-success btn-block col-sm-6 offset-sm-3">Add</button>
+                    <button type="submit" class="submit-reg btn btn-success btn-block col-sm-6 offset-sm-3 bgr-btn">Add</button>
                 </form>
             </div>
         </div>

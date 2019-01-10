@@ -1,0 +1,138 @@
+<% include template/headeradmin %>
+<!-- Modal -->
+<div class="opacity col-md-12"></div>
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLongTitle">Are you sure delete?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-9 session">
+	<div class="row">
+		<div class="w-100 tieude-bang">
+			<p class="chu-tieude"><i class="fa fa-users canh-tieude"></i>List User</p>
+		</div>
+	</div>
+	<div class="row">
+		<% if(success_msg.length >0){ %>
+		<div class="alert alert-success text-center wow bounceInLeft col-sm-12 " data-wow-delay="0.1" role="alert">
+			<strong>
+				<%= success_msg %></strong>
+		</div>
+		<%} %>
+
+	</div>
+	<div class="row">
+		<div class="content col-sm-12">
+			<div class="row">
+					
+				<table class="table">
+					<thead class="thead-light">
+						<tr>
+                          
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Date</th>
+							<th scope="col">Total Quantity</th>
+                            <th scope="col">Total Price</th>
+                            <th scope="col">Detail</th>
+                            <th scope="col">Status</th>
+                            
+						</tr>
+					</thead>
+					<% data.forEach(function(motphantu){ %>
+					<tbody>
+						<tr>
+						
+							<td>
+								<p class="khong-la-admin">
+									<%= motphantu.name %>
+								</p>
+                            </td>
+                            <td>
+								<p class="khong-la-admin">
+									<%= motphantu.address %>
+								</p>
+                            </td>
+                            <td>
+                                    <p class="khong-la-admin">
+                                        <%= motphantu.date %>
+                                    </p>
+                                </td>
+                            <td>
+								<p class="khong-la-admin">
+									<%= motphantu.cart.totalQty %>
+								</p>
+							</td>
+                            <td>
+								<p class="khong-la-admin">
+									<%= motphantu.cart.totalPrice %>
+								</p>
+							</td>
+							<td>
+								<a href="/admin/detail-order/<%= motphantu._id%>"> <i class="fa fa-edit list-users" aria-hidden="true"></i></a>
+							</td>
+							<td>
+									<input type="checkbox" checked data-toggle="toggle">
+                            </td>
+						</tr>
+					</tbody>
+					<% }); %>
+				</table>
+			</div>
+		</div>
+
+
+
+		<div class="col-sm-12">
+			<% if (locals.pages > 0) { %>
+			<nav aria-label="Page navigation example" class="col-sm-4 offset-sm-4">
+				<ul class="pagination">
+					<% if (current == 1) { %>
+					<li class="page-item">
+						<a class="page-link cus-page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">First</span>
+						</a>
+					</li>
+					<% } else { %>
+					<li class="page-item"><a class="page-link cus-page-link" href="/admin/orders/1"><span aria-hidden="true">First</span></a></li>
+					<% } %>
+					<% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+					<% if (i !== 1) { %>
+					<li class="page-item disabled"><a class="page-link cus-page-link" href="#">...</a></li>
+					<% } %>
+					<% for (; i <= (Number(current) + 4) && i <= locals.pages; i++) { %>
+					<% if (i == current) { %>
+					<li class="page-item active"><a class="page-link cus-page-link" href="#">
+							<%= i %></a></li>
+					<% } else { %>
+					<li class="page-item"><a class="page-link cus-page-link" href="/admin/orders/<%= i %>">
+							<%= i %></a></li>
+					<% } %>
+					<% if (i == Number(current) + 4 && i < locals.pages) { %>
+					<li class="page-item disabled"><a class="page-link cus-page-link">...</a></li>
+					<% } %>
+					<% } %>
+					<li class="page-item">
+						<a class="page-link cus-page-link" href="/admin/list-users/<%= pages %>" aria-label="Next">
+							<span aria-hidden="true">Last</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<% } %>
+		</div>
+	</div>
+</div>
+
+<% include template/footeradmin %>

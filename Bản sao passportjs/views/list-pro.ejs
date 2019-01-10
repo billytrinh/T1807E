@@ -2,45 +2,49 @@
 <!-- Modal -->
 <div class="opacity col-md-12"></div>
 <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLongTitle">Are you sure delete?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger btn-ok">Delete</a>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-center" id="exampleModalLongTitle">Are you sure delete this product?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<a class="btn btn-danger btn-ok">Delete</a>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
 <div class="col-sm-9 session">
-    <h1 class="text-center title-block title-block-admin">List Categories</h1>
-    
-    <div class="row">
-        <% if(success_msg.length >0){ %>
-        <div class="alert alert-success text-center wow bounceInLeft col-sm-12 " data-wow-delay="0.1" role="alert">
-            <strong>
-                <%= success_msg %></strong>
-        </div>
-        <%} %>
+	<div class="row">
+		<div class="w-100 tieude-bang">
+			<p class="chu-tieude"><i class="fa fa-gift canh-tieude"></i>List Products</p>
+		</div>
+	</div>
+	<div class="row">
+		<% if(success_msg.length >0){ %>
+		<div class="alert alert-success text-center wow bounceInLeft col-sm-12 " data-wow-delay="0.1" role="alert">
+			<strong>
+				<%= success_msg %></strong>
+		</div>
+		<%} %>
 
-    </div>
+	</div>
 
-    <div class="row">
+	<div class="row">
 		<div class="content col-sm-12">
 			<div class="row">
 				<table class="table">
 					<thead class="thead-light">
 						<tr>
 							<th scope="col">Name</th>
-							<th scope="col">Amount</th>
-                            <th scope="col">Thumbnail Image </th>
-                            <th scope="col">Edit</th>
+							<th scope="col">Quantity</th>
+							<th scope="col">Status</th>
+							<th scope="col">Thumbnail Image </th>
+							<th scope="col">Edit</th>
 							<th scope="col">Delete</th>
 						</tr>
 					</thead>
@@ -52,26 +56,33 @@
 							</td>
 							<td>
 
-								<%= motphantu.pro_amount %>
+								<%= motphantu.pro_qty %>
+							</td>
+							<td>
+								<% if(motphantu.isAvailable == true){ %>
+								<p class="available">Available</p>
+								<%}else{ %>
+								<p class="out-of-stock">Out of stock</p>
+								<%} %>
 							</td>
 							<td>
 								<img src=" <%= motphantu.big_image[0] %> " class="img-edit-cat" alt="">
 							</td>
-							
 							<td>
 								<a href="/admin/edit-product/<%= motphantu._id%>">More detail</a>
 							</td>
 							<td>
-								<a class="delete-user" data-toggle="modal" data-href="/admin/delete/product/<%= motphantu._id %>" data-target="#confirm-delete"> <i class="fa fa-remove list-users"
-									 aria-hidden="true"></i></a></td>
+								<a class="delete-user" data-toggle="modal" data-href="/admin/delete/product/<%= motphantu._id %>" data-target="#confirm-delete">
+									<i class="fa fa-trash-alt list-users" aria-hidden="true"></i></a></td>
 						</tr>
 					</tbody>
 					<% }) %>
 				</table>
 			</div>
-        </div> 
+		</div>
 
-        <a href="/admin/add-new-product" class="col-sm-12"><button type="button" class="btn btn-success float-right">Add a new product</button></a>
+		<a href="/admin/add-new-product" class="col-sm-12"><button type="button" class="btn btn-success float-right bgr-btn">Add a
+				new product</button></a>
 
 		<div class="col-sm-12">
 			<% if (locals.pages > 0) { %>
@@ -118,4 +129,4 @@
 			</nav>
 			<% } %>
 		</div>
-        <% include template/footeradmin %>
+		<% include template/footercus %>

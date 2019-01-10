@@ -1,6 +1,11 @@
 <% include template/headeradmin %>
 <div class="col-sm-9 session">
-        <h1 class="text-center title-block title-block-admin">Edit User</h1>
+        <div class="row">
+                <div class="w-100 tieude-bang">
+                        <p class="chu-tieude" ><i class="fa fa-edit canh-tieude"></i>Edit User</p>
+                </div>
+            </div>
+        
     <div class="row">
         <% data.forEach(function(mot){ %>
         <div class="col-sm-12 content">
@@ -10,37 +15,37 @@
                         <label for="">Username</label>
                         <input type="text" class="form-control" name="username" id="" aria-describedby="helpId" value="<%= mot.username%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit username</small>
+                        
                     </div>
                     <div class="form-group">
                         <label for="">Firstname</label>
                         <input type="text" class="form-control" name="firstname" id="" aria-describedby="helpId" value="<%= mot.firstname%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit firstname</small>
+                        
                     </div>
                     <div class="form-group">
                         <label for="">Lastname</label>
                         <input type="text" class="form-control" name="lastname" id="" aria-describedby="helpId" value="<%= mot.lastname%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit lastname</small>
+                        
                     </div>
                     <div class="form-group">
                         <label for="">Address</label>
                         <input type="text" class="form-control" name="address" id="" aria-describedby="helpId" value="<%= mot.address%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit address</small>
+                        
                     </div>
                     <div class="form-group">
                         <label for="">Telephone</label>
                         <input type="text" class="form-control" name="phone" id="" aria-describedby="helpId" value="<%= mot.phone%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit phone number</small>
+                        
                     </div>
                     <div class="form-group">
                         <label for="">Email</label>
                         <input type="text" class="form-control" name="email" id="" aria-describedby="helpId" value="<%= mot.email%>"
                             placeholder="">
-                        <small id="helpId" class="form-text text-muted">Edit email</small>
+                        
                     </div>
                     <button type="submit" class="btn btn-success btn-block">Save</button>
                 </form>

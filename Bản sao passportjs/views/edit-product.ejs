@@ -1,34 +1,46 @@
 <% include template/headeradmin %>
-
 <div class="col-sm-9 session">
-    <h1 class="text-center title-block title-block-admin">Edit Category</h1>
+    <div class="row">
+        <div class="w-100 tieude-bang">
+            <p class="chu-tieude"><i class="fa fa-edit canh-tieude"></i>Detail and edit products</p>
+        </div>
+    </div>
     <div class="row">
         <% data.forEach(function(mot){ %>
         <div class="col-sm-12 content">
             <form action="/admin/edit-product/<%= mot._id %>" method="POST" class="col-sm-12">
-                <div class="form-group">
-                    <label for="">Name</label>
+                <div class="row m-g-b">
+                <div class="form-group  col-sm-6">
+                    <label for="" class="tieumuc">Name</label>
                     <input type="text" class="form-control" name="pro_name" id="" aria-describedby="helpId" value="<%= mot.pro_name%>"
                         placeholder="">
                 </div>
-                <div class="form-group">
-                    <label for="">Description</label>
-                    <input type="text" class="form-control" name="pro_desc" id="" aria-describedby="helpId" value="<%= mot.pro_desc%>"
-                        placeholder="">
+                <div class="form-group m-g-b col-sm-6">
+                    <label for="" class="tieumuc">Description</label>
+                    <textarea class="form-control" rows="5" id="pro_desc" name="pro_desc"><%= mot.pro_desc %></textarea>
+
                 </div>
-                <div class="form-group">
-                    <label for="">Price</label>
-                    <input type="text" class="form-control" name="pro_price" id="" aria-describedby="helpId" value="<%= mot.pro_price%>"
-                        placeholder="">
+            </div>
+                <div class="row m-g-b">
+                    <div class="form-group col-sm-4">
+                        <label for="" class="tieumuc">Price</label>
+                        <input type="number" step="0.01" class="form-control" name="pro_price" id="" aria-describedby="helpId"
+                            value="<%= (mot.pro_price/100).toFixed(1) %>" placeholder="">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="" class="tieumuc">Amount</label>
+                        <input type="text" class="form-control" name="pro_qty" id="" aria-describedby="helpId" value="<%= mot.pro_qty%>"
+                            placeholder="">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="" class="tieumuc">Size</label>
+                        <input type="text" class="form-control" name="size" id="" aria-describedby="helpId" value="<%= mot.pro_size%>"
+                            placeholder="">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="">Amount</label>
-                    <input type="text" class="form-control" name="pro_amount" id="" aria-describedby="helpId" value="<%= mot.pro_amount%>"
-                        placeholder="">
-                </div>
-                <div class="row">
+                <div class="row m-g-b">
                     <div class="form-group col-sm-6">
-                        <label for="exampleFormControlSelect1">Categories are chosen before!</label>
+                        <label for="exampleFormControlSelect1" class="tieumuc">Categories are chosen before!</label>
                         <select class="form-control" name="selectpicker" multiple>
                             <% category.forEach(function(motphantu){ %>
                             <option value="<%= motphantu._id %>">
@@ -38,7 +50,7 @@
                         </select>
                     </div>
                     <div class="form-group col-sm-6">
-                        <label for="exampleFormControlSelect1">List Categories</label>
+                        <label for="exampleFormControlSelect1" class="tieumuc">List Categories</label>
                         <select class="form-control" name="selectpicker_edit" multiple>
                             <% all_category.forEach(function(mot_loai){ %>
                             <option value="<%= mot_loai._id %>">
@@ -51,15 +63,27 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
-                        <p>Old thumbnail</p>
+                        <p class="tieumuc">Old thumbnail</p>
                         <div class="col-sm-12">
                             <img src=" <%= mot.big_image[0] %> " class="col-sm-12 img-edit-cat" alt="">
                         </div>
                     </div>
                 </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="tieumuc">Old video</p>
+                        <div class="col-sm-12">
+                            <video width="320" height="240" controls>
+                                <source src="<%= mot.video[0] %>" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
                 <hr>
                 <div class="col-sm-12">
-                    <p>Old Gallery</p>
+                    <p class="tieumuc">Old Gallery</p>
                     <div class="row">
                         <% mot.small_image.forEach(function(motanh){ %>
                         <div class="col-sm-3">
@@ -74,7 +98,7 @@
             <% }) %>
 
             <div class="add-img col-sm-12">
-                <p>New gallery</p>
+                <p class="tieumuc">New gallery</p>
                 <div class="row">
                     <div class="col-sm-3">
                         <form id="upload-widget" method="post" action="/admin/uploadimgs" class="dropzone col-sm-12 content box"
@@ -95,9 +119,16 @@
                 </div>
             </div>
             <div class="add-img col-sm-12 edit-thumb">
-                <p>New Thumbnail</p>
+                <p class="tieumuc">New Thumbnail</p>
                 <div class="col-sm-12">
                     <form id="upload-widget" method="post" action="/admin/uploadthumb" class="dropzone col-sm-12 content box"
+                        enctype="multipart/form-data"></form>
+                </div>
+            </div>
+            <div class="add-video col-sm-12 edit-thumb">
+                <p class="tieumuc">New Video</p>
+                <div class="col-sm-12">
+                    <form id="upload-widget" method="post" action="/admin/uploadvideo" class="dropzone col-sm-12 content box"
                         enctype="multipart/form-data"></form>
                 </div>
             </div>

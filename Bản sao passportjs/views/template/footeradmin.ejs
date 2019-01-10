@@ -1,14 +1,53 @@
-  <!-- Optional JavaScript -->
+
+ <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/js/poper.js"></script>
+    <script src="../../vendor/js/bootstrap.min.js"></script>
+    <script src="../../javascripts/admin.js"></script>
+    <script src="../../vendor/js/bootstrap-toggle.min.js"></script>
+    <script src="../../vendor/js/all.js"></script>
+    <script src="../../vendor/js/wow.js"></script>
     <script src="../../vendor/js/lightslider.js"></script>
     <script src="../../vendor/js/Tweenmax.js"></script>
     <script src="../../vendor/js/easing.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="../../vendor/js/bootstrap.min.js"></script>
+    
     <script src="../../javascripts/dropzone.js"></script>
     <script src="../../javascripts/drop.js"></script>
-    <script src="../../javascripts/admin.js"></script>
+    
     <script src="../../javascripts/register.js"></script>
+    <script src="../../vendor/js/chart.min.js"></script>
+    <script src="../../vendor/js/Chart.min.js"></script>
+    <script src="../../vendor/js/Chart.bundle.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+    
   </body>
 </html>

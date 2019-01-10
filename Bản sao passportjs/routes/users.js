@@ -131,22 +131,24 @@ router.post('/register', function (req, res, next) {
         }
         User.createUser(newUser, function (err, user) {
           if (err) throw err;
+          // console.log(user);
+          passport.authenticate('local')(req, res, function () {
+            req.flash('success_msg', 'Welcome to our shop! Hello ' + req.body.firstname + ' ' + req.body.lastname);
+            res.redirect('/alithea');
+        })
         });
-
-        req.flash('success_msg', 'You have been successfully registered! Nice to meet you ' + req.body.firstname + req.body.lastname);
-        res.redirect('/users/login');
       }
     }
   })
 });
 
 
-
 router.post('/login', passport.authenticate('local', {
   failureRedirect: '/users/login',
   failureFlash: 'Invalid username or password'
 }), function (req, res) {
-  req.flash('success_msg', 'You have logged in successfully!');
+  console.log(req.user);
+  req.flash('success_msg', 'Welcome to our shop!');
   res.redirect('/alithea');
 });
 
@@ -186,27 +188,17 @@ passport.deserializeUser(function (name, done) {
   })
 })
 
-// router.get('/aboutus', function(req, res, next) {
-//   res.render('admin', {title: 'Admin page'});
-// });
 
-// router.get('/private', isLoggedIn, function(req,res,next){
-//   res.send('welcome private');
-// })
-// router.get('/private', function(req,res,next){
-//   res.render('product', {
-//     title: 'Trang private'
-//   })
-// })
+//find and filter
 
-/* GET admin page. */
-// router.get('/admin', function(req, res, next) {
-//   if(req.isAuthenticated()){
-//     res.send('Ban co the truy cap vao trang admin');
-//   }else{
-//     res.redirect('/users/login');
-//   }
-// });
+// User.
+//   find({ lastname: { $regex : /bang/i } }).
+//   sort('-lastname').
+//   select({}).
+//   exec(function(err,user){
+//     if(err) throw err;
+//     console.log(user);
+//   });
 
 router.get('/logout', function (req, res, next) {
   req.logout();

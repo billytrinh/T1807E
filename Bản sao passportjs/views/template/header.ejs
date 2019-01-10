@@ -2,45 +2,80 @@
 <html lang="en">
 
 <head>
-    <title> <%= title %> </title>
+    <title>
+        <%= title %>
+    </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../fonts/KaushanScript-Regular.ttf">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../vendor/font-awesome.css">
-
-    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
-    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link rel="stylesheet" href="../stylesheets/ipadto.css">
-    <link rel="stylesheet" href="../stylesheets/ipadnho.css">
-    <link rel="stylesheet" href="../stylesheets/iphone.css">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="/vendor/font-awesome.css">
+    <link rel="stylesheet" href="/vendor/all.css">
+    <link rel='stylesheet' href='/vendor/css/animate.css'>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/ipadto.css">
+    <link rel="stylesheet" href="/stylesheets/ipadnho.css">
+    <link rel="stylesheet" href="/stylesheets/iphone.css">
 </head>
 
 <body>
-    
+
     <div class="nav col-md-12">
         <div class="col-md-6 logo">
-            <p class="logo-word wow bounceIn" data-wow-delay="0.1s"><a href="/alithea">Alithea</a></p>
+            <small class="hot-line wow bounceIn" data-wow-delay="0.1s"><i class="fa fa-phone"></i> Hotline: +61(0) 383 766 284</small>
+            <div class="row">
+                <p class="logo-word col-sm-3 wow bounceIn" data-wow-delay="0.1s"><a href="/alithea"><img class="anh-logo"
+                            src="/images/logo.png" alt=""></a></p>
+                <form action="/search/1" method="GET" class="col-sm-9 wow bounceIn" data-wow-delay="0.2s">
+                    <div class="form-group search-input">
+                        <label for=""></label>
+                        <input type="text" class="form-control" name="search" id="" aria-describedby="helpId"
+                            placeholder="Search products, categories...">
+                    </div>
+                    <button type="submit" class="nut-search"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
         <div class="col-md-6 menu">
             <ul>
-                <li class="wow bounceIn" data-wow-delay="0.2s"><a href="/alithea/service">Services</a> </li>
-                <li class="wow bounceIn" data-wow-delay="0.3s"><a href="#">Categories</a></li>
-                <li class="wow bounceIn" data-wow-delay="0.4s"><a href="/alithea/aboutus">About us</a></li>
-                <li class="wow bounceIn" data-wow-delay="0.5s"><a href="/alithea/contact">Contact</a></li>
+                <li class="wow bounceIn " data-wow-delay="0.2s"><a href="/alithea/service">Services</a> </li>
+                
+                <li class="wow bounceIn " data-wow-delay="0.4s"><a href="/alithea/aboutus">About us</a></li>
+                <li class="wow bounceIn " data-wow-delay="0.5s"><a href="/alithea/contact">Contact</a></li>
+                <a href="/alithea/shopping-cart" class="xehang wow bounceIn" data-wow-delay="0.5s"><i class="fa fa-shopping-cart"></i>
+                    <% if(session.cart){ %>
+                        <span class="badge badge-light custom-badge">
+                    <%- JSON.stringify(session.cart.totalQty) %></span></a>
+                
+            <%} %>
                 <% if(!locals.user){ %>
-                    
-                <li class="wow bounceIn" data-wow-delay="0.6s"><a href="/users/login"><i class="fa fa-shopping-cart"></i> Log in</a></li>
+
+                <li class="wow bounceIn " data-wow-delay="0.6s">
+                    <a href="/users/login">Log in</a>
+                </li>
                 <% } %>
                 <% if(locals.user){ %>
-                <li class="wow bounceIn" data-wow-delay="0.6s"><a href="/users/logout"></i>Log out</a></li>
+                    <li class="drd wow bounceIn" data-wow-delay="0.6s">
+                <div class="dropdown" >
+                    
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <%= user[0].lastname %>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="/edit-profile/<%= user[0]._id %>">Profile</a>
+                        <% if(user[0].isAdmin == true){ %>
+                        
+                        <a class="dropdown-item" href="/admin">Manage Shop</a>
+                        <% } %>
+                        <a class="dropdown-item" href="/alithea/my-order">My order</a>
+                        <a class="dropdown-item" href="/users/logout">Logout</a>
+                        
+                    </div>
+                </div>
+            </li>
                 <% } %>
             </ul>
         </div>
     </div>
-   

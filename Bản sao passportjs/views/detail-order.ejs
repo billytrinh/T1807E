@@ -1,0 +1,64 @@
+<% include template/headeradmin %>
+<div class="col-sm-9 session">
+        <div class="row">
+                <div class="w-100 tieude-bang">
+                        <p class="chu-tieude" ><i class="fa fa-edit canh-tieude"></i>Detail Order</p>
+                </div>
+            </div>
+        
+    <div class="row">
+            <% data.forEach(function(mot){ %>
+        <div class="col-sm-6">
+            <p> <strong class="title-order">Order Information</strong> </p>
+            <p><strong>Order date:</strong>  <%= mot.date %> </p>
+            <p><strong>Customer fullname:</strong>  <%= mot.name %></p>
+            <% user.forEach(function(khach){ %>
+                <p> <strong>Username:</strong>  <%= khach.username %></p>
+                <%}); %>
+           
+            <% mot.items.forEach(function(item){ %>
+                <p><strong>Product Name: </strong><%= item.item.pro_name %></p>
+                <%}); %>
+                <p><strong class="title-order">Total:</strong> <%= mot.cart.totalPrice %>$</p>
+        </div>
+        
+        <div class="col-sm-6">
+                <p> <strong class="title-order">Billing Information</strong> </p>
+                <p><strong>Address:</strong>  <%= mot.address %> </p>
+                <p><strong>Message:</strong>  <%= mot.message %></p>
+                <p><strong>Telephone:</strong> <%= mot.phone %></p>
+            </div>
+        
+        <div class="col-sm-12">
+                <table class="table table-hover">
+                       
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <% mot.items.forEach(function(item){ %>
+                        <tbody>
+                           
+                            <tr>
+                                <td>
+                                    <a href="/detail-product/<%= item.item._id %>"><%= item.item.pro_name %></a>
+                                    <a href="/detail-product/<%= item.item._id %>"><img src="<%= item.item.big_image[0] %>" alt=""></a> 
+                                </td>
+                                <td>
+                                        <%= item.qty %>
+                                </td>
+                                <td>
+                                    <%= item.price %>$</td>
+                                
+                            </tr>
+                        </tbody>
+                        <%}); %>
+                    </table>
+                <% }) %>
+        </div>
+    </div>
+</div>
+<% include template/footeradmin %>

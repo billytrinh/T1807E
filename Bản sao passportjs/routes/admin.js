@@ -6,8 +6,11 @@ var LocalStrategy = require('passport-local').Strategy;
 var passport = require('passport');
 var flash = require('connect-flash');
 var User = require('../models/user');
+var Cart = require('../models/cart');
 var Cate = require('../models/category');
 var Product = require('../models/product');
+var Order = require('../models/order');
+var Message = require('../models/message');
 mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://dungntth:Lienmam123@ds038888.mlab.com:38888/project', {
   useNewUrlParser: true
@@ -15,6 +18,7 @@ mongoose.connect('mongodb://dungntth:Lienmam123@ds038888.mlab.com:38888/project'
 var cate_images = [];
 var thumb_images = [];
 var detail_images = [];
+var video = [];
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -32,7 +36,7 @@ var upload = multer({
 
 router.get('/', function (req, res, next) {
   res.render('admin', {
-    title: 'Admin page ne'
+    title: 'Dashboard'
   });
 });
 /* GET login page. */
@@ -40,37 +44,44 @@ router.get('/', function (req, res, next) {
 router.post('/upload', upload.any(), function (req, res, next) {
   var temp = req.files[0].path
   cate_images.push(temp);
-  console.log(cate_images);
+  // console.log(cate_images);
   res.status(200).send(req.files);
 });
 router.post('/uploadthumb', upload.any(), function (req, res, next) {
   var temp = req.files[0].path
   thumb_images.push(temp);
-  console.log(thumb_images);
+  // console.log(thumb_images);
   res.status(200).send(req.files);
 });
 router.post('/uploadimgs', upload.any(), function (req, res, next) {
   var temp = req.files[0].path
   detail_images.push(temp);
-  console.log(detail_images);
+  // console.log(detail_images);
   res.status(200).send(req.files);
 });
+router.post('/uploadvideo', upload.any(), function (req, res, next) {
+  var temp = req.files[0].path
+  video.push(temp);
+  // console.log(detail_images);
+  res.status(200).send(req.files);
+});
+
 
 // router.post('/add-new-product', function (req, res, next) {
 //   var pro_name = req.body.pro_name;
 //   var pro_desc = req.body.pro_desc;
-//   var pro_amount = req.body.pro_amount;
+//   var pro_qty = req.body.pro_qty;
 //   var pro_price = req.body.pro_price;
 //   var aproduct = {
 //     "pro_name": pro_name,
 //     "pro_desc": pro_desc,
 //     "pro_price": pro_price,
-//     "pro_amount": pro_amount,
+//     "pro_qty": pro_qty,
 //     "big_image": thumb_images,
 //     "small_image": detail_images
 //   }
 //   var dulieu = new Product(aproduct);
-//   if(pro_amount > 0){
+//   if(pro_qty > 0){
 //     dulieu.isAvailable = true;
 //   }
 //   thumb_images = [];
@@ -125,13 +136,27 @@ router.post('/add-new-cat', function (req, res, next) {
   cate_images = [];
   res.redirect('/admin/list-categories/1');
 });
+
+
 //delete category
 router.get('/delete/:idcanxoa', function (req, res, next) {
-  var id = req.params.idcanxoa;
-  Cate.findByIdAndRemove(id).exec();
-  req.flash('success_msg', 'You have successfully deleted a category!');
-  res.redirect('/admin/list-categories/1');
+  var cate = [req.params.idcanxoa];
+  Product.find({
+    category: {
+      $in: cate
+    }
+  }).populate('category').exec(function(err, dulieu){
+    if(dulieu.length > 0){
+      req.flash('err_msg', 'You can not delete this category!');
+      res.redirect('/admin/list-categories/1');
+    }else{
+      Cate.findByIdAndRemove(req.params.idcanxoa).exec();
+      req.flash('success_msg', 'You have successfully deleted a category!');
+      res.redirect('/admin/list-categories/1');
+    }
+  })
 });
+
 
 
 //edit category
@@ -140,7 +165,7 @@ router.get('/edit-cat/:idcansua', function (req, res, next) {
   Cate.find({
     _id: id
   }, function (err, dulieu) {
-    console.log(dulieu[0].date);
+    // console.log(dulieu[0].date);
     res.render('edit-cat', {
       title: 'Edit category',
       data: dulieu
@@ -156,8 +181,8 @@ router.post('/edit-cat/:idcansua', function (req, res, next) {
     if (err) return handleError(err);
     dulieu.cate_desc = cate_desc;
     dulieu.cate_name = cate_name;
-    console.log(cate_images.length);
-    if(cate_images.length == 0 ){
+    // console.log(cate_images.length);
+    if (cate_images.length == 0) {
       cate_images = dulieu.cate_images;
     }
     dulieu.cate_images = cate_images;
@@ -185,37 +210,43 @@ router.get('/products', function (req, res, next) {
 
 router.get('/add-new-product', function (req, res, next) {
   Cate.find(function (err, docs1) {
-        res.render('add-product', {
-            title: 'Add product',
-            category : docs1
-        });
+    res.render('add-product', {
+      title: 'Add product',
+      category: docs1
     });
+  });
 });
 
 router.post('/add-new-product', function (req, res, next) {
   var pro_name = req.body.pro_name;
   var pro_desc = req.body.pro_desc;
-  var pro_amount = req.body.pro_amount;
+  var pro_qty = req.body.pro_qty;
   var pro_price = req.body.pro_price;
+  var pro_size = req.body.size;
   var category = req.body.selectpicker;
 
   var aproduct = {
     "pro_name": pro_name,
     "pro_desc": pro_desc,
-    "pro_amount": pro_amount,
-    "pro_price" : pro_price,
+    "pro_qty": pro_qty,
+    "pro_size": pro_size,
+    "pro_price": pro_price,
     "category": category,
     "big_image": thumb_images,
-    "small_image": detail_images
+    "small_image": detail_images,
+    "video": video
   }
   var dulieu = new Product(aproduct);
-  if(pro_amount == 0) {
+  if (pro_qty == 0) {
     dulieu.isAvailable = false;
+  } else {
+    dulieu.isAvailable == true;
   }
   dulieu.save();
-  console.log(dulieu);
+  
   thumb_images = [];
   detail_images = [];
+  video = [];
   res.redirect('/admin/list-product/1');
 });
 
@@ -236,17 +267,19 @@ router.get('/edit-product/:idcansua', function (req, res, next) {
     _id: id
   }, function (err, dulieu) {
     var id_cate = dulieu[0].category;
-    Cate.find({_id: id_cate},function (err, docs1) {
-      Cate.find({},function(err, docs2){
+    Cate.find({
+      _id: id_cate
+    }, function (err, docs1) {
+      Cate.find({}, function (err, docs2) {
         // console.log(docs2);
         res.render('edit-product', {
           title: 'Edit product',
           all_category: docs2,
-          category : docs1,
+          category: docs1,
           data: dulieu,
+        });
       });
-      });
-  });
+    });
   })
 });
 
@@ -254,53 +287,64 @@ router.post('/edit-product/:idcansua', function (req, res, next) {
   var id = req.params.idcansua;
   var pro_name = req.body.pro_name;
   var pro_desc = req.body.pro_desc;
-  var pro_amount = req.body.pro_amount;
+  var pro_qty = req.body.pro_qty;
+  var pro_size = req.body.size;
   var pro_price = req.body.pro_price;
   var category_them = req.body.selectpicker_edit;
   Product.findById(id, function (err, dulieu) {
-    console.log(dulieu);
-    console.log(dulieu.category.length);
+    // console.log(pro_qty);
     if (err) return handleError(err);
     dulieu.pro_name = pro_name;
     dulieu.pro_desc = pro_desc;
-    dulieu.pro_amount = pro_amount;
+    dulieu.pro_qty = pro_qty;
+    dulieu.pro_size = pro_size;
     dulieu.pro_price = pro_price;
-    console.log(dulieu.category);
-     if(thumb_images.length == 0 ){
+    if (thumb_images.length == 0) {
       thumb_images = dulieu.big_image;
     }
-    if(detail_images.length == 0){
+    if (detail_images.length == 0) {
       detail_images = dulieu.small_image;
     }
+    if (video.length == 0) {
+      video = dulieu.video;
+    }
     // console.log(category.length);
-      if(category_them && category_them.length > 0){
-       dulieu.category = category_them;
+    if (category_them && category_them.length > 0) {
+      dulieu.category = category_them;
+    }
+    if (pro_qty > 0) {
+      dulieu.isAvailable = true;
+    } else {
+      dulieu.isAvailable = false;
     }
     dulieu.big_image = thumb_images;
     dulieu.small_image = detail_images;
     dulieu.save();
+    // console.log(dulieu);
     thumb_images = [];
     detail_images = [];
+    video = [];
     res.redirect('/admin/list-product/1');
   });
-  
+
 });
 
 
 //list product
 
 router.get('/list-product/:page', function (req, res, next) {
-  var perPage = 5; /* perPage - số dòng dữ liệu trên mỗi trang */
-  var page = req.params.page || 1; /* page - biến chứa số trang hiện tại (Lấy từ request) */
+  var perPage = 5;
+  var page = req.params.page || 1;
   Product.find({})
     .sort('-date')
-    .skip((perPage * page) - perPage) /* mỗi trang chúng ta cần phải bỏ qua ((perPage * page) - perPage) giá trị (trên trang đầu tiên giá trị của bỏ qua phải là 0): */
+    .skip((perPage * page) - perPage)
     .limit(perPage)
     .exec(function (err, data_product) {
-      Product.countDocuments().exec(function (err, count) { /* dùng count để tính số trang */
+      // console.log(data_product);
+      Product.countDocuments().exec(function (err, count) {
         if (err) throw err;
         //console.log(count);
-        res.render('list-pro', { /* hiển thị và gửi dữ liệu đi kèm */
+        res.render('list-pro', {
           title: 'List Products',
           data: data_product,
           current: page,
@@ -311,9 +355,9 @@ router.get('/list-product/:page', function (req, res, next) {
 });
 
 
-router.get('/calendar', function (req, res, next) {
-  res.render('calendar', {
-    title: 'Calendar page'
+router.get('/view-message', function (req, res, next) {
+  res.render('view-message', {
+    title: 'View message'
   });
 });
 // router.get('/add-new-cat', function(req, res, next) {
@@ -361,6 +405,7 @@ router.get('/delete/user/:idcanxoa', function (req, res, next) {
   res.redirect('/admin/list-users/1');
 });
 
+
 //edit users
 router.get('/edit/:idcansua', function (req, res, next) {
   var id = req.params.idcansua;
@@ -373,6 +418,65 @@ router.get('/edit/:idcansua', function (req, res, next) {
     })
   })
 });
+
+router.get('/orders/:page',  function (req, res, next) {
+  var perPage = 6; /* perPage - số dòng dữ liệu trên mỗi trang */
+  var page = req.params.page || 1;
+	Order.find({})
+    .skip((perPage * page) - perPage) /* mỗi trang chúng ta cần phải bỏ qua ((perPage * page) - perPage) giá trị (trên trang đầu tiên giá trị của bỏ qua phải là 0): */
+    .limit(perPage)
+    .sort('date')
+    .exec(function (err, orders) {
+      // console.log(orders);
+      var cart;
+		  orders.forEach(function(order){
+			cart = new Cart(order.cart);
+			order.items = cart.generateArray();
+      });
+      
+      Order.countDocuments().exec(function (err, count) { /* dùng count để tính số trang */
+        if (err) throw err;
+        res.render('list-orders', { /* hiển thị và gửi dữ liệu đi kèm */
+          title: 'Manage orders',
+          data: orders,
+          current: page,
+          pages: Math.ceil(count / perPage)
+        });
+      });
+    });
+});
+
+router.get('/detail-order/:idorder', function (req, res, next) {
+  var id = req.params.idorder;
+  Order.find({
+    _id: id
+  }, function (err, orders) {
+    var cart;
+		  orders.forEach(function(order){
+			cart = new Cart(order.cart);
+			order.items = cart.generateArray();
+      });
+    console.log(orders);
+     var iduser = orders[0].user;
+     User.find({_id: iduser}, function(err, user){
+      res.render('detail-order', {
+        title: 'Detail order',
+        data: orders,
+        user: user
+      })
+     })
+    
+  })
+});
+
+router.get('/delete-order/:id_order', function (req, res, next) {
+  var id = req.params.id_order;
+  console.log(id);
+  Order.findByIdAndRemove(id).exec();
+  req.flash('success_msg', 'You have successfully deleted one order!');
+  res.redirect('/admin/orders/1');
+});
+
 
 router.post('/edit/:idcansua', function (req, res, next) {
   var id = req.params.idcansua;
@@ -391,144 +495,67 @@ router.post('/edit/:idcansua', function (req, res, next) {
 
 
 
-
-// router.get('/add-to-cart/:id', function(req, res, next) {
-//   var userId = req.params.id;
-//   console.log(userId);
-//   var cart = new Cart(req.session.cart ? req.session.cart : {});
-
-//   User.findById(userId, function(err, product) {
-//     if (err) {
-//       return res.redirect('/');
-//     }
-//     cart.add(product, product.id);
-//     req.session.cart = cart;
-//     res.redirect('/');
-//   });
-// });
-
-
-
-// router.post('/register', upload.single('profileimage') ,function(req, res, next) {
-//     var name = req.body.name;
-//     var email = req.body.email;
-//     var username = req.body.username;
-//     var password = req.body.password;
-//     var password2 = req.body.password2;
-
-//     if(req.file){
-//         console.log('Uploading File...');
-//         var profileimage = req.file.filename;
-//     } else {
-//         console.log('No File Uploaded...');
-//         var profileimage = 'noimage.jpg';
-//     }
-
-//     // Form Validator
-//     req.checkBody('name','Name field is required').notEmpty();
-//     req.checkBody('email','Email field is required').notEmpty();
-//     req.checkBody('email','Email is not valid').isEmail();
-//     req.checkBody('username','Username field is required').notEmpty();
-//     req.checkBody('password','Password field is required').notEmpty();
-//     req.checkBody('password2','Passwords do not match').equals(req.body.password);
-
-//     // Check Errors
-//     var errors = req.validationErrors();
-//     User.findOne().and([
-//       { $or: [{email: email}, {username: username}] }
-//   ]).exec(function(err,user){
-//       if(user){
-//         req.flash('err_msg','Username hoặc Email đã tồn tại');
-//         res.redirect('/users/register');
-//       }else{
-//         if(errors){
-//           res.render('register', {
-//               errors: errors
-//           });
-//       } else{
-//           var newUser = new User({
-//           name: name,
-//           email: email,
-//           username: username,
-//           password: password,
-//           profileimage: profileimage
-//         });
-
-//         User.createUser(newUser, function(err, user){
-//           if(err) throw err;
-//           console.log(user);
-//         });
-
-//         req.flash('success_msg', 'Đăng ký thành công');
-//         res.redirect('/users/login');
-//       }
-//       }
-
-//     })
-
-//   });
-// router.post('/login', passport.authenticate('local', {
-//     failureRedirect:'/users/login',
-//     failureFlash: 'Invalid username or password'
-// }),function(req,res){
-//   req.flash('success_msg','Bạn đã đăng nhập thành công');
-//   res.redirect('/');
-// });
-
-// passport.use(new LocalStrategy(function(username, password, done){
-//     User.findOne({username: username}).exec(function(err, user){
-//         if (err) throw err;
-//         if (user && user.password == password){
-//             return done(null, user);
-//         }else{
-//             return done(null, false);
-//         }
-//     });
-// }));
-
-// passport.serializeUser(function(user,done){
-//   done(null, user.username);
-// });
-
-// passport.deserializeUser(function(name, done){
-//   User.find({username: name}).exec(function(err, user){
-//     if (err) throw err;
-//     if (user){
-//       return done(null, user)
-//     }else{
-//       return done(null, false);
-//     }
-//   })
-// })
-
-// function isLoggedIn(req, res, next) {
-//   if (req.isAuthenticated()) {
-//       return next(null, true);
+// var services = [req.params.service_id];
+// Employee.find({
+//   servicesProvided: {
+//     $in: services
 //   }
-//   res.redirect('/');
-//   }
+// }, ...)
+router.get('/get-product/:idcansua', function (req, res, next) {
+  var cate = [req.params.idcansua];
+  console.log(cate);
+  Product.find({
+    category: {
+      $in: cate
+    }
+  }).populate('category').exec(function(err, dulieu){
+    console.log(dulieu);
+  })
+});
 
-// router.get('/private', isLoggedIn, function(req,res,next){
-//   res.send('welcome private');
-// })
-//   router.get('/private', function(req,res,next){
-//     res.render('product', {
-//       title: 'Trang private'
-//     })
-//   })
+//message
 
-// /* GET admin page. */
-// router.get('/admin', function(req, res, next) {
-//   if(req.isAuthenticated()){
-//     res.send('Ban co the truy cap vao trang admin');
-//   }else{
-//     res.redirect('/users/login');
-//   }
-// });
+router.post('/message', function (req, res, next) {
+  var customer_name = req.body.customer_name;
+  var email = req.body.email;
+  var subject = req.body.subject;
+  var message = req.body.message;
+  
+  var amessage = {
+    "customer_name": customer_name,
+    "email": email,
+    "subject": subject,
+    "message": message
+  }
+  console.log(amessage)
+  var dulieu = new Message(amessage);
+  dulieu.save();
+  req.flash('success_msg', 'We have recieved your message! We will contact as soon as possible' );
+  res.redirect('/alithea/contact');
+});
 
-// router.get('/logout', function(req,res,next){
-//   req.logout();
-//   req.flash('success_msg', 'Bạn đã đăng xuất!');
-//   res.redirect('/users/login');
-// });
+router.get('/view-message/:page', function (req, res, next) {
+  var perPage = 5; /* perPage - số dòng dữ liệu trên mỗi trang */
+  var page = req.params.page || 1; /* page - biến chứa số trang hiện tại (Lấy từ request) */
+  Message.find({})
+    .sort('-date')
+    .skip((perPage * page) - perPage) /* mỗi trang chúng ta cần phải bỏ qua ((perPage * page) - perPage) giá trị (trên trang đầu tiên giá trị của bỏ qua phải là 0): */
+    .limit(perPage)
+    .exec(function (err, data_message) {
+      console.log(data_message);
+      Message.countDocuments().exec(function (err, count) { /* dùng count để tính số trang */
+        if (err) throw err;
+        //console.log(count);
+        res.render('view-message', { /* hiển thị và gửi dữ liệu đi kèm */
+          title: 'Message',
+          data: data_message,
+          current: page,
+          pages: Math.ceil(count / perPage)
+        });
+      });
+    });
+});
+ 
+
+// pro_name: { $regex : /thiep/i },pro_qty:{$gt:10} }
 module.exports = router;

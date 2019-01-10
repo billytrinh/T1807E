@@ -1,14 +1,15 @@
 <% include template/header %>
 <div class="col-sm-12 img-bgr">
     <header class="to">
-        <img src="../images/s7.png" alt="" class="embe wow bounceInUp" data-wow-delay="1.1s">
-        <img src="../images/s3.png" alt="" class="hoatiet1 wow bounceInUp" data-wow-delay="1.7s">
-        <img src="../images/s4.png" alt="" class="hoatiet2 wow bounceInUp" data-wow-delay="1.5s">
-        <img src="../images/s2.png" alt="" class="hoatiet3 wow bounceInUp" data-wow-delay="1.3s">
-        <img src="../images/s5.png" alt="" class="dammay wow bounceInLeft" data-wow-delay="0.7s">
-        <img src="../images/trees.png" alt="" class="trees wow bounceInUp" data-wow-delay="0.9s">
-        <div class="chuto wow bounceInLeft" data-wow-delay="1.9s">Countdown to Christmas!</div>
-        <div class="nut wow bounceInLeft" data-wow-delay="2.1s">See offer</div>
+        <div id="getting-started" class="wow bounceInLeft" data-wow-delay="1s"></div>
+        <img src="../images/s3.png" alt="" class="hoatiet1 wow bounceInUp" data-wow-delay="0.5s">
+        <img src="../images/s4.png" alt="" class="hoatiet2 wow bounceInUp" data-wow-delay="0.6s">
+        <img src="../images/s4.png" alt="" class="hoatiet3 wow bounceInUp" data-wow-delay="0.7s">
+        <img src="../images/s3.png" alt="" class="hoatiet4 wow bounceInUp" data-wow-delay="0.8s">
+        <div class="chuto wow bounceInLeft" data-wow-delay="0.9s">Countdown to valentine's day!</div>
+        <a href="#">
+            <div class="nut wow bounceInLeft" data-wow-delay="1.1s">See our collection for valentine day!</div>
+        </a>
     </header>
 </div>
 <div class="col-sm-8 offset-sm-2">
@@ -16,461 +17,190 @@
         <% if(success_msg.length >0){ %>
         <div class="alert alert-success text-center wow bounceInLeft col-sm-12 " data-wow-delay="0.1" role="alert">
             <strong>
-                <%= success_msg %> <%=user.lastname %></strong>
+                <%= success_msg %>
+                <%if(locals.user){ %>
+                <%=user.lastname %></strong>
+                <%} %>
         </div>
         <%} %>
 
     </div>
 </div>
 
-<section class="product-related">
-    <div class="container">
-        <div class="row">
-               
-            <h2 class="text-center title-block wow bounceIn" data-wow-delay="0.1s" data-wow-offset="50">CHECK OUT OUR
-                MOST POPULAR CARDS</h2>
-            <!-- <h2 class="related"><span class="chuto-related text-center wow bounceIn" data-wow-delay="0.5s"
-                    data-wow-offset="10">CHECK OUT OUR MOST POPULAR CARDS</span></h2> -->
-            <div class="nutan">
-                <i class="fa fa-arrow-circle-left prev wow bounceInRight" data-wow-delay="0.1s"></i>
-                <i class="fa fa-arrow-circle-right next wow bounceInRight" data-wow-delay="0.6s"></i>
-            </div>
-            <div class="col-lg-12 grid-uniform">
-                <div class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                    <div class="owl-wrapper-outer">
-                        <div class="owl-wrapper">
-                            <div class="owl-item wow bounceInRight" data-wow-delay="0.3s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
+<section class="session1">
+    <div class="row">
+
+        <h2 class="text-center title-block wow bounceIn m-t-100" data-wow-delay="0.1s" data-wow-offset="50">CHECK OUT OUR
+            NEWEST CARDS</h2>
+        <div class="col-lg-12 grid-uniform">
+            <div class="row">
+                <% 
+                            var j = 100;
+                            products.forEach(function(product){
+                                j+=100;
+                                %>
+                <div class="col-sm-3 float-left">
+                    <a href="/detail-product/<%= product._id %>">
+                        <div class=" wow bounceIn" data-wow-delay="<%= j %>ms">
+                            <div class="grid__item  product-item">
+                                <div class="grid__image">
+                                    <img class="anhthem1" src="<%= product.big_image[0] %>">
+                                    <img class="anhthem2" src="<%= product.small_image[0] %>">
                                 </div>
-                            </div>
-                            <div class="owl-item wow bounceInRight" data-wow-delay="0.5s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/d1.jpg">
-                                        <img class="anhthem2" src="images/d2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
+                                <form action="" class="variants AddToCartForm">
+                                    <h3 class="h6"><a href="">
+                                            <%= product.pro_name %></a></h3>
+                                    <div class="price">
+                                        <span class="product-price">
+                                            $
+                                            <%= (product.pro_price)/100 %>
+                                        </span>
+                                        <span class="collection-ratings__wrap">
+                                            <div class="star-ratings-css">
+                                                <div class="star-ratings-css-top">
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
                                                 </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="owl-item wow bounceInRight" data-wow-delay="0.7s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/e1.jpg">
-                                        <img class="anhthem2" src="images/e2.jpg">
+                                                <span class="text">(4685)</span>
+                                            </div>
+                                        </span>
                                     </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="owl-item wow bounceInRight" data-wow-delay="0.9s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/f1.jpg">
-                                        <img class="anhthem2" src="images/f2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="owl-item wow bounceInRight" data-wow-delay="1.1s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/h1.jpg">
-                                        <img class="anhthem2" src="images/h2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
+                                    <% if(locals.user){ %>
+                                    <a href="/add-to-cart/<%= product._id %>"><button type="button" class="btn btn-primary kieu">Add
+                                            to cart</button></a>
+                                    <%} %>
+                                    <% if(!locals.user){ %>
+                                    <a href="/add-to-cart/<%= product._id %>"><button type="button" class="btn btn-primary kieu">Buy
+                                            Now</button></a>
+                                    <%} %>
+                                </form>
                             </div>
                         </div>
-                    </div>
+
+                        
+                    </a>
                 </div>
+                <%}) %>
             </div>
         </div>
+
     </div>
+
 </section>
-<div class="container session1">
+<div class="session1">
     <div class="row">
-        <h2 class="text-center title-block wow bounceIn" data-wow-delay="0.1s" data-wow-offset="50">CARDS FOR EVERY
+        <h2 class="text-center title-block cart-title wow bounceIn m-t-100" data-wow-delay="0.1s" data-wow-offset="50">CARDS
+            FOR EVERY
             OCCASION</h2>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.3s">
+        <% 
+            var i = 80;
+            categories.forEach(function(category){
+               
+                    i+=80;
+               
+ %>
+        <a href="/list-products/<%= category._id %>/1" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="<%= i %>ms">
             <div class=" text-center">
                 <div class="tinto">
-                    <img src="../images/xmas.jpg" alt="" class="layer1">
+                    <img src="<%= category.cate_images[0] %>" alt="" class="layer1">
                     <div class="xam"></div>
 
                     <div class="gradient"></div>
                     <div class="hinhvuong"></div>
-                    <div class="chuto1">Christmas</div>
-
+                    <div class="chuto1">
+                        <%= category.cate_name %>
+                    </div>
                 </div>
             </div>
         </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.4s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/birthday.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient col-sm-6"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Birthday</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.5s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/wedding3.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient col-sm-6"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Wedding</div>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.6s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/newyear3.jpeg" alt="" class="layer1">
-                    <div class="xam"></div>
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Happy New Year</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.7s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/thanks.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Thank You</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.8s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/graduation.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Graduation</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="0.9s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/mothers.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Mother's Day</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="1s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/father.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Father's Day</div>
-
-                </div>
-            </div>
-        </a>
-        <a href="#" class="col-sm-4 cate1 wow bounceInUp" data-wow-delay="1.1s">
-            <div class="">
-                <div class="tinto">
-                    <img src="../images/valentine.jpg" alt="" class="layer1">
-                    <div class="xam"></div>
-
-                    <div class="gradient"></div>
-                    <div class="hinhvuong"></div>
-                    <div class="chuto1">Valentine's Day</div>
-
-                </div>
-            </div>
-        </a>
+        <%}); %>
     </div>
 </div>
-<section class="product-related">
-    <div class="container">
+<section class="session1">
+    <h2 class="text-center m-b-50 m-t-100 title-block wow bounceIn" data-wow-delay="0.1s" data-wow-offset="50">News Latest</h2>
+
+    <div class="col-lg-12 grid-uniform">
         <div class="row">
-            <h2 class="text-center title-block wow bounceIn" data-wow-delay="0.1s" data-wow-offset="50">News Latest</h2>
-            <div class="nutan">
-                <i class="fa fa-arrow-circle-left prev wow bounceIn" data-wow-delay="0.1s"></i>
-                <i class="fa fa-arrow-circle-right next wow bounceIn" data-wow-delay="0.6s"></i>
-            </div>
-            <div class="col-lg-12 grid-uniform">
-                <div class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                    <div class="owl-wrapper-outer">
-                        <div class="owl-wrapper">
-                            <div class="owl-item wow bounceIn" data-wow-delay="0.3s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
+            <div class="owl-item1 wow bounceInLeft col-sm-4" data-wow-delay="0.2s">
+                <div class=" text-center homepage-article">
+                    <div class="article-image">
+                        <a href="/blogs/pop-up-cards/funny-birthday-card-sayings">
+                            <div class="article-date animation">
+                                <span class="day"><strong>19</strong></span>
+                                <span class="month">Dec</span>
                             </div>
-                            <div class="owl-item wow bounceIn" data-wow-delay="0.5s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
+                            <div class="image">
+                                <img src="../../images/relate1.jpg" alt="">
                             </div>
-                            <div class="owl-item wow bounceIn" data-wow-delay="0.7s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="owl-item wow bounceIn" data-wow-delay="0.9s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="owl-item wow bounceIn" data-wow-delay="1.1s">
-                                <div class="grid__item  product-item">
-                                    <div class="grid__image">
-                                        <img class="anhthem1" src="images/c1.jpg">
-                                        <img class="anhthem2" src="images/c2.jpg">
-                                    </div>
-                                    <form action="" class="variants AddToCartForm">
-                                        <h3 class="h6"><a href="">Cherry Blossom Pop Up Card</a></h3>
-                                        <div class="price">
-                                            <span class="product-price">
-                                                $ 13
-                                            </span>
-                                            <span class="collection-ratings__wrap">
-                                                <div class="star-ratings-css">
-                                                    <div class="star-ratings-css-top">
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                        <span>★</span>
-                                                    </div>
-                                                    <span class="text">(4685)</span>
-                                                </div>
-                                            </span>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary kieu">Add to Cart</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
+                    <h3 class="add-h3">
+                        <a href="/blogs/pop-up-cards/funny-birthday-card-sayings">56 funny birthday card
+                            sayings for everyone you know (yes, even the dog)</a>
+                    </h3>
+                    <hr class="kevach">
+                    <div class="rte">
+                        <p class="p-new">Happy Birthday to you, happy birthday to you, happy birthday dear
+                            (insert name
+                            of loved one here), happy birthday to...
+                        </p>
+                    </div>
+                    <p class="p-new"><a href="/blogs/pop-up-cards/funny-birthday-card-sayings">Read more →</a></p>
+                </div>
+            </div>
+            <div class="owl-item1 wow bounceInUp col-sm-4" data-wow-delay="0.2s">
+                <div class=" text-center homepage-article">
+                    <div class="article-image">
+                        <a href="/blogs/pop-up-cards/retail-partner-spotlight-terra-firma">
+                            <div class="article-date animation">
+                                <span class="day"><strong>17</strong></span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="image">
+
+                                <img src="../../images/relate2.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <h3 class="add-h3"><a href="/blogs/pop-up-cards/retail-partner-spotlight-terra-firma">Hey,
+                            have you
+                            met… Sharlet of Terra Firma? Marketplace in Fort</a></h3>
+                    <hr class="kevach">
+                    <div class="rte">
+                        <p class="p-new">Last month, we introduced you to Antonio of To the Moon
+                            Marketplace in Fort
+                            Lauderdale, Florida. You can always shop...</p>
+                    </div>
+                    <p class="p-new"><a href="/blogs/pop-up-cards/retail-partner-spotlight-terra-firma">Read
+                            more →</a></p>
+                </div>
+            </div>
+            <div class="owl-item1 wow bounceIn col-sm-4" data-wow-delay="0.2s">
+                <div class=" text-center homepage-article">
+                    <div class="article-image">
+                        <a href="/blogs/pop-up-cards/diy-festive-feasts-and-seats">
+                            <div class="article-date animation">
+                                <span class="day"><strong>13</strong></span>
+                                <span class="month">Dec</span>
+                            </div>
+                            <div class="image">
+                                <img src="../../images/vochong.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <h3 class="add-h3"><a href="/blogs/pop-up-cards/diy-festive-feasts-and-seats">DIY: Make
+                            festive name
+                            cards for your holiday feasts with Lovepop</a></h3>
+                    <hr class="kevach">
+                    <div class="rte">
+                        <p class="p-new">Get your crafting supplies out and ready! It's time for another
+                            festive DIY
+                            project to get you in the holiday...</p>
+                    </div>
+                    <p class="p-new"><a href="/blogs/pop-up-cards/diy-festive-feasts-and-seats">Read more →</a></p>
                 </div>
             </div>
         </div>

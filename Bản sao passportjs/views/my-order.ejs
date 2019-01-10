@@ -1,0 +1,61 @@
+<% include template/header %>
+<!-- Modal -->
+<div class="opacity col-md-12"></div>
+<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center" id="exampleModalLongTitle">Are you sure delete?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-danger btn-ok">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="detail8">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <% if(orders){ %>
+                <table class="table table-hover m-t-150 box">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% orders.forEach(function(mot){ %>
+                        <tr>
+                            <% mot.items.forEach(function(item){ %>
+                            <td>
+                                <a href="/detail-product/<%= item._id %>"><%= item.item.pro_name %></a>
+                                <a href="/detail-product/<%= item._id %>"><img src="<%= item.item.big_image[0] %>" alt=""></a> 
+                            </td>
+                            <td>
+                                <%= item.qty %>
+                            </td>
+                            <td>
+                                <%= item.price %>$
+                            </td>
+                            <%}); %>
+                            <hr>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+            </table>
+                <% } else { %>
+                <p>No Item</p>
+                <%} %>
+            </div>
+        </div>
+    </div>
+</div>
+<% include template/footer %>
