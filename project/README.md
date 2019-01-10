@@ -40,5 +40,11 @@ $ npm install
 $ npm start
 ```
 
+### How to manage shop
+
+If you want to manage admin page, you have to have an admin account. You can use this account:
+Account: dung123
+Password: 123456
+
 
 
