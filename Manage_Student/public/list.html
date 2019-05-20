@@ -1,49 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>List Students</title>
+	<title>Chat</title>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
 	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
 </head>
 <body>
 	<div class="container">
-		<table class="table table-striped">
+		<!-- <table class="table table-striped">
 			<thead>
 				<th>ID</th>
 				<th>MSSV</th>
 				<th>Name</th>
 				<th>Birthday</th>
 				<th>Class</th>
+				<th>Gender</th>
+				<th>Avatar</th>
+				
 			</thead>
 			<tbody id="list_students">
 			</tbody>
 		</table>
 		<div class="text-right col-xs-12">
 			<a href="/form.html" class="btn btn-primary">Add student</a>
-		</div>
+			<button id = "demo" class="btn btn-danger">DEMO</button>
+		</div> -->
+		<!-- <div>
+			<img  class = "imgs" width="100px" height="100px" src="">
+			<img  class = "imgs" width="100px" height="100px" src="">
+		</div> -->
+		<div id="message" style="width: 300px; height:500px; border: 1.5px solid red;border-radius: 10px ;margin-bottom: 20px "></div>
+	
+		<input type="text" name="text" id="noidung" class="form-control" style="width: 240px; display: inline;">
+		<button id="send" class="btn btn-primary">Send</button>
 	</div>	
+
+</body>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="socket.io/socket.io.js"></script>
 	<script type="text/javascript">
+		// window.onload = function (){
+		// 	var url_string = window.location.href;
+		// 	var title = window.document.title;
+  //           var url = new URL(url_string);
+  //          	var id = url.searchParams.get("id");
+  //          	alert(id+title);
+		// }
+		var socket = io("http://localhost:3000");
 		jQuery(document).ready(function(){
-			jQuery.ajax({
-				url: '/list_students',
-				method: "GET",
-				success: function(result){
-					var xyz ='';
-					var students = result.data;
-					//console.log(students);
-					for (var i = 0; i < students.length; i++) {
-						xyz+=	'<tr>';
-						xyz+=		'<td>#'+students[i].id+'</td>';
-						xyz+=		'<td>'+students[i].mssv+'</td>';
-						xyz+=		'<td>'+students[i].student_name+'</td>';
-						xyz+=		'<td>'+students[i].birthday+'</td>';
-						xyz+=		'<td>'+students[i].class_id+'</td>';
-						xyz+=	'</tr>';
-					}
-					jQuery("#list_students").append(xyz);	
+			jQuery("#send").click(function(){
+				var mess = jQuery("#noidung").val();
+				if(mess === ""){
+					alert("Chưa nhập tin nhắn!")
+				}
+				else{
+					jQuery("#message").append('<div>'+mess+'</div>');
+					jQuery("#noidung").val("");
 				}
 			});
+			$('#noidung').keypress(function(event){
+
+			    var keycode = (event.keyCode ? event.keyCode : event.which);
+			    if(keycode == '13'){
+			        var mess = jQuery("#noidung").val();
+					if(mess === ""){
+						alert("Chưa nhập tin nhắn!")
+					}
+					else{
+						jQuery("#message").append('<div>'+mess+'</div>');
+						jQuery("#noidung").val("");
+					}
+			    }
+
+			});
+
+
+			// jQuery("#demo").click(function(){
+			// 	var url_string = window.location.href;
+   //          	var url = new URL(url_string);
+   //          	var id = url.searchParams.get("id");
+   //          	alert(id);
+			// })
+			// jQuery.ajax({
+			// 	url: '/list_students',
+			// 	method: "GET",
+			// 	success: function(result){
+			// 		var xyz ='';
+			// 		var students = result.data;
+			// 		console.log(students);
+			// 		//console.log(students);
+			// 		for (var i = 0; i < students.length; i++) {
+			// 			xyz+=	'<tr>';
+			// 			xyz+=		'<td>#'+students[i].id+'</td>';
+			// 			xyz+=		'<td>'+students[i].mssv+'</td>';
+			// 			xyz+=		'<td>'+students[i].student_name+'</td>';
+			// 			xyz+=		'<td>'+students[i].birthday+'</td>';
+			// 			xyz+=		'<td>'+students[i].class_id+'</td>';
+			// 			if(students[i].gender === '1'){
+			// 				xyz+=		'<td>'+'Nam'+'</td>';
+			// 			}
+			// 			else if(students[i].gender === '0'){
+			// 				xyz+=		'<td>'+'Nu'+'</td>';
+			// 			}
+			// 			else{
+			// 				xyz+=		'<td>'+'unisex'+'</td>';
+			// 			}
+						
+			// 			xyz+=		'<td><img class="imgs" width="100px" height="100px" src="'+students[i].avatar+'"></td>';
+			// 			xyz+=	'</tr>';
+			// 		}
+			// 		jQuery("#list_students").append(xyz);	
+			// 	}
+			// });
+			// jQuery(".imgs").click(function(){
+			// 	 jQuery(this).attr({"width":"500px","height":"500px"});
+			// 	//alert('OK');
+			// });
 		});
 	</script>
-</body>
+
 </html>
